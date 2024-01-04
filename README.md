@@ -2,6 +2,10 @@
 
 📌 **Document about the game Flyff Universe. NOT affiliated with GalaLab / Wemade Connect / PlayPark.**
 
+💡 **The information uses in the document is from the FlyFF Universe API.**
+
+<!-- Copyright 2023 © Gala Lab Corp. All Rights Reserved. -->
+
 <details>
   <summary>📁 Table of Contents</summary>
 
