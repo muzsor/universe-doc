@@ -848,6 +848,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/43.Candy_Cane.jpg" alt="43.Candy_Cane.jpg" width="300"/></div>
 
+44.  `2024-01-04`: `Artificial`
+
+   * Hat / Suit / Hands / Shoes / Cloak
+
+<div align="center"><img src="./system/costume_collection/44.Artificial.jpg" alt="44.Artificial.jpg" width="300"/></div>
+
 </details>
 
 #### costume collection event
@@ -855,8 +861,6 @@ This Extended is also valid for that specific season when it is purchased.
 1. `2023-04-27~2023-05-11`: `Fantasy Towel`, `Elf`, `Music Beat`
 
 2. `2023-08-31~2023-09-14`: `Alien Octopus`, `Rider`, `Baby Shark`
-
-3. `2023-01-04~2023-01-18`(prediction): `Shade Child`, `Menhera Kei`, `Gummy Bear`
 
 #### Black Friday Costume Lucky Box
 
