@@ -1,13 +1,12 @@
 # universe-document
 
-📌 **Document about the game Flyff Universe. NOT affiliated with GalaLab / Wemade Connect / PlayPark.**
+📌 **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
 
 💡 **The information uses in the document is from the FlyFF Universe API.**
 
 <!-- Copyright 2023 © Gala Lab Corp. All Rights Reserved. -->
 
-<details>
-  <summary>📁 Table of Contents</summary>
+<table><tr><td><details><summary>📁 Table of Contents</summary>
 
 - [universe-document](#universe-document)
   - [🌐 community](#-community)
@@ -85,7 +84,7 @@
     - [💎 dungeons drops](#-dungeons-drops)
     - [🏆 guild siege maps](#-guild-siege-maps)
 
-</details>
+</details></td></tr></table>
 
 ## 🌐 community
 
@@ -120,8 +119,7 @@
 
 ### 📢 updates
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * `2020-12-15 07:00 UTC ~ 2020-12-30 16:00 UTC`:Closed Beta Test server.
 
@@ -205,12 +203,11 @@
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 🕙 time
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * `1` second of real time = `100` seconds in game.
 
@@ -230,34 +227,31 @@
 
 > source:[@yorrow @[Totemia] Pantalaimon (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1025687121161375794 "@yorrow @[Totemia] Pantalaimon (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 🗺️ map
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 #### wdmadrigal
 
 <div align="center"><img src="./system/map/wdmadrigal.png" alt="wdmadrigal.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### ❤️ provisional damage hp
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * Provisional Damage Hp Gauge effect option to the Options window (Disabled by default).
 
 <div align="center"><img src="./system/provisional_damage_hp.gif" alt="provisional_damage_hp.gif"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 💬 chatting filter
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.3.3 Patch Notes](https://universe.flyff.com/news/patchnotes133 "Game Version 1.3.3 Patch Notes")
 
@@ -267,12 +261,11 @@
 
 <div align="center"><img src="./system/chatting_filter_interface.png" alt="chatting_filter_interface.png" width="400"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 👩🏻‍💻 commands
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.3.2 Patch Notes](https://universe.flyff.com/news/patchnotes132 "Game Version 1.3.2 Patch Notes")
 
@@ -280,23 +273,21 @@
 
 <div align="center"><img src="./system/commands.png" alt="commands.png" width="600"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🏰 guild name color
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/guild_name_color.png" alt="guild_name_color.png"/></div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 🤝 party
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
 
@@ -408,12 +399,11 @@
 
 * Lucky Drop: Doubles the drop rate of rare items (red items on the ground).
 
-</details>
+</details></td></tr></table>
 
 ### 🌟 exp system
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.1.3 Patch Notes](https://universe.flyff.com/news/patchnotes113 "Game Version 1.1.3 Patch Notes")
 
@@ -443,12 +433,11 @@
 
    > `1v1` 經驗值和掉落獎勵基於怪物等級。 這意味著，只要您足夠強大，可以對抗 `141` 級及以上的怪物，您就可以利用此經驗值增加。
 
-</details>
+</details></td></tr></table>
 
 ### 🎁 drop rate
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Developers Q&A December 2022 - January 2023](https://universe.flyff.com/news/qna-01-2023 "Developers Q&A December 2022 - January 2023")
 
@@ -486,32 +475,29 @@
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1171955221300252783 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 📦 item rarity
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/item_rarity_color.png" alt="item_rarity_color.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### ⚔️ damage ratio
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/damage_ratio.jpg" alt="damage_ratio.jpg"/></div>
 
 > source:[@ppap#5954 @ppap (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1079823818765385799 "@ppap#5954 @ppap (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 💳 extended battle pass
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Battle Pass System](https://universe.flyff.com/news/battlepass "Battle Pass System")
 
@@ -561,12 +547,11 @@ This Extended is also valid for that specific season when it is purchased.
 
    10. and more to come over the game updates!
 
-</details>
+</details></td></tr></table>
 
 ### 🛒 fitting room
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.2.7 Patch Notes](https://universe.flyff.com/news/patchnotes127 "Game Version 1.2.7 Patch Notes")
 
@@ -576,17 +561,15 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/fitting_room_interface.png" alt="fitting_room_interface.png" width="500"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 👗 costume collection
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 </br>
 
-<details>
-  <summary>👗 costume collection details 👔</summary>
+<table><tr><td><details><summary>👗 costume collection details 👔</summary>
 
 1. `2022-05-18`: `Casual Summer`
 
@@ -860,7 +843,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/45.Emerald_Explorer_Collection.jpg" alt="45.Emerald_Explorer_Collection.jpg" width="300"/></div>
 
-</details>
+</details></td></tr></table>
 
 #### costume collection event
 
@@ -883,12 +866,11 @@ This Extended is also valid for that specific season when it is purchased.
    * Gummy Bear
    * Winter Wizard
 
-</details>
+</details></td></tr></table>
 
 ### ⏳ monster focus timer
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.0.6 Patch Notes](https://universe.flyff.com/news/patchnotes106 "Game Version 1.0.6 Patch Notes")
 
@@ -899,34 +881,31 @@ This Extended is also valid for that specific season when it is purchased.
    * 50 seconds for >= 8 and < 13 monsters
    * 28 seconds for >= 14 monsters
 
-</details>
+</details></td></tr></table>
 
 ### 🧠 skill point
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/skill_point.png" alt="skill_point.png"/></div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1179796650504503366 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 💪 buff scale
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/buff_scale.png" alt="buff_scale.png"/></div>
 
 > source:[@steinschleuder @[Justice] Steinschleuder (discord flyff universe)](https://discord.com/channels/778915844070834186/999269990098284554/1145962826742116352 "@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 👑 master&hero quests
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
 
@@ -985,12 +964,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 * Becoming a Hero will give you a unique badge and a permanent free stat page (`3` stat pages in total if a Battle Pass is active).
 
-</details>
+</details></td></tr></table>
 
 ### ⚔️ critical chance vs critical damage
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/crit/crit_chance&crit_damage1.png" alt="crit_chance&crit_damage1.png"/></div>
 
@@ -1018,12 +996,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
       * then normally you'd opt for critical chance.
 
-</details>
+</details></td></tr></table>
 
 ### ⚔️ blade damage
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * Attack calculation:
    1. main hand
@@ -1055,12 +1032,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/999269862260084736/1000695721990815744 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 🗡️ empower weapon
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * `Empower Weapon` adds to weapons element upgrade level (literally), it is not a direct damage boost.
 
@@ -1072,12 +1048,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/999269862260084736/1034085511754678303 "@shayminhunter @TeachMeHisty (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 🔪 sword vs axe 🪓
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * The crit chance from the axe is stronger than the increase critical damage by default and going from `5.7` to `4.7` is a `17.5%` damage loss from `STR` portion of the damage alone, which makes up around halve of total attack.
 
@@ -1085,7 +1060,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/999269862260084736/1102990787186262136 "@shayminhunter @TeachMeHisty (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 </details>
 
@@ -1108,19 +1083,17 @@ Those who have completed the Optional Master Quest during the event period will 
 
 ### 🎲 power dice
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/power_dices.png" alt="power_dices.png"/></div>
 
 <div align="center"><img src="./upgrade/power_dice.jpg" alt="power_dice.jpg" width="500" height="500"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🧤 catcher
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/catcher.jpg" alt="catcher.jpg" width="500" height="500"/></div>
 
@@ -1130,12 +1103,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 * Collecting materials will be directly taken from your inventory, and don’t have to be placed in the upgrading window.
 
-</details>
+</details></td></tr></table>
 
 ### 🥺 pity system
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * In reality, the upgrade rates are theoretically the same, but your chances of being very unlucky and failing way past the theoretical average number of attempts is much lower now.
 
@@ -1155,12 +1127,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@Insanive @Insanive (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1150940230736674857 "@Insanive @Insanive (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 🏹 weapon&armor upgrade
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center">
 
@@ -1176,8 +1147,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### bouns
 
-<details>
-  <summary>details</summary>
+<details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/upgrade_level_bonus.png" alt="upgrade_level_bonus.png"/></div>
 
@@ -1185,8 +1155,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### ultimate weapon
 
-<details>
-  <summary>⚔️ details</summary>
+<details><summary>⚔️ details</summary>
 
 * When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.
 
@@ -1202,12 +1171,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-</details>
+</details></td></tr></table>
 
 ### 💍 jewelry upgrade
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center">
 
@@ -1225,23 +1193,21 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Jewelry%20%2B5.png" alt="1,000,000 Simulations Of Ultimate Jewelry +5.png" width="600"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🔥 element upgrade
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/elemental_upgrade.png" alt="elemental_upgrade.png"/></div>
 
 <div align="center"><img src="./upgrade/scroll_of_element_change.png" alt="scroll_of_element_change.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### ✨ glow&swinging
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 #### weapon glow
 
@@ -1277,12 +1243,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[Flyff Global Wiki](https://flyff-global.fandom.com/wiki/Upgrading_Armour_and_Non-Ultimate_Weapons "Flyff Global Wiki")
 
-</details>
+</details></td></tr></table>
 
 ### ✂️ piercing
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center">
 
@@ -1294,21 +1259,19 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/piercing_card.png" alt="piercing_card.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🎁 package
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/package.png" alt="package.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🛠️ craft
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/create_unique_weapon.png" alt="create_unique_weapon.png"/></div>
 
@@ -1316,12 +1279,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@cloudishere1 @クラウドニャン (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1018066487291944962 "@cloudishere1 @クラウドニャン (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 📜 stat scroll
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 * Add a random `STR`/`STA`/`DEX`/`INT` stat to your weapon or armor.
 
@@ -1331,12 +1293,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/stat_scroll.png" alt="stat_scroll.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 📜 awake
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/awake/awake1.png" alt="awake1.png"/></div>
 
@@ -1344,18 +1305,17 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/awake/awake3.png" alt="awake3.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 💍 FWC jewelry
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/fwc_jewelry.png" alt="fwc_jewelry.png"/></div>
 
 > source:[FWC Event Details](https://universe.flyff.com/news/fwc1event "FWC Event Details")
 
-</details>
+</details></td></tr></table>
 
 </details>
 
@@ -1374,17 +1334,15 @@ Those who have completed the Optional Master Quest during the event period will 
 
 ### 🦮 raised pet
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./pet/raised_pet.png" alt="raised_pet.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🕊️ grace effect
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./pet/pet_grace_effects_s_tier.png" alt="pet_grace_effects_s_tier.png"/></div>
 
@@ -1394,21 +1352,19 @@ Those who have completed the Optional Master Quest during the event period will 
 
 * Grace skill energy consumption: `50` minute.
 
-</details>
+</details></td></tr></table>
 
 ### 🍭 pet candy recipes
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./pet/pet_candy_recipes.png" alt="pet_candy_recipes.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🐾 pet defect recycling
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Developers Q&A October-November 2022](https://universe.flyff.com/news/qna-11-2022 "Developers Q&A October-November 2022")
 
@@ -1422,23 +1378,21 @@ Those who have completed the Optional Master Quest during the event period will 
 
 * If you failure(red text): You rolled the same or a lower level, so nothing changed.
 
-</details>
+</details></td></tr></table>
 
 ### 🌿 berry map
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./pet/berryfarming_map_v3.jpg" alt="berryfarming_map_v3.jpg"/></div>
+<div align="center"><img src="./pet/berryfarming_map_v3.jpg" alt="berryfarming_map_v3.jpg" width="800"/></div>
 
 > source:[@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1164895311551004713 "@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 💫 pet transmutes
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 1. `2022-08-22`: `Crystal Iphrine`
 
@@ -1454,7 +1408,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 7. `2023-07-20`: `Draco`
 
-</details>
+</details></td></tr></table>
 
 </details>
 
@@ -1475,26 +1429,23 @@ Those who have completed the Optional Master Quest during the event period will 
 
 ### 📌 dungeons position
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./dungeons/dungeons_position.png" alt="dungeons_position.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🚩 dungeons difficulties
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./dungeons/dungeons_difficulties.png" alt="dungeons_difficulties.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 📚 story dungeons
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.2.7 Patch Notes](https://universe.flyff.com/news/patchnotes127 "Game Version 1.2.7 Patch Notes")
 
@@ -1508,54 +1459,49 @@ Those who have completed the Optional Master Quest during the event period will 
    * Final bosses in Story mode dungeons do not grant Soul Fragments.
    * Story mode dungeons do not grant credit towards achievements, but do count towards the daily Clear Dungeon(s) battle pass mission.
 
-</details>
+</details></td></tr></table>
 
 ### 📍 dungeon checkpoints
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.2.7 Patch Notes](https://universe.flyff.com/news/patchnotes127 "Game Version 1.2.7 Patch Notes")
 
 * Dungeons now have checkpoints that appear after players have cleared certain objectives. These checkpoints can be used to teleport back to the entrance and vice versa. Each dungeon has 2 checkpoints, except for Storm Peak which has 4.
 
-</details>
+</details></td></tr></table>
 
 ### ⏳ cool down
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./dungeons/cool_down.png" alt="cool_down.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 🥅 pet cages
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./dungeons/pet_cages.png" alt="pet_cages.png"/></div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172264259665809510 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 💥 dungeons curses
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 #### the wilds
 
 <div align="center"><img src="./dungeons/the_wilds_curses.png" alt="the_wilds_curses.png"/></div>
 
-</details>
+</details></td></tr></table>
 
 ### 💎 dungeons drops
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 > source:[Game Version 1.2.2 Patch Notes](https://universe.flyff.com/news/patchnotes122 "Game Version 1.2.2 Patch Notes")
 
@@ -1599,17 +1545,16 @@ Those who have completed the Optional Master Quest during the event period will 
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172752197742768189 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-</details>
+</details></td></tr></table>
 
 ### 🏆 guild siege maps
 
-<details>
-  <summary>details</summary>
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./dungeons/guild_siege_maps.png" alt="guild_siege_maps.png" width="600"/></div>
 
 > source:[flyffipedia](https://flyffipedia.com/dungeons)
 
-</details>
+</details></td></tr></table>
 
 </details>
