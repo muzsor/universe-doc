@@ -891,6 +891,9 @@ This Extended is also valid for that specific season when it is purchased.
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1179796650504503366 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
+> source:[@cysotiso @cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1198561141207597127 "@cysotiso @cysotiso (discord flyff universe)")
+>
+
 </details></td></tr></table>
 
 ### 💪 buff scale
