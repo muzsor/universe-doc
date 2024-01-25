@@ -123,11 +123,11 @@
 
 * `2020-12-15 07:00 UTC ~ 2020-12-30 16:00 UTC`:Closed Beta Test server.
 
+<div align="center"><img src="./system/cbt_announcement.png" alt="cbt_announcement.png" width="200" height="200"/></div>
+
 * `2021-01-27 08:00 UTC ~ 2021-01-31 16:00 UTC`:Test server.
 
 * `2022-03-30 09:00 UTC`:Gala Lab is reveal new cross-platform 3D MMORPG `Flyff Universe`.
-
-<div align="center"><img src="./system/cbt_announcement.png" alt="cbt_announcement.png" width="200" height="200"/></div>
 
 * `2022-05-18 01:00 UTC`:Early Access to the South-East Asia Server, Pre-registration for Global starts.
 
