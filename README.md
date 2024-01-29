@@ -20,6 +20,7 @@
     - [💬 chatting filter](#-chatting-filter)
     - [👩🏻‍💻 commands](#-commands)
     - [🏰 guild name color](#-guild-name-color)
+    - [🏰 guild level](#-guild-level)
     - [🤝 party](#-party)
       - [exp share](#exp-share)
       - [Contribution](#contribution)
@@ -282,6 +283,14 @@
 <div align="center"><img src="./system/guild_name_color.png" alt="guild_name_color.png"/></div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+</details></td></tr></table>
+
+### 🏰 guild level
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./system/guild_level.png" alt="guild_level.png"/></div>
 
 </details></td></tr></table>
 
@@ -1532,7 +1541,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 * Under the hood dungeon monsters have a level as seen in the API, but all penalties are removed from dungeon monsters. So there should be no effect to drops, etc. based on level.
 
-   > 真爭的原因是地下城怪物有一個等級，如 API 中所示，但所有懲罰都從地下城怪物中刪除，所以基於等級的掉落率應該沒有影響。
+   > 真正的原因是地下城怪物有一個等級，如 API 中所示，但所有懲罰都從地下城怪物中刪除，所以基於等級的掉落率應該沒有影響。
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1152141645257641985/1158031426202124399 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
