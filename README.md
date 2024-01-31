@@ -12,7 +12,7 @@
   - [🌐 community](#-community)
   - [⚙️ system](#️-system)
     - [📢 updates](#-updates)
-      - [top up event](#top-up-event)
+      - [💸 top up event](#-top-up-event)
     - [🕙 time](#-time)
     - [🗺️ map](#️-map)
       - [wdmadrigal](#wdmadrigal)
@@ -53,6 +53,7 @@
     - [🏹 weapon\&armor upgrade](#-weaponarmor-upgrade)
       - [bouns](#bouns)
       - [ultimate weapon](#ultimate-weapon)
+      - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
       - [ultimate jewelry](#ultimate-jewelry)
     - [🔥 element upgrade](#-element-upgrade)
@@ -166,7 +167,7 @@
 
 * `2023-12-21 10:00 UTC`:New Asia server `Rhisis` starts.
 
-#### top up event
+#### 💸 top up event
 
 * `2022-05-17 ~ 2022-05-31 07:00 UTC`:[Server Group Purchase](https://universe.flyff.com/news/grouppurchase "Server Group Purchase")
 
@@ -291,6 +292,8 @@
 <table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/guild_level.png" alt="guild_level.png"/></div>
+
+> source:[@kroontje @[Mod] Kroontje (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1201432655619702885 "@kroontje @[Mod] Kroontje (discord flyff universe)")
 
 </details></td></tr></table>
 
@@ -1167,7 +1170,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### ultimate weapon
 
-<details><summary>⚔️ details</summary>
+<details><summary>details</summary>
 
 * When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.
 
@@ -1180,6 +1183,14 @@ Those who have completed the Optional Master Quest during the event period will 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1174954477112021042 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 <div align="center"><img src="./upgrade/ultimate/ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
+
+</details>
+
+#### 🦾 new horizon equipment sets
+
+<details><summary>🦾 details</summary>
+
+<div align="center"><img src="./upgrade/new_horizon_equipment_sets.png" alt="new_horizon_equipment_sets.png"/></div>
 
 </details>
 
