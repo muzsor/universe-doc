@@ -125,7 +125,7 @@
 
 * `2020-12-15 07:00 UTC ~ 2020-12-30 16:00 UTC`:Closed Beta Test server.
 
-<div align="center"><img src="./system/cbt_announcement.png" alt="cbt_announcement.png" width="200" height="200"/></div>
+<div align="center"><img src="./system/cbt_announcement.png" alt="cbt_announcement.png" width="200"/></div>
 
 * `2021-01-27 08:00 UTC ~ 2021-01-31 16:00 UTC`:Test server.
 
@@ -135,7 +135,7 @@
 
    > [Early Access in SEA will open May 18th](https://universe.flyff.com/news/early-access-20220518 "Early Access in SEA will open May 18th")
 
-<div align="center"><img src="./system/universe_early_access.png" alt="universe_early_access.png" width="382" height="200"/></div>
+<div align="center"><img src="./system/universe_early_access.png" alt="universe_early_access.png" width="382"/></div>
 
 * `2022-05-20 15:00 UTC`:New server `Glaphan` starts.
 
@@ -145,7 +145,7 @@
 
    > [@camac. @[Dev] Cameron (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/983411667977269289 "@camac. @[Dev] Cameron (discord flyff universe)")
 
-<div align="center"><img src="./system/global_launch.png" alt="global_launch.png" width="200" height="200"/></div>
+<div align="center"><img src="./system/global_launch.png" alt="global_launch.png" width="200"/></div>
 
 * `2022-11-03 06:00 UTC`:New Taiwanese server `獨眼蝙蝠` starts.
 
@@ -601,43 +601,43 @@ This Extended is also valid for that specific season when it is purchased.
 
    * Green `10%`, Purple `6%`, Blue `2%`, Red `4%`, White `2%`, Black `8%`
 
-<div align="center"><img src="./system/costume_collection/03.Elf.png" alt="03.Elf.png" width="300" height="272"/></div>
+<div align="center"><img src="./system/costume_collection/03.Elf.png" alt="03.Elf.png" width="300"/></div>
 
 4. `2022-07-05`: `Music Beat`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/04.Music%20Beat.png" alt="04.Music Beat.png" width="300" height="284"/></div>
+<div align="center"><img src="./system/costume_collection/04.Music%20Beat.png" alt="04.Music Beat.png" width="300"/></div>
 
 5. `2022-07-19`: `Alien Octopus`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/05.Alien%20Octopus.png" alt="05.Alien Octopus.png" width="300" height="102"/></div>
+<div align="center"><img src="./system/costume_collection/05.Alien%20Octopus.png" alt="05.Alien Octopus.png" width="300"/></div>
 
 6. `2022-08-02`: `Rider`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/06.Rider.png" alt="06.Rider.png" width="300" height="244"/></div>
+<div align="center"><img src="./system/costume_collection/06.Rider.png" alt="06.Rider.png" width="300"/></div>
 
 7. `2022-08-17`: `Baby Shark`
 
    * Hat / Suit / Shoes
 
-<div align="center"><img src="./system/costume_collection/07.Baby%20Shark.png" alt="07.Baby Shark.png" width="300" height="318"/></div>
+<div align="center"><img src="./system/costume_collection/07.Baby%20Shark.png" alt="07.Baby Shark.png" width="300"/></div>
 
 8. `2022-08-30`: `Shade Child`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/08.Shade%20Child.png" alt="08.Shade Child.png" width="300" height="282"/></div>
+<div align="center"><img src="./system/costume_collection/08.Shade%20Child.png" alt="08.Shade Child.png" width="300"/></div>
 
 9.  `2022-09-15`: `Menhera Kei`
 
    * Hat / Suit / Shoes / Mask / Cloak
 
-<div align="center"><img src="./system/costume_collection/09.Menhera%20Kei.jpg" alt="09.Menhera Kei.jpg" width="300" height="389"/></div>
+<div align="center"><img src="./system/costume_collection/09.Menhera%20Kei.jpg" alt="09.Menhera Kei.jpg" width="300"/></div>
 
 10. `2022-09-29`: `Gummy Bear`
 
@@ -793,7 +793,7 @@ This Extended is also valid for that specific season when it is purchased.
 
    * Hat / Suit / Shoes / Back-Worn Hat / Glasses
 
-<div align="center"><img src="./system/costume_collection/35.2023%20Summer.png" alt="35.2023 Summer.png" width="300" height="323"/></div>
+<div align="center"><img src="./system/costume_collection/35.2023%20Summer.png" alt="35.2023 Summer.png" width="300"/></div>
 
 36. `2023-09-26`: `Star`
 
@@ -817,7 +817,7 @@ This Extended is also valid for that specific season when it is purchased.
 
    * Hat / Suit / Shoes / Backpack / Mask
 
-<div align="center"><img src="./system/costume_collection/39.Modern%20Halloween.jpg" alt="39.Modern%20Halloween.jpg" width="300" height="323"/></div>
+<div align="center"><img src="./system/costume_collection/39.Modern%20Halloween.jpg" alt="39.Modern%20Halloween.jpg" width="300"/></div>
 
 40. `2023-11-09`: `Military 2023`
 
@@ -854,6 +854,12 @@ This Extended is also valid for that specific season when it is purchased.
    * Hat / Suit / Hands / Shoes / Backpack / Swords
 
 <div align="center"><img src="./system/costume_collection/45.Emerald_Explorer_Collection.jpg" alt="45.Emerald_Explorer_Collection.jpg" width="300"/></div>
+
+46.  `2024-02-01`: `Snowy`
+
+   * Hat / Suit / Hands / Shoes / Backpack / Glasses
+
+<div align="center"><img src="./system/costume_collection/46.Snowy.jpg" alt="46.Snowy.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
@@ -928,12 +934,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
-<div align="center"><img src="./system/master_quests.png" alt="master_quests.png" width="600" height="344"/></div>
+<div align="center"><img src="./system/master_quests.png" alt="master_quests.png" width="600"/></div>
 
 
 * Once you complete all of the Optional Master quest, you can try the new New Optional Hero quest at  [Master Quests] Leila. This quest will ask you to level up from `120` to `125` and gather `100` Symbols of Shade.
 
-<div align="center"><img src="./system/hero_quests.png" alt="hero_quests.png" width="600" height="122"/></div>
+<div align="center"><img src="./system/hero_quests.png" alt="hero_quests.png" width="600"/></div>
 
 * While on a master and hero quest, there are some changes to your character:
 
@@ -1102,7 +1108,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/power_dices.png" alt="power_dices.png"/></div>
 
-<div align="center"><img src="./upgrade/power_dice.jpg" alt="power_dice.jpg" width="500" height="500"/></div>
+<div align="center"><img src="./upgrade/power_dice.jpg" alt="power_dice.jpg" width="500"/></div>
 
 </details></td></tr></table>
 
@@ -1110,7 +1116,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/catcher.jpg" alt="catcher.jpg" width="500" height="500"/></div>
+<div align="center"><img src="./upgrade/catcher.jpg" alt="catcher.jpg" width="500"/></div>
 
 * All catcher spawn:`Darkon 3`, `Azria`.
 
@@ -1235,34 +1241,34 @@ Those who have completed the Optional Master Quest during the event period will 
 #### weapon glow
 
 <div align="center">
-<img src="./upgrade/glow/weapon_fire_glow.gif" alt="weapon_fire_glow.gif" width="250" height="250"/>
-<img src="./upgrade/glow/weapon_wind_glow.gif" alt="weapon_wind_glow.gif" width="250" height="250"/>
-<img src="./upgrade/glow/weapon_earth_glow.gif" alt="weapon_earth_glow.gif" width="250" height="250"/>
-<img src="./upgrade/glow/weapon_electric_glow.gif" alt="weapon_electric_glow.gif" width="250" height="250"/>
-<img src="./upgrade/glow/weapon_water_glow.gif" alt="weapon_water_glow.gif" width="250" height="250"/>
+<img src="./upgrade/glow/weapon_fire_glow.gif" alt="weapon_fire_glow.gif" width="250"/>
+<img src="./upgrade/glow/weapon_wind_glow.gif" alt="weapon_wind_glow.gif" width="250"/>
+<img src="./upgrade/glow/weapon_earth_glow.gif" alt="weapon_earth_glow.gif" width="250"/>
+<img src="./upgrade/glow/weapon_electric_glow.gif" alt="weapon_electric_glow.gif" width="250"/>
+<img src="./upgrade/glow/weapon_water_glow.gif" alt="weapon_water_glow.gif" width="250"/>
 </div>
 
 > source:[ FlyFF Wiki](https://flyff-wiki.gpotato.com.br/wiki/Cards "FlyFF Wiki")
 
 <div align="center">
-<img src="./upgrade/glow/stick_fire_glow.png" alt="stick_fire_glow.png" width="400" height="195"/>
-<img src="./upgrade/glow/stick_wind_glow.png" alt="stick_wind_glow.png" width="400" height="185"/>
-<img src="./upgrade/glow/stick_earth_glow.png" alt="stick_earth_glow.png" width="400" height="186"/>
-<img src="./upgrade/glow/stick_electric_glow.png" alt="stick_electric_glow.png" width="400" height="197"/>
-<img src="./upgrade/glow/stick_water_glow.png" alt="stick_water_glow.png" width="400" height="193"/>
+<img src="./upgrade/glow/stick_fire_glow.png" alt="stick_fire_glow.png" width="400"/>
+<img src="./upgrade/glow/stick_wind_glow.png" alt="stick_wind_glow.png" width="400"/>
+<img src="./upgrade/glow/stick_earth_glow.png" alt="stick_earth_glow.png" width="400"/>
+<img src="./upgrade/glow/stick_electric_glow.png" alt="stick_electric_glow.png" width="400"/>
+<img src="./upgrade/glow/stick_water_glow.png" alt="stick_water_glow.png" width="400"/>
 </div>
 
 > source:[@helixen @helixen (discord flyff universe)](https://discord.com/channels/778915844070834186/778936929902395392/990880934897279016 "@helixen @helixen (discord flyff universe)")
 
 #### armor glow
 
-<div align="center"><img src="./upgrade/glow/armor_upgrade_glow.png" alt="armor_upgrade_glow.png" width="600" height="347"/></div>
+<div align="center"><img src="./upgrade/glow/armor_upgrade_glow.png" alt="armor_upgrade_glow.png" width="600"/></div>
 
 > source:[Flyff Global Wiki](https://flyff-global.fandom.com/wiki/Upgrading_Armour_and_Non-Ultimate_Weapons "Flyff Global Wiki")
 
 #### swinging
 
-<div align="center"><img src="./upgrade/glow/upgrade_swinging.png" alt="upgrade_swinging.png" width="600" height="553"/></div>
+<div align="center"><img src="./upgrade/glow/upgrade_swinging.png" alt="upgrade_swinging.png" width="600"/></div>
 
 > source:[Flyff Global Wiki](https://flyff-global.fandom.com/wiki/Upgrading_Armour_and_Non-Ultimate_Weapons "Flyff Global Wiki")
 
