@@ -1628,6 +1628,22 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
+* Personal House NPC → **💎70(7 days)**/**💎140(15 days) fCoins**
+
+  * [Personal House NPC] Alice: PvE Damage Reduction +3%
+
+  * [Personal House NPC] BB Wolf: Jump Height +30 **💲7,000,000 penya**
+
+  * [Personal House NPC] Casanova: EXP +5%
+
+  * [Personal House NPC] Hatter: PvE Damage +3%
+
+  * [Personal House NPC] Misun: Drop Rate +5%
+
+  * [Personal House NPC] Temas: Speed +5%
+
+  * [Personal House NPC] Pang: Level2 Buffs limited to characters level 120 and below.
+
 * Guild House NPC → **💎350(7 days)**/**💎700(15 days) fCoins**
 
   * [Guild House NPC] Chord: PvP Damage +3%
@@ -1650,23 +1666,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Guild House NPC] Nanco: Critical Resist +3%
 
-  * [Guild House NPC] Pang: Buffs limited to characters level 140 and below.
-
-* Personal House NPC → **💎70(7 days)**/**💎140(15 days) fCoins**
-
-  * [Personal House NPC] Alice: PvE Damage Reduction +3%
-
-  * [Personal House NPC] BB Wolf: Jump Height +30 **💲7,000,000 penya**
-
-  * [Personal House NPC] Casanova: EXP +5%
-
-  * [Personal House NPC] Hatter: PvE Damage +3%
-
-  * [Personal House NPC] Misun: Drop Rate +5%
-
-  * [Personal House NPC] Temas: Speed +5%
-
-  * [Personal House NPC] Pang: Buffs limited to characters level 120 and below.
+  * [Guild House NPC] Pang: Level4 Buffs limited to characters level 140 and below.
 
 </details></td></tr></table>
 
