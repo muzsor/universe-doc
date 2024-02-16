@@ -866,6 +866,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/46.Snowy.jpg" alt="46.Snowy.jpg" width="300"/></div>
 
+47. `2024-02-15`: `Valentine 2024`
+
+   * Hat / Suit / Hands / Shoes
+
+<div align="center"><img src="./system/costume_collection/47.Valentine_2024.jpg" alt="47.Valentine_2024.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 #### costume collection event
