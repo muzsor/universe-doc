@@ -85,6 +85,9 @@
       - [the wilds](#the-wilds)
     - [💎 dungeons drops](#-dungeons-drops)
     - [🏆 guild siege maps](#-guild-siege-maps)
+  - [🏠 housing](#-housing)
+    - [📍 template](#-template)
+    - [🗿 npc](#-npc)
 
 </details></td></tr></table>
 
@@ -166,6 +169,8 @@
 * `2023-11-09 08:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
 * `2023-12-21 10:00 UTC`:New Asia server `Rhisis` starts.
+
+* `2024-02-15 06:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
 #### 💸 top up event
 
@@ -1583,6 +1588,75 @@ Those who have completed the Optional Master Quest during the event period will 
 <div align="center"><img src="./dungeons/guild_siege_maps.png" alt="guild_siege_maps.png" width="600"/></div>
 
 > source:[flyffipedia](https://flyffipedia.com/dungeons)
+
+</details></td></tr></table>
+
+</details>
+
+## 🏠 housing
+
+[🔝 Back to top](#universe-document)
+
+<details open>
+  <summary>📁 housing details</summary>
+
+### 📍 template
+
+<table><tr><td><details><summary>details</summary>
+
+* Blank World(S):💲100,000,000 penya
+
+* Blank World(M):💲200,000,000 penya
+
+* Beach House(S):💲400,000,000 penya
+
+* Beach House(M):💎1600 fCoins
+
+</details></td></tr></table>
+
+### 🗿 npc
+
+<table><tr><td><details><summary>details</summary>
+
+* Guild House NPC → **💎350(7 days)**/**💎700(15 days) fCoins**
+
+  * [Guild House NPC] Chord: PvP Damage +3%
+
+  * [Guild House NPC] Anura: PvP Damage Reduction +3%
+
+  * [Guild House NPC] Quarter: Max HP +10%
+
+  * [Guild House NPC] Sham: Max MP +10%
+
+  * [Guild House NPC] Lamew: Max FP +10%
+
+  * [Guild House NPC] Gira: MP Consumption Decrease +10%
+
+  * [Guild House NPC] Affe: FP Consumption Decrease +10%
+
+  * [Guild House NPC] Cobao: Healing +3%
+
+  * [Guild House NPC] Aibao: Magic Resistance +3%
+
+  * [Guild House NPC] Nanco: Critical Resist +3%
+
+  * [Guild House NPC] Pang: Buffs limited to characters level 140 and below.
+
+* Personal House NPC → **💎70(7 days)**/**💎140(15 days) fCoins**
+
+  * [Personal House NPC] Alice: PvE Damage Reduction +3%
+
+  * [Personal House NPC] BB Wolf: Jump Height +30 **💲7,000,000 penya**
+
+  * [Personal House NPC] Casanova: EXP +5%
+
+  * [Personal House NPC] Hatter: PvE Damage +3%
+
+  * [Personal House NPC] Misun: Drop Rate +5%
+
+  * [Personal House NPC] Temas: Speed +5%
+
+  * [Personal House NPC] Pang: Buffs limited to characters level 120 and below.
 
 </details></td></tr></table>
 
