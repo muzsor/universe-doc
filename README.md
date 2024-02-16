@@ -1295,9 +1295,13 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <img src="./upgrade/armor_piercing_upgrade.png" alt="armor_piercing_upgrade.png"/></div>
 
+<div align="center"><img src="./upgrade/armor_piercing_card.png" alt="armor_piercing_card.png"/></div>
+
+***
+
 <div align="center"><img src="./upgrade/weapon&shield_piercing_upgrade.png" alt="weapon&shield_piercing_upgrade.png"/></div>
 
-<div align="center"><img src="./upgrade/piercing_card.png" alt="piercing_card.png"/></div>
+<div align="center"><img src="./upgrade/weapon&shield_piercing_card.png" alt="weapon&shield_piercing_card.png"/></div>
 
 </details></td></tr></table>
 
