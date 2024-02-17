@@ -51,7 +51,7 @@
     - [🧤 catcher](#-catcher)
     - [🥺 pity system](#-pity-system)
     - [🏹 weapon\&armor upgrade](#-weaponarmor-upgrade)
-      - [bouns](#bouns)
+      - [bonus](#bonus)
       - [ultimate weapon](#ultimate-weapon)
       - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
@@ -1177,7 +1177,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source[@piccolo0002 @[GM] Piccolo (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1076113591536717834 "@piccolo0002 @[GM] Piccolo (discord flyff universe)")
 
-#### bouns
+#### bonus
 
 <details><summary>details</summary>
 
@@ -1632,7 +1632,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Personal House NPC] Alice: PvE Damage Reduction +3%
 
-  * [Personal House NPC] BB Wolf: Jump Height +30 **💲7,000,000 penya**
+  * [Personal House NPC] BB Wolf (7 days): Jump Height +30 **💲7,000,000 penya**
 
   * [Personal House NPC] Casanova: EXP +5%
 
