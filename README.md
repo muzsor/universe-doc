@@ -1438,19 +1438,19 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-1. `2022-08-22`: `Crystal Iphrine`
+1. `2022-08-22`: [`Crystal Iphrine Shell`](https://flyffipedia.com/items/details/9040 "Crystal Iphrine Shell")
 
-2. `2022-09-22`: `Cubone`
+2. `2022-09-22`: [`Primgon`](https://flyffipedia.com/items/details/1127 "Primgon Cage")
 
-3. `2022-11-25`: `Nine Tails`
+3. `2022-11-25`: [`Nine Tails`](https://flyffipedia.com/items/details/14640 "Nine Tails Cage")
 
-4. `2023-02-22`: `Tonge Cage`
+4. `2023-02-22`: [`Tonge`](https://flyffipedia.com/items/details/11407 "Tonge Cage")
 
-5. `2023-04-13`: `Hantiger`
+5. `2023-04-13`: [`Hantiger`](https://flyffipedia.com/items/details/15854 "Hantiger Cage")
 
-6. `2023-06-08`: `Skating Cat`
+6. `2023-06-08`: [`Skating Cat`](https://flyffipedia.com/items/details/17941 "Skating Cat Cage")
 
-7. `2023-07-20`: `Draco`
+7. `2023-07-20`: [`Draco`](https://flyffipedia.com/items/details/2923 "Draco Cage")
 
 </details></td></tr></table>
 
