@@ -75,7 +75,7 @@
     - [🌿 berry map](#-berry-map)
     - [💫 pet transmutes](#-pet-transmutes)
   - [🐉 dungeons](#-dungeons)
-    - [📌 dungeons position](#-dungeons-position)
+    - [📌 dungeons location](#-dungeons-location)
     - [🚩 dungeons difficulties](#-dungeons-difficulties)
     - [📚 story dungeons](#-story-dungeons)
     - [📍 dungeon checkpoints](#-dungeon-checkpoints)
@@ -1471,11 +1471,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
-### 📌 dungeons position
+### 📌 dungeons location
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./dungeons/dungeons_position.png" alt="dungeons_position.png"/></div>
+<div align="center"><img src="./dungeons/dungeons_location.png" alt="dungeons_location.png"/></div>
 
 </details></td></tr></table>
 
