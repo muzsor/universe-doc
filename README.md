@@ -872,6 +872,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/47.Valentine_2024.jpg" alt="47.Valentine_2024.jpg" width="300"/></div>
 
+48. `2024-02-22`: `Teddy Bear 2024`
+
+   * Hat / Suit / Hands / Shoes / Mask / Backpack
+
+<div align="center"><img src="./system/costume_collection/48.Teddy_Bear_2024.jpg" alt="48.Teddy_Bear_2024.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 #### costume collection event
