@@ -798,7 +798,7 @@ This Extended is also valid for that specific season when it is purchased.
 
    * Hat / Suit / Shoes / Back-Worn Hat / Glasses
 
-<div align="center"><img src="./system/costume_collection/35.2023%20Summer.png" alt="35.2023 Summer.png" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/35.2023%20Summer.jpg" alt="35.2023 Summer.jpg" width="300"/></div>
 
 36. `2023-09-26`: `Star`
 
@@ -877,6 +877,12 @@ This Extended is also valid for that specific season when it is purchased.
    * Hat / Suit / Hands / Shoes / Mask / Backpack
 
 <div align="center"><img src="./system/costume_collection/48.Teddy_Bear_2024.jpg" alt="48.Teddy_Bear_2024.jpg" width="300"/></div>
+
+49. `2024-02-28`: `Glitch Pop`
+
+   * Hat / Suit / Shoes / Backpack / Glasses
+
+<div align="center"><img src="./system/costume_collection/49.Glitch_Pop.jpg" alt="49.Glitch_Pop.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
