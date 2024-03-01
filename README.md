@@ -1664,7 +1664,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Guild House NPC] Quarter: Max HP +10%
 
-  * [Guild House NPC] Sham: Max MP +10%
+  * ~~[Guild House NPC] Sham: Max MP +10%~~ **[Removed Minor Fixes after 2024/02/28 Maintenance](https://universe.flyff.com/news/minorfixesfebruary28 "Minor Fixes after 2/28 Maintenance")**
 
   * [Guild House NPC] Lamew: Max FP +10%
 
