@@ -69,7 +69,7 @@
     - [💍 FWC jewelry](#-fwc-jewelry)
   - [🐶 pet](#-pet)
     - [🦮 raised pet](#-raised-pet)
-    - [🕊️ grace effect](#️-grace-effect)
+    - [🕊️ grace skill](#️-grace-skill)
     - [🍭 pet candy recipes](#-pet-candy-recipes)
     - [🐾 pet defect recycling](#-pet-defect-recycling)
     - [🌿 berry map](#-berry-map)
@@ -1396,17 +1396,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### 🕊️ grace effect
+### 🕊️ grace skill
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./pet/pet_grace_effects_s_tier.png" alt="pet_grace_effects_s_tier.png"/></div>
-
-* Grace skill duration: `20` seconds.
-
-* Grace skill cooldown: `120` seconds.
-
-* Grace skill energy consumption: `50` minute.
+<div align="center"><img src="./pet/raised_pet_grace_skill.png" alt="raised_pet_grace_skill.png"/></div>
 
 </details></td></tr></table>
 
