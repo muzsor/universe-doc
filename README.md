@@ -69,7 +69,7 @@
     - [💍 FWC jewelry](#-fwc-jewelry)
   - [🐶 pet](#-pet)
     - [🦮 raised pet](#-raised-pet)
-    - [🕊️ grace skill](#️-grace-skill)
+    - [🕊️ grace effect](#️-grace-effect)
     - [🍭 pet candy recipes](#-pet-candy-recipes)
     - [🐾 pet defect recycling](#-pet-defect-recycling)
     - [🌿 berry map](#-berry-map)
@@ -1396,11 +1396,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### 🕊️ grace skill
+### 🕊️ grace effect
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./pet/raised_pet_grace_skill.png" alt="raised_pet_grace_skill.png"/></div>
+<div align="center"><img src="./pet/raised_pet_grace_effect.png" alt="raised_pet_grace_skill.png"/></div>
 
 </details></td></tr></table>
 
