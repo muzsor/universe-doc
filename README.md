@@ -884,6 +884,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/49.Glitch_Pop.jpg" alt="49.Glitch_Pop.jpg" width="300"/></div>
 
+50. `2024-03-07`: `Tiger Stripes`
+
+   * Hat / Suit / Hands / Shoes
+
+<div align="center"><img src="./system/costume_collection/50.Tiger_Stripes.jpg" alt="50.Tiger_Stripes.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 #### costume collection event
