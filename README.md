@@ -1563,16 +1563,18 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[Game Version 1.2.3 Patch Notes](https://universe.flyff.com/news/patchnotes123 "Game Version 1.2.3 Patch Notes")
 
-* Added treasure chests to all instanced dungeons, which can contain Essential boxes, Element Attack boxes, Pill boxes, and Rainbow Cotton candies.
+> source:[Game Version 1.2.4 Patch Notes](https://universe.flyff.com/news/patchnotes124 "Game Version 1.2.4 Patch Notes")
 
+* Added treasure chests to all instanced dungeons, which can contain Essential boxes, Element Attack boxes, Pill boxes, and Rainbow Cotton candies. **[version 1.2.3](https://universe.flyff.com/news/patchnotes123 "Game Version 1.2.3 Patch Notes")**
    > 為所有實例地下城(副本)添加了寶箱，其中可以包含必需品盒、元素攻擊盒、藥丸盒和彩虹棉花糖。
 
-* Player level does not affect the drop rate of monster cosmetics, players may farm cosmetics effectively at any level.
+* Golden Aibatts are now permanent, with a lower chance to spawn than during their event. **[version 1.2.4](https://universe.flyff.com/news/patchnotes124 "Game Version 1.2.4 Patch Notes")**
+   > 金色蝙蝠現在是永久性的，生成的幾率比活動期間要低。
 
+* Player level does not affect the drop rate of monster cosmetics, players may farm cosmetics effectively at any level.
    > 玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。
 
 * Instanced dungeon (specifically Reborn dungeons) monsters do not have a drop penalty based on level due to the scaled nature of the monsters.
-
    > 由於怪物的縮放性質，實例地下城（特別是重生地下城）怪物沒有基於等級的掉落懲罰。
 
    * For instance, a level `126` and `140` would have the same drop rate when defeating monsters in Storm Peak.
@@ -1584,7 +1586,6 @@ Those who have completed the Optional Master Quest during the event period will 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1113470252257382550 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * Under the hood dungeon monsters have a level as seen in the API, but all penalties are removed from dungeon monsters. So there should be no effect to drops, etc. based on level.
-
    > 真正的原因是地下城怪物有一個等級，如 API 中所示，但所有懲罰都從地下城怪物中刪除，所以基於等級的掉落率應該沒有影響。
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1152141645257641985/1158031426202124399 "@bluechromed @[Dev] Blukie (discord flyff universe)")
@@ -1664,7 +1665,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Guild House NPC] Quarter: Max HP +10%
 
-  * ~~[Guild House NPC] Sham: Max MP +10%~~ **[Removed Minor Fixes after 2024/02/28 Maintenance](https://universe.flyff.com/news/minorfixesfebruary28 "Minor Fixes after 2/28 Maintenance")**
+  * ~~[Guild House NPC] Sham: Max MP +10%~~ **Removed [Minor Fixes after 2024/02/28 Maintenance](https://universe.flyff.com/news/minorfixesfebruary28 "Minor Fixes after 2/28 Maintenance")**
 
   * [Guild House NPC] Lamew: Max FP +10%
 
