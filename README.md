@@ -397,6 +397,14 @@
 
 * Lucky Drop: Doubles the drop rate of rare items (red items on the ground).
 
+> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1096164375313797150 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+<div align="center"><img src="./system/lucky_drop&gift_box1.png" alt="lucky_drop&gift_box1.png"/></div>
+
+<div align="center"><img src="./system/lucky_drop&gift_box2.png" alt="lucky_drop&gift_box2.png"/></div>
+
+* Gift Box: Adds a loop for all drop tables for a given monster (will run the loot tables 1 more time).
+
 </details></td></tr></table>
 
 ### 🌟 exp system
