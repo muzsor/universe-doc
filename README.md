@@ -192,11 +192,11 @@
 
 * `2022-11-11 00:00 (server time) ~ 2022-11-13 23:59 (server time)`:[Purchasing Event](https://universe.flyff.com/news/purchaseevent221110 "Purchasing Event")
 
-* **$\color{#FF0000}\textsf{{2 for 1}}$** `2022-11-24 ~ 2022-11-27 23:59 UTC`:[Black Friday Special Sales](https://universe.flyff.com/news/blackfridaysales "Black Friday Special Sales")
+* **<font color=#FF0000>2 for 1</font>** `2022-11-24 ~ 2022-11-27 23:59 UTC`:[Black Friday Special Sales](https://universe.flyff.com/news/blackfridaysales "Black Friday Special Sales")
 
 * `2022-12-27 ~ 2022-01-12 23:59 UTC`:[Lucky Roulette Event](https://universe.flyff.com/news/luckyroulette "Lucky Roulette Event")
 
-* **$\color{#FF0000}\textsf{{2 for 1}}$** `2023-03-02 07:00 UTC ~ 2023-03-08 07:00 UTC`:Special `1+1` Category, `20%` discount.
+* **<font color=#FF0000>2 for 1</font>** `2023-03-02 07:00 UTC ~ 2023-03-08 07:00 UTC`:Special `1+1` Category, `20%` discount.
 
    > [🔔item-shop-news @gm_shadow [GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1080759284163412059 "🔔item-shop-news @gm_shadow @[GM] Shadow (discord flyff universe)")
 
@@ -206,7 +206,7 @@
 
    > [🔔item-shop-news @gm_shadow [GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1108664998328287325 "🔔item-shop-news @gm_shadow [GM] Shadow(discord flyff universe)")
 
-* **$\color{#FF0000}\textsf{{2 for 1}}$** `2023-11-24 00:00 UTC ~ 2023-11-27 23:59 UTC`:Black Friday Special Sales `1+1` (No `20%` discount).
+* **<font color=#FF0000>2 for 1</font>** `2023-11-24 00:00 UTC ~ 2023-11-27 23:59 UTC`:Black Friday Special Sales `1+1` (No `20%` discount).
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
@@ -344,7 +344,7 @@
 
 #### Contribution
 
-* **$\color{#FF0000}\textsf{{Contribution Exp is now shared equally across party members who participated to the fight.}}$** [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
+* **<font color=#FF0000>Contribution Exp is now shared equally across party members who participated to the fight.</font>** [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
    > **貢獻經驗現在由參與戰鬥的成員平均分配。**
 
 * Holycross and other debuffs are now counted as party Contribution. [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
@@ -359,7 +359,7 @@
    * Now `3` players with the same level, `1` attacker, `1` tanker (can attack too), `1` healer (can attack or tank too) should get roughly the same amount of experience.
      > 現在 `3` 名相同等級的玩家，`1` 名攻擊者，`1` 名坦克手（也可以攻擊），`1` 名治療者（也可以攻擊或坦克）應該獲得大致相同的經驗量。
 
-* **$\color{#FF0000}\textsf{{Contribution experience is based on the highest level contributor, so if the highest contributor has an exp penalty against the monster you’re fighting, everyone in the area receives the same penalty.}}$**
+* **<font color=#FF0000>Contribution experience is based on the highest level contributor, so if the highest contributor has an exp penalty against the monster you’re fighting, everyone in the area receives the same penalty.</font>**
    >  **貢獻經驗取決於最高等級的貢獻者，因此如果最高貢獻者對你正在戰鬥的怪物有經驗懲罰，則該區域中的每個人都會受到相同的懲罰。**
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1007441765206343680 "@bluechromed @[Dev] Blukie (discord flyff universe)")
@@ -371,7 +371,7 @@
 * To grant the additional party experience bonus, players must be within `19 / 9 (master or hero quest)` levels.
    > 要獲得額外的劇團經驗獎勵，玩家等級必須在 `19 / 9 (master or hero quest)` 級以內。。
 
-* **$\color{#FF0000}\textsf{{At least 2 members are needed to activate the experience bonus.}}$**
+* **<font color=#FF0000>At least 2 members are needed to activate the experience bonus.</font>**
    > **至少需要 `2` 名成員才能啟動經驗獎勵**。
 
 * The Exp Bonus for a non-advanced Party (below level `10`) is the following: `4%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `13.5%` per active member contributing in the combat.
@@ -977,7 +977,7 @@ This Extended is also valid for that specific season when it is purchased.
 
       > 可以使用原本等級的裝備和技能。
 
-   * **$\color{#FF0000}\textsf{{The experience sharing level gap for master characters is 9.}}$**
+   * **<font color=#FF0000>The experience sharing level gap for master characters is 9.</font>**
 
       > 在大師任務中，經驗分享等級差距為 `9` 級。
 
