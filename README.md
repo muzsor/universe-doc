@@ -192,11 +192,11 @@
 
 * `2022-11-11 00:00 (server time) ~ 2022-11-13 23:59 (server time)`:[Purchasing Event](https://universe.flyff.com/news/purchaseevent221110 "Purchasing Event")
 
-* **<font color=#FF0000>2 for 1</font>** `2022-11-24 ~ 2022-11-27 23:59 UTC`:[Black Friday Special Sales](https://universe.flyff.com/news/blackfridaysales "Black Friday Special Sales")
+* **$\color{#FF0000}\textsf{{2 for 1}}$** `2022-11-24 ~ 2022-11-27 23:59 UTC`:[Black Friday Special Sales](https://universe.flyff.com/news/blackfridaysales "Black Friday Special Sales")
 
 * `2022-12-27 ~ 2022-01-12 23:59 UTC`:[Lucky Roulette Event](https://universe.flyff.com/news/luckyroulette "Lucky Roulette Event")
 
-* **<font color=#FF0000>2 for 1</font>** `2023-03-02 07:00 UTC ~ 2023-03-08 07:00 UTC`:Special `1+1` Category, `20%` discount.
+* **$\color{#FF0000}\textsf{{2 for 1}}$** `2023-03-02 07:00 UTC ~ 2023-03-08 07:00 UTC`:Special `1+1` Category, `20%` discount.
 
    > [🔔item-shop-news @gm_shadow [GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1080759284163412059 "🔔item-shop-news @gm_shadow @[GM] Shadow (discord flyff universe)")
 
@@ -206,7 +206,7 @@
 
    > [🔔item-shop-news @gm_shadow [GM] Shadow (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1108664998328287325 "🔔item-shop-news @gm_shadow [GM] Shadow(discord flyff universe)")
 
-* **<font color=#FF0000>2 for 1</font>** `2023-11-24 00:00 UTC ~ 2023-11-27 23:59 UTC`:Black Friday Special Sales `1+1` (No `20%` discount).
+* **$\color{#FF0000}\textsf{{2 for 1}}$** `2023-11-24 00:00 UTC ~ 2023-11-27 23:59 UTC`:Black Friday Special Sales `1+1` (No `20%` discount).
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
@@ -313,17 +313,14 @@
 * party window:
 
    * Exp Bonus: The additional experience gained by the party members in the surroundings.
-
       > 經驗獎勵：劇團成員在周遭環境中獲得的額外經驗。
 
    * Min Level: The minimum level required to get experience and to contribute to the party Exp Bonus.
-
       > 最低等級：獲得經驗並為劇團經驗獎勵做出貢獻所需的最低等級。
 
       * This corresponds to the level of the highest level player in the party and in the surroundings, minus `19`.
 
       * The text is red if the player does not meet the condition.
-
       > 劇團中和周圍環境中最高等級玩家的等級(減去 `19` 級)。
 
       > 如果玩家不符合條件，則文字為紅色。
@@ -331,50 +328,39 @@
 #### exp share
 
 * The "Level" and "Contribution" experience sharing modes now provide the same amount of Exp Bonus, only the way the experience is shared changes.
-
    > 「等級」和「貢獻」經驗分享模式現在提供相同數量的經驗獎勵，只是經驗分享方式發生了變化。
 
    * With "Level" the distribution of experience is done by following the level of each member.
-
       > 「等級」的經驗分配是根據每個成員的等級來完成的。
 
    * With "Contribution" the experience is given according to the participation to kill the monster.
-
       > 「貢獻度」根據擊殺怪物的參與度給予經驗。
 
 * No matter the sharing mode, the bonus part of the experience is always distributed to all party members around and according to their levels.
-
    > 無論何種分享模式，經驗的加成部分總是會根據等級分配給周圍的所有成員。
 
 * There is no more specific bonus to complete the party with `8` members, apart from the base bonus depending on the number of members around.
-
    > 除了取決於周圍成員數量的基本獎勵之外，組滿 `8` 名成員的劇團沒有更具體的獎勵。
 
 #### Contribution
 
-* **<font color=#FF0000>Contribution Exp is now shared equally across party members who participated to the fight.</font>** ([Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes"))
+* **$\color{#FF0000}\textsf{{Contribution Exp is now shared equally across party members who participated to the fight.}}$** [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
+   > **貢獻經驗現在由參與戰鬥的成員平均分配。**
 
-   > **<font color=#FF0000>貢獻經驗現在由參與戰鬥的成員平均分配。</font>**
-
-* Holycross and other debuffs are now counted as party Contribution. ([Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes"))
-
+* Holycross and other debuffs are now counted as party Contribution. [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
    > 神圣惩戒和和其他減益效果現在算是劇團貢獻。
 
-* Adjusted the Party Contribution formula so the Support does not steal experience from the Attacker. ([Game Version 1.0.4 Patch Notes](https://universe.flyff.com/news/patchnotes104 "Game Version 1.0.4 Patch Notes"))
-
+* Adjusted the Party Contribution formula so the Support does not steal experience from the Attacker. [Game Version 1.0.4 Patch Notes](https://universe.flyff.com/news/patchnotes104 "Game Version 1.0.4 Patch Notes")
    > 調整了隊伍貢獻公式，使支持者不會從攻擊者那裡竊取經驗。
 
 * Attacking, Tanking and Healing are now all counted as a contribution. Previously only attackers got the huge part of the contribution experience.
-
    > 攻擊、坦克和治療現在都算是貢獻。以前只有攻擊者才能獲得大部分貢獻經驗。
 
    * Now `3` players with the same level, `1` attacker, `1` tanker (can attack too), `1` healer (can attack or tank too) should get roughly the same amount of experience.
-
      > 現在 `3` 名相同等級的玩家，`1` 名攻擊者，`1` 名坦克手（也可以攻擊），`1` 名治療者（也可以攻擊或坦克）應該獲得大致相同的經驗量。
 
-* **<font color=#FF0000>Contribution experience is based on the highest level contributor, so if the highest contributor has an exp penalty against the monster you’re fighting, everyone in the area receives the same penalty.</font>**
-
-   >  **<font color=#FF0000>貢獻經驗取決於最高等級的貢獻者，因此如果最高貢獻者對你正在戰鬥的怪物有經驗懲罰，則該區域中的每個人都會受到相同的懲罰。</font>**
+* **$\color{#FF0000}\textsf{{Contribution experience is based on the highest level contributor, so if the highest contributor has an exp penalty against the monster you’re fighting, everyone in the area receives the same penalty.}}$**
+   >  **貢獻經驗取決於最高等級的貢獻者，因此如果最高貢獻者對你正在戰鬥的怪物有經驗懲罰，則該區域中的每個人都會受到相同的懲罰。**
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1007441765206343680 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
@@ -382,21 +368,17 @@
 
 #### exp bonus
 
-* To grant the additional party experience bonus, players must be within `19 / 9(master)` levels.
+* To grant the additional party experience bonus, players must be within `19 / 9 (master or hero quest)` levels.
+   > 要獲得額外的劇團經驗獎勵，玩家等級必須在 `19 / 9 (master or hero quest)` 級以內。。
 
-   > 要獲得額外的劇團經驗獎勵，玩家等級必須在 `19 / 9(master)` 級以內。。
+* **$\color{#FF0000}\textsf{{At least 2 members are needed to activate the experience bonus.}}$**
+   > **至少需要 `2` 名成員才能啟動經驗獎勵**。
 
-* **<font color=#FF0000>At least `2` members are needed to activate the experience bonus.</font>**
+* The Exp Bonus for a non-advanced Party (below level `10`) is the following: `4%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `13.5%` per active member contributing in the combat.
+   > 一般劇團:周圍每位成員(相差 `19 / 9 (master or hero quest)` 級以內)提供 `4%` + 每個在戰鬥中做出貢獻的活躍成員提供 `13.5%`。
 
-   > **<font color=#FF0000>至少需要 `2` 名成員才能啟動經驗獎勵</font>**。
-
-* The Exp Bonus for a non-advanced Party (below level `10`) is the following: `4%` per member in the surroundings (minimum `19 / 9(master)` levels below) + `13.5%` per active member contributing in the combat.
-
-   > 一般劇團:周圍每位成員(相差 `19 / 9(master)` 級以內)提供 `4%` + 每個在戰鬥中做出貢獻的活躍成員提供 `13.5%`。
-
-* The Exp Bonus for an advanced Party is the following: `7%` per member in the surroundings (minimum `19 / 9(master)` levels below) + `25%` per active member contributing in the combat.
-
-   > 高級劇團:周圍每位成員(相差 `19 / 9(master)` 級以內)提供 `7%` + 每個在戰鬥中做出貢獻的活躍成員提供 `25%`。
+* The Exp Bonus for an advanced Party is the following: `7%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `25%` per active member contributing in the combat.
+   > 高級劇團:周圍每位成員(相差 `19 / 9 (master or hero quest)` 級以內)提供 `7%` + 每個在戰鬥中做出貢獻的活躍成員提供 `25%`。
 
 #### party exp
 
@@ -405,7 +387,6 @@
 <div align="center"><img src="./system/party_exp.png" alt="party_exp.png"/></div>
 
 * If the average level of surrounding members is less than or equal to `5`(compared to the monster's level), the party will gain experience.
-
    > 如果周圍成員的平均等級小於或等於 `5`(與怪物等級相比)，隊伍就會獲得經驗。
 
 #### party skill
@@ -463,34 +444,34 @@
 <div align="center"><img src="./system/drop_rate.png" alt="drop_rate.png"/></div>
 
 * When you fight monsters much lower than your level you have a reduced drop rate, and when de-leveling the game treats your character as your highest level from a drop penalty perspective.
-
    > 當你與比你等級低得多的怪物戰鬥時，你的掉落率會降低，並且當降低等級時，從掉落懲罰的角度來看，遊戲會以角色的最高等級計算。
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1124117122432380958 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * Drop rate is based on the character with the highest level who is participating.
-
    > 掉落率是基於參與貢獻的最高等級(包含降級)角色。
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1113470252257382550 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * Drops are all done in a separate drop groups, so big loot tables don't affect the ability for certain things to drop (like cards, sunstones, unique weapons, etc.)
-
    > 掉落都是在單獨的掉落組合中分別完成的，因此大的戰利品表不會影響掉落某些東西的能力（例如卡牌，日光石，獨特的武器等）
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1172687169337430116/1172969789002616993 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * There are different drop groups on each monster so when killed the monster will drop a set amount of items from each group based on the drop chance.
-
    > 每個怪物都有不同的掉落組合(組別、分區)，因此當怪物被殺死時，會根據掉落機率從每個組合(組別、分區)中掉落一定數量的物品。
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1171954949765222470 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * For instance if you kill a violet in Darkon 3, it will check the scrolls group 5 times and give you either a spro low, a spro, an apro, or a gpro, with probability affected by drop skills, level, etc.
-
    > 例如：如果你在 達肯3 中殺死紫羅蘭，它會檢查捲軸組 5 次，並給你一個 `spro low`、一個 `spro`、一個 `apro` 或一個 `gpro`，機率受掉落技能、等級等影響。
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1171955221300252783 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+* Player level does not affect the drop rate of monster cosmetics; players may farm cosmetics effectively at any level.
+   > 玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。
+
+   > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1092833498034880552 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 </details></td></tr></table>
 
@@ -996,7 +977,7 @@ This Extended is also valid for that specific season when it is purchased.
 
       > 可以使用原本等級的裝備和技能。
 
-   * **<font color=#FF0000>The experience sharing level gap for master characters is 9.</font>**
+   * **$\color{#FF0000}\textsf{{The experience sharing level gap for master characters is 9.}}$**
 
       > 在大師任務中，經驗分享等級差距為 `9` 級。
 
