@@ -563,6 +563,10 @@ This Extended is also valid for that specific season when it is purchased.
 
 * A new window has been added that players may access through the start menu → Helper → Fitting Room. This window allows players to preview items on their character, see item stats, and play around with animations.
 
+* Added a Reset Equipment button to the Fitting Room. **[Minor Fixes after 3/14 Maintenance](https://universe.flyff.com/news/minorfixesmarch14 "Minor Fixes after 3/14 Maintenance")**
+
+* Added a Equip (L) button to the Fitting Room for Blade weapons. **[Minor Fixes after 3/14 Maintenance](https://universe.flyff.com/news/minorfixesmarch14 "Minor Fixes after 3/14 Maintenance")**
+
 <div align="center"><img src="./system/fitting_room.png" alt="fitting_room.png" width="400"/></div>
 
 <div align="center"><img src="./system/fitting_room_interface.png" alt="fitting_room_interface.png" width="500"/></div>
