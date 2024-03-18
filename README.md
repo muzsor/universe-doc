@@ -1197,6 +1197,10 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/upgrade_level_bonus.png" alt="upgrade_level_bonus.png"/></div>
 
+<div align="center"><img src="./upgrade/weapon_attack_upgrade_bonuses.png" alt="weapon_attack_upgrade_bonuses.png"/></div>
+
+> source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1218321541029167194 "@frostiae @[Dev] Frostiae (discord flyff universe)")
+
 </details>
 
 #### ultimate weapon
