@@ -962,12 +962,9 @@ This Extended is also valid for that specific season when it is purchased.
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
-<div align="center"><img src="./system/master_quests.png" alt="master_quests.png" width="600"/></div>
-
+<div align="center"><img src="./system/master_hero_quests.png" alt="master_hero_quests.png"/></div>
 
 * Once you complete all of the Optional Master quest, you can try the new New Optional Hero quest at  [Master Quests] Leila. This quest will ask you to level up from `120` to `125` and gather `100` Symbols of Shade.
-
-<div align="center"><img src="./system/hero_quests.png" alt="hero_quests.png" width="600"/></div>
 
 * While on a master and hero quest, there are some changes to your character:
 
