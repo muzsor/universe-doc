@@ -53,6 +53,7 @@
     - [🧤 catcher](#-catcher)
     - [🥺 pity system](#-pity-system)
     - [🏹 weapon\&armor upgrade](#-weaponarmor-upgrade)
+      - [event](#event)
       - [bonus](#bonus)
       - [ultimate weapon](#ultimate-weapon)
       - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
@@ -1199,7 +1200,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/chart/1,000,000%20Simulations%20Of%20Regular%20Weapon%20%2B10.png" alt="1,000,000 Simulations Of Regular Weapon +10.png" width="600"/></div>
 
+#### event
+
 <div align="center"><img src="./upgrade/weapon&armor_upgrade_event.png" alt="weapon&armor_upgrade_event.png"/></div>
+
+* **Enhanced Upgrade (Gear)** event is for upgrade with **Scroll of SProtect**, including weapons, armor and element upgrade (not Ultimates, Piercing, Jewelry, Cards).
 
 > source[@piccolo0002 @[GM] Piccolo (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1076113591536717834 "@piccolo0002 @[GM] Piccolo (discord flyff universe)")
 
