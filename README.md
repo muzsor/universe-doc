@@ -4,7 +4,9 @@
 
 💡 **The information uses in the document is from the FlyFF Universe API.**
 
-<!-- Copyright 2023 © Gala Lab Corp. All Rights Reserved. -->
+🚨 **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thanks you.** 🙏
+
+<!-- Copyright 2024 © Gala Lab Corp. All Rights Reserved. -->
 
 <table><tr><td><details><summary>📁 Table of Contents</summary>
 
@@ -84,7 +86,9 @@
     - [💥 dungeons curses](#-dungeons-curses)
       - [the wilds](#the-wilds)
     - [💎 dungeons drops](#-dungeons-drops)
-    - [🏆 guild siege maps](#-guild-siege-maps)
+    - [🏆 guild siege](#-guild-siege)
+      - [red chip](#red-chip)
+      - [maps](#maps)
   - [🏠 housing](#-housing)
     - [📍 template](#-template)
     - [🗿 npc](#-npc)
@@ -95,25 +99,33 @@
 
 * [Flyff Universe](https://universe.flyff.com/ "Flyff Universe")：Official Website.
 
-* [Flyff Universe helpshift](https://galalab.helpshift.com/hc/en/12-flyff-universe/contact-us/ "Flyff Universe helpshift")：Customer Support.
+   * [Galalab Support (helpshift)](https://galalab.helpshift.com/hc/en/12-flyff-universe/contact-us/ "Galalab Support (helpshift)")：Customer Support.
 
-* [Flyff Universe Discord](https://discord.com/invite/flyffuniverse "Flyff Universe Discord")：Official Discord.
+   * [Flyff Universe Discord](https://discord.com/invite/flyffuniverse "Flyff Universe Discord")：Official Discord.
 
-* [Flyff Universe API](https://api.flyff.com/ "Flyff Universe API")：Flyff Universe Public API.
+   * [Flyff Universe API](https://api.flyff.com/ "Flyff Universe API")：Flyff Universe Public API.
 
-* [Flyffipedia](https://flyffipedia.com/ "Flyffipedia")：A wiki page containing all kinds of static information about the game's data.
+   * [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")：Fansite Kit with high quality Flyff assets.
 
-* [Madrigalinside](https://madrigalinside.com/ "Madrigalinside")：A wiki page containing all kinds of static information about the game's data.
+   * [Frostiae/Flyffulator](https://flyffulator.com/)：About Extensive simulator for Flyff Universe.
 
-* [Madrigalmaps](https://www.madrigalmaps.com/ "Madrigalmaps")：An interactive map of the world, Madrigal.
+   * [Sniegu Translation Platform](https://translation.sniegu.fr/projects/flyff/ "Sniegu Translation Platform")
 
-* [Flyff Universe quest rewards overview](https://flyffu-quest-rewards-overview.herokuapp.com/ "Flyff Universe quest rewards overview")：An overview of the obtainable rewards of the different quests in Flyff Universe.
+* [swaight/Flyffipedia](https://flyffipedia.com/ "swaight/Flyffipedia")：A wiki page containing all kinds of static information about the game's data.
+
+* [tacota0158/Madrigalinside](https://madrigalinside.com/ "tacota0158/Madrigalinside")：A wiki page containing all kinds of static information about the game's data.
+
+* [danex2/Skillulator](https://skillulator.lol/ "Danex2/Skillulator")：A skill calculator for flyff universe.
+
+   * [nulfrost/flyff-skill-calc](https://github.com/nulfrost/flyff-skill-calc "nulfrost/flyff-skill-calc")
+
+* [FlyingSnow/Flyff Universe quest rewards overview](https://flyffu-quest-rewards-overview.herokuapp.com/ "FlyingSnow/Flyff Universe quest rewards overview")：An overview of the obtainable rewards of the different quests in Flyff Universe.
 
    * [bram-prins/flyff-universe-quest-rewards-overview](https://github.com/bram-prins/flyff-universe-quest-rewards-overview "flyff-universe-quest-rewards-overview")
 
-* [MonkeyZero/Flyff Model Viewer](https://flyffmodelviewer.com/ "MonkeyZero/Flyff Model Viewer")
+* [MonkeyZero/Flyff Model Viewer](https://flyffmodelviewer.com/ "MonkeyZero/Flyff Model Viewer")：The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
 
-* [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")：Fansite Kit with high quality Flyff assets.
+* [shovel/Madrigalmaps](https://www.madrigalmaps.com/ "shovel/Madrigalmaps")：An interactive map of the world, Madrigal.
 
 ## ⚙️ system
 
@@ -1604,13 +1616,21 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### 🏆 guild siege maps
+### 🏆 guild siege
 
 <table><tr><td><details><summary>details</summary>
 
+#### red chip
+
+* [Red Chip Distribution Calculator](https://docs.google.com/spreadsheets/d/1zX1pZ_bB7aPqpZ4rPB9pAFJmAgL4e7y8F6F9qDRc9gw/edit#gid=1531356297)
+
+> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1109658569466454099 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+#### maps
+
 <div align="center"><img src="./dungeons/guild_siege_maps.png" alt="guild_siege_maps.png" width="600"/></div>
 
-> source:[flyffipedia](https://flyffipedia.com/dungeons)
+> source:[flyffipedia](https://flyffipedia.com/worlds)
 
 </details></td></tr></table>
 
