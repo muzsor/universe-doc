@@ -895,7 +895,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/50.Tiger_Stripes.jpg" alt="50.Tiger_Stripes.jpg" width="300"/></div>
 
-51. `2024-03-07`: `Tuxedo Luxury`
+51. `2024-03-14`: `Tuxedo Luxury`
 
    * Hat / Suit / Shoes / Mask / Cloak
 
