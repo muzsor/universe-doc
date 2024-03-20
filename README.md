@@ -38,6 +38,7 @@
     - [👗 costume collection](#-costume-collection)
       - [costume collection event](#costume-collection-event)
       - [Black Friday Costume Lucky Box](#black-friday-costume-lucky-box)
+    - [costume lucky box on sale](#costume-lucky-box-on-sale)
     - [⏳ monster focus timer](#-monster-focus-timer)
     - [🧠 skill point](#-skill-point)
     - [💪 buff scale](#-buff-scale)
@@ -912,7 +913,9 @@ This Extended is also valid for that specific season when it is purchased.
 
 #### Black Friday Costume Lucky Box
 
-*  will provide past costumes and here are the available costumes from this box:
+> [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+* `2023-11-24~2023-11-27`: Black Friday Costume Lucky Box will provide past costumes and here are the available costumes from this box:
 
    * Casual Summer
    * Fantasy Towel
@@ -924,6 +927,20 @@ This Extended is also valid for that specific season when it is purchased.
    * Menhera Kei
    * Gummy Bear
    * Winter Wizard
+
+### costume lucky box on sale
+
+> [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1219918480032403557 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+* `2024-03-21~2024-03-27`: costume lucky box on sale everyday up to 20%:
+
+  * Alien Octopus
+  * Baby Shark
+  * Shade Child
+  * Future Runner
+  * Disco Lucky
+  * Wolf & Rabbit
+  * Foxy
 
 </details></td></tr></table>
 
