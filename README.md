@@ -88,6 +88,7 @@
     - [💥 dungeons curses](#-dungeons-curses)
       - [the wilds](#the-wilds)
     - [💎 dungeons drops](#-dungeons-drops)
+    - [🗼 forsaken tower](#-forsaken-tower)
     - [🏆 guild siege](#-guild-siege)
       - [red chip](#red-chip)
       - [maps](#maps)
@@ -1635,6 +1636,20 @@ Those who have completed the Optional Master Quest during the event period will 
 * Fragments you earn in Cursed dungeons are not soul-linked, they are untradeable however. Everyone in the party can receive them, and if they do the fragments will go directly to their inventory.
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172752197742768189 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+</details></td></tr></table>
+
+### 🗼 forsaken tower
+
+<table><tr><td><details><summary>details</summary>
+
+>
+
+> [Forsaken Tower Daily Quests](https://flyffipedia.com/quests/details/16118 "Forsaken Tower Daily Quests")
+
+<div align="center"><img src="./dungeons/forsaken_tower_daily_quests.png" alt="forsaken_tower_daily_quests.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower_daily_quests_5f.png" alt="forsaken_tower_daily_quests_5f.png"/></div>
 
 </details></td></tr></table>
 
