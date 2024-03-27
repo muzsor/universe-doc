@@ -42,6 +42,7 @@
     - [⏳ monster focus timer](#-monster-focus-timer)
     - [🧠 skill point](#-skill-point)
     - [💪 buff scale](#-buff-scale)
+    - [❓ office quest](#-office-quest)
     - [👑 master\&hero quests](#-masterhero-quests)
       - [master cloak](#master-cloak)
       - [hero reward](#hero-reward)
@@ -66,6 +67,7 @@
       - [armor glow](#armor-glow)
       - [swinging](#swinging)
     - [✂️ piercing](#️-piercing)
+      - [event](#event-1)
     - [🎁 package](#-package)
     - [🛠️ craft](#️-craft)
     - [📜 stat scroll](#-stat-scroll)
@@ -143,7 +145,7 @@
 
 * `2020-12-15 07:00 UTC ~ 2020-12-30 16:00 UTC`:Closed Beta Test server.
 
-<div align="center"><img src="./system/cbt_announcement.png" alt="cbt_announcement.png" width="200"/></div>
+<div align="center"><img src="./system/updates/cbt_announcement.png" alt="cbt_announcement.png" width="200"/></div>
 
 * `2021-01-27 08:00 UTC ~ 2021-01-31 16:00 UTC`:Test server.
 
@@ -153,7 +155,7 @@
 
    > [Early Access in SEA will open May 18th](https://universe.flyff.com/news/early-access-20220518 "Early Access in SEA will open May 18th")
 
-<div align="center"><img src="./system/universe_early_access.png" alt="universe_early_access.png" width="382"/></div>
+<div align="center"><img src="./system/updates/universe_early_access.png" alt="universe_early_access.png" width="382"/></div>
 
 * `2022-05-20 15:00 UTC`:New server `Glaphan` starts.
 
@@ -163,7 +165,7 @@
 
    > [@camac. @[Dev] Cameron (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/983411667977269289 "@camac. @[Dev] Cameron (discord flyff universe)")
 
-<div align="center"><img src="./system/global_launch.png" alt="global_launch.png" width="200"/></div>
+<div align="center"><img src="./system/updates/global_launch.png" alt="global_launch.png" width="200"/></div>
 
 * `2022-11-03 06:00 UTC`:New Taiwanese server `獨眼蝙蝠` starts.
 
@@ -279,9 +281,9 @@
 
 * Added Chat color customization options in Chat option window.
 
-<div align="center"><img src="./system/chatting_filter.png" alt="chatting_filter.png" width="300"/></div>
+<div align="center"><img src="./system/chatting_filter/chatting_filter.png" alt="chatting_filter.png" width="300"/></div>
 
-<div align="center"><img src="./system/chatting_filter_interface.png" alt="chatting_filter_interface.png" width="400"/></div>
+<div align="center"><img src="./system/chatting_filter/chatting_filter_interface.png" alt="chatting_filter_interface.png" width="400"/></div>
 
 </details></td></tr></table>
 
@@ -301,7 +303,7 @@
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./system/guild_name_color.png" alt="guild_name_color.png"/></div>
+<div align="center"><img src="./system/guild/guild_name_color.png" alt="guild_name_color.png"/></div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
@@ -311,7 +313,7 @@
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./system/guild_level.png" alt="guild_level.png"/></div>
+<div align="center"><img src="./system/guild/guild_level.png" alt="guild_level.png"/></div>
 
 > source:[@kroontje @[Mod] Kroontje (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1201432655619702885 "@kroontje @[Mod] Kroontje (discord flyff universe)")
 
@@ -379,7 +381,7 @@
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1007441765206343680 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-<div align="center"><img src="./system/contribution_experience_penalty.png" alt="contribution_experience_penalty.png"/></div>
+<div align="center"><img src="./system/party/contribution_experience_penalty.png" alt="contribution_experience_penalty.png"/></div>
 
 #### exp bonus
 
@@ -399,7 +401,7 @@
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1097267183945515100/1100935602746171522 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-<div align="center"><img src="./system/party_exp.png" alt="party_exp.png"/></div>
+<div align="center"><img src="./system/party/party_exp.png" alt="party_exp.png"/></div>
 
 * If the average level of surrounding members is less than or equal to `5`(compared to the monster's level), the party will gain experience.
    > 如果周圍成員的平均等級小於或等於 `5`(與怪物等級相比)，隊伍就會獲得經驗。
@@ -408,15 +410,15 @@
 
 > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1075631574864896010 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
-<div align="center"><img src="./system/lucky_drop.png" alt="lucky_drop.png"/></div>
+<div align="center"><img src="./system/party/lucky_drop.png" alt="lucky_drop.png"/></div>
 
 * Lucky Drop: Doubles the drop rate of rare items (red items on the ground).
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1096164375313797150 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-<div align="center"><img src="./system/lucky_drop&gift_box1.png" alt="lucky_drop&gift_box1.png"/></div>
+<div align="center"><img src="./system/party/lucky_drop&gift_box1.png" alt="lucky_drop&gift_box1.png"/></div>
 
-<div align="center"><img src="./system/lucky_drop&gift_box2.png" alt="lucky_drop&gift_box2.png"/></div>
+<div align="center"><img src="./system/party/lucky_drop&gift_box2.png" alt="lucky_drop&gift_box2.png"/></div>
 
 * Gift Box: Adds a loop for all drop tables for a given monster (will run the loot tables 1 more time).
 
@@ -582,9 +584,9 @@ This Extended is also valid for that specific season when it is purchased.
 
 * Added a Equip (L) button to the Fitting Room for Blade weapons. **[Minor Fixes after 3/14 Maintenance](https://universe.flyff.com/news/minorfixesmarch14 "Minor Fixes after 3/14 Maintenance")**
 
-<div align="center"><img src="./system/fitting_room.png" alt="fitting_room.png" width="400"/></div>
+<div align="center"><img src="./system/fitting_room/fitting_room.png" alt="fitting_room.png" width="400"/></div>
 
-<div align="center"><img src="./system/fitting_room_interface.png" alt="fitting_room_interface.png" width="500"/></div>
+<div align="center"><img src="./system/fitting_room/fitting_room_interface.png" alt="fitting_room_interface.png" width="500"/></div>
 
 </details></td></tr></table>
 
@@ -916,6 +918,8 @@ This Extended is also valid for that specific season when it is purchased.
 
 > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
+<div align="center"><img src="./system/costume_collection/black_friday_special_sales_2023.png" alt="black_friday_special_sales_2023.png" width="400"/></div>
+
 * `2023-11-24~2023-11-27`: Black Friday Costume Lucky Box will provide past costumes and here are the available costumes from this box:
 
    * Casual Summer
@@ -932,6 +936,8 @@ This Extended is also valid for that specific season when it is purchased.
 ### costume lucky box on sale
 
 > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1219918480032403557 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+<div align="center"><img src="./system/costume_collection/fashionsale_20240321.png" alt="fashionsale_20240321.png" width="400"/></div>
 
 * `2024-03-21~2024-03-27`: costume lucky box on sale everyday up to 20%:
 
@@ -983,6 +989,18 @@ This Extended is also valid for that specific season when it is purchased.
 
 </details></td></tr></table>
 
+### ❓ office quest
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./system/quest/office_quest_flaris.png" alt="office_quest_flaris.png"/></div>
+<div align="center"><img src="./system/quest/office_quest_saint_morning.png" alt="office_quest_saint_morning.png"/></div>
+<div align="center"><img src="./system/quest/office_quest_darkon.png" alt="office_quest_darkon.png"/></div>
+<div align="center"><img src="./system/quest/office_quest_azria.png" alt="office_quest_azria.png"/></div>
+<div align="center"><img src="./system/quest/office_quest_coral_island.png" alt="office_quest_coral_island.png"/></div>
+
+</details></td></tr></table>
+
 ### 👑 master&hero quests
 
 <table><tr><td><details><summary>details</summary>
@@ -993,7 +1011,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
-<div align="center"><img src="./system/master_hero_quests.png" alt="master_hero_quests.png"/></div>
+<div align="center"><img src="./system/quest/master_hero_quests.png" alt="master_hero_quests.png"/></div>
 
 * Once you complete all of the Optional Master quest, you can try the new New Optional Hero quest at  [Master Quests] Leila. This quest will ask you to level up from `120` to `125` and gather `100` Symbols of Shade.
 
@@ -1035,7 +1053,7 @@ You will be able to get the Cloak that can be seen on the left of the image atta
 
 Those who have completed the Optional Master Quest during the event period will get a special version of the Cloak seen on the right.
 
-<div align="center"><img src="./system/master_quest_cloak.png" alt="master_quest_cloak.png"/></div>
+<div align="center"><img src="./system/quest/master_quest_cloak.png" alt="master_quest_cloak.png"/></div>
 
 #### hero reward
 
@@ -1355,6 +1373,12 @@ Those who have completed the Optional Master Quest during the event period will 
 <div align="center"><img src="./upgrade/weapon&shield_piercing_upgrade.png" alt="weapon&shield_piercing_upgrade.png"/></div>
 
 <div align="center"><img src="./upgrade/weapon&shield_piercing_card.png" alt="weapon&shield_piercing_card.png"/></div>
+
+#### event
+
+<div align="center"><img src="./upgrade/armor_piercing_upgrade_event.png" alt="armor_piercing_upgrade_event.png"/></div>
+
+* **Enhanced Armor Piercing** event is for upgrade with **Scroll of GProtect**, only including armor piercing(not weapon piercing and shield  piercing).
 
 </details></td></tr></table>
 
