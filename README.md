@@ -128,6 +128,8 @@
 
    * [bram-prins/flyff-universe-quest-rewards-overview](https://github.com/bram-prins/flyff-universe-quest-rewards-overview "flyff-universe-quest-rewards-overview")
 
+* [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/)：[@adama.97 @Yuzaro (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 "@adama.97 @Yuzaro (discord flyff universe)")
+
 * [MonkeyZero/Flyff Model Viewer](https://flyffmodelviewer.com/ "MonkeyZero/Flyff Model Viewer")：The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
 
 * [shovel/Madrigalmaps](https://www.madrigalmaps.com/ "shovel/Madrigalmaps")：An interactive map of the world, Madrigal.
