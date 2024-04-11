@@ -914,6 +914,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/52.Future_Easter.jpg" alt="52.Future_Easter.jpg" width="300"/></div>
 
+53. `2024-04-11`: `Shadow Hunter`
+
+   * Hat / Hands / Suit / Shoes / Mask
+
+<div align="center"><img src="./system/costume_collection/53.Shadow_Hunter.jpg" alt="53.Shadow_Hunter.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 #### costume collection event
