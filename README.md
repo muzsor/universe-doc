@@ -1638,6 +1638,17 @@ Those who have completed the Optional Master Quest during the event period will 
 * Golden Aibatts are now permanent, with a lower chance to spawn than during their event. **[version 1.2.4](https://universe.flyff.com/news/patchnotes124 "Game Version 1.2.4 Patch Notes")**
    > 金色蝙蝠現在是永久性的，生成的幾率比活動期間要低。
 
+   * If you kill [Golden Aibatt](https://flyffipedia.com/monsters/details/2630) in dungeons, last super monster will [Feeling Generous](https://flyffipedia.com/skills/details/110).
+
+   <div align="center"><img src="./dungeons/feeling_generous.png" alt="feeling_generous.png"/></div>
+
+   * The buff that increases the drop rate is applied to all drops.
+
+   * It always roll lower chances items first, which means since the **rarest** items are rolled first and they have a slightly higher drop chance.
+      > source:[@nanoaa @[Dev] NaNo (discord flyff universe)](https://discord.com/channels/778915844070834186/1221684853901365288/1227538842744000592 "@nanoaa @[Dev] NaNo (discord flyff universe)")
+
+   <div align="center"><img src="./dungeons/feeling_generous_bonus.png" alt="feeling_generous_bonus.png"/></div>
+
 * Player level does not affect the drop rate of monster cosmetics, players may farm cosmetics effectively at any level.
    > 玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。
 
