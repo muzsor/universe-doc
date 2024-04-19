@@ -422,7 +422,7 @@
 
 <div align="center"><img src="./system/party/lucky_drop&gift_box2.png" alt="lucky_drop&gift_box2.png"/></div>
 
-* Gift Box: Adds a loop for all drop tables for a given monster (will run the loot tables 1 more time).
+* Gift Box: Adds a loop for all drop tables for a given monster (will run all drop tables 1 more time).
 
 </details></td></tr></table>
 
