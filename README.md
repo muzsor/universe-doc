@@ -949,11 +949,11 @@ This Extended is also valid for that specific season when it is purchased.
 
 ### costume lucky box on sale
 
-> [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1219918480032403557 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+* `2024-03-21~2024-03-27`: costume lucky box on sale everyday up to 20%.
 
-<div align="center"><img src="./system/costume_collection/fashionsale_20240321.png" alt="fashionsale_20240321.png" width="400"/></div>
+  <div align="center"><img src="./system/costume_collection/fashionsale_20240321.png" alt="fashionsale_20240321.png" width="400"/></div>
 
-* `2024-03-21~2024-03-27`: costume lucky box on sale everyday up to 20%:
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1219918480032403557 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
   * Alien Octopus
   * Baby Shark
@@ -962,6 +962,13 @@ This Extended is also valid for that specific season when it is purchased.
   * Disco Lucky
   * Wolf & Rabbit
   * Foxy
+
+* `2024-04-19~2024-04-21`: 2 costume boxes will be on sale!
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1230428448363642890 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+  * Japanese Uniform Lucky Box
+  * AI Frog Lucky Box
 
 </details></td></tr></table>
 
