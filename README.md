@@ -920,6 +920,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/53.Shadow_Hunter.jpg" alt="53.Shadow_Hunter.jpg" width="300"/></div>
 
+54. `2024-04-25`: `Safari Explorer`
+
+   * Hat / Hands / Suit / Shoes / Backpack
+
+<div align="center"><img src="./system/costume_collection/54.Safari_Explorer.jpg" alt="54.Safari_Explorer.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 #### costume collection event
