@@ -191,6 +191,8 @@
 
 * `2024-02-15 06:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
+* `2024-05-16 08:00 UTC`:[FWC 2024 Server Event](https://universe.flyff.com/news/fwc2024serverevent "Flyff World Championship 2024")
+
 #### 💸 top up event
 
 * `2022-05-17 ~ 2022-05-31 07:00 UTC`:[Server Group Purchase](https://universe.flyff.com/news/grouppurchase "Server Group Purchase")
