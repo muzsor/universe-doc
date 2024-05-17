@@ -61,7 +61,7 @@
       - [ultimate weapon](#ultimate-weapon)
       - [regular](#regular)
       - [⚜️ fwc golden](#️-fwc-golden)
-      - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
+    - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
       - [ultimate jewelry](#ultimate-jewelry)
     - [🔥 element upgrade](#-element-upgrade)
@@ -1330,7 +1330,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-#### 🦾 new horizon equipment sets
+### 🦾 new horizon equipment sets
 
 <table><tr><td><details><summary>details</summary>
 
