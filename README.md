@@ -57,7 +57,10 @@
     - [🏹 weapon\&armor upgrade](#-weaponarmor-upgrade)
       - [event](#event)
       - [bonus](#bonus)
+    - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate](#-ultimate)
       - [ultimate weapon](#ultimate-weapon)
+      - [regular](#regular)
+      - [⚜️ fwc golden](#️-fwc-golden)
       - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
       - [ultimate jewelry](#ultimate-jewelry)
@@ -1291,9 +1294,13 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### ultimate weapon
+</details></td></tr></table>
 
-<details><summary>details</summary>
+### 🆄🅻🆃🅸🅼🅰🆃🅴 ultimate
+
+<table><tr><td><details><summary>details</summary>
+
+#### ultimate weapon
 
 * When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.
 
@@ -1305,17 +1312,29 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1174954477112021042 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
+#### regular
+
+<details><summary>details</summary>
+
 <div align="center"><img src="./upgrade/ultimate/ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
 
 </details>
 
-#### 🦾 new horizon equipment sets
+#### ⚜️ fwc golden
 
-<details><summary>🦾 details</summary>
+<details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/new_horizon_equipment_sets.png" alt="new_horizon_equipment_sets.png"/></div>
+<div align="center"><img src="./upgrade/ultimate/fwc_golden_ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
 
 </details>
+
+</details></td></tr></table>
+
+#### 🦾 new horizon equipment sets
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/new_horizon_equipment_sets.png" alt="new_horizon_equipment_sets.png"/></div>
 
 </details></td></tr></table>
 
