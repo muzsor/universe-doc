@@ -1811,13 +1811,27 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Personal House NPC] BB Wolf (7 days): Jump Height +30 **💲7,000,000 penya**
 
-  * [Personal House NPC] Casanova: EXP +5%
+  * [Personal House NPC] Cachu: Party Exp +10%
 
-  * [Personal House NPC] Hatter: PvE Damage +3%
+  * **[Personal House NPC] Casanova: EXP +5%**
 
-  * [Personal House NPC] Misun: Drop Rate +5%
+  * **[Personal House NPC] Chacha: Fly Speed +5%**
 
-  * [Personal House NPC] Temas: Speed +5%
+  * [Personal House NPC] Demon: HP restored on revive +500.
+
+  * [Personal House NPC] Gevil: MP restored on revive +100.
+
+  * **[Personal House NPC] Hatter: PvE Damage +3%**
+
+  * **[Personal House NPC] Misun: Drop Rate +5%**
+
+  * [Personal House NPC] Rulu: Exp Loss Reduction +3%
+
+  * [Personal House NPC] Sevil: FP restored on revive +50.
+
+  * **[Personal House NPC] Temas: Speed +5%**
+
+  * [Personal House NPC] Tino: Added Vendor Days +1
 
   * [Personal House NPC] Pang: Level2 Buffs limited to characters level 120 and below.
 
@@ -1827,7 +1841,15 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Guild House NPC] Anura: PvP Damage Reduction +3%
 
-  * [Guild House NPC] Quarter: Max HP +10%
+  * [Guild House NPC] Naso: PvP Critical Chance +3%
+
+  * [Guild House NPC] Nuso: PvP Critical Damage +3%
+
+  * [Guild House NPC] Soz: PvP Block Penetration +3%
+
+  * [Guild House NPC] Vikel: PvP Block +3%
+
+  * **[Guild House NPC] Quarter: Max HP +10%**
 
   * ~~[Guild House NPC] Sham: Max MP +10%~~ **Removed [Minor Fixes after 2024/02/28 Maintenance](https://universe.flyff.com/news/minorfixesfebruary28 "Minor Fixes after 2/28 Maintenance")**
 
@@ -1837,13 +1859,35 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Guild House NPC] Affe: FP Consumption Decrease +10%
 
-  * [Guild House NPC] Cobao: Healing +3%
+  * **[Guild House NPC] Cobao: Healing +3%**
 
   * [Guild House NPC] Aibao: Magic Resistance +3%
 
   * [Guild House NPC] Nanco: Critical Resist +3%
 
   * [Guild House NPC] Pang: Level4 Buffs limited to characters level 140 and below.
+
+  * **[Guild House NPC] Alyn: General Upgrade Rate +3%**
+
+  * **[Guild House NPC] Runni: Piercing Rate +3%**
+
+  * **[Guild House NPC] Lane: Accessory Upgrade Rate +3%**
+
+  * [Guild House NPC] Duron: Guild Artifact Max HP +10%
+
+  * [Guild House NPC] Fuba: Guild Artifact HP Recovery +10%
+
+  * [Guild House NPC] Dolphie: Guild Artifact DEF +10%
+
+  * [Guild House NPC] Wick: Attack from nearby Guild Artifact +3%.
+
+  * [Guild House NPC] Pitch: Attack Speed Rate from nearby Guild Artifact +100%.
+
+  * [Guild House NPC] Bako: HP from nearby guild artifact +500.
+
+  * [Guild House NPC] Wina: Def from nearby Guild Artifact +3%.
+
+  * [Guild House NPC] Catch: Decrease Casting Time from nearby Guild Artifact +5%.
 
 </details></td></tr></table>
 
