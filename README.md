@@ -941,6 +941,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/55.Spring_Bunny_2024.jpg" alt="55.Spring_Bunny_2024.jpg" width="300"/></div>
 
+56. `2024-05-23`: `Anniversary 2024`
+
+   * Hat / Hands / Suit / Shoes / Mask / Backpack / Eye Patch / Bag
+
+<div align="center"><img src="./system/costume_collection/56.Anniversary_2024.jpg" alt="55.56.Anniversary_2024.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 #### costume collection event
