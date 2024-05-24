@@ -37,7 +37,7 @@
     - [🛒 fitting room](#-fitting-room)
     - [👗 costume collection](#-costume-collection)
       - [costume collection event](#costume-collection-event)
-      - [Black Friday Costume Lucky Box$$](#black-friday-costume-lucky-box)
+      - [Black Friday Costume Lucky Box](#black-friday-costume-lucky-box)
     - [costume lucky box on sale](#costume-lucky-box-on-sale)
     - [⏳ monster focus timer](#-monster-focus-timer)
     - [🧠 skill point](#-skill-point)
@@ -955,7 +955,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 2. `2023-08-31~2023-09-14`: `Alien Octopus`, `Rider`, `Baby Shark`
 
-#### Black Friday Costume Lucky Box$$
+#### Black Friday Costume Lucky Box
 
 > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
@@ -996,6 +996,12 @@ This Extended is also valid for that specific season when it is purchased.
 
   * Japanese Uniform Lucky Box
   * AI Frog Lucky Box
+
+* `2024-05-09~2024-05-23`: 2nd Anniversary Costume Lucky Box.
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1238046856374648905 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+  <div align="center"><img src="./system/costume_collection/2ndAnni_Luck_box.png" alt="2ndAnni_Luck_box.png" width="400"/></div>
 
 </details></td></tr></table>
 
