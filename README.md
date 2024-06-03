@@ -1712,6 +1712,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[Game Version 1.2.4 Patch Notes](https://universe.flyff.com/news/patchnotes124 "Game Version 1.2.4 Patch Notes")
 
+* Added new repeatable quests that reward weapon piercing card select boxes for a certain number of final dungeon boss kills. **[version 1.2.2](https://universe.flyff.com/news/patchnotes122 "Game Version 1.2.3 Patch Notes")**
+   > 新增了可重複完成的任務，完成擊殺一定數量的地下城最終 boss 後，會獲得武器穿洞卡片選擇盒。
+
+   > [Weapon Piercing Box Quests](https://flyffipedia.com/quests?repeatable=True&sort=minLevel-2&search=Weapon+Piercing+Box "Weapon Piercing Box Quests")
+
 * Added treasure chests to all instanced dungeons, which can contain Essential boxes, Element Attack boxes, Pill boxes, and Rainbow Cotton candies. **[version 1.2.3](https://universe.flyff.com/news/patchnotes123 "Game Version 1.2.3 Patch Notes")**
    > 為所有實例地下城(副本)添加了寶箱，其中可以包含必需品盒、元素攻擊盒、藥丸盒和彩虹棉花糖。
 
