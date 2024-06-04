@@ -610,6 +610,10 @@ This Extended is also valid for that specific season when it is purchased.
 
 <table><tr><td><details><summary>👗 costume collection details 👔</summary>
 
+</br>
+
+<details><summary>1~10 details</summary>
+
 1. `2022-05-18`: `Casual Summer`
 
    * Suit / Shoes
@@ -672,6 +676,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/10.Gummy%20Bear.jpg" alt="10.Gummy Bear.jpg" width="300"/></div>
 
+</details>
+
+</br>
+
+<details><summary>11~20 details</summary>
+
 11. `2022-10-14`: `Autumn`
 
    * Hat / Suit / Shoes / Cloak
@@ -731,6 +741,12 @@ This Extended is also valid for that specific season when it is purchased.
    * Hat / Suit / Shoes / Cloak (Backpack) / Mask (Lollipop)
 
 <div align="center"><img src="./system/costume_collection/20.Cacti.jpg" alt="20.Cacti.jpg" width="300"/></div>
+
+</details>
+
+</br>
+
+<details><summary>21~30 details</summary>
 
 21. `2023-03-16`: `Modern Sportswear`
 
@@ -792,6 +808,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/30.AI%20Frog.jpg" alt="30.AI Frog.jpg" width="300"/></div>
 
+</details>
+
+</br>
+
+<details><summary>31~40 details</summary>
+
 31. `2023-07-20`: `Cake Kingdom`
 
    * Hat / Suit / Hands / Shoes
@@ -851,6 +873,12 @@ This Extended is also valid for that specific season when it is purchased.
    * Hat / Suit / Hands / Shoes / Cloak
 
 <div align="center"><img src="./system/costume_collection/40.Military%202023.jpg" alt="40.Military%202023.jpg" width="300"/></div>
+
+</details>
+
+</br>
+
+<details><summary>41~50 details</summary>
 
 41. `2023-11-23`: `Thanksgiving`
 
@@ -912,6 +940,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/50.Tiger_Stripes.jpg" alt="50.Tiger_Stripes.jpg" width="300"/></div>
 
+</details>
+
+</br>
+
+<details><summary>51~60 details</summary>
+
 51. `2024-03-14`: `Tuxedo Luxury`
 
    * Hat / Suit / Shoes / Mask / Cloak
@@ -946,7 +980,15 @@ This Extended is also valid for that specific season when it is purchased.
 
    * Hat / Hands / Suit / Shoes / Mask / Backpack / Eye Patch / Bag
 
-<div align="center"><img src="./system/costume_collection/56.Anniversary_2024.jpg" alt="55.56.Anniversary_2024.jpg" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/56.Anniversary_2024.jpg" alt="56.Anniversary_2024.jpg" width="300"/></div>
+
+57. `2024-06-04`: `2024 School Uniform `
+
+   * Hair / Hands / Suit / Shoes / Backpack / Mask
+
+<div align="center"><img src="./system/costume_collection/57.2024_School_Uniform.jpg" alt="57.2024_School_Uniform.jpg" width="300"/></div>
+
+</details>
 
 </details></td></tr></table>
 
