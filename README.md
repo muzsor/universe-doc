@@ -97,6 +97,7 @@
     - [🏆 guild siege](#-guild-siege)
       - [red chip](#red-chip)
       - [maps](#maps)
+    - [🏆 kalgas assault](#-kalgas-assault)
   - [🏠 housing](#-housing)
     - [📍 template](#-template)
     - [🗿 npc](#-npc)
@@ -1796,6 +1797,24 @@ Those who have completed the Optional Master Quest during the event period will 
 <div align="center"><img src="./dungeons/guild_siege_maps.png" alt="guild_siege_maps.png" width="600"/></div>
 
 > source:[flyffipedia](https://flyffipedia.com/worlds)
+
+</details></td></tr></table>
+
+### 🏆 kalgas assault
+
+<table><tr><td><details><summary>details</summary>
+
+> source:[Game Version 1.3.6 Patch Notes](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
+
+<div align="center"><img src="./dungeons/kalgas_assault/wdrealm.png" alt="wdrealm.png"/></div>
+
+<div align="center"><img src="./dungeons/kalgas_assault/kalgas_assault_infomation.jpg" alt="kalgas_assault_infomation.jpg" width="400"/><img src="./dungeons/kalgas_assault/kalgas_assault_infomation_cn.jpg" alt="kalgas_assault_infomation.jpg" width="400"/></div>
+
+<div align="center"><img src="./dungeons/kalgas_assault/kalgas_assault_registration.jpg" alt="kalgas_assault_registration.jpg" width="400"/><img src="./dungeons/kalgas_assault/kalgas_assault_registration_cn.jpg" alt="kalgas_assault_registration.jpg" width="400"/></div>
+
+<div align="center"><img src="./dungeons/kalgas_assault/tradekalgaschips.jpg" alt="tradekalgaschips.jpg" width="300"/></div>
+
+> [Kalgas' wrath Wing](https://flyffipedia.com/items/details/18037 "Kalgas' wrath Wing")
 
 </details></td></tr></table>
 
