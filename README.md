@@ -1858,6 +1858,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./dungeons/kalgas_assault/tradekalgaschips.jpg" alt="tradekalgaschips.jpg" width="300"/></div>
 
+<div align="center"><img src="./dungeons/kalgas_assault/kalgas_wrath_wing.jpg" alt="kalgas_wrath_wing.jpg" width="600"/></div>
+
 > [Kalgas' wrath Wing](https://flyffipedia.com/items/details/18037 "Kalgas' wrath Wing")
 
 </details></td></tr></table>
