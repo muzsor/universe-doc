@@ -2,7 +2,7 @@
 
 📌 **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
 
-💡 **The information uses in the document is from the FlyFF Universe API.**
+💡 **The information uses in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
 
 🚨 **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thanks you.** 🙏
 
@@ -115,6 +115,8 @@
    * [Flyff Universe API](https://api.flyff.com/ "Flyff Universe API")：Flyff Universe Public API.
 
    * [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")：Fansite Kit with high quality Flyff assets.
+
+   * [Gothante](https://gothante.pages.dev/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
 
    * [Frostiae/Flyffulator](https://flyffulator.com/)：About Extensive simulator for Flyff Universe.
 
