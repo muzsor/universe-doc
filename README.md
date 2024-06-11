@@ -59,11 +59,11 @@
       - [bonus](#bonus)
     - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate](#-ultimate)
       - [ultimate weapon](#ultimate-weapon)
-      - [regular](#regular)
-      - [⚜️ fwc golden](#️-fwc-golden)
+      - [regular weapon](#regular-weapon)
+      - [⚜️ fwc golden weapon](#️-fwc-golden-weapon)
+      - [ultimate jewelry](#ultimate-jewelry)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
-      - [ultimate jewelry](#ultimate-jewelry)
     - [🔥 element upgrade](#-element-upgrade)
     - [✨ glow\&swinging](#-glowswinging)
       - [weapon glow](#weapon-glow)
@@ -1363,6 +1363,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### ultimate weapon
 
+<details><summary>details</summary>
+
 * When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.
 
 > source:[@tassel#0672 @[Mod CN] tassel (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1178910002065457202 "@tassel#0672 @[Mod CN] tassel (discord flyff universe)")
@@ -1373,7 +1375,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1174954477112021042 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-#### regular
+</details>
+
+#### regular weapon
 
 <details><summary>details</summary>
 
@@ -1381,11 +1385,23 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### ⚜️ fwc golden
+#### ⚜️ fwc golden weapon
 
 <details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/ultimate/fwc_golden_ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
+
+</details>
+
+#### ultimate jewelry
+
+<details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/ultimate/ultimate_jewelry.png" alt="ultimate_jewelry.png"/></div>
+
+<div align="center"><img src="./upgrade/ultimate/ultimate_jewelry_upgrade.png" alt="ultimate_jewelry_upgrade.png"/></div>
+
+<div align="center"><img src="./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Jewelry%20%2B5.png" alt="1,000,000 Simulations Of Ultimate Jewelry +5.png" width="600"/></div>
 
 </details>
 
@@ -1410,14 +1426,6 @@ Those who have completed the Optional Master Quest during the event period will 
 <img src="./upgrade/jewelry_upgrade.png" alt="jewelry_upgrade.png"/></div>
 
 <div align="center"><img src="./upgrade/chart/1,000,000%20Simulations%20Of%20Regular%20Jewelry%20%2B20.png" alt="1,000,000 Simulations Of Regular Jewelry +20.png" width="600"/></div>
-
-#### ultimate jewelry
-
-<div align="center"><img src="./upgrade/ultimate/ultimate_jewelry.png" alt="ultimate_jewelry.png"/></div>
-
-<div align="center"><img src="./upgrade/ultimate/ultimate_jewelry_upgrade.png" alt="ultimate_jewelry_upgrade.png"/></div>
-
-<div align="center"><img src="./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Jewelry%20%2B5.png" alt="1,000,000 Simulations Of Ultimate Jewelry +5.png" width="600"/></div>
 
 </details></td></tr></table>
 
