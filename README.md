@@ -984,11 +984,17 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/56.Anniversary_2024.jpg" alt="56.Anniversary_2024.jpg" width="300"/></div>
 
-57. `2024-06-04`: `2024 School Uniform `
+57. `2024-06-04`: `2024 School Uniform`
 
    * Hair / Hands / Suit / Shoes / Backpack / Mask
 
 <div align="center"><img src="./system/costume_collection/57.2024_School_Uniform.jpg" alt="57.2024_School_Uniform.jpg" width="300"/></div>
+
+1.  `2024-06-13`: `Spring Qipao`
+
+   * Hair / Suit / Shoes / Mask / Umbrella
+
+<div align="center"><img src="./system/costume_collection/58.Spring_Qipao.jpg" alt="58.Spring_Qipao.jpg" width="300"/></div>
 
 </details>
 
