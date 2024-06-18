@@ -485,10 +485,15 @@
 * When you fight monsters much lower than your level you have a reduced drop rate, and when de-leveling the game treats your character as your highest level from a drop penalty perspective.
    > 當你與比你等級低得多的怪物戰鬥時，你的掉落率會降低，並且當降低等級時，從掉落懲罰的角度來看，遊戲會以角色的最高等級計算。
 
+  If you're considering intentionally reducing your level to farm more efficiently, please remember that these mechanisms will affect your drop rates.
+
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1124117122432380958 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * Drop rate is based on the character with the highest level who is participating.
    > 掉落率是基於參與貢獻的最高等級(包含降級)角色。
+
+  As an example, if a 126 and 140 kill an Ancient Mammoth (level 139), the highest level player who contributed is taken into account. That means the experience would be reduced by 20% for both players, and both players would have a full 100% drop rate.
+
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1113470252257382550 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
@@ -511,6 +516,12 @@
    > 玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1092833498034880552 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+* When a single player enters general instance dungeons (Big Muscle, Krrr, Mushmoot, Iblis Leanes, Clockworks War, Meteonyker, Red Meteonyker), there will be a drop penalty of -68% to -90% (applicable when there is only 1 player).
+
+* The monsters in these 6 new dungeons (Leren Chasm, Rhisis Catacombs, Envy Depths, Guardian Sanctuary, Storm Peak, The Wilds) have no level. They are balanced according to the required entry level, but they do not interact the same way as other monsters in terms of level difference penalties.
+
+  The monsters do not have any damage reduction based on level difference, so their damage is not affected by your level at all. They also have no drop penalties based on level difference, so it doesn’t matter what level you are - if you can enter the dungeon, you have the full drop rate potential.
 
 </details></td></tr></table>
 
