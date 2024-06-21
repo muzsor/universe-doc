@@ -1001,11 +1001,17 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/57.2024_School_Uniform.jpg" alt="57.2024_School_Uniform.jpg" width="300"/></div>
 
-1.  `2024-06-13`: `Spring Qipao`
+58.  `2024-06-13`: `Spring Qipao`
 
    * Hair / Suit / Shoes / Mask / Umbrella
 
 <div align="center"><img src="./system/costume_collection/58.Spring_Qipao.jpg" alt="58.Spring_Qipao.jpg" width="300"/></div>
+
+59.  `2024-06-21`: `Magical Kid`
+
+   * Hair / Hands / Suit / Shoes / Glasses
+
+<div align="center"><img src="./system/costume_collection/59.Magical_Kid.jpg" alt="59.Magical_Kid.jpg" width="300"/></div>
 
 </details>
 
