@@ -1851,9 +1851,17 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > [Forsaken Tower Daily Quests](https://flyffipedia.com/quests/details/16118 "Forsaken Tower Daily Quests")
 
-<div align="center"><img src="./dungeons/forsaken_tower_daily_quests.png" alt="forsaken_tower_daily_quests.png"/></div>
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests.png" alt="forsaken_tower_daily_quests.png"/></div>
 
-<div align="center"><img src="./dungeons/forsaken_tower_daily_quests_5f.png" alt="forsaken_tower_daily_quests_5f.png"/></div>
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_1f.png" alt="forsaken_tower_daily_quests_1f.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_2f.png" alt="forsaken_tower_daily_quests_2f.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_3f.png" alt="forsaken_tower_daily_quests_3f.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_4f.png" alt="forsaken_tower_daily_quests_4f.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_5f.png" alt="forsaken_tower_daily_quests_5f.png"/></div>
 
 </details></td></tr></table>
 
