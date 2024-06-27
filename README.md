@@ -1007,7 +1007,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/58.Spring_Qipao.jpg" alt="58.Spring_Qipao.jpg" width="300"/></div>
 
-59.  `2024-06-21`: `Magical Kid`
+59.  `2024-06-20`: `Magical Kid`
 
    * Hair / Hands / Suit / Shoes / Glasses
 
