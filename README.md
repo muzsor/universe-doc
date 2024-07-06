@@ -119,7 +119,7 @@
 
    * [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")：Fansite Kit with high quality Flyff assets.
 
-   * [Gothante](https://gothante.pages.dev/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
+   * [Gothante](https://gothante.com/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
 
    * [Frostiae/Flyffulator](https://flyffulator.com/)：About Extensive simulator for Flyff Universe.
 
@@ -290,6 +290,12 @@
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=chat).**
+
+</div>
+
 > source:[Game Version 1.3.3 Patch Notes](https://universe.flyff.com/news/patchnotes133 "Game Version 1.3.3 Patch Notes")
 
 * Added Chat color customization options in Chat option window.
@@ -304,6 +310,12 @@
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=commands).**
+
+</div>
+
 > source:[Game Version 1.3.2 Patch Notes](https://universe.flyff.com/news/patchnotes132 "Game Version 1.3.2 Patch Notes")
 
 * Added a chat command /lockedslots to display all missing quests and achievements unlocking inventory slots.
@@ -316,6 +328,12 @@
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=guild+level).**
+
+</div>
+
 <div align="center"><img src="./system/guild/guild_name_color.png" alt="guild_name_color.png"/></div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 "@bluechromed @[Dev] Blukie (discord flyff universe)")
@@ -325,6 +343,12 @@
 ### 🏰 guild level
 
 <table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=guild+level).**
+
+</div>
 
 <div align="center"><img src="./system/guild/guild_level.png" alt="guild_level.png"/></div>
 
@@ -483,7 +507,11 @@
 
 > source:[Flyff Universe Developer Q&A December ‘22 - January ‘23 Questions](https://wcdn-universe.flyff.com/site/qna_01_2023.pdf "Flyff Universe Developer Q&A December ‘22 - January ‘23 Questions")
 
-<div align="center"><img src="./system/drop_rate.png" alt="drop_rate.png"/></div>
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=drop+rate+%28chart%29).**
+
+<img src="./system/drop_rate.png" alt="drop_rate.png"/></div>
 
 * When you fight monsters much lower than your level you have a reduced drop rate, and when de-leveling the game treats your character as your highest level from a drop penalty perspective.
    > 當你與比你等級低得多的怪物戰鬥時，你的掉落率會降低，並且當降低等級時，從掉落懲罰的角度來看，遊戲會以角色的最高等級計算。
@@ -550,6 +578,12 @@
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=extended+pass+system).**
+
+</div>
+
 > source:[Battle Pass System](https://universe.flyff.com/news/battlepass "Battle Pass System")
 
 > source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
@@ -604,6 +638,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=fitting+room).**
+
+</div>
+
 > source:[Game Version 1.2.7 Patch Notes](https://universe.flyff.com/news/patchnotes127 "Game Version 1.2.7 Patch Notes")
 
 * A new window has been added that players may access through the start menu → Helper → Fitting Room. This window allows players to preview items on their character, see item stats, and play around with animations.
@@ -621,6 +661,12 @@ This Extended is also valid for that specific season when it is purchased.
 ### 👗 costume collection
 
 <table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=costume+collection).**
+
+</div>
 
 </br>
 
@@ -1136,6 +1182,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=optional+master%2Fhero+quests).**
+
+</div>
+
 > source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
 
 > source:[Reborn Expansion Flyff Universe Version 1.2.0](https://wcdn-universe.flyff.com/site/patch1_2_0.pdf "Reborn Expansion Flyff Universe Version 1.2.0")
@@ -1297,7 +1349,11 @@ Those who have completed the Optional Master Quest during the event period will 
 <details open>
   <summary>📁 upgrade details</summary>
 
->
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=upgrade).**
+
+</div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/778936929902395392/975078940425207928 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
@@ -1602,7 +1658,11 @@ Those who have completed the Optional Master Quest during the event period will 
 <details open>
   <summary>📁 pet details</summary>
 
->
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=raised+pet).**
+
+</div>
 
 > source:[Summer 2022 expansion on August 22!](https://universe.flyff.com/news/summerupdate "Summer 2022 expansion on August 22!")
 
@@ -1707,7 +1767,11 @@ Those who have completed the Optional Master Quest during the event period will 
 <details open>
   <summary>📁 dungeons details</summary>
 
->
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=dungeons).**
+
+</div>
 
 > source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
 
@@ -1856,7 +1920,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
->
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=forsaken+tower).**
+
+</div>
 
 > [Forsaken Tower Daily Quests](https://flyffipedia.com/quests/details/16118 "Forsaken Tower Daily Quests")
 
@@ -1896,6 +1964,12 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=kalgas+assault).**
+
+</div>
+
 > source:[Game Version 1.3.6 Patch Notes](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
 <div align="center"><img src="./dungeons/kalgas_assault/wdrealm.png" alt="wdrealm.png"/></div>
@@ -1920,6 +1994,12 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <details open>
   <summary>📁 housing details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=housing).**
+
+</div>
 
 ### 📍 template
 
