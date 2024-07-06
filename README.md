@@ -1,10 +1,13 @@
 # universe-document
 
-📌 **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
+> [!IMPORTANT]
+> **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
 
-💡 **The information uses in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
+> [!IMPORTANT]
+> **The information uses in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
 
-🚨 **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thanks you.** 🙏
+> [!CAUTION]
+> **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thanks you.** 🙏
 
 <!-- Copyright 2024 © Gala Lab Corp. All Rights Reserved. -->
 
@@ -1012,6 +1015,12 @@ This Extended is also valid for that specific season when it is purchased.
    * Hair / Hands / Suit / Shoes / Glasses
 
 <div align="center"><img src="./system/costume_collection/59.Magical_Kid.jpg" alt="59.Magical_Kid.jpg" width="300"/></div>
+
+60.  `2024-07-04`: `Big Wave Surfing`
+
+   * Hair / Suit / Shoes / Surf
+
+<div align="center"><img src="./system/costume_collection/60.Big_Wave_Surfing.jpg" alt="60.Big_Wave_Surfing.jpg" width="300"/></div>
 
 </details>
 
