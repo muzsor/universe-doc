@@ -4,7 +4,7 @@
 > **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
 
 > [!IMPORTANT]
-> **The information uses in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
+> **The information used in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
 
 > [!CAUTION]
 > **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thanks you.** 🙏
@@ -24,6 +24,7 @@
     - [❤️ provisional damage hp](#️-provisional-damage-hp)
     - [💬 chatting filter](#-chatting-filter)
     - [👩🏻‍💻 commands](#-commands)
+    - [💫 transmute](#-transmute)
     - [🏰 guild name color](#-guild-name-color)
     - [🏰 guild level](#-guild-level)
     - [🤝 party](#-party)
@@ -33,9 +34,10 @@
       - [party exp](#party-exp)
       - [party skill](#party-skill)
     - [🌟 exp system](#-exp-system)
-    - [🎁 drop rate](#-drop-rate)
+    - [🥇 level gap](#-level-gap)
+      - [⚔️damage ratio](#️damage-ratio)
+      - [🎁 drop rate](#-drop-rate)
     - [📦 item rarity](#-item-rarity)
-    - [⚔️ damage ratio](#️-damage-ratio)
     - [💳 extended battle pass](#-extended-battle-pass)
     - [🛒 fitting room](#-fitting-room)
     - [👗 costume collection](#-costume-collection)
@@ -59,11 +61,12 @@
     - [🥺 pity system](#-pity-system)
     - [🏹 weapon\&armor upgrade](#-weaponarmor-upgrade)
       - [event](#event)
-      - [bonus](#bonus)
+      - [upgrade level bonus](#upgrade-level-bonus)
     - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate](#-ultimate)
       - [ultimate weapon](#ultimate-weapon)
       - [regular weapon](#regular-weapon)
       - [⚜️ fwc golden weapon](#️-fwc-golden-weapon)
+      - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
@@ -78,7 +81,7 @@
     - [🛠️ craft](#️-craft)
     - [📜 stat scroll](#-stat-scroll)
     - [📜 awake](#-awake)
-    - [💍 FWC jewelry](#-fwc-jewelry)
+    - [💍 FWC 2023 Jewelry](#-fwc-2023-jewelry)
   - [🐶 pet](#-pet)
     - [🦮 raised pet](#-raised-pet)
     - [🕊️ grace effect](#️-grace-effect)
@@ -324,6 +327,18 @@
 
 </details></td></tr></table>
 
+### 💫 transmute
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=how+do+i+transmute+an+equipment).**
+
+</div>
+
+</details></td></tr></table>
+
 ### 🏰 guild name color
 
 <table><tr><td><details><summary>details</summary>
@@ -499,9 +514,21 @@
 
 </details></td></tr></table>
 
-### 🎁 drop rate
+### 🥇 level gap
 
 <table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./system/level_gap.png" alt="level_gap.png"/></div>
+
+> source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1079288438056034314/1250528036374184078 "@navi2765 @Navi (discord flyff universe)")
+
+#### ⚔️damage ratio
+
+<div align="center"><img src="./system/damage_ratio.jpg" alt="damage_ratio.jpg"/></div>
+
+> source:[@ppap#5954 @ppap (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1079823818765385799 "@ppap#5954 @ppap (discord flyff universe)")
+
+#### 🎁 drop rate
 
 > source:[Developers Q&A December 2022 - January 2023](https://universe.flyff.com/news/qna-01-2023 "Developers Q&A December 2022 - January 2023")
 
@@ -561,16 +588,6 @@
 <table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./system/item_rarity_color.png" alt="item_rarity_color.png"/></div>
-
-</details></td></tr></table>
-
-### ⚔️ damage ratio
-
-<table><tr><td><details><summary>details</summary>
-
-<div align="center"><img src="./system/damage_ratio.jpg" alt="damage_ratio.jpg"/></div>
-
-> source:[@ppap#5954 @ppap (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1079823818765385799 "@ppap#5954 @ppap (discord flyff universe)")
 
 </details></td></tr></table>
 
@@ -1367,6 +1384,12 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=what+power+dice+and+upgrading+materials+do+i+need+for+which+upgrade).**
+
+</div>
+
 <div align="center"><img src="./upgrade/power_dices.png" alt="power_dices.png"/></div>
 
 <div align="center"><img src="./upgrade/power_dice.jpg" alt="power_dice.jpg" width="500"/></div>
@@ -1376,6 +1399,12 @@ Those who have completed the Optional Master Quest during the event period will 
 ### 🧤 catcher
 
 <table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=the+catchers).**
+
+</div>
 
 <div align="center"><img src="./upgrade/catcher.jpg" alt="catcher.jpg" width="500"/></div>
 
@@ -1431,7 +1460,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source[@piccolo0002 @[GM] Piccolo (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1076113591536717834 "@piccolo0002 @[GM] Piccolo (discord flyff universe)")
 
-#### bonus
+#### upgrade level bonus
 
 <details><summary>details</summary>
 
@@ -1478,6 +1507,18 @@ Those who have completed the Optional Master Quest during the event period will 
 <details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/ultimate/fwc_golden_ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
+
+</details>
+
+#### reroll weapons
+
+<details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=how+to+reroll).**
+
+</div>
 
 </details>
 
@@ -1605,6 +1646,12 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=crafting).**
+
+</div>
+
 <div align="center"><img src="./upgrade/create_unique_weapon.png" alt="create_unique_weapon.png"/></div>
 
 > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172180003119697970 "@frostiae @[Dev] Frostiae (discord flyff universe)")
@@ -1616,6 +1663,12 @@ Those who have completed the Optional Master Quest during the event period will 
 ### 📜 stat scroll
 
 <table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=random+stats+%28stats+bonus%29).**
+
+</div>
 
 * Add a random `STR`/`STA`/`DEX`/`INT` stat to your weapon or armor.
 
@@ -1631,21 +1684,21 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/awake/awake1.png" alt="awake1.png"/></div>
+<div align="center">
 
-<div align="center"><img src="./upgrade/awake/awake2.png" alt="awake2.png"/></div>
+**For more information please refer to [Flyffipedia](https://flyffipedia.com/skillawakes).**
 
-<div align="center"><img src="./upgrade/awake/awake3.png" alt="awake3.png"/></div>
+</div>
 
 </details></td></tr></table>
 
-### 💍 FWC jewelry
+### 💍 FWC 2023 Jewelry
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/fwc_jewelry.png" alt="fwc_jewelry.png"/></div>
+<div align="center"><img src="./upgrade/fwc2023_jewelry.png" alt="fwc_jewelry.png"/></div>
 
-> source:[FWC Event Details](https://universe.flyff.com/news/fwc1event "FWC Event Details")
+> source:[FWC 2023 Event Details](https://universe.flyff.com/news/fwc1event "FWC 2023 Event Details")
 
 </details></td></tr></table>
 
@@ -1923,6 +1976,10 @@ Those who have completed the Optional Master Quest during the event period will 
 <div align="center">
 
 **For more information please refer to [Gothante](https://gothante.com/?search=forsaken+tower).**
+
+**Only the experience necessary for a single level up is calculated, without accounting for cumulative experience.**
+
+**The actual number of days required to level up will be fewer than those indicated in the chart.**
 
 </div>
 
