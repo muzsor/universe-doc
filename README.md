@@ -987,7 +987,7 @@ This Extended is also valid for that specific season when it is purchased.
 
    * Hat / Suit / Hands / Shoes / Backpack / Swords
 
-<div align="center"><img src="./system/costume_collection/45.Emerald_Explorer_Collection.jpg" alt="45.Emerald_Explorer_Collection.jpg" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/45.Emerald_Explorer.jpg" alt="45.Emerald_Explorer.jpg" width="300"/></div>
 
 46.  `2024-02-01`: `Snowy`
 
