@@ -1087,6 +1087,18 @@ This Extended is also valid for that specific season when it is purchased.
 
 </details>
 
+</br>
+
+<details><summary>61~70 details</summary>
+
+61.  `2024-07-18`: `Space Engineer`
+
+   * Hair / Hands / Suit / Shoes / Jetpack
+
+<div align="center"><img src="./system/costume_collection/61.Space_Engineer.jpg" alt="61.Space_Engineer.jpg" width="300"/></div>
+
+</details>
+
 </details></td></tr></table>
 
 #### costume collection event
