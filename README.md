@@ -1789,9 +1789,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 ### 💫 pet transmutation
 
-**For more information please refer to [Gothante](https://gothante.com/?search=pet+transmutation).**
-
 <table><tr><td><details><summary>details</summary>
+
+**For more information please refer to [Gothante](https://gothante.com/?search=pet+transmutation).**
 
 1. `2022-08-22`: [`Crystal Iphrine Shell`](https://flyffipedia.com/items/details/9040 "Crystal Iphrine Shell")
 
