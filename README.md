@@ -1584,6 +1584,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
+**For more information please refer to [Gothante](https://gothante.com/?search=weapons+glow).**
+
 #### weapon glow
 
 <div align="center">
