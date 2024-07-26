@@ -88,7 +88,7 @@
     - [🍭 pet candy recipes](#-pet-candy-recipes)
     - [🐾 pet defect recycling](#-pet-defect-recycling)
     - [🌿 berry map](#-berry-map)
-    - [💫 pet transmutes](#-pet-transmutes)
+    - [💫 pet transmutation](#-pet-transmutation)
   - [🐉 dungeons](#-dungeons)
     - [📌 dungeons location](#-dungeons-location)
     - [🚩 dungeons difficulties](#-dungeons-difficulties)
@@ -1787,7 +1787,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### 💫 pet transmutes
+### 💫 pet transmutation
+
+**For more information please refer to [Gothante](https://gothante.com/?search=pet+transmutation).**
 
 <table><tr><td><details><summary>details</summary>
 
@@ -1819,7 +1821,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./pet/transmutes/draco.png" alt="draco.png"/ width="400"></div>
 
-8. `2024-05-09`: `Fox Spirit`
+8. `2024-05-09`: [`Fox Spirit`](https://flyffipedia.com/items/details/11025 "Fox Spirit Cage")
 
 <div align="center"><img src="./pet/transmutes/fox_spirit.png" alt="fox_spirit.png"/ width="400"></div>
 
