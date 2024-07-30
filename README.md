@@ -1584,9 +1584,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-**For more information please refer to [Gothante](https://gothante.com/?search=weapon+glow).**
-
 #### weapon glow
+
+**For more information please refer to [Gothante](https://gothante.com/?search=weapon+glow).**
 
 <div align="center">
 <img src="./upgrade/glow/weapon_fire_glow.gif" alt="weapon_fire_glow.gif" width="250"/>
@@ -1610,11 +1610,15 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### armor glow
 
+**For more information please refer to [Gothante](https://gothante.com/?search=armor+set+glow).**
+
 <div align="center"><img src="./upgrade/glow/armor_upgrade_glow.png" alt="armor_upgrade_glow.png" width="600"/></div>
 
 > source:[Flyff Global Wiki](https://flyff-global.fandom.com/wiki/Upgrading_Armour_and_Non-Ultimate_Weapons "Flyff Global Wiki")
 
 #### swinging
+
+**For more information please refer to [Gothante](https://gothante.com/?search=weapon+swinging).**
 
 <div align="center"><img src="./upgrade/glow/upgrade_swinging.png" alt="upgrade_swinging.png" width="600"/></div>
 
