@@ -1069,19 +1069,19 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/57.2024_School_Uniform.jpg" alt="57.2024_School_Uniform.jpg" width="300"/></div>
 
-58.  `2024-06-13`: `Spring Qipao`
+58. `2024-06-13`: `Spring Qipao`
 
    * Hair / Suit / Shoes / Mask / Umbrella
 
 <div align="center"><img src="./system/costume_collection/58.Spring_Qipao.jpg" alt="58.Spring_Qipao.jpg" width="300"/></div>
 
-59.  `2024-06-20`: `Magical Kid`
+59. `2024-06-20`: `Magical Kid`
 
    * Hair / Hands / Suit / Shoes / Glasses
 
 <div align="center"><img src="./system/costume_collection/59.Magical_Kid.jpg" alt="59.Magical_Kid.jpg" width="300"/></div>
 
-60.  `2024-07-04`: `Big Wave Surfing`
+60. `2024-07-04`: `Big Wave Surfing`
 
    * Hair / Suit / Shoes / Surf
 
@@ -1093,11 +1093,17 @@ This Extended is also valid for that specific season when it is purchased.
 
 <details><summary>61~70 details</summary>
 
-61.  `2024-07-18`: `Space Engineer`
+61. `2024-07-18`: `Space Engineer`
 
    * Hair / Hands / Suit / Shoes / Jetpack
 
 <div align="center"><img src="./system/costume_collection/61.Space_Engineer.jpg" alt="61.Space_Engineer.jpg" width="300"/></div>
+
+62.  `2024-08-01`: `Steampunk Wizard`
+
+   * Hair / Hands / Suit / Shoes / Jetpack
+
+<div align="center"><img src="./system/costume_collection/62.Steampunk_Wizard.jpg" alt="62.Steampunk_Wizard.jpg" width="300"/></div>
 
 </details>
 
