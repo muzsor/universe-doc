@@ -36,7 +36,13 @@
     - [🌟 exp system](#-exp-system)
     - [🥇 level gap](#-level-gap)
       - [⚔️damage ratio](#️damage-ratio)
-      - [🎁 drop rate](#-drop-rate)
+    - [🎁 drop rate](#-drop-rate)
+      - [Level-based Drop Rate Penalties](#level-based-drop-rate-penalties)
+      - [Optional Master/Hero Quests](#optional-masterhero-quests)
+      - [Character Buffs That Increase Drop Rate](#character-buffs-that-increase-drop-rate)
+      - [Drops Mechanics](#drops-mechanics)
+      - [1v1 Disadvantage Towards AoE](#1v1-disadvantage-towards-aoe)
+      - [Dungeon](#dungeon)
     - [📦 item rarity](#-item-rarity)
     - [💳 extended battle pass](#-extended-battle-pass)
     - [🛒 fitting room](#-fitting-room)
@@ -393,11 +399,10 @@
    * Min Level: The minimum level required to get experience and to contribute to the party Exp Bonus.
       > 最低等級：獲得經驗並為劇團經驗獎勵做出貢獻所需的最低等級。
 
-      * This corresponds to the level of the highest level player in the party and in the surroundings, minus `19`.
+      * This corresponds to the level of the highest level player in the party and in the surroundings, minus `19 / 9 (master or hero quest)`.
+      > 劇團中和周圍環境中最高等級玩家的等級(減去 `19 / 9 (master or hero quest)` 級)。
 
       * The text is red if the player does not meet the condition.
-      > 劇團中和周圍環境中最高等級玩家的等級(減去 `19` 級)。
-
       > 如果玩家不符合條件，則文字為紅色。
 
 #### exp share
@@ -530,32 +535,66 @@
 
 > source:[@ppap#5954 @ppap (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1079823818765385799 "@ppap#5954 @ppap (discord flyff universe)")
 
-#### 🎁 drop rate
+</details></td></tr></table>
+
+### 🎁 drop rate
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=extended+pass+system).**
+
+</div>
 
 > source:[Developers Q&A December 2022 - January 2023](https://universe.flyff.com/news/qna-01-2023 "Developers Q&A December 2022 - January 2023")
 
 > source:[Flyff Universe Developer Q&A December ‘22 - January ‘23 Questions](https://wcdn-universe.flyff.com/site/qna_01_2023.pdf "Flyff Universe Developer Q&A December ‘22 - January ‘23 Questions")
 
-<div align="center">
+#### Level-based Drop Rate Penalties
 
-**For more information please refer to [Gothante](https://gothante.com/?search=drop+rate+%28chart%29).**
+<div align="center"><img src="./system/drop_rate.png" alt="drop_rate.png"/></div>
 
-<img src="./system/drop_rate.png" alt="drop_rate.png"/></div>
-
-* When you fight monsters much lower than your level you have a reduced drop rate, and when de-leveling the game treats your character as your highest level from a drop penalty perspective.
+* When you fight monsters much lower than your level you have a reduced drop rate, and when de-leveling the game treats your character as your **highest level** from a drop penalty perspective.
    > 當你與比你等級低得多的怪物戰鬥時，你的掉落率會降低，並且當降低等級時，從掉落懲罰的角度來看，遊戲會以角色的最高等級計算。
 
   If you're considering intentionally reducing your level to farm more efficiently, please remember that these mechanisms will affect your drop rates.
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1124117122432380958 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-* Drop rate is based on the character with the highest level who is participating.
+* Drop rate is based on the character with the **highest level** who is **participating**.
    > 掉落率是基於參與貢獻的最高等級(包含降級)角色。
 
   As an example, if a 126 and 140 kill an Ancient Mammoth (level 139), the highest level player who contributed is taken into account. That means the experience would be reduced by 20% for both players, and both players would have a full 100% drop rate.
 
-
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1113470252257382550 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+  *Healing and Resurrection are not considered participation, but Tanking, Holycross, and any attack that causes damage are considered participation.*
+
+  *The penalties still apply if the monster’s HP has not fully recovered, regardless of whether the highest-level character has disconnected, switched to another channel or world, or died.*
+
+* Player level does not affect the drop rate of **monster cosmetics**; players may farm cosmetics effectively at any level.
+   > 玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。
+
+   > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1092833498034880552 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+#### Optional Master/Hero Quests
+
+* If any of the participants has an active Optional Master/Hero Quest, the drop rate is divided by 2 (**50% drop rate penalty**).
+
+#### Character Buffs That Increase Drop Rate
+
+* Regarding Party Skills(Lucky Drop and Gift Box), Housing Buffs, Adventurer's Fortune Flask, and other character buffs that increase drop rates:
+
+  When a monster dies, the drop rate is affected based on the buffs belonging to the character who did the **most total damage**, ignoring players who are disconnected, have switched to another channel or world, or are dead.
+
+  *The **last hit** is only considered for monster kill count like quests, battle pass, achievement etc.*
+
+  If there are two characters with the same total damage, the character who started attacking the monster last will affect it (this is not about the last hit but rather the order of the first hit).
+
+  If a character dies and then resurrects, the total damage dealt by the character does **not** include the damage done before death.
+
+#### Drops Mechanics
 
 * Drops are all done in a separate drop groups, so big loot tables don't affect the ability for certain things to drop (like cards, sunstones, unique weapons, etc.)
    > 掉落都是在單獨的掉落組合中分別完成的，因此大的戰利品表不會影響掉落某些東西的能力（例如卡牌，日光石，獨特的武器等）
@@ -572,16 +611,29 @@
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1171955221300252783 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
-* Player level does not affect the drop rate of monster cosmetics; players may farm cosmetics effectively at any level.
-   > 玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。
+*  When a monster dies, it will always check the drop table in order, starting with the items that have the **lowest chances first**, which means that the rarest items are rolled first.
 
-   > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1092833498034880552 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+#### 1v1 Disadvantage Towards AoE
+
+* We received many feedbacks regarding the disadvantage of players using a 1vs1 playstyle. It takes them more time to level up and loot items due to the ability of AoE players to kill more monsters at a time.
+
+  Thus we introduced a new mechanism to the game: low, regular and captain monsters level 30+ killed by **at least 80% of damage inflicted from single target attacks and skills** will have an increased experience and drop rate.
+
+* The 1v1 experience and drop rate increase is currently **20%** for monsters at level 30 and gradually rises to **35%** at level 140, with rates ranging from **90%** at level 141 to **102%** at level 160.
+
+* **The 1v1 experience and drop rate increases are based on monster level**, which means that you can take advantage of these increases as soon as you are strong enough to fight monsters at level 141 and above.
+
+#### Dungeon
 
 * When a single player enters general instance dungeons (Big Muscle, Krrr, Mushmoot, Iblis Leanes, Clockworks War, Meteonyker, Red Meteonyker), there will be a drop penalty of -68% to -90% (applicable when there is only 1 player).
 
-* The monsters in these 6 new dungeons (Leren Chasm, Rhisis Catacombs, Envy Depths, Guardian Sanctuary, Storm Peak, The Wilds) have no level. They are balanced according to the required entry level, but they do not interact the same way as other monsters in terms of level difference penalties.
+* The monsters in these **6 new dungeons** (Leren Chasm, Rhisis Catacombs, Envy Depths, Guardian Sanctuary, Storm Peak, The Wilds) have no level. They are balanced according to the required entry level, but they do not interact the same way as other monsters in terms of level difference penalties.
 
   The monsters do not have any damage reduction based on level difference, so their damage is not affected by your level at all. They also have no drop penalties based on level difference, so it doesn’t matter what level you are - if you can enter the dungeon, you have the full drop rate potential.
+
+* Some dungeon curses grant extra drop rate for all monsters inside the dungeon, ranging from as low as 1% to as high as 10%.
+
+* If you find and kill the **Golden Aibatt** in dungeons, the last super monster will feel generous and will have an increased drop and EXP bonus of 10%.
 
 </details></td></tr></table>
 
