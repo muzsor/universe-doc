@@ -543,7 +543,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=extended+pass+system).**
+**For more information please refer to [Gothante](https://gothante.com/?search=drop+rate+%28chart%29).**
 
 </div>
 
@@ -586,7 +586,8 @@
 
 * Regarding Party Skills(Lucky Drop and Gift Box), Housing Buffs, Adventurer's Fortune Flask, and other character buffs that increase drop rates:
 
-  When a monster dies, the drop rate is affected based on the buffs belonging to the character who did the **most total damage**, ignoring players who are disconnected, have switched to another channel or world, or are dead.
+  When a monster dies, the drop rate is affected by the buffs of the character who dealt the **most total damage**, and the drops will belong to that character, ignoring players who are disconnected, have switched to another channel or world, or are dead.
+  > 當怪物死亡時，掉落率會受到造成 **最大總傷害** 角色的 Buffs 影響，且掉落的物品將屬於該角色，並忽略斷線、切換到其他頻道、世界或已死亡的玩家。
 
   *The **last hit** is only considered for monster kill count like quests, battle pass, achievement etc.*
 
