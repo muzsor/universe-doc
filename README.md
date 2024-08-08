@@ -28,8 +28,9 @@
     - [🏰 guild name color](#-guild-name-color)
     - [🏰 guild level](#-guild-level)
     - [🤝 party](#-party)
+      - [party window](#party-window)
       - [exp share](#exp-share)
-      - [Contribution](#contribution)
+      - [contribution](#contribution)
       - [exp bonus](#exp-bonus)
       - [party exp](#party-exp)
       - [party skill](#party-skill)
@@ -391,97 +392,104 @@
 
 > source:[Game Version 1.0.4 Patch Notes](https://universe.flyff.com/news/patchnotes104 "Game Version 1.0.4 Patch Notes")
 
-* party window:
+#### party window
 
-   * Exp Bonus: The additional experience gained by the party members in the surroundings.
-      > 經驗獎勵：劇團成員在周遭環境中獲得的額外經驗。
+* Exp Bonus: The additional experience gained by the party members in the surroundings.
+  > 經驗獎勵：劇團成員在周遭環境中獲得的額外經驗。
 
-   * Min Level: The minimum level required to get experience and to contribute to the party Exp Bonus.
-      > 最低等級：獲得經驗並為劇團經驗獎勵做出貢獻所需的最低等級。
+* Min Level: The minimum level required to get experience and to contribute to the party Exp Bonus.
+  > 最低等級：獲得經驗並為劇團經驗獎勵做出貢獻所需的最低等級。
 
-      * This corresponds to the level of the highest level player in the party and in the surroundings, minus `19 / 9 (master or hero quest)`.
-      > 劇團中和周圍環境中最高等級玩家的等級(減去 `19 / 9 (master or hero quest)` 級)。
+  * This corresponds to the level of the highest level player in the party and in the surroundings, minus `19 / 9 (master or hero quest)`.
+    > 劇團中和周圍環境中最高等級玩家的等級(減去 `19 / 9 (master or hero quest)` 級)。
 
-      * The text is red if the player does not meet the condition.
-      > 如果玩家不符合條件，則文字為紅色。
+  * The text is red if the player does not meet the condition.
+    > 如果玩家不符合條件，則文字為紅色。
 
 #### exp share
 
-* The "Level" and "Contribution" experience sharing modes now provide the same amount of Exp Bonus, only the way the experience is shared changes.
-   > 「等級」和「貢獻」經驗分享模式現在提供相同數量的經驗獎勵，只是經驗分享方式發生了變化。
+* The "**Level**" and "**Contribution**" experience sharing modes now provide different amount of **Exp Bonus**, and the way the experience is shared is different as well.
+  > 「等級」和「貢獻」經驗分享模式現在提供不同的經驗加成，並且經驗分享的方式也有所不同。
 
-   * With "Level" the distribution of experience is done by following the level of each member.
-      > 「等級」的經驗分配是根據每個成員的等級來完成的。
+  * With "**Level**" the experience is distributed to the Party members according to their levels.
+    > 「等級」的經驗將根據成員的等級進行分配。
 
-   * With "Contribution" the experience is given according to the participation to kill the monster.
-      > 「貢獻度」根據擊殺怪物的參與度給予經驗。
+  * With "**Contribution**" the experience is given according to the participation to kill the monster (their contribution to the combat). Contribution includes attacking, healing and tanking.
+    > 「貢獻」的經驗根據擊殺怪物的參與度(對戰鬥的貢獻)進行分配。貢獻包括攻擊、治療和坦克。
 
 * No matter the sharing mode, the bonus part of the experience is always distributed to all party members around and according to their levels.
-   > 無論何種分享模式，經驗的加成部分總是會根據等級分配給周圍的所有成員。
+  > 無論何種分享模式，經驗的加成部分總是會根據等級分配給周圍的所有成員。
 
 * There is no more specific bonus to complete the party with `8` members, apart from the base bonus depending on the number of members around.
-   > 除了取決於周圍成員數量的基本獎勵之外，組滿 `8` 名成員的劇團沒有更具體的獎勵。
+  > 除了取決於周圍成員數量的基本獎勵之外，組滿 `8` 名成員的劇團沒有更具體的獎勵。
 
-#### Contribution
+#### contribution
 
-* **<font color=#FF0000>Contribution Exp is now shared equally across party members who participated to the fight.</font>** [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
-   > **貢獻經驗現在由參與戰鬥的成員平均分配。**
+* Contribution Exp is now shared equally across party members who participated to the fight. [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
+  > 貢獻經驗現在由參與戰鬥的成員平均分配。
 
 * Holycross and other debuffs are now counted as party Contribution. [Game Version 1.0.3 Patch Notes](https://universe.flyff.com/news/patchnotes103 "Game Version 1.0.3 Patch Notes")
-   > 神圣惩戒和和其他減益效果現在算是劇團貢獻。
+  > 神圣惩戒和和其他減益效果現在算是劇團貢獻。
 
 * Adjusted the Party Contribution formula so the Support does not steal experience from the Attacker. [Game Version 1.0.4 Patch Notes](https://universe.flyff.com/news/patchnotes104 "Game Version 1.0.4 Patch Notes")
-   > 調整了隊伍貢獻公式，使支持者不會從攻擊者那裡竊取經驗。
+  > 調整了隊伍貢獻公式，使支持者不會從攻擊者那裡竊取經驗。
 
 * Attacking, Tanking and Healing are now all counted as a contribution. Previously only attackers got the huge part of the contribution experience.
-   > 攻擊、坦克和治療現在都算是貢獻。以前只有攻擊者才能獲得大部分貢獻經驗。
+  > 攻擊、坦克和治療現在都算是貢獻。以前只有攻擊者才能獲得大部分貢獻經驗。
 
-   * Now `3` players with the same level, `1` attacker, `1` tanker (can attack too), `1` healer (can attack or tank too) should get roughly the same amount of experience.
-     > 現在 `3` 名相同等級的玩家，`1` 名攻擊者，`1` 名坦克手（也可以攻擊），`1` 名治療者（也可以攻擊或坦克）應該獲得大致相同的經驗量。
+  * Now `3` players with the same level, `1` attacker, `1` tanker (can attack too), `1` healer (can attack or tank too) should get roughly the same amount of experience.
+    > 現在 `3` 名相同等級的玩家，`1` 名攻擊者，`1` 名坦克手（也可以攻擊），`1` 名治療者（也可以攻擊或坦克）應該獲得大致相同的經驗量。
 
 * **<font color=#FF0000>Contribution experience is based on the highest level contributor, so if the highest contributor has an exp penalty against the monster you’re fighting, everyone in the area receives the same penalty.</font>**
-   >  **貢獻經驗取決於最高等級的貢獻者，因此如果最高貢獻者對你正在戰鬥的怪物有經驗懲罰，則該區域中的每個人都會受到相同的懲罰。**
-
-   > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1007441765206343680 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+  >  **貢獻經驗取決於最高等級的貢獻者，因此如果最高貢獻者對你正在戰鬥的怪物有經驗懲罰，則該區域中的每個人都會受到相同的懲罰。**
 
 <div align="center"><img src="./system/party/contribution_experience_penalty.png" alt="contribution_experience_penalty.png"/></div>
+
+> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1007441765206343680 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 #### exp bonus
 
 * To grant the additional party experience bonus, players must be within `19 / 9 (master or hero quest)` levels.
-   > 要獲得額外的劇團經驗獎勵，玩家等級必須在 `19 / 9 (master or hero quest)` 級以內。。
+  > 要獲得額外的劇團經驗獎勵，玩家等級必須在 `19 / 9 (master or hero quest)` 級以內。。
 
 * **<font color=#FF0000>At least 2 members are needed to activate the experience bonus.</font>**
-   > **至少需要 `2` 名成員才能啟動經驗獎勵**。
+  > **至少需要 `2` 名成員才能啟動經驗獎勵**。
 
-* The Exp Bonus for a non-advanced Party (below level `10`) is the following: `4%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `13.5%` per active member contributing in the combat.
-   > 一般劇團:周圍每位成員(相差 `19 / 9 (master or hero quest)` 級以內)提供 `4%` + 每個在戰鬥中做出貢獻的活躍成員提供 `13.5%`。
+* The Exp Bonus for a non-advanced Party (below level `10`) is the following:
 
-* The Exp Bonus for an advanced Party is the following: `7%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `25%` per active member contributing in the combat.
-   > 高級劇團:周圍每位成員(相差 `19 / 9 (master or hero quest)` 級以內)提供 `7%` + 每個在戰鬥中做出貢獻的活躍成員提供 `25%`。
+  * `4%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `13.5%` per active member contributing in the combat.
+    > 周圍每位成員(相差 `19 / 9 (master or hero quest)` 級以內)提供 `4%` + 每個在戰鬥中做出貢獻的活躍成員提供 `13.5%`。
+
+* The Exp Bonus for an advanced Party is the following:
+
+  * With **Level** Exp Share: `7%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `13%` per active member contributing in the combat.
+    > 等級經驗分配：周圍每位成員(相差 `19 / 9 (master or hero quest)` 級以內)提供 `7%` + 每個在戰鬥中做出貢獻的活躍成員提供 `13%`。
+
+  * With **Contribution** Exp Share: `7%` per member in the surroundings (minimum `19 / 9 (master or hero quest)` levels below) + `25%` per active member contributing in the combat.
+    > 貢獻經驗分配：周圍每位成員(相差 `19 / 9 (master or hero quest)` 級以內)提供 `7%` + 每個在戰鬥中做出貢獻的活躍成員提供 `25%`。
 
 #### party exp
 
-> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1097267183945515100/1100935602746171522 "@bluechromed @[Dev] Blukie (discord flyff universe)")
-
 <div align="center"><img src="./system/party/party_exp.png" alt="party_exp.png"/></div>
 
-* If the average level of surrounding members is less than or equal to `5`(compared to the monster's level), the party will gain experience.
-   > 如果周圍成員的平均等級小於或等於 `5`(與怪物等級相比)，隊伍就會獲得經驗。
+> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1097267183945515100/1100935602746171522 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+* If the average level of the surrounding members compared to the monster's level is less than or equal to `5`, the party will gain experience.
+  > 若周圍成員的平均等級與怪物等級相比小於或等於 `5`，劇團將獲得經驗。
 
 #### party skill
 
-> source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1075631574864896010 "@frostiae @[Dev] Frostiae (discord flyff universe)")
-
 <div align="center"><img src="./system/party/lucky_drop.png" alt="lucky_drop.png"/></div>
 
-* Lucky Drop: Doubles the drop rate of rare items (red items on the ground).
+> source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1075631574864896010 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
-> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1096164375313797150 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+* Lucky Drop: Doubles the drop rate of rare items (red items on the ground).
 
 <div align="center"><img src="./system/party/lucky_drop&gift_box1.png" alt="lucky_drop&gift_box1.png"/></div>
 
 <div align="center"><img src="./system/party/lucky_drop&gift_box2.png" alt="lucky_drop&gift_box2.png"/></div>
+
+> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1096164375313797150 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * Gift Box: Adds a loop for all drop tables for a given monster (will run all drop tables 1 more time).
 
