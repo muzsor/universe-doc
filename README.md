@@ -50,8 +50,9 @@
     - [👗 costume collection](#-costume-collection)
       - [costume collection event](#costume-collection-event)
       - [Black Friday Costume Lucky Box](#black-friday-costume-lucky-box)
-    - [costume lucky box on sale](#costume-lucky-box-on-sale)
+    - [🍀 costume lucky box on sale](#-costume-lucky-box-on-sale)
     - [⏳ monster focus timer](#-monster-focus-timer)
+    - [🐑 herd damage reduction](#-herd-damage-reduction)
     - [🧠 skill point](#-skill-point)
     - [💪 buff scale](#-buff-scale)
     - [❓ office quest](#-office-quest)
@@ -1195,7 +1196,7 @@ This Extended is also valid for that specific season when it is purchased.
    * Gummy Bear
    * Winter Wizard
 
-### costume lucky box on sale
+### 🍀 costume lucky box on sale
 
 * `2024-03-21~2024-03-27`: costume lucky box on sale everyday up to 20%.
 
@@ -1238,6 +1239,37 @@ This Extended is also valid for that specific season when it is purchased.
    * 80 seconds for >= 4 and < 7 monsters
    * 50 seconds for >= 8 and < 13 monsters
    * 28 seconds for >= 14 monsters
+
+</details></td></tr></table>
+
+### 🐑 herd damage reduction
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=herd+damage+reduction).**
+
+</div>
+
+<div align="center"><img src="./system/herd_damage_reduction.png" alt="herd_damage_reduction.png" width="600"/></div>
+
+When the number of monsters attacked by the same spell (n) is greater than 8, the n-th monster will take damage = 0.9^(n-8).
+
+* For example:
+  * Monsters 1st to 8th will receive 100% damage.
+  * Monsters 9th will receive 91% damage.
+  * Monsters 10th will receive 81% damage.
+  * Monsters 11th will receive 72.9% damage.
+  * Monsters 12th will receive 65.61% damage.
+  * Monsters 13th will receive 59.05% damage.
+  * Monsters 14th will receive 53.14% damage.
+  * Monsters 15th will receive 47.83% damage.
+  * Monsters 16th will receive 43.05% damage.
+  * Monsters 17th will receive 38.74% damage.
+  * Monsters 18th will receive 34.87% damage.
+  * Monsters 19th will receive 31.38% damage.
+  * Monsters 20th will receive 28.24% damage.
 
 </details></td></tr></table>
 
