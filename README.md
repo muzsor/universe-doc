@@ -21,6 +21,7 @@
     - [🕙 time](#-time)
     - [🗺️ map](#️-map)
       - [wdmadrigal](#wdmadrigal)
+    - [🖱️ pixel perfect cursor precision](#️-pixel-perfect-cursor-precision)
     - [❤️ provisional damage hp](#️-provisional-damage-hp)
     - [💬 chatting filter](#-chatting-filter)
     - [👩🏻‍💻 commands](#-commands)
@@ -286,6 +287,18 @@
 #### wdmadrigal
 
 <div align="center"><img src="./system/map/wdmadrigal.png" alt="wdmadrigal.png"/></div>
+
+</details></td></tr></table>
+
+### 🖱️ pixel perfect cursor precision
+
+<table><tr><td><details><summary>details</summary>
+
+> source:[Game Version 1.2.12 Minor Patch Notes](https://universe.flyff.com/news/patchnotes1212minor "Game Version 1.2.12 Minor Patch Notes")
+
+<div align="center"><img src="./system/pixel_perfect_cursor_precision1.gif" alt="pixel_perfect_cursor_precision1"/><img src="./system/pixel_perfect_cursor_precision2.gif" alt="pixel_perfect_cursor_precision2"/></div>
+
+* Pixel perfect Cursor Selection allowing for precise pixel-level selection and ensuring accurate selection at the boundaries and corners of UI elements, for players who want to target objects more precisely.
 
 </details></td></tr></table>
 
