@@ -21,8 +21,7 @@
     - [🕙 time](#-time)
     - [🗺️ map](#️-map)
       - [wdmadrigal](#wdmadrigal)
-      - [coral island giant](#coral-island-giant)
-      - [coral island violet](#coral-island-violet)
+      - [coral island giant\&violet](#coral-island-giantviolet)
     - [🖱️ pixel perfect cursor precision](#️-pixel-perfect-cursor-precision)
     - [❤️ provisional damage hp](#️-provisional-damage-hp)
     - [💬 chatting filter](#-chatting-filter)
@@ -289,13 +288,9 @@
 
 <div align="center"><img src="./system/map/wdmadrigal.png" alt="wdmadrigal.png"/></div>
 
-#### coral island giant
+#### coral island giant&violet
 
-<div align="center"><img src="./system/map/coral_island_giant.png" alt="coral_island_giant.png"/></div>
-
-#### coral island violet
-
-<div align="center"><img src="./system/map/coral_island_violet.png" alt="coral_island_violet.png"/></div>
+<div align="center"><img src="./system/map/coral_island_giant_violet.png" alt="coral_island_giant.png"/></div>
 
 </details></td></tr></table>
 
