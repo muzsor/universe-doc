@@ -61,6 +61,9 @@
     - [👑 master\&hero quests](#-masterhero-quests)
       - [master cloak](#master-cloak)
       - [hero reward](#hero-reward)
+    - [⛔ block](#-block)
+      - [block cap](#block-cap)
+      - [block penetration](#block-penetration)
     - [⚔️ critical chance vs critical damage](#️-critical-chance-vs-critical-damage)
     - [⚔️ blade damage](#️-blade-damage)
     - [🗡️ empower weapon](#️-empower-weapon)
@@ -1388,6 +1391,65 @@ Those who have completed the Optional Master Quest during the event period will 
 #### hero reward
 
 * Becoming a Hero will give you a unique badge and a permanent free stat page (`3` stat pages in total if a Battle Pass is active).
+
+</details></td></tr></table>
+
+### ⛔ block
+
+<table><tr><td><details><summary>details</summary>
+
+> source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1266532805651726346 "@shayminhunter @TeachMeHisty (discord flyff universe)")
+
+* You will still get hit, but you'll take significantly less damage. Secondary effects such as crowd control, debuffs, or Sword Cross can still be triggered even if the hit is blocked.
+
+> source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
+
+* Blocked hits no longer deal 1 damage at the minimum, but 20% of the initial damage instead.
+
+> source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
+
+* `block = (dex / 8 * classBlockModifier) + blockB + extraBlock + variableBlock`
+```bash
+# Only calculate blocks for the character window
+# simple formula in Excel
+# A1 : your dex
+# A2 : classBlockModifier
+# A3 : blockB (same level enemies dex, in character window is 15)
+
+=MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
+```
+
+* The block rate displayed in the character window assumes that your enemies' level is the same as yours and that they have 15 dex, which can make your block rate seem higher than it really is.
+
+* `true character block = (dex / 8 * classBlockModifier) + extraBlock`
+```bash
+# simple formula in Excel
+# A1 : your dex
+# A2 : classBlockModifier
+# A3 : extraBlock
+
+=MIN(ROUNDDOWN(((A1/8)*A2),0)+A3, 100)
+```
+
+#### block cap
+
+<div align="center"><img src="./system/block_rate_translation_table.png" alt="block_rate_translation_table.png"/></div>
+
+> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1085622720575852654 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+* 75% is still the block cap. For those reading this and wondering why you may see a higher % in your stat window, it’s because you can technically have more block % but it caps at 75%. Block is rolled out of 80, so 75% block = 75/80 = 93.75% chance to block.
+
+> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1174839023383085080 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+* The cap is 75% and it’s divided by 80 instead of 100. So you end up with 92.5% block (even though it says 75%). Anything above that is only useful again enemies that have block penetration.
+
+#### block penetration
+
+> source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1272345376720158841 "@frostiae @[Dev] Frostiae (discord flyff universe)")
+
+* It makes your target's block rate `block rate * (1 - your block penetration)`
+
+* Block penetration only affects PvP damage.
 
 </details></td></tr></table>
 
