@@ -1181,11 +1181,17 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/61.Space_Engineer.jpg" alt="61.Space_Engineer.jpg" width="300"/></div>
 
-62.  `2024-08-01`: `Steampunk Wizard`
+62. `2024-08-01`: `Steampunk Wizard`
 
    * Hair / Hands / Suit / Shoes / Jetpack
 
 <div align="center"><img src="./system/costume_collection/62.Steampunk_Wizard.jpg" alt="62.Steampunk_Wizard.jpg" width="300"/></div>
+
+63. `2024-08-13`: `Little Butterflies`
+
+   * Hair / Suit / Shoes / Little Butterfly (mask) / Back Ring (Cloak 1) / Ring (Cloak 2)
+
+<div align="center"><img src="./system/costume_collection/63.Little_Butterflies.jpg" alt="63.Little_Butterflies.jpg" width="300"/></div>
 
 </details>
 
