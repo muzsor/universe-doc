@@ -1251,6 +1251,12 @@ This Extended is also valid for that specific season when it is purchased.
 
   <div align="center"><img src="./system/costume_collection/2ndAnni_Luck_box.png" alt="2ndAnni_Luck_box.png" width="400"/></div>
 
+* `2024-08-16~2024-08-22`: Memorial Summer Lucky Box
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1273189557596192821 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+<div align="center"><img src="./system/costume_collection/Memorial_SummerM.png" alt="Memorial_SummerM.png" width="400"/> <img src="./system/costume_collection/Memorial_SummerF.png" alt="Memorial_SummerF.png" width="400"/></div>
+
 </details></td></tr></table>
 
 ### ⏳ monster focus timer
