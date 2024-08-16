@@ -219,6 +219,10 @@
 
 * `2024-05-16 08:00 UTC`:[FWC 2024 Server Event](https://universe.flyff.com/news/fwc2024serverevent "Flyff World Championship 2024")
 
+* `2024-08-16`: [Flyff 20 Year Anniversary Article](https://universe.flyff.com/news/flyff20anniversaryarticle "Flyff 20 Year Anniversary Article")
+
+<div align="center"><img src="./system/updates/Flyff_20th_Event.png" alt="Flyff_20th_Event.png" width="400"/></div>
+
 #### 💸 top up event
 
 * `2022-05-17 ~ 2022-05-31 07:00 UTC`:[Server Group Purchase](https://universe.flyff.com/news/grouppurchase "Server Group Purchase")
