@@ -140,6 +140,8 @@
 
    * [Frostiae/Flyffulator](https://flyffulator.com/)：About Extensive simulator for Flyff Universe.
 
+     * [Frostiae/Flyffulator](https://github.com/Frostiae/Flyffulator "Frostiae/Flyffulator")
+
    * [Sniegu Translation Platform](https://translation.sniegu.fr/projects/flyff/ "Sniegu Translation Platform")
 
 * [swaight/Flyffipedia](https://flyffipedia.com/ "swaight/Flyffipedia")：A wiki page containing all kinds of static information about the game's data.
@@ -1772,6 +1774,14 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/elemental_upgrade.png" alt="elemental_upgrade.png"/></div>
 
+* Monsters have a +30% resistance to 1 element (taking less damage) and a -30% resistance for the opposite element (taking more damage).
+
+* Having the advantageous element (e.g. +1 fire) on your weapon increases your damage by 30% due to the monster's negative resistance.
+
+* Upgrading weapon with an element also increases attack by a % on top of the resistance bonus.
+
+* Always use a weapon with at least a +1 elemental advantage against the monster for a 7% attack bonus boost and 30% damage increase.
+
 <div align="center"><img src="./upgrade/scroll_of_element_change.png" alt="scroll_of_element_change.png"/></div>
 
 </details></td></tr></table>
@@ -1784,41 +1794,13 @@ Those who have completed the Optional Master Quest during the event period will 
 
 **For more information please refer to [Gothante](https://gothante.com/?search=weapon+glow).**
 
-<div align="center">
-<img src="./upgrade/glow/weapon_fire_glow.gif" alt="weapon_fire_glow.gif" width="250"/>
-<img src="./upgrade/glow/weapon_wind_glow.gif" alt="weapon_wind_glow.gif" width="250"/>
-<img src="./upgrade/glow/weapon_earth_glow.gif" alt="weapon_earth_glow.gif" width="250"/>
-<img src="./upgrade/glow/weapon_electric_glow.gif" alt="weapon_electric_glow.gif" width="250"/>
-<img src="./upgrade/glow/weapon_water_glow.gif" alt="weapon_water_glow.gif" width="250"/>
-</div>
-
-> source:[ FlyFF Wiki](https://flyff-wiki.gpotato.com.br/wiki/Cards "FlyFF Wiki")
-
-<div align="center">
-<img src="./upgrade/glow/stick_fire_glow.png" alt="stick_fire_glow.png" width="400"/>
-<img src="./upgrade/glow/stick_wind_glow.png" alt="stick_wind_glow.png" width="400"/>
-<img src="./upgrade/glow/stick_earth_glow.png" alt="stick_earth_glow.png" width="400"/>
-<img src="./upgrade/glow/stick_electric_glow.png" alt="stick_electric_glow.png" width="400"/>
-<img src="./upgrade/glow/stick_water_glow.png" alt="stick_water_glow.png" width="400"/>
-</div>
-
-> source:[@helixen @helixen (discord flyff universe)](https://discord.com/channels/778915844070834186/778936929902395392/990880934897279016 "@helixen @helixen (discord flyff universe)")
-
 #### armor glow
 
 **For more information please refer to [Gothante](https://gothante.com/?search=armor+set+glow).**
 
-<div align="center"><img src="./upgrade/glow/armor_upgrade_glow.png" alt="armor_upgrade_glow.png" width="600"/></div>
-
-> source:[Flyff Global Wiki](https://flyff-global.fandom.com/wiki/Upgrading_Armour_and_Non-Ultimate_Weapons "Flyff Global Wiki")
-
 #### swinging
 
 **For more information please refer to [Gothante](https://gothante.com/?search=weapon+swinging).**
-
-<div align="center"><img src="./upgrade/glow/upgrade_swinging.png" alt="upgrade_swinging.png" width="600"/></div>
-
-> source:[Flyff Global Wiki](https://flyff-global.fandom.com/wiki/Upgrading_Armour_and_Non-Ultimate_Weapons "Flyff Global Wiki")
 
 </details></td></tr></table>
 
