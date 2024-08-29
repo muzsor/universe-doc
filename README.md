@@ -1199,6 +1199,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/63.Little_Butterflies.jpg" alt="63.Little_Butterflies.jpg" width="300"/></div>
 
+64. `2024-08-29`: `Eastern Warrior`
+
+   * Hat / Suit / Hands / Shoes / Cloak
+
+<div align="center"><img src="./system/costume_collection/64.Eastern_Warrior.jpg" alt="64.Eastern_Warrior.jpg" width="300"/></div>
+
 </details>
 
 </details></td></tr></table>
