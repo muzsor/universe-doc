@@ -38,7 +38,7 @@
       - [party skill](#party-skill)
     - [🌟 exp system](#-exp-system)
     - [🥇 level gap](#-level-gap)
-      - [⚔️damage ratio](#️damage-ratio)
+      - [⚔️ damage ratio](#️-damage-ratio)
     - [🎁 drop rate](#-drop-rate)
       - [Level-based Drop Rate Penalties](#level-based-drop-rate-penalties)
       - [Optional Master/Hero Quests](#optional-masterhero-quests)
@@ -61,6 +61,9 @@
     - [👑 master\&hero quests](#-masterhero-quests)
       - [master cloak](#master-cloak)
       - [hero reward](#hero-reward)
+    - [💥 damage](#-damage)
+      - [dps](#dps)
+      - [auto attack](#auto-attack)
     - [⛔ block](#-block)
       - [block cap](#block-cap)
       - [block penetration](#block-penetration)
@@ -564,7 +567,7 @@
 
 > source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1079288438056034314/1250528036374184078 "@navi2765 @Navi (discord flyff universe)")
 
-#### ⚔️damage ratio
+#### ⚔️ damage ratio
 
 <div align="center"><img src="./system/damage_ratio.jpg" alt="damage_ratio.jpg"/></div>
 
@@ -1415,6 +1418,146 @@ Those who have completed the Optional Master Quest during the event period will 
 #### hero reward
 
 * Becoming a Hero will give you a unique badge and a permanent free stat page (`3` stat pages in total if a Battle Pass is active).
+
+</details></td></tr></table>
+
+### 💥 damage
+
+<table><tr><td><details><summary>details</summary>
+
+#### dps
+
+```
+DamagePerSecond = computeDamage * hitsPerSecond
+```
+
+#### auto attack
+
+* computeAttack
+   ```js
+   computeAttack = HitPower * AttackMultiplier + FlatAttack
+                 = (HitMinMax * DamagePropertyFactor * (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+   ```
+
+   * HitPower
+   ```js
+   HitPower = HitMinMax * DamagePropertyFactor
+   // DamagePropertyFactor : ElementMultiplier(UpgradeLevel)
+   ```
+
+   * HitMinMax
+   ```js
+   HitMinMax = ((WeaponBaseAttackMinMax * 2) + WeaponAttack + CharacterPlusDamage) * WeaponMultiplier + WeaponUpgradeLevelAdditionalAttack
+
+   // example (Lusaka's Crystal Axe U+5, Demol Earring U+5, Spirit Fortune) :
+   // ((544 ~ 546 * 2) + 3123 + (540 * 2) + 150) * 1.39 + 58.0948 = 7621.0848 ~ 7626.6448
+   ```
+
+   * WeaponAttack
+   ```js
+   WeaponAttack = statAttack + levelAttack + plusWeaponAttack
+
+   statAttack = (ChatacterStats - ModiferStat) * ClassAutoAttackWeaponTypeFactor
+   // example (Blade str 500 and use Axe) :
+   // (500 - 12) * 5.7 = 2781.6
+   // example (Blade str 500 and use Sword) :
+   // (500 - 12) * 4.7 = 2,293.6
+
+   levelAttack = CharacterLevel * LevelFactor
+   // example (lv160 Blade Axe) :
+   // 160 * 1.2 = 192
+
+   plusWeaponAttack : Weapon Type Additional Attack (Gear, Buff)
+   // example (Blade Skill Axe) :
+   // Smite Axe axeattack + 50 and Axe Mastery axeattack + 100, total = 150
+
+   // example total = 2781.6 + 192 + 150 = 3123
+   ```
+
+   * CharacterPlusDamage : Unscaled `damage` `DST_CHR_DMG`. Like Demol Earring `damage`, Spirit Fortune `damage`
+
+   * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
+   ```js
+   WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+   ```
+
+   * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack
+   ```js
+   WeaponUpgradeLevelAdditionalAttack = UpgradeLevel^1.5
+   ```
+
+   * AttackMultiplier
+   ```js
+   // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+   AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+   ```
+   * FlatAttack : Unscaled `attack` `DST_ATKPOWER`. Like Balloons, Power Scroll etc.
+
+* computeDamage
+   ```js
+   computeDamage = applyDefense(computeAttack)
+                 = applyGenericDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 =  damage * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+   ```
+   * applyGenericDefense
+   ```js
+   applyGenericDefense = damage * blockFactor
+   ```
+   * damage
+   ```js
+   damage = applyAttackDefense(computeAttack, defense) * critical
+          = damageAfterApplyDefense * critical
+   ```
+   * defense
+   ```js
+   defense = computeDefense
+           = computeGenericDefense
+   ```
+   * criticalChance
+   ```js
+   criticalChance = CriticalResistFactor * (((dex / 10) * ClassCriticalFactor) + ExtraCriticalChance)
+   ```
+   * ExtraCriticalChance : From Gear, Buff
+   * criticalFactor
+   ```js
+   // your level <= monster's level
+   minCritical = 1.1
+   maxCritical = 1.4
+   criticalFactor = (minCritical + maxCritical) / 2.0 = 1.25
+
+   // monster's level < your level
+   minCritical = 1.2
+   maxCritical = 2.0
+   criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
+   ```
+   * criticalDamage
+   ```js
+   criticalDamage = damageAfterApplyDefense * criticalFactor * (1 + criticalDamage%)
+
+   // linearInterpolation
+   damage = linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance)
+          = ((1 - criticalChance) * damageAfterApplyDefense) + (criticalChance * criticalDamage)
+
+   ```
+   * ElementResistFactor
+   ```js
+   ElementResistFactor = 0.7 ~ 1.3
+   ```
+   * DamageMultiplier
+   ```js
+   DamageMultiplier = OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+   ```
+
+* hitsPerSecond
+   ```js
+   hitsPerSecond = classHitsPerSecond * attackSpeed * HitRate
+   ```
+   * HitRate
+   ```js
+   factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
+   hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
+   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96);
+   ```
 
 </details></td></tr></table>
 
