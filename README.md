@@ -1655,7 +1655,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    ```
 
-   * ElementResistFactor : `0.7` or `1.3`
+   * ElementResistFactor : `0.7`, `1.0`, `1.3`
 
    * DamageMultiplier
    ```js
@@ -1746,7 +1746,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
            = computeGenericDefense
    ```
 
-   * ElementResistFactor : `0.8` or `1.4`
+   * ElementResistFactor : `0.8`, `1.0`, `1.4`
 
       If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
 
@@ -1812,7 +1812,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
            = computeGenericDefense
    ```
 
-   * ElementResistFactor : `0.8` or `1.4`
+   * ElementResistFactor : `0.8`, `1.0`, `1.4`
 
       If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
 
