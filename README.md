@@ -1440,7 +1440,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * HitRate
    ```js
+   // ------------------------------------------------------------------------------------
    // If not AUTO_ATTACK, this is always 100.
+   // ------------------------------------------------------------------------------------
 
    factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
    hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
@@ -1473,15 +1475,17 @@ DamagePerSecond = computeDamage * hitsPerSecond
    HitPower = HitMinMax * DamagePropertyFactor
 
    // ------------------------------------------------------------------------------------
-   // DamagePropertyFactor : ElementMultiplier(UpgradeLevel)
+   // DamagePropertyFactor = ElementMultiplier(UpgradeLevel)
    // Find the increase/decrease factor of ATK and DEF to be used in the GetHitPower function.
    // ------------------------------------------------------------------------------------
    ```
 
    * HitMinMax
    ```js
-   // minAttack DST_ABILITY_MIN, maxAttack DST_ABILITY_MAX
    HitMinMax = ((WeaponBaseAttackMinMax * 2) + WeaponAttack + CharacterPlusDamage) * WeaponMultiplier + WeaponUpgradeLevelAdditionalAttack
+   // ------------------------------------------------------------------------------------
+   // WeaponBaseAttackMinMax = minAttack DST_ABILITY_MIN, maxAttack DST_ABILITY_MAX
+   // ------------------------------------------------------------------------------------
 
    // ------------------------------------------------------------------------------------
    // example (Lusaka's Crystal Axe U+5, Demol Earring U+5, Spirit Fortune) :
@@ -1492,11 +1496,13 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * WeaponAttack
    ```js
    WeaponAttack = statAttack + levelAttack + plusWeaponAttack
-
-
+   ```
+   ```js
    // ------------------------------------------------------------------------------------
    statAttack = (ChatacterStats - WeaponTypeStatModifer) * ClassAutoAttackWeaponTypeFactor
+   // ------------------------------------------------------------------------------------
    // ClassAutoAttackWeaponTypeFactor = GetJobPropFactor(JOB_PROP_TYPE)
+   // ------------------------------------------------------------------------------------
    // WeaponTypeStatModifer:
    // sword WT_MELEE_SWD 12
    // axe WT_MELEE_AXE 12
@@ -1515,6 +1521,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    // ------------------------------------------------------------------------------------
    levelAttack = CharacterLevel * WeaponTypeLevelFactor
+   // ------------------------------------------------------------------------------------
    // WeaponTypeLevelFactor :
    // sword WT_MELEE_SWD 1.1
    // axe WT_MELEE_AXE 1.2
@@ -1531,9 +1538,19 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    // ------------------------------------------------------------------------------------
    plusWeaponAttack : From Gear, Buff Weapon Type Additional Attack.
-   // swordattack DST_SWD_DMG, axeattack DST_AXE_DMG, staffattack, stickattck, knuckleattack DST_KNUCKLE_DMG, wandattack, yoyoattack DST_YOY_DMG, bowattack DST_BOW_DMG
+   // ------------------------------------------------------------------------------------
+   // swordattack DST_SWD_DMG
+   // axeattack DST_AXE_DMG
+   // staffattack, stickattck
+   // knuckleattack DST_KNUCKLE_DMG
+   // wandattack, yoyoattack DST_YOY_DMG
+   // bowattack DST_BOW_DMG
+   // ------------------------------------------------------------------------------------
    // master skill :
-   // DST_KNUCKLEMASTER_DMG, DST_YOYOMASTER_DMG, DST_BOWMASTER_DMG, DST_TWOHANDMASTER_DMG
+   // DST_KNUCKLEMASTER_DMG
+   // DST_YOYOMASTER_DMG
+   // DST_BOWMASTER_DMG
+   // DST_TWOHANDMASTER_DMG
    // ------------------------------------------------------------------------------------
    // example (Blade Skill Axe) :
    // Smite Axe axeattack + 50 and Axe Mastery axeattack + 100, total = 150
@@ -1547,7 +1564,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * CharacterPlusDamage : From Gear, Buff unscaled `damage` `DST_CHR_DMG`.
 
-      * Like *Demol Earring* `damage`, *Spirit Fortune* `damage`
+      * Example : *Demol Earring* `damage`, *Spirit Fortune* `damage` etc.
 
    * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
    ```js
@@ -1568,7 +1585,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * FlatAttack : From Gear, Buff unscaled `attack` `DST_ATKPOWER`.
 
-      * Like *Balloons* `attack`, *Power Scroll* `attack` etc.
+      * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
 
 * computeDamage
    ```js
@@ -1597,6 +1614,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * criticalChance
    ```js
    criticalChance = CriticalResistFactor * (((dex / 10) * ClassCriticalFactor) + ExtraCriticalChance)
+   // ------------------------------------------------------------------------------------
+   // ClassCriticalFactor = GetJobPropFactor( JOB_PROP_CRITICAL )
+   // ------------------------------------------------------------------------------------
    ```
 
    * ExtraCriticalChance : From Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
@@ -1624,8 +1644,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * criticalDamage
    ```js
-   // criticalDamage% = DST_CRITICAL_BONUS
    criticalDamage = damageAfterApplyDefense * criticalFactor * (1 + criticalDamage%)
+   // ------------------------------------------------------------------------------------
+   // criticalDamage% = DST_CRITICAL_BONUS
+   // ------------------------------------------------------------------------------------
 
    // linearInterpolation
    damage = linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance)
@@ -1694,7 +1716,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * CharacterPlusDamage : From Gear, Buff unscaled `damage` `DST_CHR_DMG`.
 
-      * Like Demol Earring `damage`, Spirit Fortune `damage`
+      * Example : Demol Earring `damage`, Spirit Fortune `damage` etc.
 
    * AttackMultiplier
    ```js
@@ -1702,7 +1724,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
    AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
    ```
 
-   * FlatAttack : Unscaled `attack` `DST_ATKPOWER`. Like Balloons, Power Scroll etc.
+   * FlatAttack : From Gear, Buff unscaled `attack` `DST_ATKPOWER`.
+
+      * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
 
 * computeDamage
    ```js
@@ -1735,10 +1759,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // ------------------------------------------------------------------------------------
    ```
 
-   * SkillDamageMultiplier : skill.levels.damageMultiplier * skill.levels.probability(probabilityPVP) * BuffSkillDamageMultiplier
+   * SkillDamageMultiplier : `skill.levels.damageMultiplier * skill.levels.probability(probabilityPVP) * BuffSkillDamageMultiplier`
 
    * BuffSkillDamageMultiplier : Damage caused by specific skills in different states.
-      like `If it's a Silent Shot, the damage is doubled, and if it's Dark Illusion, it's removed.`
+
+      * Example : *If it's a Silent Shot, the damage is doubled, and if it's Dark Illusion, it's removed.*
 
 #### magic skill
 
@@ -1756,7 +1781,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    MagicSkillPower = MeleeSkillPower * (1+ magicattack%) * (1 + ElementMastery%)
    ```
 
-   * ElementMastery% : From Gear, Buff scales `firemastery` `DST_MASTRY_FIRE`, `watermastery` `DST_MASTRY_WATER`, `electricitymastery` `DST_MASTRY_ELECTRICITY`, `windmastery` `DST_MASTRY_WIND`, `earthmastery` `DST_MASTRY_EARTH`
+   * ElementMastery% : From Gear, Buff scales `firemastery` `DST_MASTRY_FIRE`, `watermastery` `DST_MASTRY_WATER`, `electricitymastery` `DST_MASTRY_ELECTRICITY`, `windmastery` `DST_MASTRY_WIND`, `earthmastery` `DST_MASTRY_EARTH`.
 
    * AttackMultiplier
    ```js
@@ -1764,7 +1789,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
    AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
    ```
 
-   * FlatAttack : Unscaled `attack` `DST_ATKPOWER`. Like Balloons, Power Scroll etc.
+   * FlatAttack : From Gear, Buff unscaled `attack` `DST_ATKPOWER`.
+
+      * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
 
 * computeDamage
    ```js
@@ -1801,7 +1828,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * SkillDamageMultiplier : `skill.levels.damageMultiplier` * `skill.levels.probability(probabilityPVP)` * `BuffSkillDamageMultiplier`
 
    * BuffSkillDamageMultiplier : Damage caused by specific skills in different states.
-      like `If it's a Silent Shot, the damage is doubled, and if it's Dark Illusion, it's removed.`
+
+      * Example : *If it's a Silent Shot, the damage is doubled, and if it's Dark Illusion, it's removed.*
 
 </details></td></tr></table>
 
