@@ -64,6 +64,7 @@
     - [💥 damage](#-damage)
       - [dps](#dps)
       - [auto attack](#auto-attack)
+      - [melee skill](#melee-skill)
     - [⛔ block](#-block)
       - [block cap](#block-cap)
       - [block penetration](#block-penetration)
@@ -1431,6 +1432,20 @@ Those who have completed the Optional Master Quest during the event period will 
 DamagePerSecond = computeDamage * hitsPerSecond
 ```
 
+* hitsPerSecond
+   ```js
+   hitsPerSecond = classHitsPerSecond * attackSpeed * HitRate
+   ```
+
+   * HitRate
+   ```js
+   factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
+   hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
+   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96);
+   // Limited to 0.2~0.96
+   ```
+   * ExtraHitRate : From Gear, Buff scales `hitrate`.
+
 #### auto attack
 
 * computeAttack
@@ -1467,23 +1482,27 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // example (lv160 Blade Axe) :
    // 160 * 1.2 = 192
 
-   plusWeaponAttack : Weapon Type Additional Attack (Gear, Buff)
+   plusWeaponAttack : From Gear, Buff Weapon Type Additional Attack.
+   // swordattack, axeattack, staffattack, stickattck, knuckleattack, wandattack, yoyoattack
    // example (Blade Skill Axe) :
    // Smite Axe axeattack + 50 and Axe Mastery axeattack + 100, total = 150
 
    // example total = 2781.6 + 192 + 150 = 3123
    ```
 
-   * CharacterPlusDamage : Unscaled `damage` `DST_CHR_DMG`. Like Demol Earring `damage`, Spirit Fortune `damage`
+   * CharacterPlusDamage : From Gear, Buff unscaled `damage` `DST_CHR_DMG`.
+
+      * Like *Demol Earring* `damage`, *Spirit Fortune* `damage`
 
    * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
    ```js
+   // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
    WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
    ```
 
    * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack
    ```js
-   WeaponUpgradeLevelAdditionalAttack = UpgradeLevel^1.5
+   WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
    ```
 
    * AttackMultiplier
@@ -1491,7 +1510,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
    AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
    ```
-   * FlatAttack : Unscaled `attack` `DST_ATKPOWER`. Like Balloons, Power Scroll etc.
+
+   * FlatAttack : From Gear, Buff unscaled `attack` `DST_ATKPOWER`.
+
+      * Like *Balloons* `attack`, *Power Scroll* `attack` etc.
 
 * computeDamage
    ```js
@@ -1499,39 +1521,49 @@ DamagePerSecond = computeDamage * hitsPerSecond
                  = applyGenericDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
                  =  damage * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
    ```
+
    * applyGenericDefense
    ```js
    applyGenericDefense = damage * blockFactor
    ```
+
    * damage
    ```js
    damage = applyAttackDefense(computeAttack, defense) * critical
           = damageAfterApplyDefense * critical
    ```
+
    * defense
    ```js
    defense = computeDefense
            = computeGenericDefense
    ```
+
    * criticalChance
    ```js
    criticalChance = CriticalResistFactor * (((dex / 10) * ClassCriticalFactor) + ExtraCriticalChance)
    ```
-   * ExtraCriticalChance : From Gear, Buff
+
+   * ExtraCriticalChance : From Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
+
    * criticalFactor
    ```js
    // your level <= monster's level
    minCritical = 1.1
    maxCritical = 1.4
+   // Average
    criticalFactor = (minCritical + maxCritical) / 2.0 = 1.25
 
    // monster's level < your level
    minCritical = 1.2
    maxCritical = 2.0
+   // Average
    criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
    ```
+
    * criticalDamage
    ```js
+   // criticalDamage% = DST_CRITICAL_BONUS
    criticalDamage = damageAfterApplyDefense * criticalFactor * (1 + criticalDamage%)
 
    // linearInterpolation
@@ -1539,25 +1571,102 @@ DamagePerSecond = computeDamage * hitsPerSecond
           = ((1 - criticalChance) * damageAfterApplyDefense) + (criticalChance * criticalDamage)
 
    ```
-   * ElementResistFactor
-   ```js
-   ElementResistFactor = 0.7 ~ 1.3
-   ```
+
+   * ElementResistFactor : `0.7` or `1.3`
+
    * DamageMultiplier
    ```js
-   DamageMultiplier = OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+   DamageMultiplier = HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+
+   // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
    ```
 
-* hitsPerSecond
+#### melee skill
+
+* computeAttack
    ```js
-   hitsPerSecond = classHitsPerSecond * attackSpeed * HitRate
+   computeAttack = MeleeSkillPower * AttackMultiplier + FlatAttack
    ```
-   * HitRate
+
+* MeleeSkillPower
    ```js
-   factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
-   hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
-   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96);
+   MeleeSkillPower = (((WeaponAttackPowerMinMax + (SkillMinMaxAttack + WeaponAdditionalSkillDamage) * 5 + ReferStat - 20) * (16 + SkillLevel)) / 13) + PlusWeaponAttack + CharacterPlusDamage
    ```
+
+   * WeaponAttackPowerMinMax
+   ```js
+   WeaponAttackPowerMinMax = WeaponBaseAttackMinMax * WeaponMultiplier + MainhandWeaponUpgradeLevel^1.5
+
+   // example (Lusaka's Crystal Axe U+5) :
+   // (544 ~ 546 * 1.39) + 58.0948 = 814.25 ~ 817.03
+   ```
+
+   * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
+   ```js
+   WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+   ```
+
+   * ReferStat
+   ```js
+   // If there are two Stats, add them after calculation.
+   ReferStat = CharacterStat * ((((PvEPvPSkillStatScale * 50.0) - (SkillLevel + 1)) / 5.0) / 10.0) + ((CharacterStat * SkillLevel) / 50.0)
+             = CharacterStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50)
+
+   // example (Bldae Armor Penetrate Lv10 PvE) :
+   // str 500, dex60, str scale 3, dex scale 1.7
+   // (500 * (((3 * 50.0) - 1) / 50.0)) + (60 * (((1.7 * 50.0) - 1) /50.0)) = 1590.8
+   ```
+
+   * SkillMinAttack : skill.minAttack and skill.maxAttack
+
+   * WeaponAdditionalSkillDamage : weapon.additionalSkillDamage
+
+   * PlusWeaponAttack : Weapon Type Additional Attack (Gear, Buff)
+
+   * CharacterPlusDamage : Unscaled `damage` `DST_CHR_DMG`. Like Demol Earring `damage`, Spirit Fortune `damage`
+
+
+   * AttackMultiplier
+   ```js
+   // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+   AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+   ```
+
+   * FlatAttack : Unscaled `attack` `DST_ATKPOWER`. Like Balloons, Power Scroll etc.
+
+* computeDamage
+   ```js
+   computeDamage = applyDefense(computeAttack)
+                 = applyDefenseParryCritical(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 =  damage * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+   ```
+
+   * applyDefenseParryCritical
+   ```js
+   applyDefenseParryCritical = applyAttackDefense(computeAttack, defense)
+   ```
+
+   * defense
+   ```js
+   defense = computeDefense
+           = computeGenericDefense
+   ```
+
+   * ElementResistFactor : `0.8` or `1.4`
+
+      If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
+
+   * DamageMultiplier
+   ```js
+   DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+
+   // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
+   ```
+
+   * SkillDamageMultiplier : skill.levels.damageMultiplier * skill.levels.probability(probabilityPVP) * BuffSkillDamageMultiplier
+
+   * BuffSkillDamageMultiplier : Damage caused by specific skills in different states.
+      like `If it's a Silent Shot, the damage is doubled, and if it's Dark Illusion, it's removed.`
 
 </details></td></tr></table>
 
