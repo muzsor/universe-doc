@@ -293,11 +293,22 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * DamageMultiplier
       ```js
-      DamageMultiplier = HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+      DamageMultiplier = OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
 
       // ------------------------------------------------------------------------------------
-      // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
+      // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
+      // HolycrossSwordcross2x : CHS_DOUBLE
+      // ------------------------------------------------------------------------------------
+      ```
+
+   * LevelDifferenceReductionFactor
+      ```js
+      LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
+                                     = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
+      //for ( i = 0; i < 16; i++ ) {
+      //  console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
+      //}
       ```
 
 </details></td></tr></table>
@@ -390,11 +401,22 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * DamageMultiplier
       ```js
-      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
 
       // ------------------------------------------------------------------------------------
-      // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
+      // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
+      // HolycrossSwordcross2x : CHS_DOUBLE
+      // ------------------------------------------------------------------------------------
+      ```
+
+   * LevelDifferenceReductionFactor
+      ```js
+      LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
+                                     = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
+      //for ( i = 0; i < 16; i++ ) {
+      //  console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
+      //}
       ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier * skill.levels.probability(probabilityPVP) * BuffSkillDamageMultiplier`
@@ -463,18 +485,31 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * DamageMultiplier
       ```js
-      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
 
       // ------------------------------------------------------------------------------------
-      // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
+      // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
+      // HolycrossSwordcross2x : CHS_DOUBLE
+      // ------------------------------------------------------------------------------------
+      ```
+
+   * LevelDifferenceReductionFactor
+      ```js
+      LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
+                                     = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
+      //for ( i = 0; i < 16; i++ ) {
+      //  console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
+      //}
       ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier` * `skill.levels.probability(probabilityPVP)` * `BuffSkillDamageMultiplier`
 
-   * BuffSkillDamageMultiplier : Damage caused by specific skills in different states.
+      * `skill.levels.probability(probabilityPVP)` `dwProbability` : The skill's probability. Will calculate damage factor upon success.
 
-      * Example : *If it's a Silent Shot, the damage is doubled, and if it's Dark Illusion, it's removed.*
+      * BuffSkillDamageMultiplier : Damage factor caused by specific skills in different buffs.
+
+         * Example : *If it's a Silent Shot, the damage is doubled, and if it's Dark Illusion, it's removed.*
 
 </details></td></tr></table>
 
