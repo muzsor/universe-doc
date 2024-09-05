@@ -14,7 +14,7 @@
 <table><tr><td><details><summary>📁 Table of Contents</summary>
 
 - [Formulas](#formulas)
-  - [💥 damage](#-damage)
+  - [⚔️ damage](#️-damage)
     - [dps](#dps)
     - [auto attack](#auto-attack)
     - [melee skill](#melee-skill)
@@ -29,7 +29,7 @@
 
 </details></td></tr></table>
 
-## 💥 damage
+## ⚔️ damage
 
 <details>
   <summary>📁 damage details</summary>
@@ -46,26 +46,26 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```
 
    * HitRate
-   ```js
-   // ------------------------------------------------------------------------------------
-   // If not AUTO_ATTACK, this is always 100.
-   // ------------------------------------------------------------------------------------
+      ```js
+      // ------------------------------------------------------------------------------------
+      // If not AUTO_ATTACK, this is always 100.
+      // ------------------------------------------------------------------------------------
 
-   factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
-   hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
-   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
-   // Limited to 0.2 ~ 0.96
-   ```
-   ```js
-   // simplify formula
-   nHitRate = (AttackDex * 288 * AttackLevel) / ((AttackDex + DefenderParry) * (AttackLevel + DefenderLevel))
-   HitRate = clamp(hitRate + ExtraHitRate, 20, 96)
-   // Limited to 20 ~ 96
-   ```
+      factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
+      hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
+      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+      // Limited to 0.2 ~ 0.96
+      ```
+      ```js
+      // simplify formula
+      nHitRate = (AttackDex * 2.88 * AttackLevel) / ((AttackDex + DefenderParry) * (AttackLevel + DefenderLevel))
+      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+      // Limited to 0.2 ~ 0.96
+      ```
 
-   * DefenderParry : Defender unscaled `parry` `DST_PARRY`.
+   * DefenderParry : From Defender's unscaled `parry` `DST_PARRY`.
 
-   * ExtraHitRate : From Gear, Buff scales `hitrate` `DST_ADJ_HITRATE`.
+   * ExtraHitRate : From Attacker's Gear, Buff scales `hitrate` `DST_ADJ_HITRATE`.
 
 ### auto attack
 
@@ -80,203 +80,225 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```
 
    * HitPower
-   ```js
-   HitPower = HitMinMax * DamagePropertyFactor
+      ```js
+      HitPower = HitMinMax * DamagePropertyFactor
 
-   // ------------------------------------------------------------------------------------
-   // DamagePropertyFactor = ElementMultiplier(UpgradeLevel)
-   // Find the increase/decrease factor of ATK and DEF to be used in the GetHitPower function.
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // DamagePropertyFactor = ElementMultiplier(UpgradeLevel)
+      // Find the increase/decrease factor of ATK and DEF to be used in the GetHitPower function.
+      // ------------------------------------------------------------------------------------
+      ```
 
    * HitMinMax
-   ```js
-   HitMinMax = ((WeaponBaseAttackMinMax * 2) + WeaponAttack + CharacterPlusDamage) * WeaponMultiplier + WeaponUpgradeLevelAdditionalAttack
-   // ------------------------------------------------------------------------------------
-   // WeaponBaseAttackMinMax = minAttack DST_ABILITY_MIN, maxAttack DST_ABILITY_MAX
-   // ------------------------------------------------------------------------------------
+      ```js
+      HitMinMax = ((WeaponBaseAttackMinMax * 2) + WeaponAttack + AttackerPlusDamage) * WeaponMultiplier + WeaponUpgradeLevelAdditionalAttack
+      // ------------------------------------------------------------------------------------
+      // WeaponBaseAttackMinMax = minAttack DST_ABILITY_MIN, maxAttack DST_ABILITY_MAX
+      // ------------------------------------------------------------------------------------
 
-   // ------------------------------------------------------------------------------------
-   // example (Lusaka's Crystal Axe U+5, Demol Earring U+5, Spirit Fortune) :
-   // ((544 ~ 546 * 2) + 3123 + (540 * 2) + 150) * 1.39 + 58.0948 = 7621.0848 ~ 7626.6448
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // example (Lusaka's Crystal Axe U+5, Demol Earring U+5, Spirit Fortune) :
+      // ((544 ~ 546 * 2) + 3123 + (540 * 2) + 150) * 1.39 + 58.0948 = 7621.0848 ~ 7626.6448
+      // ------------------------------------------------------------------------------------
+      ```
 
    * WeaponAttack
-   ```js
-   WeaponAttack = statAttack + levelAttack + plusWeaponAttack
-   ```
-   ```js
-   // ------------------------------------------------------------------------------------
-   statAttack = (ChatacterStats - WeaponTypeStatModifer) * ClassAutoAttackWeaponTypeFactor
-   // ------------------------------------------------------------------------------------
-   // ClassAutoAttackWeaponTypeFactor = GetJobPropFactor(JOB_PROP_TYPE)
-   // ------------------------------------------------------------------------------------
-   // WeaponTypeStatModifer:
-   // sword WT_MELEE_SWD 12
-   // axe WT_MELEE_AXE 12
-   // staff WT_MELEE_STAFF 10
-   // stick WT_MELEE_STICK 10
-   // knuckle WT_MELEE_KNUCKLE 10
-   // wand WT_MAGIC_WAND 10
-   // yoyo WT_MELEE_YOYO 12
-   // bow WT_RANGE_BOW 14
-   // ------------------------------------------------------------------------------------
-   // example (Blade str 500 and use Axe) :
-   // (500 - 12) * 5.7 = 2781.6
-   // example (Blade str 500 and use Sword) :
-   // (500 - 12) * 4.7 = 2,293.6
-   // ------------------------------------------------------------------------------------
+      ```js
+      WeaponAttack = statAttack + levelAttack + plusWeaponAttack
+      ```
+      ```js
+      // ------------------------------------------------------------------------------------
+      statAttack = (AttackerStats - WeaponTypeStatModifer) * ClassWeaponTypeAutoAttackFactors
+      // ------------------------------------------------------------------------------------
+      // ClassWeaponTypeAutoAttackFactors = autoAttackFactors = GetJobPropFactor( JOB_PROP_TYPE )
+      // ------------------------------------------------------------------------------------
+      // WeaponTypeStatModifer:
+      // sword WT_MELEE_SWD 12
+      // axe WT_MELEE_AXE 12
+      // staff WT_MELEE_STAFF 10
+      // stick WT_MELEE_STICK 10
+      // knuckle WT_MELEE_KNUCKLE 10
+      // wand WT_MAGIC_WAND 10
+      // yoyo WT_MELEE_YOYO 12
+      // bow WT_RANGE_BOW 14
+      // ------------------------------------------------------------------------------------
+      // example (Blade str 500 and use Axe) :
+      // (500 - 12) * 5.7 = 2781.6
+      // example (Blade str 500 and use Sword) :
+      // (500 - 12) * 4.7 = 2,293.6
+      // ------------------------------------------------------------------------------------
 
-   // ------------------------------------------------------------------------------------
-   levelAttack = CharacterLevel * WeaponTypeLevelFactor
-   // ------------------------------------------------------------------------------------
-   // WeaponTypeLevelFactor :
-   // sword WT_MELEE_SWD 1.1
-   // axe WT_MELEE_AXE 1.2
-   // staff WT_MELEE_STAFF 1.1
-   // stick WT_MELEE_STICK 1.3
-   // knuckle WT_MELEE_KNUCKLE 1.2
-   // wand WT_MAGIC_WAND 1.2
-   // yoyo WT_MELEE_YOYO 1.1
-   // bow WT_RANGE_BOW 0.91
-   // ------------------------------------------------------------------------------------
-   // example (lv160 Blade Axe) :
-   // 160 * 1.2 = 192
-   // ------------------------------------------------------------------------------------
+      // ------------------------------------------------------------------------------------
+      levelAttack = AttackerLevel * WeaponTypeLevelFactor
+      // ------------------------------------------------------------------------------------
+      // WeaponTypeLevelFactor :
+      // sword WT_MELEE_SWD 1.1
+      // axe WT_MELEE_AXE 1.2
+      // staff WT_MELEE_STAFF 1.1
+      // stick WT_MELEE_STICK 1.3
+      // knuckle WT_MELEE_KNUCKLE 1.2
+      // wand WT_MAGIC_WAND 1.2
+      // yoyo WT_MELEE_YOYO 1.1
+      // bow WT_RANGE_BOW 0.91
+      // ------------------------------------------------------------------------------------
+      // example (lv160 Blade use Axe) :
+      // 160 * 1.2 = 192
+      // ------------------------------------------------------------------------------------
 
-   // ------------------------------------------------------------------------------------
-   plusWeaponAttack : From Gear, Buff Weapon Type Additional Attack.
-   // ------------------------------------------------------------------------------------
-   // swordattack DST_SWD_DMG
-   // axeattack DST_AXE_DMG
-   // staffattack, stickattck
-   // knuckleattack DST_KNUCKLE_DMG
-   // wandattack, yoyoattack DST_YOY_DMG
-   // bowattack DST_BOW_DMG
-   // ------------------------------------------------------------------------------------
-   // master skill :
-   // DST_KNUCKLEMASTER_DMG
-   // DST_YOYOMASTER_DMG
-   // DST_BOWMASTER_DMG
-   // DST_TWOHANDMASTER_DMG
-   // ------------------------------------------------------------------------------------
-   // example (Blade Skill Axe) :
-   // Smite Axe axeattack + 50 and Axe Mastery axeattack + 100, total = 150
-   // ------------------------------------------------------------------------------------
+      // ------------------------------------------------------------------------------------
+      plusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
+      // ------------------------------------------------------------------------------------
+      // swordattack DST_SWD_DMG
+      // axeattack DST_AXE_DMG
+      // staffattack, stickattck
+      // knuckleattack DST_KNUCKLE_DMG
+      // wandattack, yoyoattack DST_YOY_DMG
+      // bowattack DST_BOW_DMG
+      // ------------------------------------------------------------------------------------
+      // master skill :
+      // DST_KNUCKLEMASTER_DMG
+      // DST_YOYOMASTER_DMG
+      // DST_BOWMASTER_DMG
+      // DST_TWOHANDMASTER_DMG
+      // ------------------------------------------------------------------------------------
+      // example (Blade Skill Axe) :
+      // Smite Axe axeattack + 50 and Axe Mastery axeattack + 100, total = 150
+      // ------------------------------------------------------------------------------------
 
 
-   // ------------------------------------------------------------------------------------
-   // example total = 2781.6 + 192 + 150 = 3123
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // example total = 2781.6 + 192 + 150 = 3123
+      // ------------------------------------------------------------------------------------
+      ```
 
-   * CharacterPlusDamage : From Gear, Buff unscaled `damage` `DST_CHR_DMG`.
+   * AttackerPlusDamage : From Attacker's Gear, Buff unscaled `damage` `DST_CHR_DMG`.
 
       * Example : *Demol Earring* `damage`, *Spirit Fortune* `damage` etc.
 
    * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
-   ```js
-   // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
-   WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
-   ```
+      ```js
+      // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
+      WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+      ```
 
    * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack
-   ```js
-   WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
-   ```
+      ```js
+      WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
+      ```
 
    * AttackMultiplier
-   ```js
-   // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-   AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
-   ```
+      ```js
+      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+      AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+      ```
 
-   * FlatAttack : From Gear, Buff unscaled `attack` `DST_ATKPOWER`.
+   * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
 
       * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
 
 * computeDamage
+
+   * **The term `critical` here refers to a factor derived from a series of calculations. For detailed calculations, please refer to the section below.**
+
    ```js
    computeDamage = applyDefense(computeAttack)
                  = applyGenericDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 =  damage * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = damageAfterCritical * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = applyAttackDefense(computeAttack, defense) * critical * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
    ```
 
    * applyGenericDefense
-   ```js
-   applyGenericDefense = damage * blockFactor
-   ```
+      ```js
+      applyGenericDefense = damageAfterCritical * blockFactor
+      ```
 
-   * damage
-   ```js
-   damage = applyAttackDefense(computeAttack, defense) * critical
-          = damageAfterApplyDefense * critical
-   ```
+   * 💥 damageAfterCritical
+
+      * **The term `critical` here refers to a factor derived from a series of calculations. For detailed calculations, please refer to the section below.**
+
+      ```js
+      damageAfterCritical = applyAttackDefense(computeAttack, defense) * critical
+                        = damageAfterApplyDefense * critical
+      ```
 
    * defense
-   ```js
-   defense = computeDefense
-           = computeGenericDefense
-   ```
+      ```js
+      defense = computeDefense
+              = computeGenericDefense
+      ```
 
-   * criticalChance
-   ```js
-   criticalChance = CriticalResistFactor * (((dex / 10) * ClassCriticalFactor) + ExtraCriticalChance)
-   // ------------------------------------------------------------------------------------
-   // ClassCriticalFactor = GetJobPropFactor( JOB_PROP_CRITICAL )
-   // ------------------------------------------------------------------------------------
-   ```
+   * 💥 criticalChance
 
-   * ExtraCriticalChance : From Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
+      * AttackerCriticalChance : From Attacker's Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
 
-   * criticalFactor
-   ```js
-   // ------------------------------------------------------------------------------------
-   // your level <= monster's level
-   minCritical = 1.1
-   maxCritical = 1.4
-   // ------------------------------------------------------------------------------------
-   // Average Dps
-   criticalFactor = (minCritical + maxCritical) / 2.0 = 1.25
-   // ------------------------------------------------------------------------------------
+      ```js
+      criticalChance = CriticalResistFactor * (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance)
+      // ------------------------------------------------------------------------------------
+      // ClassCriticalFactor : critical , class.critical, job.critical
+      // ClassCriticalFactor = GetJobPropFactor (JOB_PROP_CRITICAL )
+      // ------------------------------------------------------------------------------------
+      // example (Blade's str 500, dex 60, cc 45) :
+      // criticalChance = CriticalResistFactor * (((60 / 10) * 1) + 45)) = CriticalResistFactor * 51
+      // ------------------------------------------------------------------------------------
+      ```
 
-   // ------------------------------------------------------------------------------------
-   // monster's level < your level
-   minCritical = 1.2
-   maxCritical = 2.0
-   // ------------------------------------------------------------------------------------
-   // Average Dps
-   criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
-   // ------------------------------------------------------------------------------------
-   ```
+   * 💥 criticalFactor
+      ```js
+      // ------------------------------------------------------------------------------------
+      // your level <= monster's level
+      minCritical = 1.1
+      maxCritical = 1.4
+      // ------------------------------------------------------------------------------------
+      // Average Dps
+      criticalFactor = (minCritical + maxCritical) / 2.0 = 1.25
+      // ------------------------------------------------------------------------------------
 
-   * criticalDamage
+      // ------------------------------------------------------------------------------------
+      // monster's level < your level
+      minCritical = 1.2
+      maxCritical = 2.0
+      // ------------------------------------------------------------------------------------
+      // Average Dps
+      criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
+      // ------------------------------------------------------------------------------------
+      ```
 
-   <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
+   * 💥 criticalDamage
 
-   ```js
-   criticalDamage = damageAfterApplyDefense * criticalFactor * (1 + criticalDamage%)
-   // ------------------------------------------------------------------------------------
-   // criticalDamage% = DST_CRITICAL_BONUS
-   // ------------------------------------------------------------------------------------
+      <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
 
-   // linearInterpolation
-   damage = linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance)
-          = ((1 - criticalChance) * damageAfterApplyDefense) + (criticalChance * criticalDamage)
+      ```js
+      criticalDamage = damageAfterApplyDefense * criticalFactor * (1 + CriticalDamage%)
+      // ------------------------------------------------------------------------------------
+      // criticalBonus, CriticalDamage% : From Attacker's Gear, Buff scales criticaldamage, DST_CRITICAL_BONUS
+      // ------------------------------------------------------------------------------------
+      ```
 
-   ```
+   * 💥 **damageAfterCritical**
+      ```js
+      // linearInterpolation
+      damageAfterCritical = linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance)
+                        = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%))
+      ```
+      ```js
+      // your level <= monster's level, average dps
+      damageAfterCritical = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.25 * (1 + criticalDamage%))
+      ```
+      ```js
+      // monster's level < your level, average dps
+      damageAfterCritical = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.6 * (1 + criticalDamage%))
+      ```
 
    * ElementResistFactor : `0.7`, `1.0`, `1.3`
 
    * DamageMultiplier
-   ```js
-   DamageMultiplier = HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+      ```js
+      DamageMultiplier = HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
 
-   // ------------------------------------------------------------------------------------
-   // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
+      // ------------------------------------------------------------------------------------
+      ```
 
 </details></td></tr></table>
 
@@ -292,55 +314,55 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```
 
    * MeleeSkillPower
-   ```js
-   MeleeSkillPower = (((WeaponAttackPowerMinMax + (SkillMinMaxAttack + WeaponAdditionalSkillDamage) * 5 + ReferStat - 20) * (16 + SkillLevel)) / 13) + PlusWeaponAttack + CharacterPlusDamage
-   ```
+      ```js
+      MeleeSkillPower = (((WeaponAttackPowerMinMax + (SkillMinMaxAttack + WeaponAdditionalSkillDamage) * 5 + ReferStat - 20) * (16 + SkillLevel)) / 13) + PlusWeaponAttack + AttackerPlusDamage
+      ```
 
    * WeaponAttackPowerMinMax
-   ```js
-   WeaponAttackPowerMinMax = WeaponBaseAttackMinMax * WeaponMultiplier + MainhandWeaponUpgradeLevel^1.5
+      ```js
+      WeaponAttackPowerMinMax = WeaponBaseAttackMinMax * WeaponMultiplier + MainhandWeaponUpgradeLevel^1.5
 
-   // ------------------------------------------------------------------------------------
-   // example (Lusaka's Crystal Axe U+5) :
-   // (544 ~ 546 * 1.39) + 58.0948 = 814.25 ~ 817.03
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // example (Lusaka's Crystal Axe U+5) :
+      // (544 ~ 546 * 1.39) + 58.0948 = 814.25 ~ 817.03
+      // ------------------------------------------------------------------------------------
+      ```
 
    * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
-   ```js
-   WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
-   ```
+      ```js
+      WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+      ```
 
    * ReferStat
-   ```js
-   // If there are two Stats, add them after calculation.
-   ReferStat = CharacterStat * ((((PvEPvPSkillStatScale * 50.0) - (SkillLevel + 1)) / 5.0) / 10.0) + ((CharacterStat * SkillLevel) / 50.0)
-             = CharacterStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50)
+      ```js
+      // If there are two Stats, add them after calculation.
+      ReferStat = AttackerStat * ((((PvEPvPSkillStatScale * 50.0) - (SkillLevel + 1)) / 5.0) / 10.0) + ((AttackerStat * SkillLevel) / 50.0)
+                = AttackerStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50)
 
-   // ------------------------------------------------------------------------------------
-   // example (Bldae Armor Penetrate Lv10 PvE) :
-   // str 500, dex60, str scale 3, dex scale 1.7
-   // (500 * (((3 * 50.0) - 1) / 50.0)) + (60 * (((1.7 * 50.0) - 1) /50.0)) = 1590.8
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // example (Bldae use Armor Penetrate Lv10 PvE str scale 3, dex scale 1.7) :
+      // character's str 500, dex 60 :
+      // (500 * (((3 * 50.0) - 1) / 50.0)) + (60 * (((1.7 * 50.0) - 1) /50.0)) = 1590.8
+      // ------------------------------------------------------------------------------------
+      ```
 
    * SkillMinAttack : skill.minAttack and skill.maxAttack
 
    * WeaponAdditionalSkillDamage : weapon.additionalSkillDamage
 
-   * PlusWeaponAttack : Weapon Type Additional Attack (Gear, Buff)
+   * PlusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
 
-   * CharacterPlusDamage : From Gear, Buff unscaled `damage` `DST_CHR_DMG`.
+   * AttackerPlusDamage : From Attacker's Gear, Buff unscaled `damage` `DST_CHR_DMG`.
 
-      * Example : Demol Earring `damage`, Spirit Fortune `damage` etc.
+      * Example : *Demol Earring* `damage`, *Spirit Fortune* `damage` etc.
 
    * AttackMultiplier
-   ```js
-   // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-   AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
-   ```
+      ```js
+      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+      AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+      ```
 
-   * FlatAttack : From Gear, Buff unscaled `attack` `DST_ATKPOWER`.
+   * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
 
       * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
 
@@ -352,28 +374,28 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```
 
    * applyDefenseParryCritical
-   ```js
-   applyDefenseParryCritical = applyAttackDefense(computeAttack, defense)
-   ```
+      ```js
+      applyDefenseParryCritical = applyAttackDefense(computeAttack, defense)
+      ```
 
    * defense
-   ```js
-   defense = computeDefense
-           = computeGenericDefense
-   ```
+      ```js
+      defense = computeDefense
+              = computeGenericDefense
+      ```
 
    * ElementResistFactor : `0.8`, `1.0`, `1.4`
 
-      If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
+      * If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
 
    * DamageMultiplier
-   ```js
-   DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+      ```js
+      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
 
-   // ------------------------------------------------------------------------------------
-   // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
+      // ------------------------------------------------------------------------------------
+      ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier * skill.levels.probability(probabilityPVP) * BuffSkillDamageMultiplier`
 
@@ -396,20 +418,20 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```
 
    * MagicSkillPower
-   ```js
-   // MagicSkillPower = MeleeSkillPower * (1 + DST_ADDMAGIC%) * ( 1 + DST_MASTRY_ELEMENT%)
-   MagicSkillPower = MeleeSkillPower * (1+ magicattack%) * (1 + ElementMastery%)
-   ```
+      ```js
+      // MagicSkillPower = MeleeSkillPower * (1 + DST_ADDMAGIC%) * ( 1 + DST_MASTRY_ELEMENT%)
+      MagicSkillPower = MeleeSkillPower * (1+ magicattack%) * (1 + ElementMastery%)
+      ```
 
-   * ElementMastery% : From Gear, Buff scales `firemastery` `DST_MASTRY_FIRE`, `watermastery` `DST_MASTRY_WATER`, `electricitymastery` `DST_MASTRY_ELECTRICITY`, `windmastery` `DST_MASTRY_WIND`, `earthmastery` `DST_MASTRY_EARTH`.
+   * ElementMastery% : From Attacker's Gear, Buff scales `firemastery` `DST_MASTRY_FIRE`, `watermastery` `DST_MASTRY_WATER`, `electricitymastery` `DST_MASTRY_ELECTRICITY`, `windmastery` `DST_MASTRY_WIND`, `earthmastery` `DST_MASTRY_EARTH`.
 
    * AttackMultiplier
-   ```js
-   // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-   AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
-   ```
+      ```js
+      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+      AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+      ```
 
-   * FlatAttack : From Gear, Buff unscaled `attack` `DST_ATKPOWER`.
+   * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
 
       * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
 
@@ -421,29 +443,32 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```
 
    * applyMagicSkillDefense
-   ```js
-   // nATK = nATK - nATK * pDefender->GetParam( DST_RESIST_MAGIC_RATE, 0 ) / 100
-   applyMagicSkillDefense = applyAttackDefense((computeAttack * (1 − magicDefensePvP%)), defense)
-   ```
+      ```js
+      // nATK = nATK - nATK * pDefender->GetParam( DST_RESIST_MAGIC_RATE, 0 ) / 100
+      applyMagicSkillDefense = applyAttackDefense((computeAttack * (1 − magicDefense%)), defense)
+      // ------------------------------------------------------------------------------------
+      // magicDefense% : From Defender's scales magicDefense, DST_RESIST_MAGIC_RATE
+      // ------------------------------------------------------------------------------------
+      ```
 
    * defense
-   ```js
-   defense = computeDefense
-           = computeGenericDefense
-   ```
+      ```js
+      defense = computeDefense
+              = computeGenericDefense
+      ```
 
    * ElementResistFactor : `0.8`, `1.0`, `1.4`
 
-      If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
+      * If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
 
    * DamageMultiplier
-   ```js
-   DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
+      ```js
+      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * HolycrossSwordcross2x * OffhandWeaponAttackFactor * LevelDifferenceReductionFactor
 
-   // ------------------------------------------------------------------------------------
-   // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
-   // ------------------------------------------------------------------------------------
-   ```
+      // ------------------------------------------------------------------------------------
+      // HolycrossSwordcross2x : DST_CHRSTATE / CHS_DOUBLE
+      // ------------------------------------------------------------------------------------
+      ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier` * `skill.levels.probability(probabilityPVP)` * `BuffSkillDamageMultiplier`
 
