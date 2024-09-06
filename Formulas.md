@@ -78,22 +78,35 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * computeAttack
    ```js
+   // AttackArbiter.cpp
+   // int CAttackArbiter::CalcATK( ATTACK_INFO* pInfo )
    computeAttack = (HitPower * AttackMultiplier) + FlatAttack
                  = (HitMinMax * DamagePropertyFactor * (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+
+   // ------------------------------------------------------------------------------------
+   // WndField.cpp
+   // void CWndCharacterDetail2::GetVirtualATK(int* pnMin, int* pnMax)
+   // ------------------------------------------------------------------------------------
    ```
 
    * HitPower
       ```js
+      // MoverAttack.cpp
+      // int CMover::GetHitPower( ATTACK_INFO* pInfo  )
       HitPower = HitMinMax * DamagePropertyFactor
 
       // ------------------------------------------------------------------------------------
       // DamagePropertyFactor = ElementMultiplier(UpgradeLevel)
+      // ------------------------------------------------------------------------------------
+      // void CMover::GetDamagePropertyFactor( CMover* pDefender, int* pnATKFactor, int* pnDEFFactor, int nParts )
       // Find the increase/decrease factor of ATK and DEF to be used in the GetHitPower function.
       // ------------------------------------------------------------------------------------
       ```
 
    * HitMinMax
       ```js
+      // MoverAttack.cpp
+      // void CMover::GetHitMinMax( int* pnMin, int* pnMax, ATTACK_INFO *pInfo )
       HitMinMax = ((WeaponBaseAttackMinMax * 2) + WeaponAttack + AttackerPlusDamage) * WeaponMultiplier + WeaponUpgradeLevelAdditionalAttack
       // ------------------------------------------------------------------------------------
       // WeaponBaseAttackMinMax = minAttack DST_ABILITY_MIN, maxAttack DST_ABILITY_MAX
@@ -107,6 +120,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * WeaponAttack
       ```js
+      // MoverAttack.cpp
+      // int CMover::GetWeaponATK( DWORD dwWeaponType )
       WeaponAttack = statAttack + levelAttack + plusWeaponAttack
       ```
       ```js
@@ -148,6 +163,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // 160 * 1.2 = 192
       // ------------------------------------------------------------------------------------
 
+      // ------------------------------------------------------------------------------------
+      // int CMover::GetPlusWeaponATK( DWORD dwWeaponType )
       // ------------------------------------------------------------------------------------
       plusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
       // ------------------------------------------------------------------------------------
@@ -191,6 +208,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * AttackMultiplier
       ```js
+      // MoverAttack.cpp
+      // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
+      // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
       AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
@@ -204,6 +224,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * **The term `critical` here refers to a factor derived from a series of calculations. For detailed calculations, please refer to the section below.**
 
    ```js
+   // AttackArbiter.cpp
+   // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyGenericDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
                  = damageAfterCritical * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
@@ -215,13 +237,28 @@ DamagePerSecond = computeDamage * hitsPerSecond
       applyGenericDefense = damageAfterCritical * blockFactor
       ```
 
+   *  blockFactor : `0.2` (block), `1.0` (block failure)
+
+      > source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
+
+      * Blocked hits no longer deal 1 damage at the minimum, but 20% of the initial damage instead.
+
    * 💥 damageAfterCritical
 
       * **The term `critical` here refers to a factor derived from a series of calculations. For detailed calculations, please refer to the section below.**
 
       ```js
       damageAfterCritical = applyAttackDefense(computeAttack, defense) * critical
-                        = damageAfterApplyDefense * critical
+                          = damageAfterApplyDefense * critical
+      ```
+
+   * applyAttackDefense
+
+      <img src="./formulas/effect_of_defense_on_adjusted_attack.png" alt="effect_of_defense_on_adjusted_attack.png" width="600"/>
+
+      ```js
+      value = Math.sqrt(defense / (defense + (2 * attack)))
+      applyAttackDefense = linearInterpolation(defense, attack, value)
       ```
 
    * defense
@@ -234,16 +271,23 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * AttackerCriticalChance : From Attacker's Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
 
+      * ClassCriticalFactor : `critical`, `class.critical`, `job.critical`, `JOB_PROP_CRITICAL`.
+
       ```js
-      criticalChance = CriticalResistFactor * (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance)
-      // ------------------------------------------------------------------------------------
-      // ClassCriticalFactor : critical , class.critical, job.critical
-      // ClassCriticalFactor = GetJobPropFactor (JOB_PROP_CRITICAL )
+      // MoverAttack.cpp
+      // int CMover::GetCriticalProb( void )
+      criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance) * CriticalResistFactor
+
       // ------------------------------------------------------------------------------------
       // example (Blade's str 500, dex 60, cc 45) :
-      // criticalChance = CriticalResistFactor * (((60 / 10) * 1) + 45)) = CriticalResistFactor * 51
+      // criticalChance = (((60 / 10) * 1) + 45)) * CriticalResistFactor = 51 * CriticalResistFactor
       // ------------------------------------------------------------------------------------
       ```
+      * character window critical chance
+         ```js
+         // int CWndCharInfo::GetVirtualCritical()
+         criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance)
+         ```
 
    * 💥 criticalFactor
       ```js
@@ -281,7 +325,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // linearInterpolation
       damageAfterCritical = linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance)
-                        = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%))
+                          = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%))
       ```
       ```js
       // your level <= monster's level, average dps
@@ -372,6 +416,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * AttackMultiplier
       ```js
+      // MoverAttack.cpp
+      // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
+      // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
       AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
@@ -382,9 +429,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * computeDamage
    ```js
+   // AttackArbiter.cpp
+   // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyDefenseParryCritical(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 =  damage * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = damage * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
    ```
 
    * applyDefenseParryCritical
@@ -452,6 +501,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * AttackMultiplier
       ```js
+      // MoverAttack.cpp
+      // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
+      // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
       AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
@@ -462,9 +514,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * computeDamage
    ```js
+   // AttackArbiter.cpp
+   // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyMagicSkillDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 =  damage * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = damage * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
    ```
 
    * applyMagicSkillDefense
@@ -694,8 +748,6 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * Blocked hits no longer deal 1 damage at the minimum, but 20% of the initial damage instead.
 
-> source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
-
 ### calculate
 
 * Defender is Player.
@@ -754,7 +806,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
       CharacterWindowBlock =MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
       ```
 
+   > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
+
 ### block cap
+
+<div align="center"><img src="./formulas/block_rate_translation.png" alt="block_rate_translation.png"/></div>
 
 <div align="center"><img src="./formulas/block_rate_translation_table.png" alt="block_rate_translation_table.png"/></div>
 
