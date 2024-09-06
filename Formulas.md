@@ -23,7 +23,10 @@
   - [⚔️ blade damage](#️-blade-damage)
   - [🗡️ empower weapon](#️-empower-weapon)
   - [🔪 sword vs axe 🪓](#-sword-vs-axe-)
+  - [❤️ health](#️-health)
+    - [max hp](#max-hp)
   - [⛔ block](#-block)
+    - [calculate](#calculate)
     - [block cap](#block-cap)
     - [block penetration](#block-penetration)
 
@@ -615,10 +618,73 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 </details>
 
+## ❤️ health
+
+<details>
+  <summary>📁 hp details</summary>
+
+* `DST_HP`
+
+* Vagrant
+   ```js
+   hp = 150 + (level * 18) + (sta * level * 0.18)
+      = 150 + level * (18 + (0.18 * sta))
+   ```
+
+* Mercenary, Blade, Jester, Psykeeper, Elementor
+   ```js
+   hp = 150 + (level * 30) + (sta * level * 0.3)
+      = 150 + level * (30 + (0.3 * sta))
+   ```
+
+* Assist, Acrobat, Magician
+   ```js
+   hp = 150 + (level * 28) + (sta * level * 0.28)
+      = 150 + level * (28 + (0.28 * sta))
+   ```
+
+* Knight
+   ```js
+   hp = 150 + (level * 40) + (sta * level * 0.4)
+      = 150 + level * (40 + (0.4 * sta))
+   ```
+
+* Ringmaster
+   ```js
+   hp = 150 + (level * 34) + (sta * level * 0.34)
+      = 150 + level * (34 + (0.34 * sta))
+   ```
+
+* Billposter
+   ```js
+   hp = 150 + (level * 36) + (sta * level * 0.36)
+      = 150 + level * (36 + (0.36 * sta))
+   ```
+
+* Ranger
+   ```js
+   hp = 150 + (level * 32) + (sta * level * 0.32)
+      = 150 + level * (32 + (0.32 * sta))
+   ```
+
+### max hp
+
+* hp
+
+   * flatMaxHp : From Character's Gear, Buff unscaled `maxhp`.
+
+   ```js
+   hp = (baseHealth * (1 + maxHp%)) + flatMaxHp
+   ```
+
+</details>
+
 ## ⛔ block
 
 <details>
   <summary>📁 block details</summary>
+
+>
 
 > source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1266532805651726346 "@shayminhunter @TeachMeHisty (discord flyff universe)")
 
@@ -630,28 +696,76 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
 
-* `block = (dex / 8 * classBlockModifier) + blockB + extraBlock + variableBlock`
-```bash
-# Only calculate blocks for the character window
-# simple formula in Excel
-# A1 : your dex
-# A2 : classBlockModifier
-# A3 : blockB (same level enemies dex, in character window is 15)
+### calculate
 
-=MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
-```
+* Defender is Player.
 
-* The block rate displayed in the character window assumes that your enemies' level is the same as yours and that they have 15 dex, which can make your block rate seem higher than it really is.
+* block chance
 
-* `true character block = (dex / 8 * classBlockModifier) + extraBlock`
-```bash
-# simple formula in Excel
-# A1 : your dex
-# A2 : classBlockModifier
-# A3 : extraBlock
+   * block failure : `6 / 80 = 7.5%`
 
-=MIN(ROUNDDOWN(((A1/8)*A2),0)+A3, 100)
-```
+   * block success : `5 / 80 = 6.25%`
+
+   * Further calculate the block rate : `69 / 80 = 86.25%`
+
+   * If reaching the maximum block%, the block chance is **`6.25% + 86.25% = 92.5%`.**
+
+* blockRate (random values is `6 ~ 74`, total of `69` possible values)
+   ```js
+   blockRate = ((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock
+   // if blockRate < 0.0 , then 0.0
+
+   // ------------------------------------------------------------------------------------
+   // classBlockModifier = GetJobPropFactor( JOB_PROP_BLOCKING )
+   ```
+
+   * fAdd
+      ```js
+      fblockA = PlayerLevel / ((PlayerLevel + AttackerLevel) * 15.0)
+      fblockB = clamp(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0, 10)
+      // fblockB Limited to 0.0 ~ 10.0
+
+      fAdd = fblockA + fblockB
+      // if fAdd < 0.0 , then 0.0
+      ```
+   * ExtraBlock
+      ```js
+      block% + DST_BLOCK_RANGE%DST_BLOCK_MELEE%
+      // ------------------------------------------------------------------------------------
+      // block%
+      // if IsRangeAttack = rangedblock%, DST_BLOCK_RANGE%
+      // if not IsRangeAttack = meleeblock%, DST_BLOCK_MELEE%
+      // ------------------------------------------------------------------------------------
+      ```
+
+* character window block
+
+   ```js
+   CharacterWindowBlock = fblockB + (PlayerDex / 8.0) * classBlockModifier
+   ```
+   * The block rate displayed in the character window assumes that your enemies's level is the same as yours and that they have 15 dex, which can make your block rate seem higher than it really is.
+      ```js
+      // simple formula in Excel
+      // A1 : Player's Dex
+      // A2 : classBlockModifier
+      // A3 : Attacker's Dex (same level enemies Dex, in character window is always 15)
+
+      CharacterWindowBlock =MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
+      ```
+
+
+* true character block
+   ```js
+   CharacterTrueBlock = (PlayerDex / 8.0) * classBlockModifier + ExtraBlock
+   ```
+   ```js
+   // simple formula in Excel
+   // A1 : Player's Dex
+   // A2 : classBlockModifier
+   // A3 : ExtraBlock
+
+   CharacterTrueBlock =MIN(ROUNDDOWN(((A1/8)*A2),0)+A3, 100)
+   ```
 
 ### block cap
 
