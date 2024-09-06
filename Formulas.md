@@ -728,6 +728,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       fAdd = fblockA + fblockB
       // if fAdd < 0.0 , then 0.0
       ```
+
    * ExtraBlock
       ```js
       block% + DST_BLOCK_RANGE%DST_BLOCK_MELEE%
@@ -741,7 +742,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 * character window block
 
    ```js
-   CharacterWindowBlock = fblockB + (PlayerDex / 8.0) * classBlockModifier
+   CharacterWindowBlock = ((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock
    ```
    * The block rate displayed in the character window assumes that your enemies's level is the same as yours and that they have 15 dex, which can make your block rate seem higher than it really is.
       ```js
@@ -752,20 +753,6 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       CharacterWindowBlock =MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
       ```
-
-
-* true character block
-   ```js
-   CharacterTrueBlock = (PlayerDex / 8.0) * classBlockModifier + ExtraBlock
-   ```
-   ```js
-   // simple formula in Excel
-   // A1 : Player's Dex
-   // A2 : classBlockModifier
-   // A3 : ExtraBlock
-
-   CharacterTrueBlock =MIN(ROUNDDOWN(((A1/8)*A2),0)+A3, 100)
-   ```
 
 ### block cap
 
