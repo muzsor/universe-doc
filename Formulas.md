@@ -61,7 +61,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
       ```js
       // simplify formula
-      nHitRate = (AttackDex * 2.88 * AttackLevel) / ((AttackDex + DefenderParry) * (AttackLevel + DefenderLevel))
+      nHitRate = (2.88 * AttackDex * AttackLevel) / ((AttackDex + DefenderParry) * (AttackLevel + DefenderLevel))
       HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
       // Limited to 0.2 ~ 0.96
       ```
@@ -263,6 +263,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * defense
       ```js
+      // MoverAttack.cpp
+      // int CMover::CalcDefense( ATTACK_INFO* pInfo, BOOL bRandom )
       defense = computeDefense
               = computeGenericDefense
       ```
