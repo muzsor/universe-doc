@@ -742,7 +742,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 * character window block
 
    ```js
-   CharacterWindowBlock = ((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock
+   CharacterWindowBlock = ((PlayerDex / 8.0) * classBlockModifier) + fblockB + ExtraBlock
    ```
    * The block rate displayed in the character window assumes that your enemies's level is the same as yours and that they have 15 dex, which can make your block rate seem higher than it really is.
       ```js
