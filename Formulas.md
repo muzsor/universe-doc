@@ -971,8 +971,35 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // A1 : Player's Dex
       // A2 : classBlockModifier
       // A3 : Attacker's Dex (same level enemies Dex, in character window is always 15)
-
-      CharacterWindowBlock =MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
+      //CharacterWindowBlock =MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
+      ```
+      ```js
+      // simple formula
+      function getBlock(
+      defenderDex,
+      classBlockModifier,
+      extraBlock = 0,
+      attackerDex = 15
+      ) {
+         const blockB = Math.min(
+            Math.max(
+               Math.floor(
+                  (defenderDex + attackerDex + 2) * ((defenderDex - attackerDex) / 800.0)
+               ),
+               0
+            ),
+            10
+         )
+         return Math.min(
+            Math.max(
+               blockB +
+               Math.floor((defenderDex / 8.0) * classBlockModifier) +
+               extraBlock,
+               0
+            ),
+            100
+         )
+      }
       ```
 
    > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
