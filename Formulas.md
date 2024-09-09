@@ -809,7 +809,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * flatMaxHp : From Character's Gear, Buff unscaled `maxhp`.
 
    ```js
-   hp = (baseHealth * (1 + maxHp%)) + flatMaxHp
+   hp = (baseHealth + flatMaxHp) * (1 + maxHp%)
    ```
 
 </details>
