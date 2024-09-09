@@ -7,7 +7,7 @@
 > **The information used in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
 
 > [!CAUTION]
-> **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thanks you.** 🙏
+> **This document is for reference only and may not fully represent the game. If any inconvenience is caused, please contact me as soon as possible. Thank you.** 🙏
 
 <!-- Copyright 2024 © Gala Lab Corp. All Rights Reserved. -->
 
@@ -48,27 +48,32 @@ DamagePerSecond = computeDamage * hitsPerSecond
    hitsPerSecond = classHitsPerSecond * attackSpeed * HitRate
    ```
 
-   * HitRate
-      ```js
-      // ------------------------------------------------------------------------------------
-      // If not AUTO_ATTACK, this is always 100.
-      // ------------------------------------------------------------------------------------
+* HitRate
 
-      factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
-      hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
-      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
-      // Limited to 0.2 ~ 0.96
-      ```
-      ```js
-      // simplify formula
-      nHitRate = (2.88 * AttackDex * AttackLevel) / ((AttackDex + DefenderParry) * (AttackLevel + DefenderLevel))
-      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
-      // Limited to 0.2 ~ 0.96
-      ```
+   * hit rate in character window : It generally displays the incorrect value, with the value increasing by `1` for every `4` DEX, which isn't how DEX affects `hit rate` in reality. Additionally, it caps at `100`, whereas the actual limit should be `96`.
 
    * DefenderParry : From Defender's unscaled `parry` `DST_PARRY`.
 
+      * parry in character window : Displayed as a percentage, but the unit is incorrect (the number is correct).
+
    * ExtraHitRate : From Attacker's Gear, Buff scales `hitrate` `DST_ADJ_HITRATE`.
+
+   ```js
+   // ------------------------------------------------------------------------------------
+   // If not AUTO_ATTACK, this is always 100.
+   // ------------------------------------------------------------------------------------
+
+   factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
+   hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
+   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+   // Limited to 0.2 ~ 0.96
+   ```
+   ```js
+   // simplify formula
+   nHitRate = (2.88 * AttackDex * AttackLevel) / ((AttackDex + DefenderParry) * (AttackLevel + DefenderLevel))
+   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+   // Limited to 0.2 ~ 0.96
+   ```
 
 ### auto attack
 
@@ -113,7 +118,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
 
       // ------------------------------------------------------------------------------------
-      // example (Lusaka's Crystal Axe U+5, Demol Earring U+5, Spirit Fortune) :
+      // example (Lusaka's Crystal Axe U+5, Demol Earring U+5 * 2, Spirit Fortune) :
       // ((544 ~ 546 * 2) + 3123 + (540 * 2) + 150) * 1.39 + 58.0948 = 7621.0848 ~ 7626.6448
       // ------------------------------------------------------------------------------------
       ```
@@ -182,7 +187,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // DST_TWOHANDMASTER_DMG
       // ------------------------------------------------------------------------------------
       // example (Blade Skill Axe) :
-      // Smite Axe axeattack + 50 and Axe Mastery axeattack + 100, total = 150
+      // Smite Axe MAX axeattack + 50 and Axe Mastery MAX axeattack + 100, total = 150
       // ------------------------------------------------------------------------------------
 
 
@@ -285,7 +290,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // criticalChance = (((60 / 10) * 1) + 45)) * CriticalResistFactor = 51 * CriticalResistFactor
       // ------------------------------------------------------------------------------------
       ```
-      * character window critical chance
+      * critical chance in character window
          ```js
          // int CWndCharInfo::GetVirtualCritical()
          criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance)
@@ -375,16 +380,28 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * MeleeSkillPower
       ```js
-      MeleeSkillPower = (((WeaponAttackPowerMinMax + (SkillMinMaxAttack + WeaponAdditionalSkillDamage) * 5 + ReferStat - 20) * (16 + SkillLevel)) / 13) + PlusWeaponAttack + AttackerPlusDamage
+      MeleeSkillPower = Math.floor(((WeaponAttackPowerMinMax + (SkillMinMaxAttack + WeaponAdditionalSkillDamage) * 5 + ReferStat - 20) * (16 + SkillLevel)) / 13) + PlusWeaponAttack + AttackerPlusDamage
+      ```
+      ```js
+      // ------------------------------------------------------------------------------------
+      // example (Bldae use Lusaka's Crystal Axe U+5, Demol Earring U+5, Armor Penetrate Lv10 PvE, Smite Axe MAX , Axe Mastery MAX) :
+      // Math.floor(((814.16 ~ 816.94 + (79 ~ 80 + 0) * 5 + 1590 - 20) * (16 + 10)) / 13) = 5558 ~ 5573
+      // 5558 ~ 5573 + 150 + (540 * 2) = 6788 ~ 6803
+      // ------------------------------------------------------------------------------------
+      // Average Dps
+      // Math.floor((6788 + 6803) / 2) = 6795
+      // ------------------------------------------------------------------------------------
       ```
 
    * WeaponAttackPowerMinMax
       ```js
-      WeaponAttackPowerMinMax = WeaponBaseAttackMinMax * WeaponMultiplier + MainhandWeaponUpgradeLevel^1.5
+      // MoverAttack.cpp
+      // void CMover::GetItemATKPower( int *pnMin, int *pnMax, ItemProp* pItemProp, CItemElem *pWeapon )
+      WeaponAttackPowerMinMax = WeaponBaseAttackMinMax * WeaponMultiplier + Math.floor(MainhandWeaponUpgradeLevel^1.5)
 
       // ------------------------------------------------------------------------------------
       // example (Lusaka's Crystal Axe U+5) :
-      // (544 ~ 546 * 1.39) + 58.0948 = 814.25 ~ 817.03
+      // (544 ~ 546 * 1.39) + 58 = 814.16 ~ 816.94
       // ------------------------------------------------------------------------------------
       ```
 
@@ -396,21 +413,83 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * ReferStat
       ```js
       // If there are two Stats, add them after calculation.
-      ReferStat = AttackerStat * ((((PvEPvPSkillStatScale * 50.0) - (SkillLevel + 1)) / 5.0) / 10.0) + ((AttackerStat * SkillLevel) / 50.0)
-                = AttackerStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50)
-
+      ReferStat = Math.floor(AttackerStat * ((((PvEPvPSkillStatScale * 50.0) - (SkillLevel + 1)) / 5.0) / 10.0) + ((AttackerStat * SkillLevel) / 50.0))
+                = Math.floor(AttackerStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50))
+      ```
+      ```js
+      {
+         "id": 9740,
+         "name": {
+            "en": "Armor Penetrate",
+            //
+            /* For brevity, not all details are shown */
+            //
+         }
+         //
+         /* For brevity, not all details are shown */
+         //
+         "magic": false,
+         //
+         /* For brevity, not all details are shown */
+         //
+         "levels": [
+            //
+            /* For brevity, not all details are shown */
+            //
+            {
+               "damageMultiplier": 0.6,
+               "minAttack": 79,
+               "maxAttack": 80,
+               "probabilityPVP": 90,
+               "consumedFP": 58,
+               "cooldown": 0.2,
+               "casting": 1.25,
+               "duration": 20,
+               "durationPVP": 20,
+               "abilities": [
+                  {
+                     "parameter": "block",
+                     "add": -40,
+                     "rate": true
+                  }
+               ],
+               "scalingParameters": [
+                  {
+                     "parameter": "attack",
+                     "stat": "str",
+                     "scale": 3,
+                     "pvp": true,
+                     "pve": true
+                  },
+                  {
+                     "parameter": "attack",
+                     "stat": "dex",
+                     "scale": 1.7,
+                     "pvp": true,
+                     "pve": true
+                  }
+               ]
+            }
+         ]
+      }
       // ------------------------------------------------------------------------------------
       // example (Bldae use Armor Penetrate Lv10 PvE str scale 3, dex scale 1.7) :
       // character's str 500, dex 60 :
-      // (500 * (((3 * 50.0) - 1) / 50.0)) + (60 * (((1.7 * 50.0) - 1) /50.0)) = 1590.8
+      // Math.floor((500 * (((3 * 50.0) - 1) / 50.0)) + (60 * (((1.7 * 50.0) - 1) /50.0))) = 1590
       // ------------------------------------------------------------------------------------
       ```
 
-   * SkillMinAttack : skill.minAttack and skill.maxAttack
+   * SkillMinMaxAttack : `skill.levels[skillLevel].minAttack` and `skill.levels[skillLevel].maxAttack`.
 
-   * WeaponAdditionalSkillDamage : weapon.additionalSkillDamage
+   * WeaponAdditionalSkillDamage : `weapon.additionalSkillDamage`.
 
    * PlusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
+      ```js
+      // ------------------------------------------------------------------------------------
+      // example (Blade Skill Axe) :
+      // Smite Axe MAX axeattack + 50 and Axe Mastery MAX axeattack + 100, total = 150
+      // ------------------------------------------------------------------------------------
+      ```
 
    * AttackerPlusDamage : From Attacker's Gear, Buff unscaled `damage` `DST_CHR_DMG`.
 
@@ -756,21 +835,25 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * block chance
 
-   * block failure : `6 / 80 = 7.5%`
+   * block failure : `6 / 80 = 7.5%` (random values is `0 ~ 5`, total of `6` possible values)
 
-   * block success : `5 / 80 = 6.25%`
 
-   * Further calculate the block rate : `69 / 80 = 86.25%`
+   * block success : `5 / 80 = 6.25%` (random values is `75 ~ 79`, total of `5` possible values)
 
-   * If reaching the maximum block%, the block chance is **`6.25% + 86.25% = 92.5%`.**
+   * Further calculate the block rate : `69 / 80 = 86.25%` (random values is `6 ~ 74`, total of `69` possible values)
 
-* blockRate (random values is `6 ~ 74`, total of `69` possible values)
+   * If reaching the maximum block rate, the block chance is **`6.25% + 86.25% = 92.5%`.**
+
+* BlockRate
    ```js
-   blockRate = ((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock
-   // if blockRate < 0.0 , then 0.0
+   // MoverAttack.cpp
+   // float CMover::GetBlockFactor( CMover* pAttacker, ATTACK_INFO* pInfo )
+   BlockRate = Math.floor(((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock)
+   // if BlockRate < 0.0 , then 0.0
 
    // ------------------------------------------------------------------------------------
    // classBlockModifier = GetJobPropFactor( JOB_PROP_BLOCKING )
+   // ------------------------------------------------------------------------------------
    ```
 
    * fAdd
@@ -785,19 +868,20 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * ExtraBlock
       ```js
-      block% + DST_BLOCK_RANGE%DST_BLOCK_MELEE%
+      ExtraBlock = block% + DST_BLOCK_RANGE%DST_BLOCK_MELEE%
       // ------------------------------------------------------------------------------------
-      // block%
+      // block% : From Defender's Gear, Buff scales block
       // if IsRangeAttack = rangedblock%, DST_BLOCK_RANGE%
       // if not IsRangeAttack = meleeblock%, DST_BLOCK_MELEE%
       // ------------------------------------------------------------------------------------
       ```
 
-* character window block
+* block in character window
 
    ```js
    CharacterWindowBlock = ((PlayerDex / 8.0) * classBlockModifier) + fblockB + ExtraBlock
    ```
+
    * The block rate displayed in the character window assumes that your enemies's level is the same as yours and that they have 15 dex, which can make your block rate seem higher than it really is.
       ```js
       // simple formula in Excel
@@ -814,11 +898,18 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 <div align="center"><img src="./formulas/block_rate_translation.png" alt="block_rate_translation.png"/></div>
 
-<div align="center"><img src="./formulas/block_rate_translation_table.png" alt="block_rate_translation_table.png"/></div>
+<div align="center">
+
+**The Display Block Rate shown in the image refers to the Block Rate that has been calculated, rather than the Block Rate displayed in the Character Window.**
+
+<img src="./formulas/block_rate_translation_table.png" alt="block_rate_translation_table.png"/></div>
+
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1085622720575852654 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * 75% is still the block cap. For those reading this and wondering why you may see a higher % in your stat window, it’s because you can technically have more block % but it caps at 75%. Block is rolled out of 80, so 75% block = 75/80 = 93.75% chance to block.
+
+   * **It might be incorrect, as the actual calculation should be `92.5%`.**
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1174839023383085080 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 

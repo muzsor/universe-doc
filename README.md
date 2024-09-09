@@ -7,7 +7,7 @@
 > **The information used in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
 
 > [!CAUTION]
-> **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thanks you.** 🙏
+> **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thank you.** 🙏
 
 <!-- Copyright 2024 © Gala Lab Corp. All Rights Reserved. -->
 
