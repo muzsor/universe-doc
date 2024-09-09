@@ -52,28 +52,57 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * hit rate in character window : It generally displays the incorrect value, with the value increasing by `1` for every `4` DEX, which isn't how DEX affects `hit rate` in reality. Additionally, it caps at `100`, whereas the actual limit should be `96`.
 
+   ```js
+   // ------------------------------------------------------------------------------------
+   // Attacker is Player, Defender is NPC
+   factor = 1.6 * 1.5 * ((AttackerLevel * 1.2) / (AttackerLevel + DefenderLevel))
+   // ------------------------------------------------------------------------------------
+
+   // ------------------------------------------------------------------------------------
+   // Attacker is NPC, Defender is Player
+   factor = 1.5 * 2.0 * ((AttackerLevel * 0.5) / (AttackerLevel + DefenderLevel * 0.3))
+   // -----------------------------------------------------------------------------------
+   ```
+   ```js
+   // ------------------------------------------------------------------------------------
+   // If not AUTO_ATTACK, this is always 100.
+   // ------------------------------------------------------------------------------------
+   hitProb = (AttackerDex / (AttackerDex + DefenderParry)) * factor
+   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+   // Limited to 0.2 ~ 0.96
+   // ------------------------------------------------------------------------------------
+   ```
+
    * DefenderParry : From Defender's unscaled `parry` `DST_PARRY`.
 
       * parry in character window : Displayed as a percentage, but the unit is incorrect (the number is correct).
 
    * ExtraHitRate : From Attacker's Gear, Buff scales `hitrate` `DST_ADJ_HITRATE`.
 
-   ```js
-   // ------------------------------------------------------------------------------------
-   // If not AUTO_ATTACK, this is always 100.
-   // ------------------------------------------------------------------------------------
+   * Player VS Monster
+      ```js
+      // simplify formula
+      // Attacker is Player, Defender is NPC
+      nHitRate = (2.88 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel))
+      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+      // Limited to 0.2 ~ 0.96
 
-   factor = 1.6 * 1.5 * ((AttackLevel * 1.2) / (AttackLevel + DefenderLevel))
-   hitProb = (AttackDex / (AttackDex + DefenderParry)) * factor
-   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
-   // Limited to 0.2 ~ 0.96
-   ```
-   ```js
-   // simplify formula
-   nHitRate = (2.88 * AttackDex * AttackLevel) / ((AttackDex + DefenderParry) * (AttackLevel + DefenderLevel))
-   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
-   // Limited to 0.2 ~ 0.96
-   ```
+      // ------------------------------------------------------------------------------------
+      // example (Lv160 Blade's dex 60 vs Beast King Khan https://api.flyff.com/monster/16244) :
+      // nHitRate = (2.88 * 60 * 160) / ((60 + 178) * (160 + 150)) = 0.374
+      // Equipment Set +10 Hit Rate +45%, Accuracy +30%
+      // HitRate = clamp(0.374 + 0.45 + 0.3, 0.2, 0.96) = 0.96 = 96%
+      // ------------------------------------------------------------------------------------
+      ```
+
+   * Monster VS Player
+      ```js
+      // simplify formula
+      // Attacker is NPC, Defender is Player
+      nHitRate = (1.5 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel * 0.3))
+      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+      // Limited to 0.2 ~ 0.96
+      ```
 
 ### auto attack
 
@@ -145,9 +174,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // yoyo WT_MELEE_YOYO 12
       // bow WT_RANGE_BOW 14
       // ------------------------------------------------------------------------------------
-      // example (Blade str 500 and use Axe) :
+      // example (Blade's str 500 and use Axe) :
       // (500 - 12) * 5.7 = 2781.6
-      // example (Blade str 500 and use Sword) :
+      // example (Blade's str 500 and use Sword) :
       // (500 - 12) * 4.7 = 2,293.6
       // ------------------------------------------------------------------------------------
 
@@ -186,7 +215,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // DST_BOWMASTER_DMG
       // DST_TWOHANDMASTER_DMG
       // ------------------------------------------------------------------------------------
-      // example (Blade Skill Axe) :
+      // example (Blade's Skill Axe) :
       // Smite Axe MAX axeattack + 50 and Axe Mastery MAX axeattack + 100, total = 150
       // ------------------------------------------------------------------------------------
 
@@ -276,24 +305,32 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * 💥 criticalChance
 
+      * ClassCriticalFactor : `critical`, `class.critical`, `job.critical`, `JOB_PROP_CRITICAL`.
+
       * AttackerCriticalChance : From Attacker's Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
 
-      * ClassCriticalFactor : `critical`, `class.critical`, `job.critical`, `JOB_PROP_CRITICAL`.
+      * Precision： Increases the Critical Chance on the next attack of all party members around the leader by `0.5%` x Amount of party members.
+
+      * CriticalResist% : From Defender's Gear, Buff scales `criticalresist`.
 
       ```js
       // MoverAttack.cpp
       // int CMover::GetCriticalProb( void )
-      criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance) * CriticalResistFactor
+      criticalChance = ((((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0) * ( 1 - CriticalResist%)
 
       // ------------------------------------------------------------------------------------
+      // MoverAttack.cpp
+      // BOOL CMover::IsCriticalAttack( CMover* pDefender, DWORD dwAtkFlags )
+      // ------------------------------------------------------------------------------------
       // example (Blade's str 500, dex 60, cc 45) :
-      // criticalChance = (((60 / 10) * 1) + 45)) * CriticalResistFactor = 51 * CriticalResistFactor
+      // criticalChance = ((((60 / 10) * 1) + 45) / 100.0) * (1 - CriticalResist%) = 51% * (1 - CriticalResist%)
       // ------------------------------------------------------------------------------------
       ```
       * critical chance in character window
          ```js
+         // WndField.cpp
          // int CWndCharInfo::GetVirtualCritical()
-         criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance)
+         criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0
          ```
 
    * 💥 criticalFactor
@@ -315,6 +352,16 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // Average Dps
       criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
       // ------------------------------------------------------------------------------------
+
+
+      // ------------------------------------------------------------------------------------
+      // Attacker is NPC Mob
+      minCritical = 1.4
+      maxCritical = 1.8
+      // ------------------------------------------------------------------------------------
+      // Average Dps
+      criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
+      // ------------------------------------------------------------------------------------
       ```
 
    * 💥 criticalDamage
@@ -322,28 +369,30 @@ DamagePerSecond = computeDamage * hitsPerSecond
       <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
 
       ```js
-      criticalDamage = damageAfterApplyDefense * criticalFactor * (1 + CriticalDamage%)
+      criticalDamage = applyAttackDefense(computeAttack, defense) * criticalFactor * (1 + CriticalDamage%)
+                     = damageAfterApplyDefense * criticalFactor * (1 + CriticalDamage%)
+      // if (1 + CriticalDamage%), fCriticalBonus < 0.1, then 0.1
       // ------------------------------------------------------------------------------------
-      // criticalBonus, CriticalDamage% : From Attacker's Gear, Buff scales criticaldamage, DST_CRITICAL_BONUS
+      // CriticalDamage% : From Attacker's Gear, Buff scales criticaldamage, DST_CRITICAL_BONUS
       // ------------------------------------------------------------------------------------
       ```
 
    * 💥 **damageAfterCritical**
       ```js
       // linearInterpolation
-      damageAfterCritical = linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance)
-                          = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%))
+      damageAfterCritical = Math.floor(linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance))
+                          = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%)))
       ```
       ```js
       // your level <= monster's level, average dps
-      damageAfterCritical = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.25 * (1 + criticalDamage%))
+      damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.25 * (1 + criticalDamage%)))
       ```
       ```js
       // monster's level < your level, average dps
-      damageAfterCritical = damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.6 * (1 + criticalDamage%))
+      damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.6 * (1 + criticalDamage%)))
       ```
 
-   * ElementResistFactor : `0.7`, `1.0`, `1.3`
+   * ElementResistFactor : `0.7`(weak against), `1.0`(none), `1.3`(strong against)
 
    * DamageMultiplier
       ```js
@@ -417,6 +466,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
                 = Math.floor(AttackerStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50))
       ```
       ```js
+      // Armor Penetrate https://api.flyff.com/skill/9740
       {
          "id": 9740,
          "name": {
@@ -486,7 +536,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * PlusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
       ```js
       // ------------------------------------------------------------------------------------
-      // example (Blade Skill Axe) :
+      // example (Blade's Skill Axe) :
       // Smite Axe MAX axeattack + 50 and Axe Mastery MAX axeattack + 100, total = 150
       // ------------------------------------------------------------------------------------
       ```
@@ -514,7 +564,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyDefenseParryCritical(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 = damage * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = applyDefenseParryCritical * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
    ```
 
    * applyDefenseParryCritical
@@ -528,9 +578,23 @@ DamagePerSecond = computeDamage * hitsPerSecond
               = computeGenericDefense
       ```
 
-   * ElementResistFactor : `0.8`, `1.0`, `1.4`
+   * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
+      ```js
+      ElementResistFactor = SkillElementVSDefenderElementFactor * SkillElementVSWeaponElementFactor
+                          = (0.7, 1.0, 1.3) * (0.9, 1.1)
 
-      * If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
+      // ------------------------------------------------------------------------------------
+      // Skill Element VS Defender Element Factor
+      // weak against = 0.7
+      // none against = 1.0
+      // strong against = 1.3
+      // ------------------------------------------------------------------------------------
+      // Skill Element VS Weapon Element Factor
+      // If the weapon is weak compared to the skill element = 0.9
+      // If the skill and weapon match the element = 1.1
+      // ------------------------------------------------------------------------------------
+
+      ```
 
    * DamageMultiplier
       ```js
@@ -569,13 +633,16 @@ DamagePerSecond = computeDamage * hitsPerSecond
 * computeAttack
    ```js
    computeAttack = (MagicSkillPower * AttackMultiplier) + FlatAttack
-                 = (MeleeSkillPower MeleeSkillPower * (1+ magicattack%) * (1 + ElementMastery%) * AttackMultiplier) + FlatAttack
+                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * AttackMultiplier) + FlatAttack
    ```
 
    * MagicSkillPower
+
+      * magicattack% : From Attacker's Gear, Buff scales `magicattack`.
+
       ```js
       // MagicSkillPower = MeleeSkillPower * (1 + DST_ADDMAGIC%) * ( 1 + DST_MASTRY_ELEMENT%)
-      MagicSkillPower = MeleeSkillPower * (1+ magicattack%) * (1 + ElementMastery%)
+      MagicSkillPower = MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%)
       ```
 
    * ElementMastery% : From Attacker's Gear, Buff scales `firemastery` `DST_MASTRY_FIRE`, `watermastery` `DST_MASTRY_WATER`, `electricitymastery` `DST_MASTRY_ELECTRICITY`, `windmastery` `DST_MASTRY_WIND`, `earthmastery` `DST_MASTRY_EARTH`.
@@ -599,16 +666,16 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyMagicSkillDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 = damage * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = applyMagicSkillDefense * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
    ```
 
    * applyMagicSkillDefense
+
+      * magicDefense% : From Attacker's Gear, Buff scales `magicDefense` `DST_RESIST_MAGIC_RATE`.
+
       ```js
       // nATK = nATK - nATK * pDefender->GetParam( DST_RESIST_MAGIC_RATE, 0 ) / 100
       applyMagicSkillDefense = applyAttackDefense((computeAttack * (1 − magicDefense%)), defense)
-      // ------------------------------------------------------------------------------------
-      // magicDefense% : From Defender's scales magicDefense, DST_RESIST_MAGIC_RATE
-      // ------------------------------------------------------------------------------------
       ```
 
    * defense
@@ -617,9 +684,23 @@ DamagePerSecond = computeDamage * hitsPerSecond
               = computeGenericDefense
       ```
 
-   * ElementResistFactor : `0.8`, `1.0`, `1.4`
+   * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
+      ```js
+      ElementResistFactor = SkillElementVSDefenderElementFactor * SkillElementVSWeaponElementFactor
+                          = (0.7, 1.0, 1.3) * (0.9, 1.1)
 
-      * If the skill and weapon match the element, apply `10%` more damage; otherwise, apply `-10%` damage.
+      // ------------------------------------------------------------------------------------
+      // Skill Element VS Defender Element Factor
+      // weak against = 0.7
+      // none against = 1.0
+      // strong against = 1.3
+      // ------------------------------------------------------------------------------------
+      // Skill Element VS Weapon Element Factor
+      // If the weapon is weak compared to the skill element = 0.9
+      // If the skill and weapon match the element = 1.1
+      // ------------------------------------------------------------------------------------
+
+      ```
 
    * DamageMultiplier
       ```js
@@ -636,6 +717,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
                                      = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
+
+      // ------------------------------------------------------------------------------------
       //for ( i = 0; i < 16; i++ ) {
       //  console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
       //}
