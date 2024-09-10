@@ -959,6 +959,46 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
       ```
 
+   * calculate
+   ```js
+   function calculateBlock(
+     playerLevel,
+     attackerLevel,
+     playerDex,
+     attackerDex,
+     extraRangedBlock = 0,
+     extraMeleeBlock = 0,
+     classBlockModifier = 1,
+     isRangeAttack = false,
+   ) {
+     let blockA = playerLevel / ((playerLevel + attackerLevel) * 15.0)
+     let blockB = Math.min(
+       Math.max(
+          Math.floor(
+          (playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800.0)
+          ),
+          0
+       ),
+       10
+     )
+     // rangedblock & meleeblock
+     let extraBlock = isRangeAttack ? extraRangedBlock : extraMeleeBlock
+     let blockRate = Math.max(
+       Math.floor(
+         (playerDex / 8.0) * classBlockModifier + blockA + blockB + extraBlock
+       ),
+       0
+     )
+     return blockRate
+   }
+
+   // ------------------------------------------------------------------------------------
+   // example (Lv160 Knight's dex 240, extra Block +45% vs Beast King Khan https://api.flyff.com/monster/16244)
+   // calculateBlock(160, 150, 240, 251, 45, 45) = 75
+   // ------------------------------------------------------------------------------------
+   ```
+
+
 * block in character window
 
    ```js
@@ -976,30 +1016,39 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // simple formula
       function getBlock(
-      defenderDex,
-      classBlockModifier,
-      extraBlock = 0,
-      attackerDex = 15
+        playerDex,
+        classBlockModifier = 1,
+        extraRangedBlock = 0,
+        extraMeleeBlock = 0,
+        isRangeAttack = false,
+        attackerDex = 15,
       ) {
-         const blockB = Math.min(
-            Math.max(
-               Math.floor(
-                  (defenderDex + attackerDex + 2) * ((defenderDex - attackerDex) / 800.0)
-               ),
-               0
+        const blockB = Math.min(
+          Math.max(
+            Math.floor(
+              (playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800.0)
             ),
-            10
-         )
-         return Math.min(
-            Math.max(
-               blockB +
-               Math.floor((defenderDex / 8.0) * classBlockModifier) +
-               extraBlock,
-               0
-            ),
-            100
-         )
+            0
+          ),
+          10
+        )
+         // rangedblock & meleeblock
+        let extraBlock = isRangeAttack ? extraRangedBlock : extraMeleeBlock
+        return Math.min(
+          Math.max(
+            blockB +
+              Math.floor((playerDex / 8.0) * classBlockModifier) +
+              extraBlock,
+            0
+          ),
+          100
+        )
       }
+
+      // ------------------------------------------------------------------------------------
+      // example (Lv160 Knight's dex 240, extra Block +45%)
+      // getBlock(240, 1 ,45, 45) = 85
+      // ------------------------------------------------------------------------------------
       ```
 
    > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
