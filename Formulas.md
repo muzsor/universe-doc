@@ -866,7 +866,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // int CMover::GetMaxOriginHitPoint( BOOL bOriginal )
    baseHp = 150 + (level * classHpModifier) + (sta * level * classHpModifier / 100)
       = 150 + level * (classHpModifier + (classHpModifier / 100 * sta))
-      = 150 + classHpModifier * level * (1 + (sta / 100 ))
+      = 150 + classHpModifier * level * (1 + (sta / 100))
    ```
 
 ### max hp
@@ -1062,30 +1062,37 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // if BlockRate < 0.0 , then 0.0
    ```
 
-* calculate
+* Average Multiplier
    ```js
-   // average multiplier
-   const minBlock = 0.1;
-   const regularBlock = 0.2;
-   blockFactor = 1 - BlockRate / 100.0 + ((minBlock + regularBlock) / 2.0) * (BlockRate / 100.0);
-   ```
-   ```js
-   // average multiplier
-   function calculateBlockFactor(defenderParry, defenderLevel) {
-     const minBlock = 0.1
-     const regularBlock = 0.2
-     const blockRate = Math.max(Math.floor((defenderParry - defenderLevel) * 0.5), 0)
-     blockFactor =
-       1 -
-       blockRate / 100.0 +
-       ((minBlock + regularBlock) / 2.0) * (blockRate / 100.0)
-     return blockFactor
+   // Average Multiplier
+   function calculateAverageBlockFactor(
+     defenderParry,
+     defenderLevel,
+     numSamples = 1_000_000_000
+   ) {
+     const nBR = Math.max(Math.floor((defenderParry - defenderLevel) * 0.5), 0);
+
+     let sum = 0
+     for (let i = 0; i < numSamples; i++) {
+       let r = Math.floor(Math.random() * 100)
+
+       if (r <= 5) {
+         sum += 1.0
+       } else if (r >= 95) {
+         sum += 0.1
+       } else {
+         sum += nBR > r ? 0.2 : 1.0;
+       }
+     }
+     return sum / numSamples
    }
 
    // ------------------------------------------------------------------------------------
    // example (Beast King Khan https://api.flyff.com/monster/16244)
-   // calculateBlockFactor(178, 150) = 0.881 = 88.1%
    // ------------------------------------------------------------------------------------
+   const averageValue = calculateAverageBlockFactor(178, 150)
+   console.log('Average value:', averageValue)
+   // Average value: 0.8910116515800439
    ```
 
 ### block cap
