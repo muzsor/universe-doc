@@ -1199,6 +1199,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/64.Eastern_Warrior.jpg" alt="64.Eastern_Warrior.jpg" width="300"/></div>
 
+65.  `2024-09-10`: `Overalls`
+
+   * Hat / Suit / Shoes / RGB Speaker (Cloak)
+
+<div align="center"><img src="./system/costume_collection/65.Overalls.jpg" alt="65.Overalls.jpg" width="300"/></div>
+
 </details>
 
 </details></td></tr></table>
