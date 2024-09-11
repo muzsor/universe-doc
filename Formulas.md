@@ -27,6 +27,8 @@
     - [max hp](#max-hp)
   - [⛔ block](#-block)
     - [calculate](#calculate)
+      - [Monster VS Player](#monster-vs-player)
+      - [Player VS Monster](#player-vs-monster)
     - [block cap](#block-cap)
     - [block penetration](#block-penetration)
 
@@ -68,7 +70,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // If not AUTO_ATTACK, this is always 100.
    // ------------------------------------------------------------------------------------
    hitProb = (AttackerDex / (AttackerDex + DefenderParry)) * factor
-   HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+   HitRate = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
    // Limited to 0.2 ~ 0.96
    // ------------------------------------------------------------------------------------
    ```
@@ -84,14 +86,14 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // simplify formula
       // Attacker is Player, Defender is NPC
       nHitRate = (2.88 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel))
-      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+      HitRate = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
       // Limited to 0.2 ~ 0.96
 
       // ------------------------------------------------------------------------------------
       // example (Lv160 Blade's dex 60 vs Beast King Khan https://api.flyff.com/monster/16244) :
       // nHitRate = (2.88 * 60 * 160) / ((60 + 178) * (160 + 150)) = 0.374
       // Equipment Set +10 Hit Rate +45%, Accuracy +30%
-      // HitRate = clamp(0.374 + 0.45 + 0.3, 0.2, 0.96) = 0.96 = 96%
+      // HitRate = Math.min(Math.max((0.374 + 0.45 + 0.3), 0.2), 0.96) = 0.96 = 96%
       // ------------------------------------------------------------------------------------
       ```
 
@@ -100,7 +102,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // simplify formula
       // Attacker is NPC, Defender is Player
       nHitRate = (1.5 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel * 0.3))
-      HitRate = clamp(hitRate + ExtraHitRate, 0.2, 0.96)
+      HitRate = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
       // Limited to 0.2 ~ 0.96
       ```
 
@@ -914,16 +916,17 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 ### calculate
 
+#### Monster VS Player
+
 * Defender is Player.
 
 * block chance
 
-   * block failure : `6 / 80 = 7.5%` (random values is `0 ~ 5`, total of `6` possible values)
+   * block failure : `6 / 80 = 7.5%` (random values is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
 
+   * block success : `5 / 80 = 6.25%` (random values is `75 ~ 79`, total of `5` possible values), blockFactor return `0.2`.
 
-   * block success : `5 / 80 = 6.25%` (random values is `75 ~ 79`, total of `5` possible values)
-
-   * Further calculate the block rate : `69 / 80 = 86.25%` (random values is `6 ~ 74`, total of `69` possible values)
+   * Further calculate the block rate : `69 / 80 = 86.25%` (random values is `6 ~ 74`, total of `69` possible values), blockFactor return `0.2`.
 
    * If reaching the maximum block rate, the block chance is **`6.25% + 86.25% = 92.5%`.**
 
@@ -931,7 +934,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```js
    // MoverAttack.cpp
    // float CMover::GetBlockFactor( CMover* pAttacker, ATTACK_INFO* pInfo )
-   BlockRate = Math.floor(((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock)
+   BlockRate = Math.max(Math.floor(((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock), 0)
    // if BlockRate < 0.0 , then 0.0
 
    // ------------------------------------------------------------------------------------
@@ -942,7 +945,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * fAdd
       ```js
       fblockA = PlayerLevel / ((PlayerLevel + AttackerLevel) * 15.0)
-      fblockB = clamp(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0, 10)
+      fblockB = Math.min(Math.max(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0), 10)
       // fblockB Limited to 0.0 ~ 10.0
 
       fAdd = fblockA + fblockB
@@ -959,7 +962,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
       ```
 
-   * calculate
+* calculate
    ```js
    function calculateBlock(
      playerLevel,
@@ -993,7 +996,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    }
 
    // ------------------------------------------------------------------------------------
-   // example (Lv160 Knight's dex 240, extra Block +45% vs Beast King Khan https://api.flyff.com/monster/16244)
+   // example (Beast King Khan https://api.flyff.com/monster/16244 vs Lv160 Knight's dex 240, extra Block +45%)
    // calculateBlock(160, 150, 240, 251, 45, 45) = 75
    // ------------------------------------------------------------------------------------
    ```
@@ -1052,6 +1055,52 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
+
+#### Player VS Monster
+
+* Defender is Monster.
+
+* block chance
+
+   * block failure : `6 / 100 = 6%` (random values is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
+
+   * block success : `5 / 100 = 5%` (random values is `95 ~ 99`, total of `5` possible values), blockFactor return `0.1`.
+
+   * Further calculate the block rate : `89 / 100 = 89%` (random values is `6 ~ 94`, total of `89` possible values), blockFactor return `0.2`.
+
+> `xRandom(100)` should only return numbers between `0` and `99`, the comment in the code is likely incorrect.
+
+* BlockRate
+   ```js
+   BlockRate = Math.max(Math.floor((DefenderParry - DefenderLevel) * 0.5)), 0)
+   // if BlockRate < 0.0 , then 0.0
+   ```
+
+* calculate
+   ```js
+   // average multiplier
+   const minBlock = 0.1;
+   const regularBlock = 0.2;
+   blockFactor = 1 - BlockRate / 100.0 + ((minBlock + regularBlock) / 2.0) * (BlockRate / 100.0);
+   ```
+   ```js
+   // average multiplier
+   function calculateBlockFactor(defenderParry, defenderLevel) {
+     const minBlock = 0.1
+     const regularBlock = 0.2
+     const blockRate = Math.max(Math.floor((defenderParry - defenderLevel) * 0.5), 0)
+     blockFactor =
+       1 -
+       blockRate / 100.0 +
+       ((minBlock + regularBlock) / 2.0) * (blockRate / 100.0)
+     return blockFactor
+   }
+
+   // ------------------------------------------------------------------------------------
+   // example (Beast King Khan https://api.flyff.com/monster/16244)
+   // calculateBlockFactor(178, 150) = 0.881 = 88.1%
+   // ------------------------------------------------------------------------------------
+   ```
 
 ### block cap
 
