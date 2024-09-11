@@ -843,58 +843,44 @@ DamagePerSecond = computeDamage * hitsPerSecond
 <details>
   <summary>📁 hp details</summary>
 
-* `DST_HP`
+* `m_nHitPoint`, `DST_HP`
 
-* Vagrant
-   ```js
-   hp = 150 + (level * 18) + (sta * level * 0.18)
-      = 150 + level * (18 + (0.18 * sta))
-   ```
+* baseHp
 
-* Mercenary, Blade, Jester, Psykeeper, Elementor
-   ```js
-   hp = 150 + (level * 30) + (sta * level * 0.3)
-      = 150 + level * (30 + (0.3 * sta))
-   ```
+   * Vagrant : `classHpModifier = 18`
 
-* Assist, Acrobat, Magician
-   ```js
-   hp = 150 + (level * 28) + (sta * level * 0.28)
-      = 150 + level * (28 + (0.28 * sta))
-   ```
+   * Assist, Acrobat, Magician : `classHpModifier = 28`
 
-* Knight
-   ```js
-   hp = 150 + (level * 40) + (sta * level * 0.4)
-      = 150 + level * (40 + (0.4 * sta))
-   ```
+   * Mercenary, Blade, Jester, Psykeeper, Elementor : `classHpModifier = 30`
 
-* Ringmaster
-   ```js
-   hp = 150 + (level * 34) + (sta * level * 0.34)
-      = 150 + level * (34 + (0.34 * sta))
-   ```
+   * Ranger : `classHpModifier = 32`
 
-* Billposter
-   ```js
-   hp = 150 + (level * 36) + (sta * level * 0.36)
-      = 150 + level * (36 + (0.36 * sta))
-   ```
+   * Ringmaster : `classHpModifier = 34`
 
-* Ranger
+   * Billposter : `classHpModifier = 36`
+
+   * Knight : `classHpModifier = 40`
+
    ```js
-   hp = 150 + (level * 32) + (sta * level * 0.32)
-      = 150 + level * (32 + (0.32 * sta))
+   // MoverParam.cpp
+   // int CMover::GetMaxOriginHitPoint( BOOL bOriginal )
+   baseHp = 150 + (level * classHpModifier) + (sta * level * classHpModifier / 100)
+      = 150 + level * (classHpModifier + (classHpModifier / 100 * sta))
+      = 150 + classHpModifier * level * (1 + (sta / 100 ))
    ```
 
 ### max hp
 
 * hp
 
-   * flatMaxHp : From Character's Gear, Buff unscaled `maxhp`.
+   * flatMaxHp : From Character's Gear, Buff unscaled `maxhp` `DST_HP_MAX`.
+
+   * maxHp% :  From Character's Gear, Buff scales `maxhp` `DST_HP_MAX_RATE`.
 
    ```js
-   hp = (baseHealth + flatMaxHp) * (1 + maxHp%)
+   // MoverParam.cpp
+   // int CMover::GetMaxHitPoint()
+   hp = (baseHp + flatMaxHp) * (1 + maxHp%)
    ```
 
 </details>
