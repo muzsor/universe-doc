@@ -52,6 +52,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * HitRate
 
+   <details><summary>details</summary>
+
    * hit rate in character window : It generally displays the incorrect value, with the value increasing by `1` for every `4` DEX, which isn't how DEX affects `hit rate` in reality. Additionally, it caps at `100`, whereas the actual limit should be `96`.
 
    ```js
@@ -105,6 +107,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       HitRate = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
       // Limited to 0.2 ~ 0.96
       ```
+
+   </details>
 
 ### auto attack
 
@@ -249,7 +253,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * DamagePropertyFactor : `1.0`(attacker is none or same element), `1.0 ~ 1.000895`(attacker element vs none or others), `1.0 ~ 1.002139`(strong), `0.999554 ~ 1.000895`(weak).
 
-      * Element includes the weapon's inherent element.
+      * Element Type : Includes the weapon's inherent element.
+
+      * Element Level : Sum of unscaled `elementattack` `DST_CHR_WEAEATKCHANGE` from Attacker's Gear, Buff.
 
       ```js
       // MoverAttack.cpp
@@ -258,20 +264,20 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       <details><summary>details</summary>
 
-      | Attack Element Level (Element vs None) | DamagePropertyFactor |
-      |:--------------------------------------:|:--------------------:|
-      | 0                                      | 1                    |
-      | 1                                      | 1.0002               |
-      | 2                                      | 1.0002209999999998   |
-      | 3                                      | 1.000256             |
-      | 4                                      | 1.000305             |
-      | 5                                      | 1.000368             |
-      | 6                                      | 1.000446             |
-      | 7                                      | 1.000537             |
-      | 8                                      | 1.000642             |
-      | 9                                      | 1.000761             |
-      | 10                                     | 1.000895             |
-      | ...                                    | 1.000895             |
+      | Attack Element Level (Any Element Type vs None) | DamagePropertyFactor |
+      |:-----------------------------------------------:|:--------------------:|
+      | 0                                               | 1                    |
+      | 1                                               | 1.0002               |
+      | 2                                               | 1.0002209999999998   |
+      | 3                                               | 1.000256             |
+      | 4                                               | 1.000305             |
+      | 5                                               | 1.000368             |
+      | 6                                               | 1.000446             |
+      | 7                                               | 1.000537             |
+      | 8                                               | 1.000642             |
+      | 9                                               | 1.000761             |
+      | 10                                              | 1.000895             |
+      | ...                                             | 1.000895             |
 
       | Attack Element Level (Same or Others) | DamagePropertyFactor |
       |:---------------------------:|:--------------------:|
@@ -877,24 +883,19 @@ DamagePerSecond = computeDamage * hitsPerSecond
    2. main + offhand (dual)
    3. main hand
    4. main + offhand (dual)
-   - repeat
+   * repeat
 
-> dual and main distribution is split 50/50, offhand never attacks alone.
+* dual and main distribution is split 50/50, offhand never attacks alone.
+   > 主手攻擊和雙手攻擊是各為一半，副手從不單獨攻擊。
 
-> 主手攻擊和雙手攻擊是各為一半，副手從不單獨攻擊。
+* dual hit is 100% main hand + 75% off hand damage.
+   > 雙手攻擊是 `100%` 主手傷害 + `75%` 副手傷害。
 
+* upgrading offhand does affect actual damage when hitting with that weapon.
+   > 副手基礎傷害和屬性等級加成會影響使用該武器擊中(雙手攻擊)時的實際傷害。
 
-> dual hit is 100% main hand + 75% off hand damage.
-
-> 雙手攻擊是 `100%` 主手傷害 + `75%` 副手傷害。
-
-> upgrading offhand does affect actual damage when hitting with that weapon.
-
-> 副手基礎傷害和屬性等級加成會影響使用該武器擊中(雙手攻擊)時的實際傷害。
-
-> Each hit's damage is calculated independently based on which weapon is being used for that hit.
-
-> 每次攻擊的傷害都是根據該攻擊所使用的武器獨立計算的。
+* Each hit's damage is calculated independently based on which weapon is being used for that hit.
+   > 每次攻擊的傷害都是根據該攻擊所使用的武器獨立計算的。
 
 > source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/999269862260084736/1032237394856001556 "@shayminhunter @TeachMeHisty (discord flyff universe)")
 
@@ -926,7 +927,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 <details>
   <summary>📁 sword vs axe details</summary>
 
-* The crit chance from the axe is stronger than the increase critical damage by default and going from `5.7` to `4.7` is a `17.5%` damage loss from `STR` portion of the damage alone, which makes up around halve of total attack.
+* The crit chance from the axe is stronger than the increase critical damage by default and going from `5.7` to `4.7` is a `17.54%` damage loss from `STR` portion of the damage alone, which makes up around halve of total attack.
 
 * `8.78%` loss from the lower scaling + less damage from `10 crit chance` to `10 critical damage` and you're at around `10%` total dps loss.
 
@@ -999,6 +1000,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 ### calculate
 
 #### Monster VS Player
+
+<table><tr><td><details><summary>details</summary>
 
 * Defender is Player.
 
@@ -1138,7 +1141,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
 
+</details></td></tr></table>
+
+
 #### Player VS Monster
+
+<table><tr><td><details><summary>details</summary>
 
 * Defender is Monster.
 
@@ -1190,6 +1198,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
    console.log('Average value:', averageValue)
    // Average value: 0.8910116515800439
    ```
+
+</details></td></tr></table>
+
 
 ### block cap
 
