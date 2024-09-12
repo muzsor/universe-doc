@@ -129,17 +129,20 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // MoverAttack.cpp
       // int CMover::GetHitPower( ATTACK_INFO* pInfo  )
-      HitPower = HitMinMax * DamagePropertyFactor
-
+      HitPower = Math.floor(HitMinMax * DamagePropertyFactor)
+      // HitPower = xRandom( nMin, nMax ) * DamagePropertyFactor
+      ```
+      ```js
       // ------------------------------------------------------------------------------------
-      // DamagePropertyFactor = ElementMultiplier(UpgradeLevel)
-      // ------------------------------------------------------------------------------------
-      // void CMover::GetDamagePropertyFactor( CMover* pDefender, int* pnATKFactor, int* pnDEFFactor, int nParts )
-      // Find the increase/decrease factor of ATK and DEF to be used in the GetHitPower function.
+      // Average Dps
+      HitPower = Math.floor(Math.floor((HitMin + HitMax) / 2) * DamagePropertyFactor)
       // ------------------------------------------------------------------------------------
       ```
 
    * HitMinMax
+
+      <details><summary>details</summary>
+
       ```js
       // MoverAttack.cpp
       // void CMover::GetHitMinMax( int* pnMin, int* pnMax, ATTACK_INFO *pInfo )
@@ -154,93 +157,175 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
       ```
 
-   * WeaponAttack
+      * WeaponAttack
+         ```js
+         // MoverAttack.cpp
+         // int CMover::GetWeaponATK( DWORD dwWeaponType )
+         WeaponAttack = statAttack + levelAttack + plusWeaponAttack
+         ```
+         ```js
+         // ------------------------------------------------------------------------------------
+         statAttack = (AttackerStats - WeaponTypeStatModifer) * ClassWeaponTypeAutoAttackFactors
+         // ------------------------------------------------------------------------------------
+         // ClassWeaponTypeAutoAttackFactors = autoAttackFactors = GetJobPropFactor( JOB_PROP_TYPE )
+         // ------------------------------------------------------------------------------------
+         // WeaponTypeStatModifer:
+         // sword WT_MELEE_SWD 12
+         // axe WT_MELEE_AXE 12
+         // staff WT_MELEE_STAFF 10
+         // stick WT_MELEE_STICK 10
+         // knuckle WT_MELEE_KNUCKLE 10
+         // wand WT_MAGIC_WAND 10
+         // yoyo WT_MELEE_YOYO 12
+         // bow WT_RANGE_BOW 14
+         // ------------------------------------------------------------------------------------
+         // example (Blade's str 500 and use Axe) :
+         // (500 - 12) * 5.7 = 2781.6
+         // example (Blade's str 500 and use Sword) :
+         // (500 - 12) * 4.7 = 2,293.6
+         // ------------------------------------------------------------------------------------
+
+         // ------------------------------------------------------------------------------------
+         levelAttack = AttackerLevel * WeaponTypeLevelFactor
+         // ------------------------------------------------------------------------------------
+         // WeaponTypeLevelFactor :
+         // sword WT_MELEE_SWD 1.1
+         // axe WT_MELEE_AXE 1.2
+         // staff WT_MELEE_STAFF 1.1
+         // stick WT_MELEE_STICK 1.3
+         // knuckle WT_MELEE_KNUCKLE 1.2
+         // wand WT_MAGIC_WAND 1.2
+         // yoyo WT_MELEE_YOYO 1.1
+         // bow WT_RANGE_BOW 0.91
+         // ------------------------------------------------------------------------------------
+         // example (lv160 Blade use Axe) :
+         // 160 * 1.2 = 192
+         // ------------------------------------------------------------------------------------
+
+         // ------------------------------------------------------------------------------------
+         // int CMover::GetPlusWeaponATK( DWORD dwWeaponType )
+         // ------------------------------------------------------------------------------------
+         plusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
+         // ------------------------------------------------------------------------------------
+         // swordattack DST_SWD_DMG
+         // axeattack DST_AXE_DMG
+         // staffattack, stickattck
+         // knuckleattack DST_KNUCKLE_DMG
+         // wandattack, yoyoattack DST_YOY_DMG
+         // bowattack DST_BOW_DMG
+         // ------------------------------------------------------------------------------------
+         // master skill :
+         // DST_KNUCKLEMASTER_DMG
+         // DST_YOYOMASTER_DMG
+         // DST_BOWMASTER_DMG
+         // DST_TWOHANDMASTER_DMG
+         // ------------------------------------------------------------------------------------
+         // example (Blade's Skill Axe) :
+         // Smite Axe MAX axeattack + 50 and Axe Mastery MAX axeattack + 100, total = 150
+         // ------------------------------------------------------------------------------------
+
+
+         // ------------------------------------------------------------------------------------
+         // example total = 2781.6 + 192 + 150 = 3123
+         // ------------------------------------------------------------------------------------
+         ```
+
+      * AttackerPlusDamage : From Attacker's Gear, Buff unscaled `damage` `DST_CHR_DMG`.
+
+         * Example : *Demol Earring* `damage`, *Spirit Fortune* `damage` etc.
+
+      * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
+         ```js
+         // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
+         WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+         ```
+
+      * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack
+         ```js
+         WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
+         ```
+      </details>
+
+
+   * DamagePropertyFactor : `1.0`(attacker is none or same element), `1.0 ~ 1.000895`(attacker element vs none or others), `1.0 ~ 1.002139`(strong), `0.999554 ~ 1.000895`(weak).
+
+      * Element includes the weapon's inherent element.
+
       ```js
       // MoverAttack.cpp
-      // int CMover::GetWeaponATK( DWORD dwWeaponType )
-      WeaponAttack = statAttack + levelAttack + plusWeaponAttack
-      ```
-      ```js
-      // ------------------------------------------------------------------------------------
-      statAttack = (AttackerStats - WeaponTypeStatModifer) * ClassWeaponTypeAutoAttackFactors
-      // ------------------------------------------------------------------------------------
-      // ClassWeaponTypeAutoAttackFactors = autoAttackFactors = GetJobPropFactor( JOB_PROP_TYPE )
-      // ------------------------------------------------------------------------------------
-      // WeaponTypeStatModifer:
-      // sword WT_MELEE_SWD 12
-      // axe WT_MELEE_AXE 12
-      // staff WT_MELEE_STAFF 10
-      // stick WT_MELEE_STICK 10
-      // knuckle WT_MELEE_KNUCKLE 10
-      // wand WT_MAGIC_WAND 10
-      // yoyo WT_MELEE_YOYO 12
-      // bow WT_RANGE_BOW 14
-      // ------------------------------------------------------------------------------------
-      // example (Blade's str 500 and use Axe) :
-      // (500 - 12) * 5.7 = 2781.6
-      // example (Blade's str 500 and use Sword) :
-      // (500 - 12) * 4.7 = 2,293.6
-      // ------------------------------------------------------------------------------------
-
-      // ------------------------------------------------------------------------------------
-      levelAttack = AttackerLevel * WeaponTypeLevelFactor
-      // ------------------------------------------------------------------------------------
-      // WeaponTypeLevelFactor :
-      // sword WT_MELEE_SWD 1.1
-      // axe WT_MELEE_AXE 1.2
-      // staff WT_MELEE_STAFF 1.1
-      // stick WT_MELEE_STICK 1.3
-      // knuckle WT_MELEE_KNUCKLE 1.2
-      // wand WT_MAGIC_WAND 1.2
-      // yoyo WT_MELEE_YOYO 1.1
-      // bow WT_RANGE_BOW 0.91
-      // ------------------------------------------------------------------------------------
-      // example (lv160 Blade use Axe) :
-      // 160 * 1.2 = 192
-      // ------------------------------------------------------------------------------------
-
-      // ------------------------------------------------------------------------------------
-      // int CMover::GetPlusWeaponATK( DWORD dwWeaponType )
-      // ------------------------------------------------------------------------------------
-      plusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
-      // ------------------------------------------------------------------------------------
-      // swordattack DST_SWD_DMG
-      // axeattack DST_AXE_DMG
-      // staffattack, stickattck
-      // knuckleattack DST_KNUCKLE_DMG
-      // wandattack, yoyoattack DST_YOY_DMG
-      // bowattack DST_BOW_DMG
-      // ------------------------------------------------------------------------------------
-      // master skill :
-      // DST_KNUCKLEMASTER_DMG
-      // DST_YOYOMASTER_DMG
-      // DST_BOWMASTER_DMG
-      // DST_TWOHANDMASTER_DMG
-      // ------------------------------------------------------------------------------------
-      // example (Blade's Skill Axe) :
-      // Smite Axe MAX axeattack + 50 and Axe Mastery MAX axeattack + 100, total = 150
-      // ------------------------------------------------------------------------------------
-
-
-      // ------------------------------------------------------------------------------------
-      // example total = 2781.6 + 192 + 150 = 3123
-      // ------------------------------------------------------------------------------------
+      // void CMover::GetDamagePropertyFactor( CMover* pDefender, int* pnATKFactor, int* pnDEFFactor, int nParts )
       ```
 
-   * AttackerPlusDamage : From Attacker's Gear, Buff unscaled `damage` `DST_CHR_DMG`.
+      <details><summary>details</summary>
 
-      * Example : *Demol Earring* `damage`, *Spirit Fortune* `damage` etc.
+      | Attack Element Level (Element vs None) | DamagePropertyFactor |
+      |:--------------------------------------:|:--------------------:|
+      | 0                                      | 1                    |
+      | 1                                      | 1.0002               |
+      | 2                                      | 1.0002209999999998   |
+      | 3                                      | 1.000256             |
+      | 4                                      | 1.000305             |
+      | 5                                      | 1.000368             |
+      | 6                                      | 1.000446             |
+      | 7                                      | 1.000537             |
+      | 8                                      | 1.000642             |
+      | 9                                      | 1.000761             |
+      | 10                                     | 1.000895             |
+      | ...                                    | 1.000895             |
 
-   * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
-      ```js
-      // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
-      WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
-      ```
+      | Attack Element Level (Same or Others) | DamagePropertyFactor |
+      |:---------------------------:|:--------------------:|
+      | 0                           | 1                    |
+      | 1                           | 1                    |
+      | 2                           | 1.002                |
+      | 3                           | 1.0002209999999998   |
+      | 4                           | 1.000256             |
+      | 5                           | 1.000305             |
+      | 6                           | 1.000368             |
+      | 7                           | 1.000446             |
+      | 8                           | 1.000537             |
+      | 9                           | 1.000642             |
+      | 10                          | 1.000761             |
+      | 11                          | 1.000895             |
+      | ...                         | 1.000895             |
 
-   * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack
-      ```js
-      WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
-      ```
+      | Attack Element Level (Strong) | DamagePropertyFactor |
+      |:-----------------------------:|:--------------------:|
+      | 0                             | 1                    |
+      | 1                             | 1.0007               |
+      | 2                             | 1.000743             |
+      | 3                             | 1.000816             |
+      | 4                             | 1.000917             |
+      | 5                             | 1.001048             |
+      | 6                             | 1.001209             |
+      | 7                             | 1.0013969999999999   |
+      | 8                             | 1.001615             |
+      | 9                             | 1.001862             |
+      | 10                            | 1.002139             |
+      | ...                           | 1.002139             |
+
+      | Attack Element Level (Weak) | DamagePropertyFactor |
+      |:---------------------------:|:--------------------:|
+      | 0                           | 0.999554             |
+      | 1                           | 0.999632             |
+      | 2                           | 0.9996950000000001   |
+      | 3                           | 0.9997440000000001   |
+      | 4                           | 0.9997790000000001   |
+      | 5                           | 0.9998               |
+      | 6                           | 1                    |
+      | 7                           | 1.0002               |
+      | 8                           | 1.0002209999999998   |
+      | 9                           | 1.000256             |
+      | 10                          | 1.000305             |
+      | 11                          | 1.000368             |
+      | 12                          | 1.000446             |
+      | 13                          | 1.000537             |
+      | 14                          | 1.000642             |
+      | 15                          | 1.000761             |
+      | 16                          | 1.000895             |
+      | ...                         | 1.000895             |
+
+      </details>
 
    * AttackMultiplier
       ```js
@@ -305,94 +390,101 @@ DamagePerSecond = computeDamage * hitsPerSecond
               = computeGenericDefense
       ```
 
-   * 💥 criticalChance
+   * critical
 
-      * ClassCriticalFactor : `critical`, `class.critical`, `job.critical`, `JOB_PROP_CRITICAL`.
+      <details><summary>details</summary>
 
-      * AttackerCriticalChance : From Attacker's Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
+      * 💥 criticalChance
 
-      * Precision： Increases the Critical Chance on the next attack of all party members around the leader by `0.5%` x Amount of party members.
+         * ClassCriticalFactor : `critical`, `class.critical`, `job.critical`, `JOB_PROP_CRITICAL`.
 
-      * CriticalResist% : From Defender's Gear, Buff scales `criticalresist`.
+         * AttackerCriticalChance : From Attacker's Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
 
-      ```js
-      // MoverAttack.cpp
-      // int CMover::GetCriticalProb( void )
-      criticalChance = ((((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0) * ( 1 - CriticalResist%)
+         * Precision： Increases the Critical Chance on the next attack of all party members around the leader by `0.5%` x Amount of party members.
 
-      // ------------------------------------------------------------------------------------
-      // MoverAttack.cpp
-      // BOOL CMover::IsCriticalAttack( CMover* pDefender, DWORD dwAtkFlags )
-      // ------------------------------------------------------------------------------------
-      // example (Blade's str 500, dex 60, cc 45) :
-      // criticalChance = ((((60 / 10) * 1) + 45) / 100.0) * (1 - CriticalResist%) = 51% * (1 - CriticalResist%)
-      // ------------------------------------------------------------------------------------
-      ```
-      * critical chance in character window
+         * CriticalResist% : From Defender's Gear, Buff scales `criticalresist`.
+
          ```js
-         // WndField.cpp
-         // int CWndCharInfo::GetVirtualCritical()
-         criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0
+         // MoverAttack.cpp
+         // int CMover::GetCriticalProb( void )
+         criticalChance = ((((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0) * ( 1 - CriticalResist%)
+
+         // ------------------------------------------------------------------------------------
+         // MoverAttack.cpp
+         // BOOL CMover::IsCriticalAttack( CMover* pDefender, DWORD dwAtkFlags )
+         // ------------------------------------------------------------------------------------
+         // example (Blade's str 500, dex 60, cc 45) :
+         // criticalChance = ((((60 / 10) * 1) + 45) / 100.0) * (1 - CriticalResist%) = 51% * (1 - CriticalResist%)
+         // ------------------------------------------------------------------------------------
          ```
 
-   * 💥 criticalFactor
-      ```js
-      // ------------------------------------------------------------------------------------
-      // your level <= monster's level
-      minCritical = 1.1
-      maxCritical = 1.4
-      // ------------------------------------------------------------------------------------
-      // Average Dps
-      criticalFactor = (minCritical + maxCritical) / 2.0 = 1.25
-      // ------------------------------------------------------------------------------------
+         * critical chance in character window
+            ```js
+            // WndField.cpp
+            // int CWndCharInfo::GetVirtualCritical()
+            criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0
+            ```
 
-      // ------------------------------------------------------------------------------------
-      // monster's level < your level
-      minCritical = 1.2
-      maxCritical = 2.0
-      // ------------------------------------------------------------------------------------
-      // Average Dps
-      criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
-      // ------------------------------------------------------------------------------------
+      * 💥 criticalFactor
+         ```js
+         // ------------------------------------------------------------------------------------
+         // your level <= monster's level
+         minCritical = 1.1
+         maxCritical = 1.4
+         // ------------------------------------------------------------------------------------
+         // Average Dps
+         criticalFactor = (minCritical + maxCritical) / 2.0 = 1.25
+         // ------------------------------------------------------------------------------------
+
+         // ------------------------------------------------------------------------------------
+         // monster's level < your level
+         minCritical = 1.2
+         maxCritical = 2.0
+         // ------------------------------------------------------------------------------------
+         // Average Dps
+         criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
+         // ------------------------------------------------------------------------------------
 
 
-      // ------------------------------------------------------------------------------------
-      // Attacker is NPC Mob
-      minCritical = 1.4
-      maxCritical = 1.8
-      // ------------------------------------------------------------------------------------
-      // Average Dps
-      criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
-      // ------------------------------------------------------------------------------------
-      ```
+         // ------------------------------------------------------------------------------------
+         // Attacker is NPC Mob
+         minCritical = 1.4
+         maxCritical = 1.8
+         // ------------------------------------------------------------------------------------
+         // Average Dps
+         criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
+         // ------------------------------------------------------------------------------------
+         ```
 
-   * 💥 criticalDamage
+      * 💥 criticalDamage
 
-      <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
+         <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
 
-      ```js
-      criticalDamage = applyAttackDefense(computeAttack, defense) * criticalFactor * (1 + CriticalDamage%)
-                     = damageAfterApplyDefense * criticalFactor * (1 + CriticalDamage%)
-      // if (1 + CriticalDamage%), fCriticalBonus < 0.1, then 0.1
-      // ------------------------------------------------------------------------------------
-      // CriticalDamage% : From Attacker's Gear, Buff scales criticaldamage, DST_CRITICAL_BONUS
-      // ------------------------------------------------------------------------------------
-      ```
+         ```js
+         criticalDamage = applyAttackDefense(computeAttack, defense) * criticalFactor * (1 + CriticalDamage%)
+                        = damageAfterApplyDefense * criticalFactor * (1 + CriticalDamage%)
+         // if (1 + CriticalDamage%), fCriticalBonus < 0.1, then 0.1
+         // ------------------------------------------------------------------------------------
+         // CriticalDamage% : From Attacker's Gear, Buff scales criticaldamage, DST_CRITICAL_BONUS
+         // ------------------------------------------------------------------------------------
+         ```
 
-   * 💥 **damageAfterCritical**
-      ```js
-      // linearInterpolation
-      damageAfterCritical = Math.floor(linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance))
-                          = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%)))
-      ```
-      ```js
-      // your level <= monster's level, average dps
-      damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.25 * (1 + criticalDamage%)))
-      ```
-      ```js
-      // monster's level < your level, average dps
-      damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.6 * (1 + criticalDamage%)))
-      ```
+      * 💥 **damageAfterCritical**
+         ```js
+         // linearInterpolation
+         damageAfterCritical = Math.floor(linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance))
+                             = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%)))
+         ```
+         ```js
+         // your level <= monster's level, average dps
+         damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.25 * (1 + criticalDamage%)))
+         ```
+         ```js
+         // monster's level < your level, average dps
+         damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.6 * (1 + criticalDamage%)))
+         ```
+
+      </details>
 
    * ElementResistFactor : `0.7`(weak against), `1.0`(none), `1.3`(strong against)
 
@@ -411,9 +503,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
                                      = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
-      //for ( i = 0; i < 16; i++ ) {
-      //  console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
-      //}
+      ```
+      ```js
+      for ( i = 0; i < 16; i++ ) {
+        console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
+      }
       ```
 
 </details></td></tr></table>
@@ -613,9 +707,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
                                      = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
-      //for ( i = 0; i < 16; i++ ) {
-      //  console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
-      //}
+      ```
+      ```js
+      for ( i = 0; i < 16; i++ ) {
+        console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
+      }
       ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier * skill.levels.probability(probabilityPVP) * BuffSkillDamageMultiplier`
@@ -719,11 +815,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
                                      = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
-
-      // ------------------------------------------------------------------------------------
-      //for ( i = 0; i < 16; i++ ) {
-      //  console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
-      //}
+      ```
+      ```js
+      for ( i = 0; i < 16; i++ ) {
+        console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
+      }
       ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier` * `skill.levels.probability(probabilityPVP)` * `BuffSkillDamageMultiplier`
