@@ -531,16 +531,27 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * MeleeSkillPower
       ```js
-      MeleeSkillPower = Math.floor(((WeaponAttackPowerMinMax + (SkillMinMaxAttack + WeaponAdditionalSkillDamage) * 5 + ReferStat - 20) * (16 + SkillLevel)) / 13) + PlusWeaponAttack + AttackerPlusDamage
+      // MoverAttack.cpp
+      // int	CMover::GetMeleeSkillPower( ATTACK_INFO* pInfo )
+      MeleeSkillPower = Math.max(Math.floor(((WeaponAttackPowerMinMax + (SkillMinMaxAttack + WeaponAdditionalSkillDamage) * 5 + ReferStat - 20) * (16 + SkillLevel)) / 13 + PlusWeaponAttack + AttackerPlusDamage), 1)
+      /*
+      float fMinMax = (fPowerMax - fPowerMin) + 1;
+      if( fMinMax <= 0 )
+        fMinMax = 1;
+      MeleeSkillPower = (float)( fPowerMin + xRandom( (DWORD)( fMinMax ) ) );
+      */
       ```
       ```js
+      // ------------------------------------------------------------------------------------
+      // Average Dps
+      MeleeSkillPower = Math.max(Math.floor((MeleeSkillPowerMin + MeleeSkillPowerMax) / 2), 1)
       // ------------------------------------------------------------------------------------
       // example (Bldae use Lusaka's Crystal Axe U+5, Demol Earring U+5, Armor Penetrate Lv10 PvE, Smite Axe MAX , Axe Mastery MAX) :
       // Math.floor(((814.16 ~ 816.94 + (79 ~ 80 + 0) * 5 + 1590 - 20) * (16 + 10)) / 13) = 5558 ~ 5573
       // 5558 ~ 5573 + 150 + (540 * 2) = 6788 ~ 6803
       // ------------------------------------------------------------------------------------
       // Average Dps
-      // Math.floor((6788 + 6803) / 2) = 6795
+      // Math.max(Math.floor((6788 + 6803) / 2), 1) = 6795
       // ------------------------------------------------------------------------------------
       ```
 
