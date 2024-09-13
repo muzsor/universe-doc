@@ -108,6 +108,16 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // Limited to 0.2 ~ 0.96
       ```
 
+      * Player Parry
+
+         * ExtraParry : From Player's Gear, Buff unscaled `parry` `DST_PARRY`.
+
+         * parry : From Player's Gear, Buff scaled `parry` `DST_PARRY`.
+
+         ```js
+         Parry = (()Dex * 0.5) + ExtraParry) * (1 + parry%)
+         ```
+
    </details>
 
 ### auto attack
@@ -241,12 +251,14 @@ DamagePerSecond = computeDamage * hitsPerSecond
       * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
          ```js
          // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
-         WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+         WeaponAttackUpgradeLevelBonus% = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+         WeaponMultiplier = (1 + WeaponAttackUpgradeLevelBonus%)
          ```
 
       * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack
          ```js
          WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
+                                            = Math.floor(Math.pow(WeaponUpgradeLevel, 1.5))
          ```
       </details>
 
@@ -559,7 +571,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // MoverAttack.cpp
       // void CMover::GetItemATKPower( int *pnMin, int *pnMax, ItemProp* pItemProp, CItemElem *pWeapon )
-      WeaponAttackPowerMinMax = WeaponBaseAttackMinMax * WeaponMultiplier + Math.floor(MainhandWeaponUpgradeLevel^1.5)
+      WeaponAttackPowerMinMax = (WeaponBaseAttackMinMax * WeaponMultiplier) + Math.floor(Math.pow(WeaponUpgradeLevel, 1.5))
 
       // ------------------------------------------------------------------------------------
       // example (Lusaka's Crystal Axe U+5) :
@@ -569,7 +581,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
       ```js
-      WeaponMultiplier = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+      // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
+      WeaponAttackUpgradeLevelBonus% = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+      WeaponMultiplier = (1 + WeaponAttackUpgradeLevelBonus%)
       ```
 
    * ReferStat
@@ -578,6 +592,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ReferStat = Math.floor(AttackerStat * ((((PvEPvPSkillStatScale * 50.0) - (SkillLevel + 1)) / 5.0) / 10.0) + ((AttackerStat * SkillLevel) / 50.0))
                 = Math.floor(AttackerStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50))
       ```
+      <details><summary>details</summary>
+
       ```js
       // Armor Penetrate https://api.flyff.com/skill/9740
       {
@@ -641,6 +657,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // Math.floor((500 * (((3 * 50.0) - 1) / 50.0)) + (60 * (((1.7 * 50.0) - 1) /50.0))) = 1590
       // ------------------------------------------------------------------------------------
       ```
+
+      </details>
 
    * SkillMinMaxAttack : `skill.levels[skillLevel].minAttack` and `skill.levels[skillLevel].maxAttack`.
 
