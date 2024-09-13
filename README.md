@@ -1647,6 +1647,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 * Always use a weapon with at least a +1 elemental advantage against the monster for a 7% attack bonus boost and 30% damage increase.
 
+**For more information please refer to [Formulas/damage/dps/auto attack/DamagePropertyFactor](./Formulas.md "Formulas.md").**
+
 <div align="center"><img src="./upgrade/scroll_of_element_change.png" alt="scroll_of_element_change.png"/></div>
 
 </details></td></tr></table>

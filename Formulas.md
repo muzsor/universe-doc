@@ -263,15 +263,18 @@ DamagePerSecond = computeDamage * hitsPerSecond
       </details>
 
 
-   * DamagePropertyFactor : `1.0`(attacker is none or same element), `1.0 ~ 1.000895`(attacker element vs none or others), `1.0 ~ 1.002139`(strong), `0.999554 ~ 1.000895`(weak).
+   * DamagePropertyFactor : `1.0`(attacker is none or same element), `1.0 ~ 1.0895`(attacker element vs none or others), `1.0 ~ 1.2139`(strong), `0.9554 ~ 1.0895`(weak).
 
       * Element Type : Includes the weapon's inherent element.
 
       * Element Level : Sum of unscaled `elementattack` `DST_CHR_WEAEATKCHANGE` from Attacker's Gear, Buff.
 
+      * ElementAttackStone%： Only boost attack when using auto attack against monsters that have a weakness to that element. If the monsters aren't weak to that element, the stones won't increase attack.
+
       ```js
       // MoverAttack.cpp
       // void CMover::GetDamagePropertyFactor( CMover* pDefender, int* pnATKFactor, int* pnDEFFactor, int nParts )
+      DamagePropertyFactor = ElementAttackFactor + ElementAttackStone%
       ```
 
       <details><summary>details</summary>
@@ -279,69 +282,69 @@ DamagePerSecond = computeDamage * hitsPerSecond
       | Attack Element Level (Any Element Type vs None) | DamagePropertyFactor |
       |:-----------------------------------------------:|:--------------------:|
       | 0                                               | 1                    |
-      | 1                                               | 1.0002               |
-      | 2                                               | 1.0002209999999998   |
-      | 3                                               | 1.000256             |
-      | 4                                               | 1.000305             |
-      | 5                                               | 1.000368             |
-      | 6                                               | 1.000446             |
-      | 7                                               | 1.000537             |
-      | 8                                               | 1.000642             |
-      | 9                                               | 1.000761             |
-      | 10                                              | 1.000895             |
-      | ...                                             | 1.000895             |
+      | 1                                               | 1.02                 |
+      | 2                                               | 1.0221               |
+      | 3                                               | 1.0256               |
+      | 4                                               | 1.0305               |
+      | 5                                               | 1.0368000000000002   |
+      | 6                                               | 1.0446               |
+      | 7                                               | 1.0537               |
+      | 8                                               | 1.0642               |
+      | 9                                               | 1.0761               |
+      | 10                                              | 1.0895000000000001   |
+      | ...                                             | 1.0895000000000001   |
 
       | Attack Element Level (Same or Others) | DamagePropertyFactor |
       |:---------------------------:|:--------------------:|
       | 0                           | 1                    |
       | 1                           | 1                    |
-      | 2                           | 1.002                |
-      | 3                           | 1.0002209999999998   |
-      | 4                           | 1.000256             |
-      | 5                           | 1.000305             |
-      | 6                           | 1.000368             |
-      | 7                           | 1.000446             |
-      | 8                           | 1.000537             |
-      | 9                           | 1.000642             |
-      | 10                          | 1.000761             |
-      | 11                          | 1.000895             |
-      | ...                         | 1.000895             |
+      | 2                           | 1.02                 |
+      | 3                           | 1.0221               |
+      | 4                           | 1.0256               |
+      | 5                           | 1.0305               |
+      | 6                           | 1.0368000000000002   |
+      | 7                           | 1.0446               |
+      | 8                           | 1.0537               |
+      | 9                           | 1.0642               |
+      | 10                          | 1.0761               |
+      | 11                          | 1.0895000000000001   |
+      | ...                         | 1.0895000000000001   |
 
       | Attack Element Level (Strong) | DamagePropertyFactor |
       |:-----------------------------:|:--------------------:|
       | 0                             | 1                    |
-      | 1                             | 1.0007               |
-      | 2                             | 1.000743             |
-      | 3                             | 1.000816             |
-      | 4                             | 1.000917             |
-      | 5                             | 1.001048             |
-      | 6                             | 1.001209             |
-      | 7                             | 1.0013969999999999   |
-      | 8                             | 1.001615             |
-      | 9                             | 1.001862             |
-      | 10                            | 1.002139             |
-      | ...                           | 1.002139             |
+      | 1                             | 1.07                 |
+      | 2                             | 1.0743               |
+      | 3                             | 1.0816               |
+      | 4                             | 1.0917000000000001   |
+      | 5                             | 1.1048               |
+      | 6                             | 1.1209               |
+      | 7                             | 1.13969999999999     |
+      | 8                             | 1.1615               |
+      | 9                             | 1.1862000000000001   |
+      | 10                            | 1.2139               |
+      | ...                           | 1.2139               |
 
       | Attack Element Level (Weak) | DamagePropertyFactor |
       |:---------------------------:|:--------------------:|
-      | 0                           | 0.999554             |
-      | 1                           | 0.999632             |
-      | 2                           | 0.9996950000000001   |
-      | 3                           | 0.9997440000000001   |
-      | 4                           | 0.9997790000000001   |
-      | 5                           | 0.9998               |
+      | 0                           | 0.9554               |
+      | 1                           | 0.9632               |
+      | 2                           | 0.9695               |
+      | 3                           | 0.9743999999999999   |
+      | 4                           | 0.9779000000000001   |
+      | 5                           | 0.98                 |
       | 6                           | 1                    |
-      | 7                           | 1.0002               |
-      | 8                           | 1.0002209999999998   |
-      | 9                           | 1.000256             |
-      | 10                          | 1.000305             |
-      | 11                          | 1.000368             |
-      | 12                          | 1.000446             |
-      | 13                          | 1.000537             |
-      | 14                          | 1.000642             |
-      | 15                          | 1.000761             |
-      | 16                          | 1.000895             |
-      | ...                         | 1.000895             |
+      | 7                           | 1.02                 |
+      | 8                           | 1.0221               |
+      | 9                           | 1.0256               |
+      | 10                          | 1.0305               |
+      | 11                          | 1.0368000000000002   |
+      | 12                          | 1.0446               |
+      | 13                          | 1.0537               |
+      | 14                          | 1.0642               |
+      | 15                          | 1.0761               |
+      | 16                          | 1.0895000000000001   |
+      | ...                         | 1.0895000000000001   |
 
       </details>
 
