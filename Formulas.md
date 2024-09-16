@@ -172,10 +172,13 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
       * WeaponAttack
+
+         * AttackerStats : DEX for bow, INT for Wand, STR for Other Weapon.
+
          ```js
          // MoverAttack.cpp
          // int CMover::GetWeaponATK( DWORD dwWeaponType )
-         WeaponAttack = statAttack + levelAttack + plusWeaponAttack
+         WeaponAttack = Math.floor(statAttack + levelAttack + plusWeaponAttack + addValue)
          ```
          ```js
          // ------------------------------------------------------------------------------------
@@ -238,6 +241,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
          // Smite Axe MAX axeattack + 50 and Axe Mastery MAX axeattack + 100, total = 150
          // ------------------------------------------------------------------------------------
 
+         // ------------------------------------------------------------------------------------
+         // Only for bow
+         addValue = AttackerSTR  * 0.14
+         // ------------------------------------------------------------------------------------
 
          // ------------------------------------------------------------------------------------
          // example total = 2781.6 + 192 + 150 = 3123
