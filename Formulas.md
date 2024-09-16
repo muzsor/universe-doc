@@ -28,10 +28,9 @@
   - [🩹 heal](#-heal)
   - [⛔ block](#-block)
     - [calculate](#calculate)
-      - [Monster VS Player](#monster-vs-player)
+      - [Monster VS Player , Player VS Player](#monster-vs-player--player-vs-player)
       - [Player VS Monster](#player-vs-monster)
     - [block cap](#block-cap)
-    - [block penetration](#block-penetration)
 
 </details></td></tr></table>
 
@@ -387,7 +386,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       applyGenericDefense = damageAfterCritical * blockFactor
       ```
 
-   *  blockFactor : `0.2` (block), `1.0` (block failure)
+   *  blockFactor : `0.2` (block PvE), `1.0` (block failure), `0.3`(block PvP)
 
       > source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
 
@@ -404,12 +403,29 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * applyAttackDefense
 
+      <details><summary>details</summary>
+
       <img src="./formulas/effect_of_defense_on_adjusted_attack.png" alt="effect_of_defense_on_adjusted_attack.png" width="600"/>
 
       ```js
       value = Math.sqrt(defense / (defense + (2 * attack)))
-      applyAttackDefense = linearInterpolation(defense, attack, value)
+      applyAttackDefense = attack - Math.floor(linearInterpolation(defense, attack, value))
+                         = attack - Math.floor((1 - value) * defense + value * attack)
       ```
+      ```js
+      function applyAttackDefense(attack, defense){
+        const value = Math.sqrt(defense / (defense + 2 * attack))
+        const damage = attack - Math.floor((1 - value) * defense + value * attack)
+        return damage
+      }
+
+      // ------------------------------------------------------------------------------------
+      // example (Beast King Khan https://api.flyff.com/monster/16244)
+      // applyAttackDefense(15000, 223) = 13508
+      // ------------------------------------------------------------------------------------
+      ```
+
+      </details>
 
    * defense
 
@@ -1102,37 +1118,46 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 >
 
-> source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1266532805651726346 "@shayminhunter @TeachMeHisty (discord flyff universe)")
-
 * You will still get hit, but you'll take significantly less damage. Secondary effects such as crowd control, debuffs, or Sword Cross can still be triggered even if the hit is blocked.
 
-> source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
+> source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1266532805651726346 "@shayminhunter @TeachMeHisty (discord flyff universe)")
 
 * Blocked hits no longer deal 1 damage at the minimum, but 20% of the initial damage instead.
 
+> source:[v1.2.0 Reborn is coming on March 13!](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
+
+* Block Factor return `0.3` for PvP.
+
+> source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1285045859750383676 "@frostiae @[Dev] Frostiae (discord flyff universe)")
+
 ### calculate
 
-#### Monster VS Player
+#### Monster VS Player , Player VS Player
 
 <table><tr><td><details><summary>details</summary>
 
 * Defender is Player.
 
-* block chance
+* block chance : Generate random numbers from `0 ~ 79` to determine which of the following ranges applies.
 
    * block failure : `6 / 80 = 7.5%` (random values is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
 
-   * block success : `5 / 80 = 6.25%` (random values is `75 ~ 79`, total of `5` possible values), blockFactor return `0.2`.
+   * block success : `5 / 80 = 6.25%` (random values is `75 ~ 79`, total of `5` possible values), blockFactor return `0.2` (PvE), `0.3` (PvP).
 
-   * Further calculate the block rate : `69 / 80 = 86.25%` (random values is `6 ~ 74`, total of `69` possible values), blockFactor return `0.2`.
+   * Further calculate the block rate : `69 / 80 = 86.25%` (random values is `6 ~ 74`, total of `69` possible values), blockFactor return  `0.2` (PvE), `0.3` (PvP).
 
    * If reaching the maximum block rate, the block chance is **`6.25% + 86.25% = 92.5%`.**
 
 * BlockRate
+
+   * BlockPenetration% : Block penetration only affects PvP damage.
+
+   > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1272345376720158841 "@frostiae @[Dev] Frostiae (discord flyff universe)")
+
    ```js
    // MoverAttack.cpp
    // float CMover::GetBlockFactor( CMover* pAttacker, ATTACK_INFO* pInfo )
-   BlockRate = Math.max(Math.floor(((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock), 0)
+   BlockRate = Math.max(Math.floor(((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock), 0) * (1 - BlockPenetration%)
    // if BlockRate < 0.0 , then 0.0
 
    // ------------------------------------------------------------------------------------
@@ -1263,7 +1288,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * Defender is Monster.
 
-* block chance
+* block chance : Generate random numbers from `0 ~ 99` to determine which of the following ranges applies.
 
    * block failure : `6 / 100 = 6%` (random values is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
 
@@ -1335,13 +1360,5 @@ DamagePerSecond = computeDamage * hitsPerSecond
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1174839023383085080 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * The cap is 75% and it’s divided by 80 instead of 100. So you end up with 92.5% block (even though it says 75%). Anything above that is only useful again enemies that have block penetration.
-
-### block penetration
-
-> source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1272345376720158841 "@frostiae @[Dev] Frostiae (discord flyff universe)")
-
-* It makes your target's block rate `block rate * (1 - your block penetration)`
-
-* Block penetration only affects PvP damage.
 
 </details>
