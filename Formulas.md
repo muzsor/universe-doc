@@ -144,7 +144,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       * WeaponPlusDamage : From Attacker’s Weapon unscaled Additional Attack.
 
       ```js
-      Attack = ((HitMin + HitMax) / 2) * (1 + attack%) * (1 + PvEPvP%) * (1 + Upcut%) + FlatAttack + WeaponPlusDamage
+      Attack = ((HitMin + HitMax) / 2) * (1 + attack%) * (1 + Upcut%) + FlatAttack + WeaponPlusDamage
       ```
 
    * HitPower
