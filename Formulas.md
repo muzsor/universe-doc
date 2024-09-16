@@ -25,6 +25,7 @@
   - [🔪 sword vs axe 🪓](#-sword-vs-axe-)
   - [❤️ health](#️-health)
     - [max hp](#max-hp)
+  - [🩹 heal](#-heal)
   - [⛔ block](#-block)
     - [calculate](#calculate)
       - [Monster VS Player](#monster-vs-player)
@@ -1062,12 +1063,34 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * flatMaxHp : From Character's Gear, Buff unscaled `maxhp` `DST_HP_MAX`.
 
-   * maxHp% :  From Character's Gear, Buff scales `maxhp` `DST_HP_MAX_RATE`.
+   * maxHp% : From Character's Gear, Buff scales `maxhp` `DST_HP_MAX_RATE`.
 
    ```js
    // MoverParam.cpp
    // int CMover::GetMaxHitPoint()
    hp = (baseHp + flatMaxHp) * (1 + maxHp%)
+   ```
+
+</details>
+
+## 🩹 heal
+
+<details>
+  <summary>📁 heal details</summary>
+
+* healing
+
+   * skillHealingBase :
+
+      * Heal,  Heal Rain : 650
+
+      * Circle Healing : 450
+
+   * healing% : From Character's Gear, Buff scales `healing` `DST_HP_MAX_RATE`.
+
+
+   ```js
+   healing = (skillHealingBase + INT * skillScale) * healing%
    ```
 
 </details>
