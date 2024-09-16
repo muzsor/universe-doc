@@ -112,10 +112,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
          * ExtraParry : From Player's Gear, Buff unscaled `parry` `DST_PARRY`.
 
-         * parry : From Player's Gear, Buff scaled `parry` `DST_PARRY`.
+         * parry% : From Player's Gear, Buff scaled `parry` `DST_PARRY`.
 
          ```js
-         Parry = (()Dex * 0.5) + ExtraParry) * (1 + parry%)
+         Parry = (PlayerDex * 0.5) + ExtraParry) * (1 + parry%)
          ```
 
    </details>
@@ -131,13 +131,21 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // AttackArbiter.cpp
    // int CAttackArbiter::CalcATK( ATTACK_INFO* pInfo )
    computeAttack = (HitPower * AttackMultiplier) + FlatAttack
-                 = (HitMinMax * DamagePropertyFactor * (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+                 = (HitMinMax * DamagePropertyFactor * (1 + attack%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
 
    // ------------------------------------------------------------------------------------
    // WndField.cpp
    // void CWndCharacterDetail2::GetVirtualATK(int* pnMin, int* pnMax)
    // ------------------------------------------------------------------------------------
    ```
+
+   * Attack in character window
+
+      * WeaponPlusDamage : From Attacker’s Weapon unscaled Additional Attack.
+
+      ```js
+      Attack = ((HitMin + HitMax) / 2) * (1 + attack%) * (1 + PvEPvP%) * (1 + Upcut%) + FlatAttack + WeaponPlusDamage
+      ```
 
    * HitPower
       ```js
@@ -243,7 +251,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
          // ------------------------------------------------------------------------------------
          // Only for bow
-         addValue = AttackerSTR  * 0.14
+         addValue = AttackerStr  * 0.14
          // ------------------------------------------------------------------------------------
 
          // ------------------------------------------------------------------------------------
@@ -267,6 +275,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
          WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
                                             = Math.floor(Math.pow(WeaponUpgradeLevel, 1.5))
          ```
+
       </details>
 
 
@@ -361,7 +370,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+      AttackMultiplier = (1 + attack%) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -476,7 +485,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
              Math.Floor(
                DefenseFromArmor / 4 +
                  FlatDefense +
-                 (DefenderLevel + DefenderSTA / 2 + DefenderDEX) / 2.8 -
+                 (DefenderLevel + DefenderSta / 2 + DefenderDex) / 2.8 -
                  4 +
                  DefenderLevel * 2
              ),
@@ -490,7 +499,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       <details><summary>details</summary>
 
-      * 💥 criticalChance
+      * 💥 criticalChance%
 
          * ClassCriticalFactor : `critical`, `class.critical`, `job.critical`, `JOB_PROP_CRITICAL`.
 
@@ -503,14 +512,14 @@ DamagePerSecond = computeDamage * hitsPerSecond
          ```js
          // MoverAttack.cpp
          // int CMover::GetCriticalProb( void )
-         criticalChance = ((((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0) * ( 1 - CriticalResist%)
+         criticalChance% = ((((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0) * ( 1 - CriticalResist%)
 
          // ------------------------------------------------------------------------------------
          // MoverAttack.cpp
          // BOOL CMover::IsCriticalAttack( CMover* pDefender, DWORD dwAtkFlags )
          // ------------------------------------------------------------------------------------
          // example (Blade's str 500, dex 60, cc 45) :
-         // criticalChance = ((((60 / 10) * 1) + 45) / 100.0) * (1 - CriticalResist%) = 51% * (1 - CriticalResist%)
+         // criticalChance% = ((((60 / 10) * 1) + 45) / 100.0) * (1 - CriticalResist%) = 51% * (1 - CriticalResist%)
          // ------------------------------------------------------------------------------------
          ```
 
@@ -518,7 +527,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
             ```js
             // WndField.cpp
             // int CWndCharInfo::GetVirtualCritical()
-            criticalChance = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0
+            criticalChance% = (((AttackerDex / 10) * ClassCriticalFactor) + AttackerCriticalChance + Precision) / 100.0
             ```
 
       * 💥 criticalFactor
@@ -556,28 +565,27 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
          <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
 
+         * CriticalDamage% : From Attacker's Gear, Buff scales `criticaldamage` `DST_CRITICAL_BONUS`.
+
          ```js
          criticalDamage = applyAttackDefense(computeAttack, defense) * criticalFactor * (1 + CriticalDamage%)
                         = damageAfterApplyDefense * criticalFactor * (1 + CriticalDamage%)
          // if (1 + CriticalDamage%), fCriticalBonus < 0.1, then 0.1
-         // ------------------------------------------------------------------------------------
-         // CriticalDamage% : From Attacker's Gear, Buff scales criticaldamage, DST_CRITICAL_BONUS
-         // ------------------------------------------------------------------------------------
          ```
 
       * 💥 **damageAfterCritical**
          ```js
          // linearInterpolation
-         damageAfterCritical = Math.floor(linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance))
-                             = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * criticalFactor * (1 + criticalDamage%)))
+         damageAfterCritical = Math.floor(linearInterpolation(damageAfterApplyDefense, criticalDamage, criticalChance%))
+                             = Math.floor(damageAfterApplyDefense * ((1 - criticalChance%) + criticalChance% * criticalFactor * (1 + criticalDamage%)))
          ```
          ```js
          // your level <= monster's level, average dps
-         damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.25 * (1 + criticalDamage%)))
+         damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance%) + criticalChance% * 1.25 * (1 + criticalDamage%)))
          ```
          ```js
          // monster's level < your level, average dps
-         damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance) + criticalChance * 1.6 * (1 + criticalDamage%)))
+         damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance%) + criticalChance% * 1.6 * (1 + criticalDamage%)))
          ```
 
       </details>
@@ -760,7 +768,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+      AttackMultiplier = (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -864,7 +872,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + skillDamage% ) * (1 + PvEPvP%) * (1 + Upcut%)
+      AttackMultiplier = (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -1104,9 +1112,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * healing% : From Character's Gear, Buff scales `healing` `DST_HP_MAX_RATE`.
 
-
    ```js
-   healing = (skillHealingBase + INT * skillScale) * healing%
+   healing = (skillHealingBase + PlayerInt * skillScale) * healing%
    ```
 
 </details>
