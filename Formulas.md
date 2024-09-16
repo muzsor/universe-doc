@@ -404,12 +404,63 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * defense
+
+      <details><summary>details</summary>
+
+      * FlatDefense : From Defender's Gear, Buff unscaled `DST_ADJDEF`.
+
       ```js
       // MoverAttack.cpp
       // int CMover::CalcDefense( ATTACK_INFO* pInfo, BOOL bRandom )
       defense = computeDefense
-              = computeGenericDefense
+              = Math.MAX((computeGenericDefense + FlatDefense) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
+
+      * Player VS Monster
+
+         * jobFactor :  Monsters always `1.0`.
+
+         ```js
+         function computeGenericDefense(level, defense, sta, jobFactor = 1.0) {
+           const staFactor = 0.75
+           const levelScale = 2.0 / 2.8 // 0.7142857142857143 ~= 71.43%
+           const statScale = 0.5 / 2.8 // 0.1785714285714286 ~= 17.86%
+
+           const baseDefense = Math.floor(
+             level * levelScale +
+               (sta * statScale + (sta - 14) * jobFactor) * staFactor -
+               4
+           )
+
+           const equipmentDefense = defense / 4
+
+           return baseDefense + equipmentDefense
+         }
+
+         // ------------------------------------------------------------------------------------
+         // example (Beast King Khan https://api.flyff.com/monster/16244)
+         // computeGenericDefense(150, 416, 30) = 223
+         // ------------------------------------------------------------------------------------
+         ```
+
+      * Monster VS Player
+         ```js
+         // AttackArbiter.cpp
+         // int CMover::CalcDefensePlayer( CMover* pAttacker, DWORD dwAtkFlags )
+         computeGenericDefense =
+           Math.Max(
+             Math.Floor(
+               DefenseFromArmor / 4 +
+                 FlatDefense +
+                 (DefenderLevel + DefenderSTA / 2 + DefenderDEX) / 2.8 -
+                 4 +
+                 DefenderLevel * 2
+             ),
+             0
+           )
+         ```
+
+      </details>
 
    * critical
 
