@@ -1140,11 +1140,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * block chance : Generate random numbers from `0 ~ 79` to determine which of the following ranges applies.
 
-   * block failure : `6 / 80 = 7.5%` (random values is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
+   * block failure : `6 / 80 = 7.5%` (random numbers is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
 
-   * block success : `5 / 80 = 6.25%` (random values is `75 ~ 79`, total of `5` possible values), blockFactor return `0.2` (PvE), `0.3` (PvP).
+   * block success : `5 / 80 = 6.25%` (random numbers is `75 ~ 79`, total of `5` possible values), blockFactor return `0.2` (PvE), `0.3` (PvP).
 
-   * Further calculate the block rate : `69 / 80 = 86.25%` (random values is `6 ~ 74`, total of `69` possible values), blockFactor return  `0.2` (PvE), `0.3` (PvP).
+   * Further calculate the block rate : `69 / 80 = 86.25%` (random numbers is `6 ~ 74`, total of `69` possible values), blockFactor return  `0.2` (PvE), `0.3` (PvP).
 
    * If reaching the maximum block rate, the block chance is **`6.25% + 86.25% = 92.5%`.**
 
@@ -1290,11 +1290,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * block chance : Generate random numbers from `0 ~ 99` to determine which of the following ranges applies.
 
-   * block failure : `6 / 100 = 6%` (random values is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
+   * block failure : `6 / 100 = 6%` (random numbers is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
 
-   * block success : `5 / 100 = 5%` (random values is `95 ~ 99`, total of `5` possible values), blockFactor return `0.1`.
+   * block success : `5 / 100 = 5%` (random numbers is `95 ~ 99`, total of `5` possible values), blockFactor return `0.1`.
 
-   * Further calculate the block rate : `89 / 100 = 89%` (random values is `6 ~ 94`, total of `89` possible values), blockFactor return `0.2`.
+   * Further calculate the block rate : `89 / 100 = 89%` (random numbers is `6 ~ 94`, total of `89` possible values), blockFactor return `0.2`.
 
 > `xRandom(100)` should only return numbers between `0` and `99`, the comment in the code is likely incorrect.
 
