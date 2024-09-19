@@ -132,19 +132,21 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // int CAttackArbiter::CalcATK( ATTACK_INFO* pInfo )
    computeAttack = (HitPower * AttackMultiplier) + FlatAttack
                  = (HitMinMax * DamagePropertyFactor * (1 + attack%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
-
-   // ------------------------------------------------------------------------------------
-   // WndField.cpp
-   // void CWndCharacterDetail2::GetVirtualATK(int* pnMin, int* pnMax)
-   // ------------------------------------------------------------------------------------
    ```
 
    * Attack in character window
 
-      * WeaponPlusDamage : From Attacker’s Weapon unscaled Additional Attack.
+      * WeaponPlusDamage : From Attacker’s Weapon unscaled Additional Attack. (Not sure if it's still in use.)
 
       ```js
+      // WndField.cpp
+      // void CWndCharInfo::RenderATK( C2DRender* p2DRender, int x, int y )
       Attack = ((HitMin + HitMax) / 2) * (1 + attack%) * (1 + Upcut%) + FlatAttack + WeaponPlusDamage
+
+      // ------------------------------------------------------------------------------------
+      // example :
+      // Math.Floor((7898 + 7904) / 2) * 1.73 * 1.2 + 0 + 0 = 16402
+      // ------------------------------------------------------------------------------------
       ```
 
    * HitPower
@@ -168,14 +170,14 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // MoverAttack.cpp
       // void CMover::GetHitMinMax( int* pnMin, int* pnMax, ATTACK_INFO *pInfo )
-      HitMinMax = ((WeaponBaseAttackMinMax * 2) + WeaponAttack + AttackerPlusDamage) * WeaponMultiplier + WeaponUpgradeLevelAdditionalAttack
+      HitMinMax = Math.Floor(((WeaponBaseAttackMinMax * 2) + WeaponAttack + AttackerPlusDamage) * WeaponMultiplier) + WeaponUpgradeLevelAdditionalAttack
       // ------------------------------------------------------------------------------------
       // WeaponBaseAttackMinMax = minAttack DST_ABILITY_MIN, maxAttack DST_ABILITY_MAX
       // ------------------------------------------------------------------------------------
 
       // ------------------------------------------------------------------------------------
-      // example (Lusaka's Crystal Axe U+5, Demol Earring U+5 * 2, Spirit Fortune) :
-      // ((544 ~ 546 * 2) + 3123 + (540 * 2) + 150) * 1.39 + 58.0948 = 7621.0848 ~ 7626.6448
+      // example (Blade use Lusaka's Crystal Axe U+5, Demol Earring U+5 * 2, Spirit Fortune) :
+      // Math.Floor(((544 ~ 546 * 2) + 3123 + (540 * 2) + 350) * 1.39) + 58 = 7898 ~ 7904
       // ------------------------------------------------------------------------------------
       ```
 
@@ -207,7 +209,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
          // example (Blade's str 500 and use Axe) :
          // (500 - 12) * 5.7 = 2781.6
          // example (Blade's str 500 and use Sword) :
-         // (500 - 12) * 4.7 = 2,293.6
+         // (500 - 12) * 4.7 = 2293.6
          // ------------------------------------------------------------------------------------
 
          // ------------------------------------------------------------------------------------
@@ -230,7 +232,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
          // ------------------------------------------------------------------------------------
          // int CMover::GetPlusWeaponATK( DWORD dwWeaponType )
          // ------------------------------------------------------------------------------------
-         plusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack.
+         plusWeaponAttack : From Attacker’s Gear, Buff Weapon Type unscaled Additional Attack. (Weapon Mastery Buff)
          // ------------------------------------------------------------------------------------
          // swordattack DST_SWD_DMG
          // axeattack DST_AXE_DMG
@@ -253,9 +255,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
          // Only for bow
          addValue = AttackerStr  * 0.14
          // ------------------------------------------------------------------------------------
+         // example (Ranger's str 68 and use Bow) :
+         // 68 * 0.14 = 9.52
+         // ------------------------------------------------------------------------------------
 
          // ------------------------------------------------------------------------------------
-         // example total = 2781.6 + 192 + 150 = 3123
+         // example total = Math.Floor(2781.6 + 192 + 150) = 3123
          // ------------------------------------------------------------------------------------
          ```
 
@@ -263,21 +268,20 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
          * Example : *Demol Earring* `damage`, *Spirit Fortune* `damage` etc.
 
-      * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
+      * WeaponMultiplier : Weapon Attack Upgrade Level Bonus.
          ```js
          // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
          WeaponAttackUpgradeLevelBonus% = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
          WeaponMultiplier = (1 + WeaponAttackUpgradeLevelBonus%)
          ```
 
-      * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack
+      * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack.
          ```js
          WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
                                             = Math.floor(Math.pow(WeaponUpgradeLevel, 1.5))
          ```
 
       </details>
-
 
    * DamagePropertyFactor : `1.0`(attacker is none or same element), `1.0 ~ 1.0895`(attacker element vs none or others), `1.0 ~ 1.2139`(strong), `0.9554 ~ 1.0895`(weak).
 
@@ -620,11 +624,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 <table><tr><td><details><summary>details</summary>
 
-* ATK_TYPE : `ATK_MELEESKILL`, `skill.magic == false`
+* ATK_TYPE : `AF_MELEESKILL`, `ATK_MELEESKILL`, `skill.magic == false`
 
 * computeAttack
    ```js
    computeAttack = (MeleeSkillPower * AttackMultiplier) + FlatAttack
+                 = (MeleeSkillPower * (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
    ```
 
    * MeleeSkillPower
@@ -657,7 +662,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // MoverAttack.cpp
       // void CMover::GetItemATKPower( int *pnMin, int *pnMax, ItemProp* pItemProp, CItemElem *pWeapon )
-      WeaponAttackPowerMinMax = (WeaponBaseAttackMinMax * WeaponMultiplier) + Math.floor(Math.pow(WeaponUpgradeLevel, 1.5))
+      WeaponAttackPowerMinMax = (WeaponBaseAttackMinMax * WeaponMultiplier) + WeaponUpgradeLevelAdditionalAttack
 
       // ------------------------------------------------------------------------------------
       // example (Lusaka's Crystal Axe U+5) :
@@ -665,12 +670,18 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
       ```
 
-   * WeaponMultiplier : Weapon Attack Upgrade Level Bonus
-      ```js
-      // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
-      WeaponAttackUpgradeLevelBonus% = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
-      WeaponMultiplier = (1 + WeaponAttackUpgradeLevelBonus%)
-      ```
+      * WeaponMultiplier : Weapon Attack Upgrade Level Bonus.
+         ```js
+         // WeaponUpgradeLevel = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, U1, U2, U3, U4, U5
+         WeaponAttackUpgradeLevelBonus% = 2%, 4%, 6%, 8%, 10%, 13%, 16%, 19%, 21%, 24%,27%, 30%, 33%, 36%, 39%
+         WeaponMultiplier = (1 + WeaponAttackUpgradeLevelBonus%)
+         ```
+
+      * WeaponUpgradeLevelAdditionalAttack : Weapon Attack Upgrade Level Additional Attack.
+         ```js
+         WeaponUpgradeLevelAdditionalAttack = WeaponUpgradeLevel^1.5
+                                            = Math.floor(Math.pow(WeaponUpgradeLevel, 1.5))
+         ```
 
    * ReferStat
       ```js
@@ -847,12 +858,13 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 <table><tr><td><details><summary>details</summary>
 
-* ATK_TYPE : `ATK_MAGICSKILL`, `skill.magic == true`
+* ATK_TYPE : `AF_MAGIC`, `ATK_MAGICSKILL`, `skill.magic == true`
 
 * computeAttack
    ```js
    computeAttack = (MagicSkillPower * AttackMultiplier) + FlatAttack
                  = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * AttackMultiplier) + FlatAttack
+                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
    ```
 
    * MagicSkillPower
@@ -1077,8 +1089,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // MoverParam.cpp
    // int CMover::GetMaxOriginHitPoint( BOOL bOriginal )
    baseHp = 150 + (level * classHpModifier) + (sta * level * classHpModifier / 100)
-      = 150 + level * (classHpModifier + (classHpModifier / 100 * sta))
-      = 150 + classHpModifier * level * (1 + (sta / 100))
+          = 150 + level * (classHpModifier + (classHpModifier / 100 * sta))
+          = 150 + classHpModifier * level * (1 + (sta / 100))
    ```
 
 ### max hp
@@ -1106,14 +1118,20 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * skillHealingBase :
 
-      * Heal,  Heal Rain : 650
+      * Heal,  Heal Rain : `650`
 
-      * Circle Healing : 450
+      * Circle Healing : `450`
+
+   * skillScale :
+
+      * Heal, Circle Healing : `5.88`
+
+      * Heal Rain : `8.18`
 
    * healing% : From Character's Gear, Buff scales `healing` `DST_HP_MAX_RATE`.
 
    ```js
-   healing = (skillHealingBase + PlayerInt * skillScale) * healing%
+   healing = (skillHealingBase + PlayerInt * skillScale) * (1 + healing%)
    ```
 
 </details>
@@ -1147,15 +1165,25 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * block chance : Generate random numbers from `0 ~ 79` to determine which of the following ranges applies.
 
-   * block failure : `6 / 80 = 7.5%` (random numbers is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
+   * block failure : `6 / 80 = 7.5%`. The range of random numbers is `0 ~ 5`, with a total of `6` possible values.
 
-   * block success : `5 / 80 = 6.25%` (random numbers is `75 ~ 79`, total of `5` possible values), blockFactor return `0.2` (PvE), `0.3` (PvP).
+   * block success : `5 / 80 = 6.25%`. The range of random numbers is `75 ~ 79`, with a total of `5` possible values.
 
-   * Further calculate the block rate : `69 / 80 = 86.25%` (random numbers is `6 ~ 74`, total of `69` possible values), blockFactor return  `0.2` (PvE), `0.3` (PvP).
+   * Further calculate the block rate : `69 / 80 = 86.25%`. The range of random numbers is `6 ~ 74`, with a total of `69` possible values.
 
    * If reaching the maximum block rate, the block chance is **`6.25% + 86.25% = 92.5%`.**
 
+* blockFactor :
+
+   * block failure : return `1.0`.
+
+   * block success : return `0.2` (PvE), `0.3` (PvP).
+
+   * Further calculate the block rate : If the random number is lower than the player's block rate, then return `0.2` (PvE), `0.3` (PvP); otherwise, return `1.0`.
+
 * BlockRate
+
+   <details><summary>details</summary>
 
    * BlockPenetration% : Block penetration only affects PvP damage.
 
@@ -1192,7 +1220,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
       ```
 
+   </details>
+
 * calculate
+
+   <details><summary>details</summary>
+
    ```js
    function calculateBlock(
      playerLevel,
@@ -1231,8 +1264,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // ------------------------------------------------------------------------------------
    ```
 
+   </details>
 
 * block in character window
+
+   <details><summary>details</summary>
 
    ```js
    CharacterWindowBlock = ((PlayerDex / 8.0) * classBlockModifier) + fblockB + ExtraBlock
@@ -1286,8 +1322,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
 
-</details></td></tr></table>
+   </details>
 
+</details></td></tr></table>
 
 #### Player VS Monster
 
@@ -1297,21 +1334,37 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * block chance : Generate random numbers from `0 ~ 99` to determine which of the following ranges applies.
 
-   * block failure : `6 / 100 = 6%` (random numbers is `0 ~ 5`, total of `6` possible values), blockFactor return `1.0`.
+   * block failure : `6 / 100 = 6%`. The range of random numbers is `0 ~ 5`, with a total of `6` possible values.
 
-   * block success : `5 / 100 = 5%` (random numbers is `95 ~ 99`, total of `5` possible values), blockFactor return `0.1`.
+   * block success : `5 / 100 = 5%`. The range of random numbers is `95 ~ 99`, with a total of `5` possible values.
 
-   * Further calculate the block rate : `89 / 100 = 89%` (random numbers is `6 ~ 94`, total of `89` possible values), blockFactor return `0.2`.
+   * Further calculate the block rate : `89 / 100 = 89%`. The range of random numbers is `6 ~ 94`, with a total of `89` possible values.
 
 > `xRandom(100)` should only return numbers between `0` and `99`, the comment in the code is likely incorrect.
 
+* blockFactor :
+
+   * block failure : return `1.0`.
+
+   * block success : return `0.1`.
+
+   * Further calculate the block rate : If the random number is lower than the monster's block rate, then return `0.2`; otherwise, return `1.0`.
+
 * BlockRate
+
+   <details><summary>details</summary>
+
    ```js
    BlockRate = Math.max(Math.floor((DefenderParry - DefenderLevel) * 0.5)), 0)
    // if BlockRate < 0.0 , then 0.0
    ```
 
+   </details>
+
 * Average Multiplier
+
+   <details><summary>details</summary>
+
    ```js
    // Average Multiplier
    function calculateAverageBlockFactor(
@@ -1343,6 +1396,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
    console.log('Average value:', averageValue)
    // Average value: 0.8910116515800439
    ```
+
+   </details>
 
 </details></td></tr></table>
 
