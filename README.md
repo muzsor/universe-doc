@@ -1605,6 +1605,24 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/ultimate/ultimate_jewelry_upgrade.png" alt="ultimate_jewelry_upgrade.png"/></div>
 
+* Ultimate Jewelry provides the following set effects:
+
+  * <img src="https://api.flyff.com/image/item/genjewrinchampion.png" alt="Champion's Rings"/> Champion's Set :
+    * (4/5) Set Effect : Critical Chance +10%
+    * (5/5) Set Effect : Attack +5%, Block Penetration +10%
+
+  * <img src="https://api.flyff.com/image/item/genjewrinmarksman.png" alt="Marksman's Rings"/> Marksman's Set :
+    * (4/5) Set Effect : HP Recovery After Kill +750
+    * (5/5) Set Effect : Attack +5%, Block Penetration +10%
+
+  * <img src="https://api.flyff.com/image/item/genjewrindefender.png" alt="Defender's Rings"/> Defender's Set :
+    * (4/5) Set Effect : Block +10%
+    * (5/5) Set Effect : Magic Defense +5%, Critical Resist +10%
+
+  * <img src="https://api.flyff.com/image/item/genjewrinadept.png" alt="Adept's Rings"/> Adept's Set :
+    * (4/5) Set Effect : MP Recovery After Kill +500
+    * (5/5) Set Effect : Magic Attack +5%, Decreased Casting Time +10%
+
 <div align="center"><img src="./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Jewelry%20%2B5.png" alt="1,000,000 Simulations Of Ultimate Jewelry +5.png" width="600"/></div>
 
 </details>

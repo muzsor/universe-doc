@@ -446,11 +446,15 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * FlatDefense : From Defender's Gear, Buff unscaled `DST_ADJDEF`.
 
+      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate`.
+
+      * Defense% : From Defender's Gear, Buff scales `defense`.
+
       ```js
       // MoverAttack.cpp
       // int CMover::CalcDefense( ATTACK_INFO* pInfo, BOOL bRandom )
       defense = computeDefense
-              = Math.MAX((computeGenericDefense + FlatDefense) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
+              = Math.MAX((computeGenericDefense + FlatDefense) * (1 + ArmorPenetrate%) * (1 - Defense%), 0)
       ```
 
       * Player VS Monster
@@ -480,7 +484,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
          // ------------------------------------------------------------------------------------
          ```
 
-      * Monster VS Player
+      * Monster VS Player (Not sure if it's still in use.)
          ```js
          // AttackArbiter.cpp
          // int CMover::CalcDefensePlayer( CMover* pAttacker, DWORD dwAtkFlags )
@@ -801,9 +805,14 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * defense
+
+      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate`.
+
+      * Defense% : From Defender's Gear, Buff scales `defense`.
+
       ```js
       defense = computeDefense
-              = computeGenericDefense
+              = Max(Math.floor(Defense / 7.0 + 1) * (1 + ArmorPenetrate%) * (1 - Defense%), 0)
       ```
 
    * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
@@ -902,7 +911,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * applyMagicSkillDefense
 
-      * magicDefense% : From Attacker's Gear, Buff scales `magicDefense` `DST_RESIST_MAGIC_RATE`.
+      * magicDefense% : From Defender's Gear, Buff scales `magicDefense` `DST_RESIST_MAGIC_RATE`.
 
       ```js
       // nATK = nATK - nATK * pDefender->GetParam( DST_RESIST_MAGIC_RATE, 0 ) / 100
@@ -910,9 +919,18 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * defense
+
+      * Magic skills have no defense in PvE.
+
+      * magicDefense : From Defender's Gear, Buff unscaled `magicDefense` `DST_RESIST_MAGIC_RATE`.
+
+      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate`.
+
+      * Defense% : From Defender's Gear, Buff scales `defense`.
+
       ```js
       defense = computeDefense
-              = computeGenericDefense
+              = Max(magicDefense * (1 + ArmorPenetrate%) * (1 - Defense%), 0)
       ```
 
    * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
