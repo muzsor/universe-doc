@@ -454,7 +454,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // MoverAttack.cpp
       // int CMover::CalcDefense( ATTACK_INFO* pInfo, BOOL bRandom )
       defense = computeDefense
-              = Math.MAX((computeGenericDefense + FlatDefense) * (1 + ArmorPenetrate%) * (1 - Defense%), 0)
+              = Math.MAX((computeGenericDefense + FlatDefense) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
 
       * Player VS Monster
@@ -812,7 +812,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       ```js
       defense = computeDefense
-              = Max(Math.floor(Defense / 7.0 + 1) * (1 + ArmorPenetrate%) * (1 - Defense%), 0)
+              = Max(Math.floor(Defense / 7.0 + 1) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
 
    * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
@@ -911,18 +911,20 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * applyMagicSkillDefense
 
-      * magicDefense% : From Defender's Gear, Buff scales `magicDefense` `DST_RESIST_MAGIC_RATE`.
+      * Magic skills have no any defense in PvE.
+
+      * magicDefensePvP% : From Defender's Gear, Buff scales `magicDefense` `DST_RESIST_MAGIC_RATE`.
 
       ```js
       // nATK = nATK - nATK * pDefender->GetParam( DST_RESIST_MAGIC_RATE, 0 ) / 100
-      applyMagicSkillDefense = applyAttackDefense((computeAttack * (1 − magicDefense%)), defense)
+      applyMagicSkillDefense = applyAttackDefense((computeAttack * (1 − magicDefensePvP%)), defense)
       ```
 
    * defense
 
-      * Magic skills have no defense in PvE.
+      * Magic skills have no any defense in PvE.
 
-      * magicDefense : From Defender's Gear, Buff unscaled `magicDefense` `DST_RESIST_MAGIC_RATE`.
+      * magicDefensePvP : From Defender's Gear, Buff unscaled `magicDefense` `DST_RESIST_MAGIC_RATE`.
 
       * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate`.
 
@@ -930,7 +932,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       ```js
       defense = computeDefense
-              = Max(magicDefense * (1 + ArmorPenetrate%) * (1 - Defense%), 0)
+              = Max(magicDefensePvP * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
 
    * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
