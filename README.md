@@ -1205,6 +1205,12 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/costume_collection/65.Overalls.jpg" alt="65.Overalls.jpg" width="300"/></div>
 
+66.  `2024-09-24`: `Banana Hero`
+
+   * Hat / Suit / Hands / Shoes / Glasses / Cloak
+
+<div align="center"><img src="./system/costume_collection/66.Banana_Hero.jpg" alt="66.Banana_Hero.jpg" width="300"/></div>
+
 </details>
 
 </details></td></tr></table>
