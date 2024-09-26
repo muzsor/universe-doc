@@ -454,7 +454,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // MoverAttack.cpp
       // int CMover::CalcDefense( ATTACK_INFO* pInfo, BOOL bRandom )
       defense = computeDefense
-              = Math.MAX((computeGenericDefense + FlatDefense) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
+              = Math.MAX((computeGenericDefense) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
 
       * Player VS Monster
@@ -462,7 +462,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
          * jobFactor :  Monsters always `1.0`.
 
          ```js
-         function computeGenericDefense(level, defense, sta, jobFactor = 1.0) {
+         function computeGenericDefense(level, defense, sta, jobFactor = 1.0, flatDefense = 0.0) {
            const staFactor = 0.75
            const levelScale = 2.0 / 2.8 // 0.7142857142857143 ~= 71.43%
            const statScale = 0.5 / 2.8 // 0.1785714285714286 ~= 17.86%
@@ -472,10 +472,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
                (sta * statScale + (sta - 14) * jobFactor) * staFactor -
                4
            )
-
+           // Monster's defense means that natural armor represents a monster's "armor set".
            const equipmentDefense = defense / 4
 
-           return baseDefense + equipmentDefense
+           return baseDefense + equipmentDefense + flatDefense
          }
 
          // ------------------------------------------------------------------------------------
@@ -691,7 +691,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // If there are two Stats, add them after calculation.
       ReferStat = Math.floor(AttackerStat * ((((PvEPvPSkillStatScale * 50.0) - (SkillLevel + 1)) / 5.0) / 10.0) + ((AttackerStat * SkillLevel) / 50.0))
-                = Math.floor(AttackerStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50))
+                = Math.floor(AttackerStat * (((PvEPvPSkillStatScale × 50.0) - 1) / 50.0))
       ```
       <details><summary>details</summary>
 
@@ -817,8 +817,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
       ```js
+      // applyElementDefense(damage)
       ElementResistFactor = SkillElementVSDefenderElementFactor * SkillElementVSWeaponElementFactor
-                          = (0.7, 1.0, 1.3) * (0.9, 1.1)
+                          = (0.7 or 1.0 or 1.3) * (0.9 or 1.0 or 1.1)
 
       // ------------------------------------------------------------------------------------
       // Skill Element VS Defender Element Factor
@@ -829,8 +830,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // Skill Element VS Weapon Element Factor
       // If the weapon is weak compared to the skill element = 0.9
       // If the skill and weapon match the element = 1.1
+      // Others = 1.0
       // ------------------------------------------------------------------------------------
-
       ```
 
    * DamageMultiplier
@@ -937,8 +938,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
       ```js
+      // applyElementDefense(damage)
       ElementResistFactor = SkillElementVSDefenderElementFactor * SkillElementVSWeaponElementFactor
-                          = (0.7, 1.0, 1.3) * (0.9, 1.1)
+                          = (0.7 or 1.0 or 1.3) * (0.9 or 1.0 or 1.1)
 
       // ------------------------------------------------------------------------------------
       // Skill Element VS Defender Element Factor
@@ -949,8 +951,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // Skill Element VS Weapon Element Factor
       // If the weapon is weak compared to the skill element = 0.9
       // If the skill and weapon match the element = 1.1
+      // Others = 1.0
       // ------------------------------------------------------------------------------------
-
       ```
 
    * DamageMultiplier
