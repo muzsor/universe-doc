@@ -88,7 +88,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // simplify formula
       // Attacker is Player, Defender is NPC
       nHitRate = (2.88 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel))
-      HitRate = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
+      HitRate = Math.min(Math.max(nHitRate + ExtraHitRate, 0.2), 0.96)
       // Limited to 0.2 ~ 0.96
 
       // ------------------------------------------------------------------------------------
@@ -98,13 +98,27 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // HitRate = Math.min(Math.max((0.374 + 0.45 + 0.3), 0.2), 0.96) = 0.96 = 96%
       // ------------------------------------------------------------------------------------
       ```
+      ```js
+      function getHitRate(
+        attackerLevel,
+        attackerDex,
+        defenderLevel,
+        defenderParry,
+        extraHitRate = 0
+      ) {
+        nHitRate =
+          (2.88 * attackerDex * attackerLevel) /
+          ((attackerDex + defenderParry) * (attackerLevel + defenderLevel))
+        return Math.min(Math.max(nHitRate + extraHitRate, 0.2), 0.96)
+      }
+      ```
 
    * Monster VS Player
       ```js
       // simplify formula
       // Attacker is NPC, Defender is Player
       nHitRate = (1.5 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel * 0.3))
-      HitRate = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
+      HitRate = Math.min(Math.max(nHitRate + ExtraHitRate, 0.2), 0.96)
       // Limited to 0.2 ~ 0.96
       ```
 
