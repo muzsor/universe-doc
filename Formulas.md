@@ -145,7 +145,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // AttackArbiter.cpp
    // int CAttackArbiter::CalcATK( ATTACK_INFO* pInfo )
    computeAttack = (HitPower * AttackMultiplier) + FlatAttack
-                 = (HitMinMax * DamagePropertyFactor * (1 + attack%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+                 = (HitMinMax * DamagePropertyFactor * (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
    ```
 
    * Attack in character window
@@ -388,7 +388,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack%) * (1 + PvEPvP%) * (1 + Upcut%)
+      AttackMultiplier = (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -435,13 +435,13 @@ DamagePerSecond = computeDamage * hitsPerSecond
       <img src="./formulas/effect_of_defense_on_adjusted_attack.png" alt="effect_of_defense_on_adjusted_attack.png" width="600"/>
 
       ```js
-      value = Math.sqrt(defense / (defense + (2 * attack)))
+      value = Math.sqrt(defense / (defense + (2.0 * attack)))
       applyAttackDefense = attack - Math.floor(linearInterpolation(defense, attack, value))
                          = attack - Math.floor((1 - value) * defense + value * attack)
       ```
       ```js
       function applyAttackDefense(attack, defense){
-        const value = Math.sqrt(defense / (defense + 2 * attack))
+        const value = Math.sqrt(defense / (defense + 2.0 * attack))
         const damage = attack - Math.floor((1 - value) * defense + value * attack)
         return damage
       }
@@ -647,7 +647,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 * computeAttack
    ```js
    computeAttack = (MeleeSkillPower * AttackMultiplier) + FlatAttack
-                 = (MeleeSkillPower * (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+                 = (MeleeSkillPower * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
    ```
 
    * MeleeSkillPower
@@ -797,7 +797,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
+      AttackMultiplier = (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -888,7 +888,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```js
    computeAttack = (MagicSkillPower * AttackMultiplier) + FlatAttack
                  = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * AttackMultiplier) + FlatAttack
-                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
    ```
 
    * MagicSkillPower
@@ -908,7 +908,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
       // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
+      AttackMultiplier = (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
