@@ -15,6 +15,7 @@
 
 - [universe-document](#universe-document)
   - [🌐 community](#-community)
+    - [closed](#closed)
   - [⚙️ system](#️-system)
     - [📢 updates](#-updates)
       - [💸 top up event](#-top-up-event)
@@ -146,13 +147,17 @@
 
    * [nulfrost/flyff-skill-calc](https://github.com/nulfrost/flyff-skill-calc "nulfrost/flyff-skill-calc")
 
-* [FlyingSnow/Flyff Universe quest rewards overview](https://flyffu-quest-rewards-overview.herokuapp.com/ "FlyingSnow/Flyff Universe quest rewards overview")：An overview of the obtainable rewards of the different quests in Flyff Universe.
-
-   * [bram-prins/flyff-universe-quest-rewards-overview](https://github.com/bram-prins/flyff-universe-quest-rewards-overview "flyff-universe-quest-rewards-overview")
-
 * [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/)：[@adama.97 @Yuzaro (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 "@adama.97 @Yuzaro (discord flyff universe)")
 
 * [MonkeyZero/Flyff Model Viewer](https://flyffmodelviewer.com/ "MonkeyZero/Flyff Model Viewer")：The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
+
+### closed
+
+<!-- Your contributions are greatly appreciated! -->
+
+* [FlyingSnow/Flyff Universe quest rewards overview](https://flyffu-quest-rewards-overview.herokuapp.com/ "FlyingSnow/Flyff Universe quest rewards overview")：An overview of the obtainable rewards of the different quests in Flyff Universe.
+
+   * [bram-prins/flyff-universe-quest-rewards-overview](https://github.com/bram-prins/flyff-universe-quest-rewards-overview "flyff-universe-quest-rewards-overview")
 
 * [shovel/Madrigalmaps](https://www.madrigalmaps.com/ "shovel/Madrigalmaps")：An interactive map of the world, Madrigal.
 
