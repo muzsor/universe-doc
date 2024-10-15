@@ -622,7 +622,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       // ------------------------------------------------------------------------------------
       // berserkAttackPower = m_fBerserkDmgMul%
-      // If the monster's HP is lower than berserkThresholdHP%, it will be applied.
+      // If the monster's HP is lower than berserkThresholdHP%, this will apply, and it is only applicable to monster attacks.
       // ------------------------------------------------------------------------------------
       // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
@@ -859,7 +859,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       // ------------------------------------------------------------------------------------
       // berserkAttackPower = m_fBerserkDmgMul%
-      // If the monster's HP is lower than berserkThresholdHP%, it will be applied.
+      // If the monster's HP is lower than berserkThresholdHP%, this will apply, and it is only applicable to monster attacks.
       // ------------------------------------------------------------------------------------
       // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
@@ -983,7 +983,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       // ------------------------------------------------------------------------------------
       // berserkAttackPower = m_fBerserkDmgMul%
-      // If the monster's HP is lower than berserkThresholdHP%, it will be applied.
+      // If the monster's HP is lower than berserkThresholdHP%, this will apply, and it is only applicable to monster attacks.
       // ------------------------------------------------------------------------------------
       // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
