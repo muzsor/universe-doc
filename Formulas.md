@@ -410,7 +410,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * applyGenericDefense
       ```js
-      applyGenericDefense = damageAfterCritical * blockFactor
+      applyGenericDefense = damageAfterCritical * blockFactor + WeaponPlusDamage
       ```
 
    *  blockFactor : `0.2` (block PvE), `1.0` (block failure), `0.3`(block PvP)
@@ -427,6 +427,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       damageAfterCritical = applyAttackDefense(computeAttack, defense) * critical
                           = damageAfterApplyDefense * critical
       ```
+
+   * WeaponPlusDamage : From Attacker’s Weapon unscaled Additional Attack. (Not sure if it's still in use.)
 
    * applyAttackDefense
 
@@ -616,8 +618,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * DamageMultiplier
       ```js
-      DamageMultiplier = OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
+      DamageMultiplier = berserkAttackPowerMultiplier * OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
 
+      // ------------------------------------------------------------------------------------
+      // berserkAttackPower = m_fBerserkDmgMul%
+      // If the monster's HP is lower than berserkThresholdHP%, it will be applied.
       // ------------------------------------------------------------------------------------
       // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
@@ -850,8 +855,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * DamageMultiplier
       ```js
-      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
+      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * berserkAttackPowerMultiplier * OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
 
+      // ------------------------------------------------------------------------------------
+      // berserkAttackPower = m_fBerserkDmgMul%
+      // If the monster's HP is lower than berserkThresholdHP%, it will be applied.
       // ------------------------------------------------------------------------------------
       // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
@@ -971,8 +979,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * DamageMultiplier
       ```js
-      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
+      DamageMultiplier = SkillDamageMultiplier * SkillAwakeBonus * berserkAttackPowerMultiplier * OffhandWeaponAttackFactor * HolycrossSwordcross2x * LevelDifferenceReductionFactor
 
+      // ------------------------------------------------------------------------------------
+      // berserkAttackPower = m_fBerserkDmgMul%
+      // If the monster's HP is lower than berserkThresholdHP%, it will be applied.
       // ------------------------------------------------------------------------------------
       // OffhandWeaponAttackFactor : PARTS_LWEAPON 0.75
       // ------------------------------------------------------------------------------------
