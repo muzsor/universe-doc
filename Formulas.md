@@ -145,7 +145,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // AttackArbiter.cpp
    // int CAttackArbiter::CalcATK( ATTACK_INFO* pInfo )
    computeAttack = (HitPower * AttackMultiplier) + FlatAttack
-                 = (HitMinMax * DamagePropertyFactor * (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+                 = (HitMinMax * DamagePropertyFactor * ChargeMultiplier * (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
    ```
 
    * Attack in character window
@@ -167,7 +167,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // MoverAttack.cpp
       // int CMover::GetHitPower( ATTACK_INFO* pInfo  )
-      HitPower = Math.floor(HitMinMax * DamagePropertyFactor)
+      HitPower = Math.floor(HitMinMax * DamagePropertyFactor * ChargeMultiplier)
       // HitPower = xRandom( nMin, nMax ) * DamagePropertyFactor
       ```
       ```js
@@ -308,7 +308,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // MoverAttack.cpp
       // void CMover::GetDamagePropertyFactor( CMover* pDefender, int* pnATKFactor, int* pnDEFFactor, int nParts )
+      // Player VS Monster
       DamagePropertyFactor = ElementAttackFactor + ElementAttackStone%
+      ```
+      ```js
+      // Monster VS Player, Player VS Player
+      DamagePropertyFactor = 2% * (DefenderElementLevel - AttackerElementLevel)
       ```
 
       <details><summary>details</summary>
@@ -382,6 +387,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       </details>
 
+   * ChargeMultiplier : Ranger Attack boost based on charge level.
+
    * AttackMultiplier
       ```js
       // MoverAttack.cpp
@@ -404,8 +411,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyGenericDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 = damageAfterCritical * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 = applyAttackDefense(computeAttack, defense) * critical * blockFactor * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = (damageAfterCritical * blockFactor + WeaponPlusDamage) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = (applyAttackDefense(computeAttack, defense) * critical * blockFactor + WeaponPlusDamage) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
    ```
 
    * applyGenericDefense
@@ -557,44 +564,49 @@ DamagePerSecond = computeDamage * hitsPerSecond
       * 💥 criticalFactor
          ```js
          // ------------------------------------------------------------------------------------
-         // your level <= monster's level
-         minCritical = 1.1
-         maxCritical = 1.4
+         // Player's level <= Monster's level
+         criticalFactorMin = 1.1
+         criticalFactorMax = 1.4
          // ------------------------------------------------------------------------------------
          // Average Dps
-         criticalFactor = (minCritical + maxCritical) / 2.0 = 1.25
+         criticalFactor = (criticalFactorMin + criticalFactorMax) / 2.0 = 1.25
          // ------------------------------------------------------------------------------------
 
          // ------------------------------------------------------------------------------------
-         // monster's level < your level
-         minCritical = 1.2
-         maxCritical = 2.0
+         // Monster's level < Player's level
+         criticalFactorMin = 1.2
+         criticalFactorMax = 2.0
          // ------------------------------------------------------------------------------------
          // Average Dps
-         criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
+         criticalFactor = (criticalFactorMin + criticalFactorMax) / 2.0 = 1.6
          // ------------------------------------------------------------------------------------
 
 
          // ------------------------------------------------------------------------------------
-         // Attacker is NPC Mob
-         minCritical = 1.4
-         maxCritical = 1.8
+         // Attacker is NPC Mob and Player's level < NPC's level
+         criticalFactorMin = 1.4
+         criticalFactorMax = 1.8
          // ------------------------------------------------------------------------------------
          // Average Dps
-         criticalFactor = (minCritical + maxCritical) / 2.0 = 1.6
+         criticalFactor = (criticalFactorMin + criticalFactorMax) / 2.0 = 1.6
          // ------------------------------------------------------------------------------------
          ```
 
-      * 💥 criticalDamage
+      * 💥 criticalDamage, criticalBonus
 
          <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
 
          * CriticalDamage% : From Attacker's Gear, Buff scales `criticaldamage` `DST_CRITICAL_BONUS`.
 
          ```js
-         criticalDamage = applyAttackDefense(computeAttack, defense) * criticalFactor * (1 + CriticalDamage%)
-                        = damageAfterApplyDefense * criticalFactor * (1 + CriticalDamage%)
-         // if (1 + CriticalDamage%), fCriticalBonus < 0.1, then 0.1
+         // if xRandom(100) < criticalChance%, then calculate criticalDamage
+         criticalDamageMinMax = applyAttackDefense(computeAttack, defense) * criticalFactorMinMax * (1 + CriticalDamage%)
+                              = damageAfterApplyDefense * criticalFactorMinMax * (1 + CriticalDamage%)
+         // fCriticalBonus = 1 + CriticalDamage%
+         // if fCriticalBonus < 0.1, then 0.1
+         ```
+         ```js
+         actualDamageAfterCritical = xRandom(criticalDamageMin, criticalDamageMax)
          ```
 
       * 💥 **damageAfterCritical**
@@ -604,11 +616,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
                              = Math.floor(damageAfterApplyDefense * ((1 - criticalChance%) + criticalChance% * criticalFactor * (1 + criticalDamage%)))
          ```
          ```js
-         // your level <= monster's level, average dps
+         // Player level <= Monster's level, average dps
          damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance%) + criticalChance% * 1.25 * (1 + criticalDamage%)))
          ```
          ```js
-         // monster's level < your level, average dps
+         // Monster's level < Player's level, average dps
          damageAfterCritical = Math.floor(damageAfterApplyDefense * ((1 - criticalChance%) + criticalChance% * 1.6 * (1 + criticalDamage%)))
          ```
 
