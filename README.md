@@ -30,6 +30,7 @@
     - [💫 transmute](#-transmute)
     - [🏰 guild name color](#-guild-name-color)
     - [🏰 guild level](#-guild-level)
+    - [👩🏻‍❤️‍👨🏻 couple](#️-couple)
     - [🤝 party](#-party)
       - [party window](#party-window)
       - [exp share](#exp-share)
@@ -77,6 +78,7 @@
       - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
+    - [💎 ultimate jewels](#-ultimate-jewels)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
     - [🔥 element upgrade](#-element-upgrade)
     - [✨ glow\&swinging](#-glowswinging)
@@ -153,6 +155,8 @@
 
 ### closed
 
+<table><tr><td><details><summary>details</summary>
+
 <!-- Your contributions are greatly appreciated! -->
 
 * [FlyingSnow/Flyff Universe quest rewards overview](https://flyffu-quest-rewards-overview.herokuapp.com/ "FlyingSnow/Flyff Universe quest rewards overview")：An overview of the obtainable rewards of the different quests in Flyff Universe.
@@ -160,6 +164,8 @@
    * [bram-prins/flyff-universe-quest-rewards-overview](https://github.com/bram-prins/flyff-universe-quest-rewards-overview "flyff-universe-quest-rewards-overview")
 
 * [shovel/Madrigalmaps](https://www.madrigalmaps.com/ "shovel/Madrigalmaps")：An interactive map of the world, Madrigal.
+
+</details></td></tr></table>
 
 ## ⚙️ system
 
@@ -223,6 +229,12 @@
 * `2024-08-16`: [Flyff 20 Year Anniversary Article](https://universe.flyff.com/news/flyff20anniversaryarticle "Flyff 20 Year Anniversary Article")
 
 <div align="center"><img src="./system/updates/Flyff_20th_Event.png" alt="Flyff_20th_Event.png" width="400"/></div>
+
+* `2024-10-17 09:00 UTC`:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
+
+* `2024-10-24 07:00 UTC`:End of `FWC 2024` Server and Transfer.
+
+   > [Maintenance Notice (10/24)](https://universe.flyff.com/news/maintenanceoctober24 "Maintenance Notice (10/24)")
 
 #### 💸 top up event
 
@@ -407,6 +419,16 @@
 <div align="center"><img src="./system/guild/quest_items_guild_exp.png" alt="quest_items_guild_exp.png"/></div>
 
 > source:[@cysotiso @cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1230544317345697883 "@cysotiso @cysotiso (discord flyff universe)")
+
+</details></td></tr></table>
+
+### 👩🏻‍❤️‍👨🏻 couple
+
+<table><tr><td><details><summary>details</summary>
+
+> source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
+
+<div align="center"><img src="./system/couple_skills.png" alt="couple_skills.png"/></div>
 
 </details></td></tr></table>
 
@@ -1472,6 +1494,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
+> source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
+
 ### 🎲 power dice
 
 <table><tr><td><details><summary>details</summary>
@@ -1651,6 +1675,16 @@ Those who have completed the Optional Master Quest during the event period will 
 <table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/new_horizon_equipment_sets.png" alt="new_horizon_equipment_sets.png"/></div>
+
+</details></td></tr></table>
+
+### 💎 ultimate jewels
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/ultimate_jewels.png" alt="ultimate_jewels.png"/></div>
+
+<div align="center"><img src="./upgrade/ultimate_jewels_fusion.png" alt="ultimate_jewels_fusion.png"/></div>
 
 </details></td></tr></table>
 
@@ -1924,6 +1958,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
+> source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
+
 ### 📌 dungeons location
 
 <table><tr><td><details><summary>details</summary>
@@ -2089,6 +2125,10 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_5f.png" alt="forsaken_tower_daily_quests_5f.png"/></div>
 
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_6f.png" alt="forsaken_tower_daily_quests_6f.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_7f.png" alt="forsaken_tower_daily_quests_7f.png"/></div>
+
 </details></td></tr></table>
 
 ### 🏆 guild siege
@@ -2119,7 +2159,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </div>
 
-> source:[Game Version 1.3.6 Patch Notes](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
+> source:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
 <div align="center"><img src="./dungeons/kalgas_assault/wdrealm.png" alt="wdrealm.png"/></div>
 
@@ -2149,6 +2189,10 @@ Those who have completed the Optional Master Quest during the event period will 
 **For more information please refer to [Gothante](https://gothante.com/?search=housing).**
 
 </div>
+
+> source:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
+
+> source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
 
 ### 📍 template
 
