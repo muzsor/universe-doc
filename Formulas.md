@@ -1244,7 +1244,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    <details><summary>details</summary>
 
-   * BlockPenetration% : Block penetration only affects PvP damage.
+   * BlockPenetration% : From Attacker's Gear, Buff scales `blockpenetration` `Block_Penetration`.
 
    > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1272345376720158841 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
