@@ -430,6 +430,8 @@
 
 <div align="center"><img src="./system/couple_skills.png" alt="couple_skills.png"/></div>
 
+<div align="center"><img src="./system/couple_ring.png" alt="couple_ring.png"/></div>
+
 </details></td></tr></table>
 
 ### 🤝 party
