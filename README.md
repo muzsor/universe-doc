@@ -2198,13 +2198,17 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-* Blank World(S):💲100,000,000 penya
-
-* Blank World(M):💲200,000,000 penya
-
-* Beach House(S):💲400,000,000 penya
-
-* Beach House(M):💎1600 fCoins
+| Template | Size | Price |
+|:---:|:---:|:---:|
+| Blank World | S | 💲100,000,000 penya |
+| Blank World | M | 💲200,000,000 penya |
+| Blank World | L | 💲2,250,000,000 penya |
+| Blank World | XL | 💲4,000,000,000 penya |
+| Beach World | S | 💲400,000,000 penya |
+| Darken World</br>Forest World</br>Volcano World</br>Snow World</br>Fall World | S | 💲100,000,000 penya |
+| Beach World</br>Darken World</br>Forest World</br>Volcano World</br>Snow World</br>Fall World | M | 💎1600 fCoins |
+| Beach World</br>Darken World</br>Forest World</br>Volcano World</br>Snow World</br>Fall World | L | 💎3600 fCoins |
+| Beach World</br>Darken World</br>Forest World</br>Volcano World</br>Snow World</br>Fall World | XL | 💎6400 fCoins |
 
 </details></td></tr></table>
 
@@ -2241,6 +2245,22 @@ Those who have completed the Optional Master Quest during the event period will 
 * [Personal House NPC] Chacha: Fly Speed +5%　　💎63(7 days)/💎130(15 days)
 
 * [Personal House NPC] Pang: Level2 Buffs limited to characters level 120 and below.　　💎70(7 days)/💎140(15 days)
+
+* [Personal House NPC] Klock:　　💎63(7 days)/💎130(15 days)
+
+   * Earn that jewel with 30% chance or removing Ultimate Jewel. Ultimate Jewelry Manufacture, Compose Success Rate Increased.
+
+* [Personal House NPC] Mac (A Grade): Pet Training (A Grade)　　💎63(7 days)/💎130(15 days)
+
+* [Personal House NPC] Mac (B Grade): Pet Training (B Grade)　　💎63(7 days)/💎130(15 days)
+
+* [Personal House NPC] Mac (C Grade): Pet Training (C Grade)　　💎63(7 days)/💎130(15 days)
+
+* [Personal House NPC] Mac (D Grade): Pet Training (D Grade)　　💎63(7 days)/💎130(15 days)
+
+* [Personal House NPC] Mac (E Grade): Pet Training (E Grade)　　💎63(7 days)/💎130(15 days)
+
+* [Personal House NPC] Mac (F Grade): Pet Training (F Grade)　　💎63(7 days)/💎130(15 days)
 
 #### Guild House NPC
 
