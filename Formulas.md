@@ -57,6 +57,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * hit rate in character window : It generally displays the incorrect value, with the value increasing by `1` for every `4` DEX, which isn't how DEX affects `hit rate` in reality. Additionally, it caps at `100`, whereas the actual limit should be `96`.
 
    ```js
+   // MoverAttack.cpp
+   // BOOL CMover::GetAttackResult( CMover* pDefender, DWORD dwOption )
+
    // ------------------------------------------------------------------------------------
    // Attacker is Player, Defender is NPC
    factor = 1.6 * 1.5 * ((AttackerLevel * 1.2) / (AttackerLevel + DefenderLevel))
@@ -168,7 +171,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // MoverAttack.cpp
       // int CMover::GetHitPower( ATTACK_INFO* pInfo  )
       HitPower = Math.floor(HitMinMax * DamagePropertyFactor * ChargeMultiplier)
-      // HitPower = xRandom( nMin, nMax ) * DamagePropertyFactor
+      // HitPower = xRandom( nMin, nMax ) * DamagePropertyFactor * ChargeMultiplier
       ```
       ```js
       // ------------------------------------------------------------------------------------
