@@ -432,6 +432,8 @@
 
 <div align="center"><img src="./system/couple_ring.png" alt="couple_ring.png"/></div>
 
+<div align="center"><img src="./system/couple_daily_quests.png" alt="couple_daily_quests.png"/></div>
+
 </details></td></tr></table>
 
 ### 🤝 party
