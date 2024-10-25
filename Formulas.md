@@ -36,6 +36,8 @@
 
 ## ⚔️ damage
 
+[🔝 Back to top](#formulas)
+
 <details>
   <summary>📁 damage details</summary>
 
@@ -1031,6 +1033,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 ## ⚔️ critical chance vs critical damage
 
+[🔝 Back to top](#formulas)
+
 <details>
   <summary>📁 critical chance vs critical damage details</summary>
 
@@ -1064,6 +1068,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 ## ⚔️ blade damage
 
+[🔝 Back to top](#formulas)
+
 <details>
   <summary>📁 blade damage details</summary>
 
@@ -1096,6 +1102,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 ## 🗡️ empower weapon
 
+[🔝 Back to top](#formulas)
+
 <details>
   <summary>📁 empower weapon details</summary>
 
@@ -1113,6 +1121,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 ## 🔪 sword vs axe 🪓
 
+[🔝 Back to top](#formulas)
+
 <details>
   <summary>📁 sword vs axe details</summary>
 
@@ -1125,6 +1135,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 </details>
 
 ## ❤️ health
+
+[🔝 Back to top](#formulas)
 
 <details>
   <summary>📁 hp details</summary>
@@ -1173,6 +1185,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 ## 🩹 heal
 
+[🔝 Back to top](#formulas)
+
 <details>
   <summary>📁 heal details</summary>
 
@@ -1199,6 +1213,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 </details>
 
 ## ⛔ block
+
+[🔝 Back to top](#formulas)
 
 <details>
   <summary>📁 block details</summary>
