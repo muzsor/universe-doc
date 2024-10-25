@@ -76,7 +76,7 @@
       - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
-    - [💎 ultimate jewels](#-ultimate-jewels)
+    - [💎 battle for madrigal ultimate jewels](#-battle-for-madrigal-ultimate-jewels)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
     - [🔥 element upgrade](#-element-upgrade)
     - [✨ glow\&swinging](#-glowswinging)
@@ -204,9 +204,13 @@
 
 * `2022-08-17 02:00 UTC`:[Summer `2022` expansion (version `1.1.0`)](https://universe.flyff.com/news/summerupdate "Summer 2022 expansion on August 22!")
 
+<div align="center"><img src="./system/updates/Summer_2022_v1.1.0.png" alt="Summer_2022_v1.1.0.png" width="400"/></div>
+
 * `2022-11-03 06:00 UTC`:[Battle Pass System](https://universe.flyff.com/news/battlepass "Battle Pass System")
 
 * `2023-03-13 07:00 UTC`:[Reborn `v1.2.0` expansion (version `1.2.0`)](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
+
+<div align="center"><img src="./system/updates/Reborn_v1.2.0.png" alt="Reborn_v1.2.0.png" width="400"/></div>
 
 * `2023-05-18 07:00 UTC`:[1st Flyff World Championship (FWC) for Flyff Universe](https://universe.flyff.com/news/fwc1 "1st Flyff World Championship (FWC) for Flyff Universe")
 
@@ -217,6 +221,8 @@
    > [Maintenance Notice (10/12)](https://universe.flyff.com/news/maintenanceoctober12 "Maintenance Notice (10/12)")
 
 * `2023-11-09 08:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
+
+<div align="center"><img src="./system/updates/New_Horizon_Expansion _v1.3.0.png" alt="New_Horizon_Expansion _v1.3.0.png" width="400"/></div>
 
 * `2023-12-21 10:00 UTC`:New Asia server `Rhisis` starts.
 
@@ -230,11 +236,15 @@
 
 * `2024-10-17 09:00 UTC`:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
 
+<div align="center"><img src="./system/updates/Battle_for_Madrigal_v1.4.0.png" alt="Battle_for_Madrigal_v1.4.0.png" width="400"/></div>
+
 * `2024-10-24 07:00 UTC`:End of `FWC 2024` Server and Transfer.
 
    > [Maintenance Notice (10/24)](https://universe.flyff.com/news/maintenanceoctober24 "Maintenance Notice (10/24)")
 
 #### 💸 top up event
+
+<details><summary>details</summary>
 
 * `2022-05-17 ~ 2022-05-31 07:00 UTC`:[Server Group Purchase](https://universe.flyff.com/news/grouppurchase "Server Group Purchase")
 
@@ -271,6 +281,8 @@
 * **<font color=#FF0000>2 for 1</font>** `2023-11-24 00:00 UTC ~ 2023-11-27 23:59 UTC`:Black Friday Special Sales `1+1` (No `20%` discount).
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+</details>
 
 </details></td></tr></table>
 
@@ -1178,7 +1190,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### 💎 ultimate jewels
+### 💎 battle for madrigal ultimate jewels
 
 <table><tr><td><details><summary>details</summary>
 
