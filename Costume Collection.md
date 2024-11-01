@@ -57,37 +57,37 @@
 
    * Green `10%`, Purple `6%`, Blue `2%`, Red `4%`, White `2%`, Black `8%`
 
-<div align="center"><img src="./system/costume_collection/03.Elf.png" alt="03.Elf.png" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/03.Elf.jpg" alt="03.Elf.jpg" width="300"/></div>
 
 4. `2022-07-05`: `Music Beat`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/04.Music%20Beat.png" alt="04.Music Beat.png" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/04.Music%20Beat.jpg" alt="04.Music Beat.jpg" width="300"/></div>
 
 5. `2022-07-19`: `Alien Octopus`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/05.Alien%20Octopus.png" alt="05.Alien Octopus.png" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/05.Alien%20Octopus.jpg" alt="05.Alien Octopus.jpg" width="300"/></div>
 
 6. `2022-08-02`: `Rider`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/06.Rider.png" alt="06.Rider.png" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/06.Rider.jpg" alt="06.Rider.jpg" width="300"/></div>
 
 7. `2022-08-17`: `Baby Shark`
 
    * Hat / Suit / Shoes
 
-<div align="center"><img src="./system/costume_collection/07.Baby%20Shark.png" alt="07.Baby Shark.png" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/07.Baby%20Shark.jpg" alt="07.Baby Shark.jpg" width="300"/></div>
 
 8. `2022-08-30`: `Shade Child`
 
    * Hat / Suit / Shoes / Gloves
 
-<div align="center"><img src="./system/costume_collection/08.Shade%20Child.png" alt="08.Shade Child.png" width="300"/></div>
+<div align="center"><img src="./system/costume_collection/08.Shade%20Child.jpg" alt="08.Shade Child.jpg" width="300"/></div>
 
 9.  `2022-09-15`: `Menhera Kei`
 
@@ -496,6 +496,12 @@
    * Hat / Suit / Hands / Shoes / Mask / Backpack
 
 <div align="center"><img src="./system/costume_collection/68.Persian_Warrior.jpg" alt="68.Persian_Warrior.jpg" width="300"/></div>
+
+69. `2024-10-31`: `Necromancer`
+
+   * Hat / Suit / Hands / Shoes / Mask / Cloak
+
+<div align="center"><img src="./system/costume_collection/69.Necromancer.jpg" alt="69.Necromancer.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
