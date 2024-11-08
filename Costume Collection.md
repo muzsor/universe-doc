@@ -503,6 +503,12 @@
 
 <div align="center"><img src="./system/costume_collection/69.Necromancer.jpg" alt="69.Necromancer.jpg" width="300"/></div>
 
+70. `2024-11-07`: `Wickedstein`
+
+   * Hat / Suit / Shoes / Mask
+
+<div align="center"><img src="./system/costume_collection/70.Wickedstein.jpg" alt="70.Wickedstein.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
