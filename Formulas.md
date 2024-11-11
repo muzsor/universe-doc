@@ -485,6 +485,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
               = Math.MAX((computeGenericDefense) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
 
+      * defense in character window
+         ```js
+         defense = Math.floor((Math.floor((level * 2 + sta / 2) / 2.8 - 4 + (sta - 14) * classDefenseFactor) + DefenseFromArmor) * (1 + Defense%))
+         // true defense = ((defenseCharacterWindow / (1 + Defense%)) - (DefenseFromArmor * 0.75)) * (1 + Defense%)
+         ```
+
       * Player VS Monster
 
          * jobFactor :  Monsters always `1.0`.
@@ -514,7 +520,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * Monster VS Player (Not sure if it's still in use.)
          ```js
-         // AttackArbiter.cpp
+         // MoverAttack.cpp
          // int CMover::CalcDefensePlayer( CMover* pAttacker, DWORD dwAtkFlags )
          computeGenericDefense =
            Math.Max(
