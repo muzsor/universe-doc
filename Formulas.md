@@ -474,9 +474,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * FlatDefense : From Defender's Gear, Buff unscaled `DST_ADJDEF`.
 
-      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate`.
+      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
 
-      * Defense% : From Defender's Gear, Buff scales `defense`.
+      * Defense% : From Defender's Gear, Buff scales `defense` `DST_ADJDEF_RATE`.
 
       ```js
       // MoverAttack.cpp
@@ -848,13 +848,15 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * defense
 
-      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate`.
+      * FlatDefense : From Defender's Gear, Buff unscaled `DST_ADJDEF`.
 
-      * Defense% : From Defender's Gear, Buff scales `defense`.
+      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
+
+      * Defense% : From Defender's Gear, Buff scales `defense` `DST_ADJDEF_RATE`.
 
       ```js
       defense = computeDefense
-              = Max(Math.floor(Defense / 7.0 + 1) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
+              = Max(Math.floor(FlatDefense / 7.0 + 1) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
 
    * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
@@ -970,11 +972,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * Magic skills have no any defense in PvE.
 
-      * magicDefensePvP : From Defender's Gear, Buff unscaled `magicDefense` `DST_RESIST_MAGIC_RATE`.
+      * magicDefensePvP : From Defender's Gear, Buff unscaled `magicDefense` `DST_RESIST_MAGIC`.
 
-      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate`.
+      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
 
-      * Defense% : From Defender's Gear, Buff scales `defense`.
+      * Defense% : From Defender's Gear, Buff scales `defense` `DST_ADJDEF_RATE`.
 
       ```js
       defense = computeDefense
