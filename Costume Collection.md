@@ -22,6 +22,7 @@
     - [41~50](#4150)
     - [51~60](#5160)
     - [61~70](#6170)
+    - [71~80](#7180)
   - [🎉 Costume Collection Event](#-costume-collection-event)
   - [🛒 On Sale](#-on-sale)
     - [Black Friday Costume Lucky Box](#black-friday-costume-lucky-box)
@@ -508,6 +509,20 @@
    * Hat / Suit / Shoes / Mask
 
 <div align="center"><img src="./system/costume_collection/70.Wickedstein.jpg" alt="70.Wickedstein.jpg" width="300"/></div>
+
+</details></td></tr></table>
+
+### 71~80
+
+<table><tr><td><details><summary>71~80 details</summary>
+
+<br>
+
+71. `2024-11-21`: `Medieval Knight`
+
+   * Hat / Suit / Hands / Shoes / Cloak
+
+<div align="center"><img src="./system/costume_collection/71.Medieval_Knight.jpg" alt="71.Medieval_Knight.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
