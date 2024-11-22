@@ -1447,6 +1447,10 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./pet/transmutes/fox_spirit.png" alt="fox_spirit.png"/ width="400"></div>
 
+9. `2024-11-21`: [`White Lion`](https://flyffipedia.com/items/details/10710 "White Lion Cage")
+
+<div align="center"><img src="./pet/transmutes/white_lion.png" alt="white_lion.png"/ width="400"></div>
+
 </details></td></tr></table>
 
 </details>
