@@ -19,6 +19,7 @@
   - [⚙️ system](#️-system)
     - [📢 updates](#-updates)
       - [💸 top up event](#-top-up-event)
+    - [📅 all sever contents time](#-all-sever-contents-time)
     - [🕙 time](#-time)
     - [🗺️ map](#️-map)
       - [wdmadrigal](#wdmadrigal)
@@ -285,6 +286,16 @@
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
 </details>
+
+</details></td></tr></table>
+
+### 📅 all sever contents time
+
+<table><tr><td><details><summary>details</summary>
+
+> source:[Minor Fixes after 11/21 Maintenance](https://universe.flyff.com/news/minorfixesnov21 "Minor Fixes after 11/21 Maintenance")
+
+<div align="center"><img src="./system/all_server_contents_time.png" alt="all_server_contents_time.png"/></div>
 
 </details></td></tr></table>
 
