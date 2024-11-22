@@ -71,10 +71,12 @@
       - [upgrade level bonus](#upgrade-level-bonus)
     - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate](#-ultimate)
       - [ultimate weapon](#ultimate-weapon)
+      - [ultimate weapon event](#ultimate-weapon-event)
       - [regular weapon](#regular-weapon)
       - [⚜️ fwc golden weapon](#️-fwc-golden-weapon)
       - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
+      - [ultimate jewelry event](#ultimate-jewelry-event)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [💎 battle for madrigal ultimate jewels](#-battle-for-madrigal-ultimate-jewels)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
@@ -1122,6 +1124,16 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
+#### ultimate weapon event
+
+<details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/ultimate/ultimate_weapon_upgrade_event.png" alt="ultimate_weapon_upgrade_event.png"/></div>
+
+* **Enhance Upgrade Event (Ultimate)** applies only for **Ultimate Weapons & Accessories**.
+
+</details>
+
 #### regular weapon
 
 <details><summary>details</summary>
@@ -1177,6 +1189,16 @@ Those who have completed the Optional Master Quest during the event period will 
     * (5/5) Set Effect : Magic Attack +5%, Decreased Casting Time +10%
 
 <div align="center"><img src="./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Jewelry%20%2B5.png" alt="1,000,000 Simulations Of Ultimate Jewelry +5.png" width="600"/></div>
+
+</details>
+
+#### ultimate jewelry event
+
+<details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/ultimate/ultimate_jewelry_upgrade_event.png" alt="ultimate_jewelry_upgrade_event.png"/></div>
+
+* **Enhance Upgrade Event (Ultimate)** applies only for **Ultimate Weapons & Accessories**.
 
 </details>
 
