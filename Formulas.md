@@ -149,8 +149,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```js
    // AttackArbiter.cpp
    // int CAttackArbiter::CalcATK( ATTACK_INFO* pInfo )
-   computeAttack = (HitPower * AttackMultiplier) + FlatAttack
-                 = (HitMinMax * DamagePropertyFactor * ChargeMultiplier * (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+   computeAttack = (HitPower * AttackMultiplier) + FlatAttack + PvEFlatAttack
+                 = (HitMinMax * DamagePropertyFactor * ChargeMultiplier * (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
    ```
 
    * Attack in character window
@@ -406,6 +406,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
 
       * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
+
+   * PvEFlatAttack : From Attacker's Gear, Buff unscaled `pveattack`.
+
+      * Example : *Blessing of the Goddess* or *Blessing of the Demon* awake `pveattack` etc.
+
+         > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1311822709201567826 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
 * computeDamage
 
@@ -674,8 +680,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * computeAttack
    ```js
-   computeAttack = (MeleeSkillPower * AttackMultiplier) + FlatAttack
-                 = (MeleeSkillPower * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+   computeAttack = (MeleeSkillPower * AttackMultiplier) + FlatAttack + PvEFlatAttack
+                 = (MeleeSkillPower * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
    ```
 
    * MeleeSkillPower
@@ -832,6 +838,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
 
+   * PvEFlatAttack : From Attacker's Gear, Buff unscaled `pveattack`.
+
+      * Example : *Blessing of the Goddess* or *Blessing of the Demon* awake `pveattack` etc.
+
+         > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1311822709201567826 "@frostiae @[Dev] Frostiae (discord flyff universe)")
+
 * computeDamage
    ```js
    // AttackArbiter.cpp
@@ -919,9 +931,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * computeAttack
    ```js
-   computeAttack = (MagicSkillPower * AttackMultiplier) + FlatAttack
-                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * AttackMultiplier) + FlatAttack
-                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack
+   computeAttack = (MagicSkillPower * AttackMultiplier) + FlatAttack + PvEFlatAttack
+                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * AttackMultiplier) + FlatAttack + PvEFlatAttack
+                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
    ```
 
    * MagicSkillPower
@@ -947,6 +959,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
 
       * Example : *Balloons* `attack`, *Power Scroll* `attack` etc.
+
+   * PvEFlatAttack : From Attacker's Gear, Buff unscaled `pveattack`.
+
+      * Example : *Blessing of the Goddess* or *Blessing of the Demon* awake `pveattack` etc.
+
+         > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1311822709201567826 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
 * computeDamage
    ```js

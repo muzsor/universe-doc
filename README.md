@@ -89,6 +89,7 @@
     - [✂️ piercing](#️-piercing)
       - [event](#event-1)
     - [🛠️ craft](#️-craft)
+    - [🙌 blessing](#-blessing)
     - [📜 stat scroll](#-stat-scroll)
     - [📜 awake](#-awake)
     - [💍 FWC 2023 Jewelry](#-fwc-2023-jewelry)
@@ -223,7 +224,7 @@
 
    > [Maintenance Notice (10/12)](https://universe.flyff.com/news/maintenanceoctober12 "Maintenance Notice (10/12)")
 
-* `2023-11-09 08:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
+* `2023-11-09 09:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
 <div align="center"><img src="./system/updates/New_Horizon_Expansion _v1.3.0.png" alt="New_Horizon_Expansion _v1.3.0.png" width="400"/></div>
 
@@ -244,6 +245,10 @@
 * `2024-10-24 07:00 UTC`:End of `FWC 2024` Server and Transfer.
 
    > [Maintenance Notice (10/24)](https://universe.flyff.com/news/maintenanceoctober24 "Maintenance Notice (10/24)")
+
+* `2024-11-28 09:00 UTC`:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
+<div align="center"><img src="./system/updates/Battle_for_Madrigal_v1.4.1.png" alt="Battle_for_Madrigal_v1.4.1.png" width="400"/></div>
 
 #### 💸 top up event
 
@@ -284,6 +289,10 @@
 * **<font color=#FF0000>2 for 1</font>** `2023-11-24 00:00 UTC ~ 2023-11-27 23:59 UTC`:Black Friday Special Sales `1+1` (No `20%` discount).
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+* **<font color=#FF0000>2 for 1</font>** `2024-11-29 00:00 UTC ~ 2023-11-30 23:59 UTC`:Black Friday Special Sales `1+1` (`20%` discount).
+
+   > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1311623005864202250 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
 </details>
 
@@ -1326,6 +1335,12 @@ Those who have completed the Optional Master Quest during the event period will 
 > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172180003119697970 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
 > source:[@cloudishere1 @クラウドニャン (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1018066487291944962 "@cloudishere1 @クラウドニャン (discord flyff universe)")
+
+</details></td></tr></table>
+
+### 🙌 blessing
+
+<table><tr><td><details><summary>details</summary>
 
 </details></td></tr></table>
 
