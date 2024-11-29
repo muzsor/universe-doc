@@ -1352,6 +1352,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
+<div align="center">
+<img src="./upgrade/blessing_of_the_goddess.png" alt="blessing_of_the_goddess.png"/>
+<img src="./upgrade/blessing_of_the_demon.png" alt="blessing_of_the_demon.png"/>
+</div>
+
 </details></td></tr></table>
 
 ### 📜 stat scroll
