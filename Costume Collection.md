@@ -524,6 +524,12 @@
 
 <div align="center"><img src="./system/costume_collection/71.Medieval_Knight.jpg" alt="71.Medieval_Knight.jpg" width="300"/></div>
 
+72. `2024-11-28`: `Turkeylicious`
+
+   * Hat / Suit / Hands / Shoes / Cloak
+
+<div align="center"><img src="./system/costume_collection/72.Turkeylicious.jpg" alt="72.Turkeylicious.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
@@ -542,11 +548,11 @@
 
 ### Black Friday Costume Lucky Box
 
-> [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
-
 <div align="center"><img src="./system/costume_collection/black_friday_special_sales_2023.png" alt="black_friday_special_sales_2023.png" width="400"/></div>
 
-* `2023-11-24~2023-11-27`: Black Friday Costume Lucky Box will provide past costumes and here are the available costumes from this box:
+> [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+* `2023-11-24~2023-11-27`: **Blackfriday Costume Lucky Box** will provide past costumes and here are the available costumes from this box:
 
    * Casual Summer
    * Fantasy Towel
@@ -558,6 +564,24 @@
    * Menhera Kei
    * Gummy Bear
    * Winter Wizard
+
+<div align="center"><img src="./system/costume_collection/black_friday_special_sales_2024.png" alt="black_friday_special_sales_2024.png" width="400"/></div>
+
+> [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1311623168099618826 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+* `2024-11-29~2024-12-01`: **2024 Blackfriday Costume Lucky Box** will provide past costumes and here are the available costumes from this box:
+
+
+   * Menhera Kei
+   * Carnival Traveler
+   * Winter Casual Set
+   * Gummy Bear
+   * Foxy
+   * Star
+   * Tuxedo Luxury
+   * Snowy
+   * AI Casual
+   * Disco
 
 ### 🍀 costume lucky box on sale
 
