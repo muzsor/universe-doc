@@ -1177,11 +1177,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * Mercenary, Blade, Jester, Psykeeper, Elementor : `classHpModifier = 30`
 
-   * Ranger : `classHpModifier = 32`
+   * Ranger, Billposter: `classHpModifier = 32`
 
    * Ringmaster : `classHpModifier = 34`
-
-   * Billposter : `classHpModifier = 36`
 
    * Knight : `classHpModifier = 40`
 
