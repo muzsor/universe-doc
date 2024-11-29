@@ -24,6 +24,7 @@
     - [🗺️ map](#️-map)
       - [wdmadrigal](#wdmadrigal)
       - [coral island giant\&violet](#coral-island-giantviolet)
+      - [herneos giant](#herneos-giant)
     - [🖱️ pixel perfect cursor precision](#️-pixel-perfect-cursor-precision)
     - [❤️ provisional damage hp](#️-provisional-damage-hp)
     - [💬 chatting filter](#-chatting-filter)
@@ -343,6 +344,10 @@
 #### coral island giant&violet
 
 <div align="center"><img src="./system/map/coral_island_giant_violet.png" alt="coral_island_giant.png"/></div>
+
+#### herneos giant
+
+<div align="center"><img src="./system/map/herneos_giant.png" alt="herneos_giant.png"/></div>
 
 </details></td></tr></table>
 
