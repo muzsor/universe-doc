@@ -944,6 +944,8 @@ When the number of monsters attacked by the same spell (n) is greater than 8, th
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
+> [Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
 <div align="center"><img src="./system/quest/master_hero_quests.png" alt="master_hero_quests.png"/></div>
 
 * Once you complete all of the Optional Master quest, you can try the new New Optional Hero quest at  [Master Quests] Leila. This quest will ask you to level up from `120` to `125` and gather `100` Symbols of Shade.
@@ -992,8 +994,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 * Becoming a Hero will give you a unique badge and a permanent free stat page (`3` stat pages in total if a Battle Pass is active).
 
-</details></td></tr></table>
+* Completing the Quest Hero 125 will give you a unique badge and a Card and Dice Bag that allows you to store up to 10 slots.
 
+* Completing the Quest Hero 140 will give you a unique badge, Extended Motions(contains 9 motions for your character) and Dark Dragon Set.
+
+</details></td></tr></table>
 
 </details>
 
