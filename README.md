@@ -33,6 +33,9 @@
     - [🏰 guild name color](#-guild-name-color)
     - [🏰 guild level](#-guild-level)
     - [👩🏻‍❤️‍👨🏻 couple](#️-couple)
+      - [couple skills](#couple-skills)
+      - [couple ring](#couple-ring)
+      - [couple daily quests](#couple-daily-quests)
     - [🤝 party](#-party)
       - [party window](#party-window)
       - [exp share](#exp-share)
@@ -106,7 +109,7 @@
     - [🚩 dungeons difficulties](#-dungeons-difficulties)
     - [📚 story dungeons](#-story-dungeons)
     - [📍 dungeon checkpoints](#-dungeon-checkpoints)
-    - [⏳ cool down](#-cool-down)
+    - [⏳ cooldown](#-cooldown)
     - [🥅 pet cages](#-pet-cages)
     - [💥 dungeons curses](#-dungeons-curses)
       - [the wilds](#the-wilds)
@@ -313,6 +316,8 @@
 
 <table><tr><td><details><summary>details</summary>
 
+> source:[@yorrow @[Totemia] Pantalaimon (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1025687121161375794 "@yorrow @[Totemia] Pantalaimon (discord flyff universe)")
+
 * `1` second of real time = `100` seconds in game.
 
    > 現實世界 `1` 秒鐘 = 遊戲世界 `100` 秒。
@@ -328,8 +333,6 @@
 * Daytime is `7` minutes and `48` seconds(`7:48`), from `06:00` to `19:00`.
 
    > 白晝為現實世界 `7` 分 `48` 秒（`7:48`），從遊戲世界 `06:00` 到 `19:00`。
-
-> source:[@yorrow @[Totemia] Pantalaimon (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1025687121161375794 "@yorrow @[Totemia] Pantalaimon (discord flyff universe)")
 
 </details></td></tr></table>
 
@@ -433,9 +436,9 @@
 
 </div>
 
-<div align="center"><img src="./system/guild/guild_name_color.png" alt="guild_name_color.png"/></div>
-
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+<div align="center"><img src="./system/guild/guild_name_color.png" alt="guild_name_color.png"/></div>
 
 </details></td></tr></table>
 
@@ -449,13 +452,13 @@
 
 </div>
 
-<div align="center"><img src="./system/guild/guild_level.png" alt="guild_level.png"/></div>
-
 > source:[@kroontje @[Mod] Kroontje (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1201432655619702885 "@kroontje @[Mod] Kroontje (discord flyff universe)")
 
-<div align="center"><img src="./system/guild/quest_items_guild_exp.png" alt="quest_items_guild_exp.png"/></div>
+<div align="center"><img src="./system/guild/guild_level.png" alt="guild_level.png"/></div>
 
 > source:[@cysotiso @cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1230544317345697883 "@cysotiso @cysotiso (discord flyff universe)")
+
+<div align="center"><img src="./system/guild/quest_items_guild_exp.png" alt="quest_items_guild_exp.png"/></div>
 
 </details></td></tr></table>
 
@@ -465,9 +468,15 @@
 
 > source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
 
+#### couple skills
+
 <div align="center"><img src="./system/couple_skills.png" alt="couple_skills.png"/></div>
 
+#### couple ring
+
 <div align="center"><img src="./system/couple_ring.png" alt="couple_ring.png"/></div>
+
+#### couple daily quests
 
 <div align="center"><img src="./system/couple_daily_quests.png" alt="couple_daily_quests.png"/></div>
 
@@ -670,6 +679,10 @@
 
   *The penalties still apply if the monster’s HP has not fully recovered, regardless of whether the highest-level character has disconnected, switched to another channel or world, or died.*
 
+  *High level players will not negatively affect the drop rate of monsters for lower level players by receiving damage from special attacks of giants or violet monsters.* You don’t affect the drop rate if the AoE damage you receive comes from a monster that you can’t attack back (not the same party etc.)
+
+  > source:[Minor Fixes after 11/21 Maintenance](https://universe.flyff.com/news/minorfixesnov21 "Minor Fixes after 11/21 Maintenance")
+
 * Player level does not affect the drop rate of **monster cosmetics**; players may farm cosmetics effectively at any level.
    > 玩家等級不會影響怪物幻化外觀的掉落率，玩家在任何等級都可以有效刷出幻化外觀。
 
@@ -759,6 +772,8 @@
 
 > source:[Reborn Expansion Flyff Universe Version 1.2.0](https://wcdn-universe.flyff.com/site/patch1_2_0.pdf "Reborn Expansion Flyff Universe Version 1.2.0")
 
+> source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
 Dear players,
 
 After the maintenance on November 3, 2022, a new system will be in place for all players: the Battle Pass system.
@@ -799,7 +814,9 @@ This Extended is also valid for that specific season when it is purchased.
 
       * Using a `Re-Stat` will only apply to the currently selected stat page, not both stat pages.
 
-   10. and more to come over the game updates!
+   10. 5 Daily Search Shop Teleports
+
+   * and more to come over the game updates!
 
 </details></td></tr></table>
 
@@ -897,12 +914,11 @@ When the number of monsters attacked by the same spell (n) is greater than 8, th
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./system/skill_point.png" alt="skill_point.png"/></div>
-
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1179796650504503366 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 > source:[@cysotiso @cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1198561141207597127 "@cysotiso @cysotiso (discord flyff universe)")
->
+
+<div align="center"><img src="./system/skill_point.png" alt="skill_point.png"/></div>
 
 </details></td></tr></table>
 
@@ -910,9 +926,9 @@ When the number of monsters attacked by the same spell (n) is greater than 8, th
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./system/buff_scale.png" alt="buff_scale.png"/></div>
-
 > source:[@steinschleuder @[Justice] Steinschleuder (discord flyff universe)](https://discord.com/channels/778915844070834186/999269990098284554/1145962826742116352 "@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)")
+
+<div align="center"><img src="./system/buff_scale.png" alt="buff_scale.png"/></div>
 
 </details></td></tr></table>
 
@@ -944,7 +960,7 @@ When the number of monsters attacked by the same spell (n) is greater than 8, th
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.0)](https://universe.flyff.com/news/newhorizonv1301 "New Horizon Expansion (Flyff Universe Version 1.3.0)")
 
-> [Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+> source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
 
 <div align="center"><img src="./system/quest/master_hero_quests.png" alt="master_hero_quests.png"/></div>
 
@@ -1080,6 +1096,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
+> source:[@Insanive @Insanive (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1150940230736674857 "@Insanive @Insanive (discord flyff universe)")
+
 * In reality, the upgrade rates are theoretically the same, but your chances of being very unlucky and failing way past the theoretical average number of attempts is much lower now.
 
    > 理論上的升級率是相同的，但是你非常不幸並且失敗超過理論平均嘗試次數的機會，現在要低得多。
@@ -1095,8 +1113,6 @@ Those who have completed the Optional Master Quest during the event period will 
    * With this system the standard deviation for a success is `+/- 17` upgrade attempts, instead of `+/- 49` upgrade attempts with the old system.
 
    > 對於憐憫系統，成功的標準差是 `+/- 17` 次升級嘗試次數，而不是舊系統的 `+/- 49` 次升級嘗試次數。
-
-> source:[@Insanive @Insanive (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1150940230736674857 "@Insanive @Insanive (discord flyff universe)")
 
 </details></td></tr></table>
 
@@ -1114,11 +1130,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### event
 
+> source[@piccolo0002 @[GM] Piccolo (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1076113591536717834 "@piccolo0002 @[GM] Piccolo (discord flyff universe)")
+
 <div align="center"><img src="./upgrade/weapon&armor_upgrade_event.png" alt="weapon&armor_upgrade_event.png"/></div>
 
 * **Enhanced Upgrade (Gear)** event is for upgrade with **Scroll of SProtect**, including weapons, armor and element upgrade (not Ultimates, Piercing, Jewelry, Cards).
-
-> source[@piccolo0002 @[GM] Piccolo (discord flyff universe)](https://discord.com/channels/778915844070834186/778927702874652682/1076113591536717834 "@piccolo0002 @[GM] Piccolo (discord flyff universe)")
 
 #### upgrade level bonus
 
@@ -1142,9 +1158,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <details><summary>details</summary>
 
-* When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.
-
 > source:[@tassel#0672 @[Mod CN] tassel (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1178910002065457202 "@tassel#0672 @[Mod CN] tassel (discord flyff universe)")
+
+* When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.
 
 <div align="center"><img src="./upgrade/ultimate/ultimate_weapon_upgrade.png" alt="ultimate_weapon_upgrade.png"/></div>
 
@@ -1340,11 +1356,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </div>
 
-<div align="center"><img src="./upgrade/create_unique_weapon.png" alt="create_unique_weapon.png"/></div>
-
 > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172180003119697970 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
 > source:[@cloudishere1 @クラウドニャン (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1018066487291944962 "@cloudishere1 @クラウドニャン (discord flyff universe)")
+
+<div align="center"><img src="./upgrade/create_unique_weapon.png" alt="create_unique_weapon.png"/></div>
 
 </details></td></tr></table>
 
@@ -1419,6 +1435,8 @@ Those who have completed the Optional Master Quest during the event period will 
 > source:[Summer 2022 expansion on August 22!](https://universe.flyff.com/news/summerupdate "Summer 2022 expansion on August 22!")
 
 > source:[Summer 2022 Expansion Flyff Universe Version 1.1.0](https://wcdn-universe.flyff.com/site/patch1_1_0.pdf "Summer 2022 Expansion Flyff Universe Version 1.1.0")
+
+> source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
 
 ### 🦮 raised pet
 
@@ -1583,11 +1601,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### ⏳ cool down
+### ⏳ cooldown
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./dungeons/cool_down.png" alt="cool_down.png"/></div>
+<div align="center"><img src="./dungeons/dungeons_cooldown.png" alt="dungeons_cooldown.png"/></div>
 
 </details></td></tr></table>
 
@@ -1595,9 +1613,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./dungeons/pet_cages.png" alt="pet_cages.png"/></div>
-
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172264259665809510 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+<div align="center"><img src="./dungeons/pet_cages.png" alt="pet_cages.png"/></div>
 
 </details></td></tr></table>
 
