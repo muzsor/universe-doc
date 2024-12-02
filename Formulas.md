@@ -318,7 +318,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
       ```js
       // Monster VS Player, Player VS Player
-      DamagePropertyFactor = 2% * (DefenderElementLevel - AttackerElementLevel)
+      // example Attacker is fire vs Defender is water
+      DamagePropertyFactor = (1 - (2% * (DefenderElementLevel - AttackerElementLevel)))
       ```
 
       <details><summary>details</summary>
