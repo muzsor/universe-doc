@@ -1634,6 +1634,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172264259665809510 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
+> source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
 <div align="center"><img src="./dungeons/pet_cages.png" alt="pet_cages.png"/></div>
 
 </details></td></tr></table>
