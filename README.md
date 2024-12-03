@@ -1758,17 +1758,25 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
+> source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
 <div align="center"><img src="./dungeons/kalgas_assault/wdrealm.png" alt="wdrealm.png"/></div>
 
-<div align="center"><img src="./dungeons/kalgas_assault/kalgas_assault_infomation.jpg" alt="kalgas_assault_infomation.jpg" width="400"/><img src="./dungeons/kalgas_assault/kalgas_assault_infomation_cn.jpg" alt="kalgas_assault_infomation.jpg" width="400"/></div>
-
-<div align="center"><img src="./dungeons/kalgas_assault/kalgas_assault_registration.jpg" alt="kalgas_assault_registration.jpg" width="400"/><img src="./dungeons/kalgas_assault/kalgas_assault_registration_cn.jpg" alt="kalgas_assault_registration.jpg" width="400"/></div>
-
-<div align="center"><img src="./dungeons/kalgas_assault/tradekalgaschips.jpg" alt="tradekalgaschips.jpg" width="300"/></div>
+<div align="center"><img src="./dungeons/kalgas_assault/tradekalgaschips.jpg" alt="tradekalgaschips.jpg" width="400"/></div>
 
 <div align="center"><img src="./dungeons/kalgas_assault/kalgas_wrath_wing.jpg" alt="kalgas_wrath_wing.jpg" width="600"/></div>
 
-> [Kalgas' wrath Wing](https://flyffipedia.com/items/details/18037 "Kalgas' wrath Wing")
+> [Kalgas' wrath Wing](https://flyffipedia.com/items/details/16975 "Kalgas' wrath Wing")
+
+> [Kalgas' wrath Set](https://flyffipedia.com/items/details/19999 "Kalgas' wrath Set")
+
+<div align="center"><img src="./dungeons/kalgas_assault/kalgas_fury.png" alt="kalgas_fury.png" width="400"/></div>
+
+> [Kalgas' Fury Wing (30 days)](https://flyffipedia.com/items/details/20834 "Kalgas' Fury Wing (30 days)")
+
+> [Kalgas' Fury Set](https://flyffipedia.com/items/details/29875 "Kalgas' Fury Set")
+
+> [Kalgas' Fury Weapon Set](https://flyffipedia.com/items/details/24829 "Kalgas' Fury Weapon Set")
 
 </details></td></tr></table>
 
