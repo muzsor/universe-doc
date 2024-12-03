@@ -102,6 +102,7 @@
     - [🕊️ grace effect](#️-grace-effect)
     - [🍭 pet candy recipes](#-pet-candy-recipes)
     - [🐾 pet defect recycling](#-pet-defect-recycling)
+    - [🐾 pet rerolling](#-pet-rerolling)
     - [🌿 berry map](#-berry-map)
     - [💫 pet transmutation](#-pet-transmutation)
   - [🐉 dungeons](#-dungeons)
@@ -1477,6 +1478,24 @@ Those who have completed the Optional Master Quest during the event period will 
 * If you success(green text): Your pet has got a new, higher level!
 
 * If you failure(red text): You rolled the same or a lower level, so nothing changed.
+
+</details></td></tr></table>
+
+### 🐾 pet rerolling
+
+<table><tr><td><details><summary>details</summary>
+
+> source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
+* By using the [Pet Reroll Scroll](https://flyffipedia.com/items/details/21526 "Pet Reroll Scroll"), you can place a raised pet into the pet slot to choose a tier for rerolling, without the need for a sacrificial pet. This feature does not affect regular rerolling with a sacrificial pet at the Pet Tamer.
+
+* Note that once you select a tier to reroll, that is the only tier you will be able to reroll using this feature going forward on this pet. The probabilities for rerolling will be the same as if you were sacrificing a pet of the same tier.
+
+* The number of scrolls required to reroll a tier depends on the tier you select.
+
+* When you press the Reroll button, it will display (N is the new level after rerolling): The selected tier has been rerolled to **N**.
+
+<div align="center"><img src="./pet/pet_rerolling.png" alt="pet_rerolling.png"/></div>
 
 </details></td></tr></table>
 
