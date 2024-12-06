@@ -107,6 +107,7 @@
     - [💫 pet transmutation](#-pet-transmutation)
   - [🐉 dungeons](#-dungeons)
     - [📌 dungeons location](#-dungeons-location)
+    - [📌 new instance dungeons location](#-new-instance-dungeons-location)
     - [🚩 dungeons difficulties](#-dungeons-difficulties)
     - [📚 story dungeons](#-story-dungeons)
     - [📍 dungeon checkpoints](#-dungeon-checkpoints)
@@ -1576,11 +1577,21 @@ Those who have completed the Optional Master Quest during the event period will 
 
 > source:[Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)](https://universe.flyff.com/news/battleformadrigal1400 "Battle for Madrigal Expansion (Flyff Universe Version 1.4.0)")
 
+> source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
 ### 📌 dungeons location
 
 <table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./dungeons/dungeons_location.png" alt="dungeons_location.png"/></div>
+
+</details></td></tr></table>
+
+### 📌 new instance dungeons location
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./dungeons/new_instance_dungeons_location.png" alt="new_instance_dungeons_location.png"/></div>
 
 </details></td></tr></table>
 
