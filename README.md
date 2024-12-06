@@ -23,8 +23,8 @@
     - [🕙 time](#-time)
     - [🗺️ map](#️-map)
       - [wdmadrigal](#wdmadrigal)
-      - [coral island giant\&violet](#coral-island-giantviolet)
-      - [herneos giant](#herneos-giant)
+      - [coral island monster](#coral-island-monster)
+      - [herneos monster](#herneos-monster)
     - [🖱️ pixel perfect cursor precision](#️-pixel-perfect-cursor-precision)
     - [❤️ provisional damage hp](#️-provisional-damage-hp)
     - [💬 chatting filter](#-chatting-filter)
@@ -345,13 +345,13 @@
 
 <div align="center"><img src="./system/map/wdmadrigal.png" alt="wdmadrigal.png"/></div>
 
-#### coral island giant&violet
+#### coral island monster
 
-<div align="center"><img src="./system/map/coral_island_giant_violet.png" alt="coral_island_giant.png"/></div>
+<div align="center"><img src="./system/map/coral_island_monster.png" alt="coral_island_monster.png"/></div>
 
-#### herneos giant
+#### herneos monster
 
-<div align="center"><img src="./system/map/herneos_giant.png" alt="herneos_giant.png"/></div>
+<div align="center"><img src="./system/map/herneos_monster.png" alt="herneos_monster.png"/></div>
 
 </details></td></tr></table>
 
