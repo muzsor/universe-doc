@@ -651,7 +651,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=drop+rate+%28chart%29).**
+**For more information please refer to [Gothante](https://gothante.com/?search=drop+rate).**
 
 </div>
 
