@@ -296,7 +296,7 @@
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-* **<font color=#FF0000>2 for 1</font>** `2024-11-29 00:00 UTC ~ 2023-11-30 23:59 UTC`:Black Friday Special Sales `1+1` (`20%` discount).
+* **<font color=#FF0000>2 for 1</font>** `2024-11-29 00:00 UTC ~ 2024-11-30 23:59 UTC`:Black Friday Special Sales `1+1` (`20%` discount).
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1311623005864202250 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
