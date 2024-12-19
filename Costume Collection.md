@@ -530,6 +530,12 @@
 
 <div align="center"><img src="./system/costume_collection/72.Turkeylicious.jpg" alt="72.Turkeylicious.jpg" width="300"/></div>
 
+73.  `2024-12-19`: `Xmas 2024 White Edition`
+
+   * Hat / Suit / Shoes / Mask / Cloak
+
+<div align="center"><img src="./system/costume_collection/73.Xmas_2024_White_Edition.jpg" alt="73.Xmas_2024_White_Edition.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
