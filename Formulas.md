@@ -1121,6 +1121,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 > source:[@shayminhunter @TeachMeHisty (discord flyff universe)](https://discord.com/channels/778915844070834186/999269862260084736/1032237394856001556 "@shayminhunter @TeachMeHisty (discord flyff universe)")
 
+* Ensured that Blade's left-hand weapon element damage is now correctly calculated based on its own element, rather than the right-hand weapon's element.
+
+   > 確保 Blade 的左手武器元素傷害現在是根據其自身的元素來正確計算，而不是根據右手武器的元素。
+
+> source:[Minor Fixes after 11/21 Maintenance](https://universe.flyff.com/news/minorfixesnov21 "Minor Fixes after 11/21 Maintenance")
+
 <div align="center"><img src="./formulas/blade_damage.png" alt="blade_damage.png"/></div>
 
 > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/999269862260084736/1000695721990815744 "@frostiae @[Dev] Frostiae (discord flyff universe)")
