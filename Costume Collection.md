@@ -530,19 +530,19 @@
 
 <div align="center"><img src="./costume_collection/72.Turkeylicious.jpg" alt="72.Turkeylicious.jpg" width="300"/></div>
 
-73.  `2024-12-19`: `Xmas 2024 White Edition`
+73. `2024-12-19`: `Xmas 2024 White Edition`
 
    * Hat / Suit / Shoes / Mask / Cloak
 
 <div align="center"><img src="./costume_collection/73.Xmas_2024_White_Edition.jpg" alt="73.Xmas_2024_White_Edition.jpg" width="300"/></div>
 
-74.  `2024-12-25`: `Christmas Star`
+74. `2024-12-25`: `Christmas Star`
 
    * Hat / Suit / Hands / Shoes / Mask / Cloak
 
 <div align="center"><img src="./costume_collection/74.Christmas_Star.jpg" alt="74.Christmas_Star.jpg" width="300"/></div>
 
-75.   `2025-01-09`: `Northern Warrior`
+75. `2025-01-09`: `Northern Warrior`
 
    * Hat / Suit / Shoes / Cloak
 
