@@ -542,6 +542,12 @@
 
 <div align="center"><img src="./costume_collection/74.Christmas_Star.jpg" alt="74.Christmas_Star.jpg" width="300"/></div>
 
+75.   `2025-01-09`: `Northern Warrior`
+
+   * Hat / Suit / Shoes / Cloak
+
+<div align="center"><img src="./costume_collection/75.Northern_Warrior.jpg" alt="75.Northern_Warrior" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
