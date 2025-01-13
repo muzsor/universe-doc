@@ -31,6 +31,7 @@
       - [Monster VS Player , Player VS Player](#monster-vs-player--player-vs-player)
       - [Player VS Monster](#player-vs-monster)
     - [block cap](#block-cap)
+  - [🌟 exp](#-exp)
 
 </details></td></tr></table>
 
@@ -86,7 +87,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * parry in character window : Displayed as a percentage, but the unit is incorrect (the number is correct).
 
-   * ExtraHitRate : From Attacker's Gear, Buff scales `hitrate` `DST_ADJ_HITRATE`.
+   * ExtraHitRate : From Attacker's Gear, Buff scaled `hitrate` `DST_ADJ_HITRATE`.
 
    * Player VS Monster
       ```js
@@ -481,9 +482,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * FlatDefense : From Defender's Gear, Buff unscaled `DST_ADJDEF`.
 
-      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
+      * ArmorPenetrate% : From Attacker's Gear, Buff scaled `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
 
-      * Defense% : From Defender's Gear, Buff scales `defense` `DST_ADJDEF_RATE`.
+      * Defense% : From Defender's Gear, Buff scaled `defense` `DST_ADJDEF_RATE`.
 
       ```js
       // MoverAttack.cpp
@@ -552,11 +553,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
          * ClassCriticalFactor : `critical`, `class.critical`, `job.critical`, `JOB_PROP_CRITICAL`.
 
-         * AttackerCriticalChance : From Attacker's Gear, Buff scales `criticalchance` `DST_CHR_CHANCECRITICAL`.
+         * AttackerCriticalChance : From Attacker's Gear, Buff scaled `criticalchance` `DST_CHR_CHANCECRITICAL`.
 
          * Precision： Increases the Critical Chance on the next attack of all party members around the leader by `0.5%` x Amount of party members.
 
-         * CriticalResist% : From Defender's Gear, Buff scales `criticalresist`.
+         * CriticalResist% : From Defender's Gear, Buff scaled `criticalresist`.
 
          ```js
          // MoverAttack.cpp
@@ -614,7 +615,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
          <img src="./formulas/devblog-2021_critical_damage_formula.png" alt="devblog-2021_critical_damage_formula.png"/>
 
-         * CriticalDamage% : From Attacker's Gear, Buff scales `criticaldamage` `DST_CRITICAL_BONUS`.
+         * CriticalDamage% : From Attacker's Gear, Buff scaled `criticaldamage` `DST_CRITICAL_BONUS`.
 
          ```js
          // if xRandom(100) < criticalChance%, then calculate criticalDamage
@@ -863,9 +864,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * FlatDefense : From Defender's Gear, Buff unscaled `DST_ADJDEF`.
 
-      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
+      * ArmorPenetrate% : From Attacker's Gear, Buff scaled `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
 
-      * Defense% : From Defender's Gear, Buff scales `defense` `DST_ADJDEF_RATE`.
+      * Defense% : From Defender's Gear, Buff scaled `defense` `DST_ADJDEF_RATE`.
 
       ```js
       defense = computeDefense
@@ -939,14 +940,14 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * MagicSkillPower
 
-      * magicattack% : From Attacker's Gear, Buff scales `magicattack`.
+      * magicattack% : From Attacker's Gear, Buff scaled `magicattack`.
 
       ```js
       // MagicSkillPower = MeleeSkillPower * (1 + DST_ADDMAGIC%) * ( 1 + DST_MASTRY_ELEMENT%)
       MagicSkillPower = MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%)
       ```
 
-   * ElementMastery% : From Attacker's Gear, Buff scales `firemastery` `DST_MASTRY_FIRE`, `watermastery` `DST_MASTRY_WATER`, `electricitymastery` `DST_MASTRY_ELECTRICITY`, `windmastery` `DST_MASTRY_WIND`, `earthmastery` `DST_MASTRY_EARTH`.
+   * ElementMastery% : From Attacker's Gear, Buff scaled `firemastery` `DST_MASTRY_FIRE`, `watermastery` `DST_MASTRY_WATER`, `electricitymastery` `DST_MASTRY_ELECTRICITY`, `windmastery` `DST_MASTRY_WIND`, `earthmastery` `DST_MASTRY_EARTH`.
 
    * AttackMultiplier
       ```js
@@ -980,7 +981,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * Magic skills have no any defense in PvE.
 
-      * magicDefensePvP% : From Defender's Gear, Buff scales `magicDefense` `DST_RESIST_MAGIC_RATE`.
+      * magicDefensePvP% : From Defender's Gear, Buff scaled `magicDefense` `DST_RESIST_MAGIC_RATE`.
 
       ```js
       // nATK = nATK - nATK * pDefender->GetParam( DST_RESIST_MAGIC_RATE, 0 ) / 100
@@ -993,9 +994,9 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * magicDefensePvP : From Defender's Gear, Buff unscaled `magicDefense` `DST_RESIST_MAGIC`.
 
-      * ArmorPenetrate% : From Attacker's Gear, Buff scales `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
+      * ArmorPenetrate% : From Attacker's Gear, Buff scaled `armorpenetrate` (Currently only `SI_BLD_DOUBLE_ARMORPENETRATE`).
 
-      * Defense% : From Defender's Gear, Buff scales `defense` `DST_ADJDEF_RATE`.
+      * Defense% : From Defender's Gear, Buff scaled `defense` `DST_ADJDEF_RATE`.
 
       ```js
       defense = computeDefense
@@ -1204,7 +1205,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * flatMaxHp : From Character's Gear, Buff unscaled `maxhp` `DST_HP_MAX`.
 
-   * maxHp% : From Character's Gear, Buff scales `maxhp` `DST_HP_MAX_RATE`.
+   * maxHp% : From Character's Gear, Buff scaled `maxhp` `DST_HP_MAX_RATE`.
 
    ```js
    // MoverParam.cpp
@@ -1235,7 +1236,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       * Heal Rain : `8.18`
 
-   * healing% : From Character's Gear, Buff scales `healing` `DST_HP_MAX_RATE`.
+   * healing% : From Character's Gear, Buff scaled `healing` `DST_HP_MAX_RATE`.
 
    ```js
    healing = (skillHealingBase + PlayerInt * skillScale) * (1 + healing%)
@@ -1294,7 +1295,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    <details><summary>details</summary>
 
-   * BlockPenetration% : From Attacker's Gear, Buff scales `blockpenetration` `Block_Penetration`.
+   * BlockPenetration% : From Attacker's Gear, Buff scaled `blockpenetration` `Block_Penetration`.
 
    > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1272345376720158841 "@frostiae @[Dev] Frostiae (discord flyff universe)")
 
@@ -1323,7 +1324,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       ExtraBlock = block% + DST_BLOCK_RANGE%DST_BLOCK_MELEE%
       // ------------------------------------------------------------------------------------
-      // block% : From Defender's Gear, Buff scales block
+      // block% : From Defender's Gear, Buff scaled block
       // if IsRangeAttack = rangedblock%, DST_BLOCK_RANGE%
       // if not IsRangeAttack = meleeblock%, DST_BLOCK_MELEE%
       // ------------------------------------------------------------------------------------
@@ -1531,5 +1532,38 @@ DamagePerSecond = computeDamage * hitsPerSecond
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1174839023383085080 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 * The cap is 75% and it’s divided by 80 instead of 100. So you end up with 92.5% block (even though it says 75%). Anything above that is only useful again enemies that have block penetration.
+
+</details>
+
+## 🌟 exp
+
+[🔝 Back to top](#formulas)
+
+<details>
+  <summary>📁 block details</summary>
+
+* exp:
+   ```js
+   expValue = monsterExpValue * serverExpRate * (1 + 1v1Bonus%) * experienceReduceFactor
+   ```
+
+   * 1v1Bonus% : low, regular and captain monsters level `30+` killed by at least `80%` of damage inflicted from single target attacks and skills will have an increased experience and drop rate. From level `30` to `140`, `20%` to `35%`; from `141` to `160`, `90%` to `102%`.
+
+   * experienceReduceFactor : Reduces the experience of the highest level party member around the kill target.
+
+* character exp:
+   ```js
+   // MoverParam.cpp
+   // float CMover::GetExpFactor( void )
+   characterExpValue = expValue * partyBonus * deathBonus * masterHeroFactor * (1 + characterExpRate%) * cheer * eventBonus
+   ```
+
+   * partyBonus : Distributed based on contribution and level sharing modes.
+
+   * deathBonus : It gives more experience bonus after death, and continues until you reach the highest experience you've ever earned on that character.
+
+   * masterHeroFactor : If character has an active Optional Master/Hero Quest, the exp rate is divided by `2` (`50%` exp rate penalty).
+
+   * characterExpRate% : From Character's Gear, Buff scaled `exprate`.
 
 </details>
