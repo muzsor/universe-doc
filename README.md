@@ -922,6 +922,8 @@ When the number of monsters attacked by the same spell (n) is greater than 8, th
 
 <div align="center"><img src="./system/skill_point.png" alt="skill_point.png"/></div>
 
+<div align="center"><img src="./system/skill_point_bonus.png" alt="skill_point_bonus.png"/></div>
+
 </details></td></tr></table>
 
 ### 💪 buff scale
