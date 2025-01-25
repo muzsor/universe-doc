@@ -548,6 +548,12 @@
 
 <div align="center"><img src="./costume_collection/75.Northern_Warrior.jpg" alt="75.Northern_Warrior" width="300"/></div>
 
+76. `2025-01-24`: `Snake Samurai`
+
+   * Hat / Suit / Shoes
+
+<div align="center"><img src="./costume_collection/76.Snake_Samurai.jpg" alt="76.Snake_Samurai" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
