@@ -635,11 +635,14 @@
 
 <div align="center"><img src="./system/level_gap.png" alt="level_gap.png"/></div>
 
-> source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1079288438056034314/1250528036374184078 "@navi2765 @Navi (discord flyff universe)")
+> source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1333187382941585468/1333187382941585468 "@navi2765 @Navi (discord flyff universe)")
 
 #### ⚔️ damage ratio
 
-<div align="center"><img src="./system/damage_ratio.jpg" alt="damage_ratio.jpg"/></div>
+<div align="center">
+
+**This graph may be incorrect, please refer to [@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1333776761758023704 "@navi2765 @Navi (discord flyff universe)").**
+<img src="./system/damage_ratio.jpg" alt="damage_ratio.jpg"/></div>
 
 > source:[@ppap#5954 @ppap (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1079823818765385799 "@ppap#5954 @ppap (discord flyff universe)")
 
