@@ -45,7 +45,6 @@
       - [party skill](#party-skill)
     - [🌟 exp system](#-exp-system)
     - [🥇 level gap](#-level-gap)
-      - [⚔️ damage ratio](#️-damage-ratio)
     - [🎁 drop rate](#-drop-rate)
       - [Level-based Drop Rate Penalties](#level-based-drop-rate-penalties)
       - [Optional Master/Hero Quests](#optional-masterhero-quests)
@@ -635,16 +634,9 @@
 
 <div align="center"><img src="./system/level_gap.png" alt="level_gap.png"/></div>
 
+> source:[Flyffulator/src/calc/damageCalculator.js](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/damageCalculator.js#L180 "Flyffulator/src/calc/damageCalculator.js")
+
 > source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1333187382941585468/1333187382941585468 "@navi2765 @Navi (discord flyff universe)")
-
-#### ⚔️ damage ratio
-
-<div align="center">
-
-**This graph may be incorrect, please refer to [@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1333776761758023704 "@navi2765 @Navi (discord flyff universe)").**
-<img src="./system/damage_ratio.jpg" alt="damage_ratio.jpg"/></div>
-
-> source:[@ppap#5954 @ppap (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1079823818765385799 "@ppap#5954 @ppap (discord flyff universe)")
 
 </details></td></tr></table>
 

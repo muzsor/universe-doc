@@ -662,6 +662,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * LevelDifferenceReductionFactor
+
+      **The calculation method in Flyff Universe differs from that in Flyff PC.**
       ```js
       LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
                                      = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
@@ -907,6 +909,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * LevelDifferenceReductionFactor
+
+      **The calculation method in Flyff Universe differs from that in Flyff PC.**
       ```js
       LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
                                      = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
@@ -1037,6 +1041,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * LevelDifferenceReductionFactor
+
+      **The calculation method in Flyff Universe differs from that in Flyff PC.**
       ```js
       LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
                                      = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
