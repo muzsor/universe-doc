@@ -554,6 +554,12 @@
 
 <div align="center"><img src="./costume_collection/76.Snake_Samurai.jpg" alt="76.Snake_Samurai" width="300"/></div>
 
+77. `2025-02-06`: `Luxury Winter`
+
+   * Hat / Suit / Hands / Shoes / Mask / Backpack
+
+<div align="center"><img src="./costume_collection/77.Luxury_Winter.jpg" alt="77.Luxury_Winter" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
