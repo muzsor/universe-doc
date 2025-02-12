@@ -185,11 +185,19 @@
 
 <table><tr><td><details><summary>details</summary>
 
+</br>
+
+<details><summary>2020~2021</summary>
+
 * `2020-12-15 07:00 UTC ~ 2020-12-30 16:00 UTC`:Closed Beta Test server.
 
 <div align="center"><img src="./system/updates/cbt_announcement.png" alt="cbt_announcement.png" width="200"/></div>
 
 * `2021-01-27 08:00 UTC ~ 2021-01-31 16:00 UTC`:Test server.
+
+</details>
+
+<details><summary>2022</summary>
 
 * `2022-03-30 09:00 UTC`:Gala Lab is reveal new cross-platform 3D MMORPG `Flyff Universe`.
 
@@ -217,6 +225,10 @@
 
 * `2022-11-03 06:00 UTC`:[Battle Pass System](https://universe.flyff.com/news/battlepass "Battle Pass System")
 
+</details>
+
+<details><summary>2023</summary>
+
 * `2023-03-13 07:00 UTC`:[Reborn `v1.2.0` expansion (version `1.2.0`)](https://universe.flyff.com/news/reborn120 "v1.2.0 Reborn is coming on March 13!")
 
 <div align="center"><img src="./system/updates/Reborn_v1.2.0.png" alt="Reborn_v1.2.0.png" width="400"/></div>
@@ -234,6 +246,10 @@
 <div align="center"><img src="./system/updates/New_Horizon_Expansion _v1.3.0.png" alt="New_Horizon_Expansion _v1.3.0.png" width="400"/></div>
 
 * `2023-12-21 10:00 UTC`:New Asia server `Rhisis` starts.
+
+</details>
+
+<details><summary>2024</summary>
 
 * `2024-02-15 06:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
@@ -254,6 +270,14 @@
 * `2024-11-28 09:00 UTC`:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
 
 <div align="center"><img src="./system/updates/Battle_for_Madrigal_v1.4.1.png" alt="Battle_for_Madrigal_v1.4.1.png" width="400"/></div>
+
+</details>
+
+<details><summary>2025</summary>
+
+* `2025-02-27 09:00 UTC`:[Server Merge Announcement: Totemia and Genèse servers](https://universe.flyff.com/news/servermergefeb25 "Server Merge Announcement: Totemia and Genèse servers")
+
+</details>
 
 #### 💸 top up event
 
