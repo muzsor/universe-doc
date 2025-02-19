@@ -152,13 +152,19 @@
 
 * [tacota0158/Madrigalinside](https://madrigalinside.com/ "tacota0158/Madrigalinside")：A wiki page containing all kinds of static information about the game's data.
 
-* [danex2/Skillulator](https://skillulator.lol/ "Danex2/Skillulator")：A skill calculator for flyff universe.
+* [Skillulator | FlyFF Universe Skill Calculator](https://skillulator.lol/ "Skillulator | FlyFF Universe Skill Calculator")：A skill calculator for flyff universe.
 
-   * [nulfrost/flyff-skill-calc](https://github.com/nulfrost/flyff-skill-calc "nulfrost/flyff-skill-calc")
+   * [nulfrost/skillulator](https://github.com/nulfrost/skillulator "nulfrost/skillulator")
 
-* [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/)：[@adama.97 @Yuzaro (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 "@adama.97 @Yuzaro (discord flyff universe)")
+* [Flyff - Skill Simulator](https://flyffskillsimulator.vercel.app/ "guysuvijak/Flyff - Skill Simulator")：A skill build simulator for Flyff Universe, built with Next.js and React Flow.
 
-* [MonkeyZero/Flyff Model Viewer](https://flyffmodelviewer.com/ "MonkeyZero/Flyff Model Viewer")：The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
+   * [guysuvijak/flyff-skill-simulator](https://github.com/guysuvijak/flyff-skill-simulator "guysuvijak/flyff-skill-simulator")
+
+* [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/)：A Simple Website for Housing Furniture Preview.
+
+   * [@adama.97 @Yuzaro (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 "@adama.97 @Yuzaro (discord flyff universe)")
+
+* [MonkeyZero/Flyff Model Viewer | flyffmodelviewer.com](https://flyffmodelviewer.com/ "MonkeyZero/Welcome to Flyff Model Viewer | flyffmodelviewer.com")：The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
 
 ### closed
 
@@ -1876,105 +1882,113 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### Personal House NPC
 
-* [Personal House NPC] Hatter: PvE Damage +3%　　💎70(7 days)/💎140(15 days)
+* 💲7,000,000 penya
 
-* [Personal House NPC] Alice: PvE Damage Reduction +3%　　💎70(7 days)/💎140(15 days)
+  * [Personal House NPC] BB Wolf (7 days): Jump Height +30
 
-* [Personal House NPC] Rulu: Experience Loss Reduction +3%　　💎63(7 days)/💎130(15 days)
+* 💎70(7 days)/💎140(15 days)
 
-* *<ins>Not released yet</ins> [Personal House NPC] Demon: HP Restored on revive +500*
+  * [Personal House NPC] Hatter: PvE Damage +3%
 
-* *<ins>Not released yet</ins> [Personal House NPC] Gevil: MP Restored on revive +100*
+  * [Personal House NPC] Alice: PvE Damage Reduction +3%
 
-* *<ins>Not released yet</ins> [Personal House NPC] Sevil: FP restored on revive +50*
+  * [Personal House NPC] Rulu: Experience Loss Reduction +3% (Decreased from 3% to 2.91%.)
 
-* [Personal House NPC] Tino: Added Vendor Shop Day(s) +1　　💎63(7 days)/💎130(15 days)
+  <!-- * *<ins>Not released yet</ins> [Personal House NPC] Demon: HP Restored on revive +500* -->
 
-* *<ins>Not released yet</ins> [Personal House NPC] Cachu: Party Exp +10%*
+  <!-- * *<ins>Not released yet</ins> [Personal House NPC] Gevil: MP Restored on revive +100* -->
 
-* [Personal House NPC] Casanova: Monster EXP +5%　　💎70(7 days)/💎140(15 days)
+  <!-- * *<ins>Not released yet</ins> [Personal House NPC] Sevil: FP restored on revive +50* -->
 
-* [Personal House NPC] Misun: Item Drop Rate +5%　　💎70(7 days)/💎140(15 days)
+  * [Personal House NPC] Tino: Added Vendor Shop Day(s) +1.
 
-* [Personal House NPC] Temas: Speed +5%　　💎70(7 days)/💎140(15 days)
+  <!-- * *<ins>Not released yet</ins> [Personal House NPC] Cachu: Party Exp +10%* -->
 
-* [Personal House NPC] BB Wolf (7 days): Jump Height +30　　💲7,000,000 penya
+  * [Personal House NPC] Casanova: Monster EXP +5%
 
-* [Personal House NPC] Chacha: Fly Speed +5%　　💎63(7 days)/💎130(15 days)
+  * [Personal House NPC] Misun: Item Drop Rate +5%
 
-* [Personal House NPC] Pang: Level2 Buffs limited to characters level 120 and below.　　💎70(7 days)/💎140(15 days)
+  * [Personal House NPC] Temas: Speed +5%
 
-* [Personal House NPC] Klock:　　💎63(7 days)/💎130(15 days)
+  * [Personal House NPC] Chacha: Flying Speed +5%　　
 
-   * Earn that jewel with 30% chance or removing Ultimate Jewel. Ultimate Jewelry Manufacture, Compose Success Rate Increased.
+  * [Personal House NPC] Pang: Level2 Buffs limited to characters level 120 and below.
 
-* [Personal House NPC] Mac (A Grade): Pet Training (A Grade)　　💎63(7 days)/💎130(15 days)
+  * [Personal House NPC] Klock: Earn that jewel with 30% chance or removing Ultimate Jewel.
 
-* [Personal House NPC] Mac (B Grade): Pet Training (B Grade)　　💎63(7 days)/💎130(15 days)
+     * Ultimate Jewelry Manufacture, Compose Success Rate Increased.
 
-* [Personal House NPC] Mac (C Grade): Pet Training (C Grade)　　💎63(7 days)/💎130(15 days)
+  * [Personal House NPC] Mac (A Grade): Pet Training (Pet Candy A)
 
-* [Personal House NPC] Mac (D Grade): Pet Training (D Grade)　　💎63(7 days)/💎130(15 days)
+  * [Personal House NPC] Mac (B Grade): Pet Training (Pet Candy B)
 
-* [Personal House NPC] Mac (E Grade): Pet Training (E Grade)　　💎63(7 days)/💎130(15 days)
+  * [Personal House NPC] Mac (C Grade): Pet Training (Pet Candy C)
 
-* [Personal House NPC] Mac (F Grade): Pet Training (F Grade)　　💎63(7 days)/💎130(15 days)
+  * [Personal House NPC] Mac (D Grade): Pet Training (Pet Candy D)
+
+  * [Personal House NPC] Mac (E Grade): Pet Training (Pet Candy E)
+
+  * [Personal House NPC] Mac (F Grade): Pet Training (Pet Candy F)
 
 #### Guild House NPC
 
-* [Guild House NPC] Asa: Allow you to teleport to the place of your choice　　💎63(7 days)/💎130(15 days)
+* 💎350(7 days)/💎700(15 days)
 
-* [Guild House NPC] Chord: PvP Damage +3%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Asa: Allow you to teleport to the place of your choice.
 
-* [Guild House NPC] Anura: PvP Damage Reduction +3%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Chord: PvP Damage +3%
 
-* [Guild House NPC] Naso: PvP Critical Chance +3%　　💎63(7 days)/💎130(15 days)
+  * [Guild House NPC] Anura: PvP Damage Reduction +3%
 
-* [Guild House NPC] Nuso: PvP Critical Damage +3%　　💎63(7 days)/💎130(15 days)
+  * [Guild House NPC] Naso: PvP Critical Chance +3%
 
-* [Guild House NPC] Soz: PvP Block Penetration +3%　　💎63(7 days)/💎130(15 days)
+  * [Guild House NPC] Nuso: PvP Critical Damage +3%
 
-* [Guild House NPC] Vikel: PvP Melee/Range Block +3%　　💎63(7 days)/💎130(15 days)
+  * [Guild House NPC] Soz: PvP Block Penetration +3%
 
-* [Guild House NPC] Quarter: Max HP +10%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Vikel: PvP Melee/Range Block +3%
 
-* ~~[Guild House NPC] Sham: Max MP +10%~~ **Removed [Minor Fixes after 2024/02/28 Maintenance](https://universe.flyff.com/news/minorfixesfebruary28 "Minor Fixes after 2/28 Maintenance")**
+  * [Guild House NPC] Quarter: Increased HP +10%
 
-* [Guild House NPC] Lamew: Increased FP +10%　　💎350(7 days)/💎700(15 days)
+  * ~~[Guild House NPC] Sham: Increased MP +10%~~ **Removed [Minor Fixes after 2024/02/28 Maintenance](https://universe.flyff.com/news/minorfixesfebruary28 "Minor Fixes after 2/28 Maintenance")**
 
-* [Guild House NPC] Gira: MP Consumption Decrease +10%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Lamew: Increased FP +10%
 
-* [Guild House NPC] Affe: FP Consumption Decrease +10%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Gira: MP Consumption Decrease +10%
 
-* [Guild House NPC] Cobao: Healing +3%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Affe: FP Consumption Decrease +10%
 
-* [Guild House NPC] Aibao: Magic Resistance +3%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Cobao: Healing +3%
 
-* [Guild House NPC] Nanco: Critical Resist +3%　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Aibao: Magic Resistance +3%
 
-* [Guild House NPC] Pang: Level4 Buffs limited to characters level 140 and below.　　💎350(7 days)/💎700(15 days)
+  * [Guild House NPC] Nanco: Critical Resist +3%
 
-* [Guild House NPC] Alyn: Weapon/Armor upgrade chance +3%　　💎63(7 days)/💎130(15 days)
+  * [Guild House NPC] Pang: Level4 Buffs limited to characters level 140 and below.
 
-* [Guild House NPC] Runni: Piercing chance +3%　　💎63(7 days)/💎130(15 days)
+  * [Guild House NPC] Alyn: Weapon/Armor upgrade chance +3%
 
-* [Guild House NPC] Lane: Accessory Upgrade chance +3%　　💎63(7 days)/💎130(15 days)
+  * [Guild House NPC] Runni: Piercing upgrade chance +3%
 
-* *<ins>Not released yet</ins> [Guild House NPC] Duron: Guild Artifact Max HP +10%*
+  * [Guild House NPC] Lane: Accessory upgrade chance +3%
 
-* [Guild House NPC] Fuba: Guild Artifact HP Recovery +10%　　💲7,000,000 penya
+* 💲7,000,000 penya
 
-* [Guild House NPC] Dolphie: Guild Artifact DEF +10%　　💲7,000,000 penya
+  <!-- * *<ins>Not released yet</ins> [Guild House NPC] Duron: Guild Artifact Max HP +10%* -->
 
-* [Guild House NPC] Wick: Ally character ATK increase near artifact(10m) +3%　　💲7,000,000 penya
+  * [Guild House NPC] Fuba: Guild Artifact HP Recovery +10%　　
 
-* [Guild House NPC] Pitch: Ally character Attack Speed increase near artifact(10m) +5%　　💲7,000,000 penya
+  * [Guild House NPC] Dolphie: Guild Artifact DEF +10%
 
-* [Guild House NPC] Bako: Ally character HP increase near artifact(10m) +500　　💲7,000,000 penya
+  * [Guild House NPC] Wick: Ally character ATK increase near artifact(10m) +3%
 
-* [Guild House NPC] Wina: Ally character DEF increase near artifact(10m) +3%　　💲7,000,000 penya
+  * [Guild House NPC] Pitch: Ally character Attack Speed increase near artifact(10m) +5%
 
-* [Guild House NPC] Catch: Ally character Casting Speed increase near artifact(10m) +5%　　💲7,000,000 penya
+  * [Guild House NPC] Bako: Ally character HP increase near artifact(10m) +500
+
+  * [Guild House NPC] Wina: Ally character DEF increase near artifact(10m) +3%
+
+  * [Guild House NPC] Catch: Ally character Casting Speed increase near artifact(10m) +5%
 
 </details></td></tr></table>
 
