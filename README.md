@@ -1932,6 +1932,24 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### Guild House NPC
 
+* 💲7,000,000 penya
+
+  <!-- * *<ins>Not released yet</ins> [Guild House NPC] Duron: Guild Artifact Max HP +10%* -->
+
+  * [Guild House NPC] Fuba: Guild Artifact HP Recovery +10%　　
+
+  * [Guild House NPC] Dolphie: Guild Artifact DEF +10%
+
+  * [Guild House NPC] Wick: Ally character ATK increase near artifact(10m) +3%
+
+  * [Guild House NPC] Pitch: Ally character Attack Speed increase near artifact(10m) +5%
+
+  * [Guild House NPC] Bako: Ally character HP increase near artifact(10m) +500
+
+  * [Guild House NPC] Wina: Ally character DEF increase near artifact(10m) +3%
+
+  * [Guild House NPC] Catch: Ally character Casting Speed increase near artifact(10m) +5%
+
 * 💎350(7 days)/💎700(15 days)
 
   * [Guild House NPC] Asa: Allow you to teleport to the place of your choice.
@@ -1971,24 +1989,6 @@ Those who have completed the Optional Master Quest during the event period will 
   * [Guild House NPC] Runni: Piercing upgrade chance +3%
 
   * [Guild House NPC] Lane: Accessory upgrade chance +3%
-
-* 💲7,000,000 penya
-
-  <!-- * *<ins>Not released yet</ins> [Guild House NPC] Duron: Guild Artifact Max HP +10%* -->
-
-  * [Guild House NPC] Fuba: Guild Artifact HP Recovery +10%　　
-
-  * [Guild House NPC] Dolphie: Guild Artifact DEF +10%
-
-  * [Guild House NPC] Wick: Ally character ATK increase near artifact(10m) +3%
-
-  * [Guild House NPC] Pitch: Ally character Attack Speed increase near artifact(10m) +5%
-
-  * [Guild House NPC] Bako: Ally character HP increase near artifact(10m) +500
-
-  * [Guild House NPC] Wina: Ally character DEF increase near artifact(10m) +3%
-
-  * [Guild House NPC] Catch: Ally character Casting Speed increase near artifact(10m) +5%
 
 </details></td></tr></table>
 
