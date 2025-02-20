@@ -560,6 +560,12 @@
 
 <div align="center"><img src="./costume_collection/77.Luxury_Winter.jpg" alt="77.Luxury_Winter" width="300"/></div>
 
+78. `2025-02-20`: `Neon Valentine`
+
+   * Hat / Suit / Hands / Shoes / Glasses / Backpack
+
+<div align="center"><img src="./costume_collection/78.Neon_Valentine.jpg" alt="78.Neon_Valentine" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
