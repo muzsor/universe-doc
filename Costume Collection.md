@@ -1,7 +1,7 @@
 # Costume Collection
 
 > [!IMPORTANT]
-> **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
+> **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark / Ruiwoo Technology.</ins>**
 
 > [!IMPORTANT]
 > **The information used in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**

@@ -1,7 +1,7 @@
 # universe-document
 
 > [!IMPORTANT]
-> **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
+> **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark / Ruiwoo Technology.</ins>**
 
 > [!IMPORTANT]
 > **The information used in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
@@ -638,9 +638,9 @@
 
    > 遊戲新機制：`30` 級以上的低階怪物、普通怪物、隊長怪物被單一目標攻擊和技能造成的傷害至少 `80%` 擊殺後，經驗值和掉落率都會增加。
 
-* The experience and drop rate increase is currently `20%` for monsters level `30` and increases gradually to reach `35%` for monsters level ~~`120+`~~ `140`.
+* The experience and drop rate increase is currently `20%` for monsters level `30` and increases gradually to reach `35%` for monsters level `120 ~ 140`.
 
-   > 目前 `30` 級怪物的經驗和掉落率增加為 `20%`，並逐漸增加至 `140` 級怪物的 `35%`。
+   > 目前 `30` 級怪物的經驗和掉落率增加為 `20%`，並逐漸增加，對於怪物等級 `120 ~ 140` 達到 `35%`。
 
 > source:[Game Version 1.3.1 Patch Notes](https://universe.flyff.com/news/patchnotes131 "Game Version 1.3.1 Patch Notes")
 
