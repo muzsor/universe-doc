@@ -487,7 +487,7 @@
 
 <div align="center"><img src="./system/guild/guild_level.png" alt="guild_level.png"/></div>
 
-> source:[@cysotiso @cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1230544317345697883 "@cysotiso @cysotiso (discord flyff universe)")
+> source:[@cysotiso @cysotiso (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1342035456627310613 "@cysotiso @cysotiso (discord flyff universe)")
 
 <div align="center"><img src="./system/guild/quest_items_guild_exp.png" alt="quest_items_guild_exp.png"/></div>
 
