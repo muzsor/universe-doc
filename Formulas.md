@@ -127,7 +127,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
            * 100
          )
       hitProbAdjusted = Math.max(20, Math.min(96, hitProb + ExtraHitRate))
-      // Limited to 2 ~ 96
+      // Limited to 20 ~ 96
 
       // ------------------------------------------------------------------------------------
       // example (Lv160 Blade's dex 60 vs Beast King Khan https://api.flyff.com/monster/16244) :
@@ -163,7 +163,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
            * 100
          )
       hitProbAdjusted = Math.max(20, Math.min(96, hitProb + ExtraHitRate))
-      // Limited to 2 ~ 96
+      // Limited to 20 ~ 96
       ```
 
       * Player Parry Rate
