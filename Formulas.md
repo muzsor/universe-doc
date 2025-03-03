@@ -50,10 +50,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * hitsPerSecond
    ```js
-   hitsPerSecond = classHitsPerSecond * attackSpeed * HitRate
+   hitsPerSecond = classHitsPerSecond * attackSpeed * hitProb
    ```
 
-* HitRate
+* hitProb
 
    <details><summary>details</summary>
 
@@ -64,26 +64,32 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // BOOL CMover::GetAttackResult( CMover* pDefender, DWORD dwOption )
 
    // ------------------------------------------------------------------------------------
+   // Attacker is NPC, Defender is Player
+   factor = 1.5 * 2.0 * ((attackerLevel * 0.5) / (attackerLevel + defenderLevel * 0.3))
+   // -----------------------------------------------------------------------------------
+
+   // ------------------------------------------------------------------------------------
    // Attacker is Player, Defender is NPC
-   factor = 1.6 * 1.5 * ((AttackerLevel * 1.2) / (AttackerLevel + DefenderLevel))
+   factor = 1.6 * 1.5 * ((attackerLevel * 1.2) / (attackerLevel + defenderLevel))
    // ------------------------------------------------------------------------------------
 
    // ------------------------------------------------------------------------------------
-   // Attacker is NPC, Defender is Player
-   factor = 1.5 * 2.0 * ((AttackerLevel * 0.5) / (AttackerLevel + DefenderLevel * 0.3))
-   // -----------------------------------------------------------------------------------
+   // Attacker is Player, Defender is Player
+   // No level difference factor in PvP
+   factor = 1.6 * 1.2 * (attackerLevel * 1.2) / (attackerLevel * 2))
+   // ------------------------------------------------------------------------------------
    ```
    ```js
    // ------------------------------------------------------------------------------------
    // If not AUTO_ATTACK, this is always 100.
    // ------------------------------------------------------------------------------------
-   hitProb = (AttackerDex / (AttackerDex + DefenderParry)) * factor
-   HitRate = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
+   hitRate = (attackerDex / (attackerDex + defenderParryRate)) * factor
+   hitProb = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
    // Limited to 0.2 ~ 0.96
    // ------------------------------------------------------------------------------------
    ```
 
-   * DefenderParry : From Defender's unscaled `parry` `DST_PARRY`.
+   * defenderParryRate : From Defender's unscaled `parry` `DST_PARRY`.
 
       * parry in character window : Displayed as a percentage, but the unit is incorrect (the number is correct).
 
@@ -93,15 +99,15 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // simplify formula
       // Attacker is Player, Defender is NPC
-      nHitRate = (2.88 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel))
-      HitRate = Math.min(Math.max(nHitRate + ExtraHitRate, 0.2), 0.96)
+      hitRate = (2.88 * attackerDex * attackerLevel) / ((attackerDex + defenderParryRate) * (attackerLevel + defenderLevel))
+      hitProb = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
       // Limited to 0.2 ~ 0.96
 
       // ------------------------------------------------------------------------------------
       // example (Lv160 Blade's dex 60 vs Beast King Khan https://api.flyff.com/monster/16244) :
-      // nHitRate = (2.88 * 60 * 160) / ((60 + 178) * (160 + 150)) = 0.374
+      // hitRate = (2.88 * 60 * 160) / ((60 + 178) * (160 + 150)) = 0.374
       // Equipment Set +10 Hit Rate +45%, Accuracy +30%
-      // HitRate = Math.min(Math.max((0.374 + 0.45 + 0.3), 0.2), 0.96) = 0.96 = 96%
+      // hitProb = Math.min(Math.max((0.374 + 0.45 + 0.3), 0.2), 0.96) = 0.96 = 96%
       // ------------------------------------------------------------------------------------
       ```
       ```js
@@ -112,7 +118,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
         defenderParry,
         extraHitRate = 0
       ) {
-        nHitRate =
+        hitRate =
           (2.88 * attackerDex * attackerLevel) /
           ((attackerDex + defenderParry) * (attackerLevel + defenderLevel))
         return Math.min(Math.max(nHitRate + extraHitRate, 0.2), 0.96)
@@ -123,19 +129,19 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // simplify formula
       // Attacker is NPC, Defender is Player
-      nHitRate = (1.5 * AttackerDex * AttackerLevel) / ((AttackerDex + DefenderParry) * (AttackerLevel + DefenderLevel * 0.3))
-      HitRate = Math.min(Math.max(nHitRate + ExtraHitRate, 0.2), 0.96)
+      hitRate = (1.5 * attackerDex * attackerLevel) / ((attackerDex + defenderParryRate) * (attackerLevel + defenderLevel * 0.3))
+      hitProb = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
       // Limited to 0.2 ~ 0.96
       ```
 
-      * Player Parry
+      * Player Parry Rate
 
          * ExtraParry : From Player's Gear, Buff unscaled `parry` `DST_PARRY`.
 
          * parry% : From Player's Gear, Buff scaled `parry` `DST_PARRY`.
 
          ```js
-         Parry = (PlayerDex * 0.5) + ExtraParry) * (1 + parry%)
+         playerParryRate = (playerDex * 0.5) + ExtraParry) * (1 + parry%)
          ```
 
    </details>
@@ -401,8 +407,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // MoverAttack.cpp
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
-      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)
+      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+      AttackMultiplier = (1 + attack% + achievementBonus%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -425,7 +431,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    computeDamage = applyDefense(computeAttack)
                  = applyGenericDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
                  = (damageAfterCritical * blockFactor + WeaponPlusDamage) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 = (applyAttackDefense(computeAttack, defense) * critical * blockFactor + WeaponPlusDamage) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = (applyAttackDefense(computeAttack, defense) * critical * blockFactor + WeaponPlusDamage) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor * (1 + (pvpdamage% || pvedamage%)) * Math.max((1 + incomingdamage%), -50) * (1 + bossmonsterdamage%) * (1 - Math.min(20, pvpdamagereduction% || pvedamagereduction%))
    ```
 
    * applyGenericDefense
@@ -662,16 +668,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * LevelDifferenceReductionFactor
-
-      **The calculation method in Flyff Universe differs from that in Flyff PC.**
       ```js
-      LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
-                                     = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
-      ```
-      ```js
-      for ( i = 0; i < 16; i++ ) {
-        console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
-      }
+      reductionFactor = [
+        1.0, 1.0, 0.98, 0.95, 0.91, 0.87, 0.81, 0.75, 0.67, 0.59, 0.51, 0.42, 0.32, 0.22, 0.12, 0.01,
+      ]
+      delta = Math.min(defenderLevel - attackerLevel, 15)
+      LevelDifferenceReductionFactor = reductionFactor[delta]
       ```
 
 </details></td></tr></table>
@@ -834,8 +836,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // MoverAttack.cpp
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
-      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
+      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+      AttackMultiplier = (1 + attack% + achievementBonus% + skillDamage%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -854,7 +856,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyDefenseParryCritical(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 = applyDefenseParryCritical * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = applyDefenseParryCritical * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor * (1 + (pvpdamage% || pvedamage%)) * Math.max((1 + incomingdamage%), -50) * (1 + bossmonsterdamage%) * (1 - Math.min(20, pvpdamagereduction% || pvedamagereduction%))
    ```
 
    * applyDefenseParryCritical
@@ -909,16 +911,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * LevelDifferenceReductionFactor
-
-      **The calculation method in Flyff Universe differs from that in Flyff PC.**
       ```js
-      LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
-                                     = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
-      ```
-      ```js
-      for ( i = 0; i < 16; i++ ) {
-        console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
-      }
+      reductionFactor = [
+        1.0, 1.0, 0.98, 0.95, 0.91, 0.87, 0.81, 0.75, 0.67, 0.59, 0.51, 0.42, 0.32, 0.22, 0.12, 0.01,
+      ]
+      delta = Math.min(defenderLevel - attackerLevel, 15)
+      LevelDifferenceReductionFactor = reductionFactor[delta]
       ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier * skill.levels.probability(probabilityPVP) * BuffSkillDamageMultiplier`
@@ -958,8 +956,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // MoverAttack.cpp
       // float CMover::GetATKMultiplier( CMover* pDefender, DWORD dwAtkFlags )
       // ------------------------------------------------------------------------------------
-      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * ( 1 + DST_PVP_DMG%DST_MONSTER_DMG%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
-      AttackMultiplier = (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)
+      // AttackMultiplier = (1 + DST_ATKPOWER_RATE%) * (1 + SM_ATTACK_UP1% || SM_ATTACK_UP%)
+      AttackMultiplier = (1 + attack% + achievementBonus% + skillDamage%) * (1 + Upcut%)
       ```
 
    * FlatAttack : From Attacker's Gear, Buff unscaled `attack` `DST_ATKPOWER`.
@@ -978,7 +976,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // int CAttackArbiter::CalcDamage( ATTACK_INFO* pInfo )
    computeDamage = applyDefense(computeAttack)
                  = applyMagicSkillDefense(computeAttack) * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
-                 = applyMagicSkillDefense * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor
+                 = applyMagicSkillDefense * ElementResistFactor * Link/Global * DamageMultiplier * afterDamageFactor * (1 + (pvpdamage% || pvedamage%)) * Math.max((1 + incomingdamage%), -50) * (1 + bossmonsterdamage%) * (1 - Math.min(20, pvpdamagereduction% || pvedamagereduction%))
    ```
 
    * applyMagicSkillDefense
@@ -1041,16 +1039,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
 
    * LevelDifferenceReductionFactor
-
-      **The calculation method in Flyff Universe differs from that in Flyff PC.**
       ```js
-      LevelDifferenceReductionFactor = Math.cos((Math.PI * Math.min(nDelta, MAX_OVER_ATK - 1)) / MAX_OVER_ATK * 2)
-                                     = Math.cos(Math.PI * Math.min(nDelta, 15) / 32)
-      ```
-      ```js
-      for ( i = 0; i < 16; i++ ) {
-        console.log(Math.cos(Math.PI * Math.min(i, 15) / 32))
-      }
+      reductionFactor = [
+        1.0, 1.0, 0.98, 0.95, 0.91, 0.87, 0.81, 0.75, 0.67, 0.59, 0.51, 0.42, 0.32, 0.22, 0.12, 0.01,
+      ]
+      delta = Math.min(defenderLevel - attackerLevel, 15)
+      LevelDifferenceReductionFactor = reductionFactor[delta]
       ```
 
    * SkillDamageMultiplier : `skill.levels.damageMultiplier` * `skill.levels.probability(probabilityPVP)` * `BuffSkillDamageMultiplier`
