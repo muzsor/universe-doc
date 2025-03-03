@@ -157,7 +157,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // AttackArbiter.cpp
    // int CAttackArbiter::CalcATK( ATTACK_INFO* pInfo )
    computeAttack = (HitPower * AttackMultiplier) + FlatAttack + PvEFlatAttack
-                 = (HitMinMax * DamagePropertyFactor * ChargeMultiplier * (1 + attack% + achievementBonus%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
+                 = (HitMinMax * DamagePropertyFactor * ChargeMultiplier * (1 + attack% + achievementBonus%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
    ```
 
    * Attack in character window
@@ -687,7 +687,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 * computeAttack
    ```js
    computeAttack = (MeleeSkillPower * AttackMultiplier) + FlatAttack + PvEFlatAttack
-                 = (MeleeSkillPower * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
+                 = (MeleeSkillPower * (1 + attack% + achievementBonus% + skillDamage%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
    ```
 
    * MeleeSkillPower
@@ -937,7 +937,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    ```js
    computeAttack = (MagicSkillPower * AttackMultiplier) + FlatAttack + PvEFlatAttack
                  = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * AttackMultiplier) + FlatAttack + PvEFlatAttack
-                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * (1 + attack% + achievementBonus% + skillDamage%) * (1 + PvEPvP%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
+                 = (MeleeSkillPower * (1 + magicattack%) * (1 + ElementMastery%) * (1 + attack% + achievementBonus% + skillDamage%) * (1 + Upcut%)) + FlatAttack + PvEFlatAttack
    ```
 
    * MagicSkillPower
