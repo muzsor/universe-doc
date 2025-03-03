@@ -50,10 +50,31 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 * hitsPerSecond
    ```js
-   hitsPerSecond = classHitsPerSecond * attackSpeed * hitProb
+   hitsPerSecond = classHitsPerSecond * attackSpeed * hitProbAdjusted
    ```
 
-* hitProb
+* checkHitRate
+
+    <details><summary>details</summary>
+
+   ```js
+   // 0 ~ 99
+   randValue = Math.floor(Math.random() * 100)
+   if (randValue < hitProbAdjusted) {
+     // hit
+   }
+   if (
+     100 - hitProbAdjusted != 0 &&
+     hitProb < (randValue - hitProbAdjusted) / (100 - hitProbAdjusted)
+   ) {
+     // PARRY
+   }
+     // MISS
+   ```
+
+   </details>
+
+* hitProb, hitProbAdjusted
 
    <details><summary>details</summary>
 
@@ -83,9 +104,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // ------------------------------------------------------------------------------------
    // If not AUTO_ATTACK, this is always 100.
    // ------------------------------------------------------------------------------------
-   hitRate = (attackerDex / (attackerDex + defenderParryRate)) * factor
-   hitProb = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
-   // Limited to 0.2 ~ 0.96
+   hitRate = (attackerDex / (attackerDex + defenderParryRate))
+   hitProb = Math.floor(hitRate * factor * 100);
+   hitProbAdjusted = Math.max(20, Math.min(96, hitProb + ExtraHitRate))
+   // Limited to 20 ~ 96
    // ------------------------------------------------------------------------------------
    ```
 
@@ -99,15 +121,19 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // simplify formula
       // Attacker is Player, Defender is NPC
-      hitRate = (2.88 * attackerDex * attackerLevel) / ((attackerDex + defenderParryRate) * (attackerLevel + defenderLevel))
-      hitProb = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
-      // Limited to 0.2 ~ 0.96
+      hitProb = Math.floor(
+         (2.88 * attackerDex * attackerLevel) /
+           ((attackerDex + defenderParryRate) * (attackerLevel + defenderLevel))
+           * 100
+         )
+      hitProbAdjusted = Math.max(20, Math.min(96, hitProb + ExtraHitRate))
+      // Limited to 2 ~ 96
 
       // ------------------------------------------------------------------------------------
       // example (Lv160 Blade's dex 60 vs Beast King Khan https://api.flyff.com/monster/16244) :
-      // hitRate = (2.88 * 60 * 160) / ((60 + 178) * (160 + 150)) = 0.374
+      // hitProb = Math.floor((2.88 * 60 * 160) / ((60 + 178) * (160 + 150)) * 100) = 37
       // Equipment Set +10 Hit Rate +45%, Accuracy +30%
-      // hitProb = Math.min(Math.max((0.374 + 0.45 + 0.3), 0.2), 0.96) = 0.96 = 96%
+      // hitProbAdjusted = Math.max(20, Math.min(96, 37 + 45 + 30)) = 96
       // ------------------------------------------------------------------------------------
       ```
       ```js
@@ -118,10 +144,12 @@ DamagePerSecond = computeDamage * hitsPerSecond
         defenderParry,
         extraHitRate = 0
       ) {
-        hitRate =
-          (2.88 * attackerDex * attackerLevel) /
-          ((attackerDex + defenderParry) * (attackerLevel + defenderLevel))
-        return Math.min(Math.max(nHitRate + extraHitRate, 0.2), 0.96)
+        let hitProb = Math.floor(
+          ((2.88 * attackerDex * attackerLevel) /
+            ((attackerDex + defenderParry) * (attackerLevel + defenderLevel))) *
+            100
+        )
+        return Math.max(20, Math.min(96, hitProb + extraHitRate))
       }
       ```
 
@@ -129,9 +157,13 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```js
       // simplify formula
       // Attacker is NPC, Defender is Player
-      hitRate = (1.5 * attackerDex * attackerLevel) / ((attackerDex + defenderParryRate) * (attackerLevel + defenderLevel * 0.3))
-      hitProb = Math.min(Math.max(hitRate + ExtraHitRate, 0.2), 0.96)
-      // Limited to 0.2 ~ 0.96
+      hitProb = Math.floor(
+         (1.5 * attackerDex * attackerLevel) /
+           ((attackerDex + defenderParryRate) * (attackerLevel + defenderLevel * 0.3))
+           * 100
+         )
+      hitProbAdjusted = Math.max(20, Math.min(96, hitProb + ExtraHitRate))
+      // Limited to 2 ~ 96
       ```
 
       * Player Parry Rate
