@@ -1316,7 +1316,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       fblockB = Math.min(Math.max(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0), 10)
       // fblockB Limited to 0.0 ~ 10.0
 
-      fAdd = fblockA + fblockB
+      fAdd = Math.max(fblockA + fblockB, 0)
       // if fAdd < 0.0 , then 0.0
       ```
 
