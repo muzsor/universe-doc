@@ -1371,7 +1371,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/armor_piercing_upgrade_event.png" alt="armor_piercing_upgrade_event.png"/></div>
 
-* **Enhanced Armor Piercing** event is for upgrade with **Scroll of GProtect**, only including armor piercing(not weapon piercing and shield  piercing).
+* **Enhanced Armor Piercing** event is for upgrade with **Scroll of GProtect**, only including armor piercing(not weapon and shield piercing).
+
+<div align="center"><img src="./upgrade/weapon&shield_piercing_upgrade_event.png" alt="weapon&shield_piercing_upgrade_event.png"/></div>
+
+* **Enhanced Weapon Piercing** event is for upgrade with **Scroll of GProtect**, only including weapon and shield piercing(not armor piercing).
 
 </details></td></tr></table>
 
