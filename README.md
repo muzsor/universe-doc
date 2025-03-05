@@ -142,7 +142,7 @@
 
    * [Gothante](https://gothante.com/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
 
-   * [Frostiae/Flyffulator](https://flyffulator.com/)：About Extensive simulator for Flyff Universe.
+   * [Frostiae/Flyffulator](https://flyffulator.com/)：Extensive character simulator and damage calculator for Flyff Universe..
 
      * [Frostiae/Flyffulator](https://github.com/Frostiae/Flyffulator "Frostiae/Flyffulator")
 
@@ -664,7 +664,7 @@
 
 <div align="center"><img src="./system/level_gap.png" alt="level_gap.png"/></div>
 
-> source:[Flyffulator/src/calc/damageCalculator.js](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/damageCalculator.js#L180 "Flyffulator/src/calc/damageCalculator.js")
+> source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/c74839c5602e329610fd6e0aa8e3236af76910ec/src/flyff/flyffdamagecalculator.js#L360 "Flyffulator/src/flyff/flyffdamagecalculator.js")
 
 > source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1333187382941585468/1333187382941585468 "@navi2765 @Navi (discord flyff universe)")
 
