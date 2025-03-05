@@ -42,7 +42,13 @@
 <details>
   <summary>📁 damage details</summary>
 
+</br>
+
+> source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffdamagecalculator.js "Flyffulator/src/flyff/flyffdamagecalculator.js")
+
 ### dps
+
+<table><tr><td><details><summary>details</summary>
 
 ```
 DamagePerSecond = computeDamage * hitsPerSecond
@@ -177,6 +183,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
          ```
 
    </details>
+
+</details></td></tr></table>
 
 ### auto attack
 
@@ -1303,6 +1311,8 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 <table><tr><td><details><summary>details</summary>
 
+> source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/c74839c5602e329610fd6e0aa8e3236af76910ec/src/flyff/flyffdamagecalculator.js#L700 "Flyffulator/src/flyff/flyffdamagecalculator.js")
+
 * Defender is Player.
 
 * block chance : Generate random numbers from `0 ~ 79` to determine which of the following ranges applies.
@@ -1327,14 +1337,10 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    <details><summary>details</summary>
 
-   * BlockPenetration% : From Attacker's Gear, Buff scaled `blockpenetration` `Block_Penetration`.
-
-   > source:[@frostiae @[Dev] Frostiae (discord flyff universe)](https://discord.com/channels/778915844070834186/867043266162458654/1272345376720158841 "@frostiae @[Dev] Frostiae (discord flyff universe)")
-
    ```js
    // MoverAttack.cpp
    // float CMover::GetBlockFactor( CMover* pAttacker, ATTACK_INFO* pInfo )
-   BlockRate = Math.max(Math.floor(((PlayerDex / 8.0) * classBlockModifier) + fAdd + ExtraBlock), 0) * (1 - BlockPenetration%)
+   BlockRate = Math.max(Math.floor((blockBase + blockJob + blockBonus), 0) * (1 - BlockPenetration%)
    // if BlockRate < 0.0 , then 0.0
 
    // ------------------------------------------------------------------------------------
@@ -1342,25 +1348,29 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // ------------------------------------------------------------------------------------
    ```
 
-   * fAdd
+   * blockBase
       ```js
-      fblockA = PlayerLevel / ((PlayerLevel + AttackerLevel) * 15.0)
-      fblockB = Math.min(Math.max(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0), 10)
+      blockLevel = PlayerLevel / ((PlayerLevel + AttackerLevel) * 15.0)
+      blockDex = Math.min(Math.max(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0), 10)
       // fblockB Limited to 0.0 ~ 10.0
 
-      fAdd = Math.max(fblockA + fblockB, 0)
+      blockBase = Math.max(blockLevel + blockDex, 0)
       // if fAdd < 0.0 , then 0.0
       ```
 
-   * ExtraBlock
+   * blockJob
       ```js
-      ExtraBlock = block% + DST_BLOCK_RANGE%DST_BLOCK_MELEE%
-      // ------------------------------------------------------------------------------------
-      // block% : From Defender's Gear, Buff scaled block
-      // if IsRangeAttack = rangedblock%, DST_BLOCK_RANGE%
-      // if not IsRangeAttack = meleeblock%, DST_BLOCK_MELEE%
-      // ------------------------------------------------------------------------------------
+      blockJob = (PlayerDex / 8.0) * classBlockModifier
       ```
+
+   * blockBonus : From Defender's Gear, Buff scaled `block`, `meleeblock`, `DST_BLOCK_MELEE%`.(If attack is ranged then `rangedblock`, `DST_BLOCK_RANGE%`)
+      ```js
+      blockBonus = meleeblock% || rangedblock%
+      ```
+
+   * BlockPenetration% : From Attacker's Gear, Buff scaled `blockpenetration` `pvpblockpenetration` `Block_Penetration`.
+
+     > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/c74839c5602e329610fd6e0aa8e3236af76910ec/src/flyff/flyffentity.js#L1110 "Flyffulator/src/flyff/flyffentity.js")
 
    </details>
 
@@ -1369,7 +1379,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    <details><summary>details</summary>
 
    ```js
-   function calculateBlock(
+   function getBlockChance(
      playerLevel,
      attackerLevel,
      playerDex,
@@ -1377,32 +1387,33 @@ DamagePerSecond = computeDamage * hitsPerSecond
      extraRangedBlock = 0,
      extraMeleeBlock = 0,
      classBlockModifier = 1,
-     isRangeAttack = false,
+     isRangeAttack = false
+     attackBlockPenetration = 0
    ) {
-     let blockA = playerLevel / ((playerLevel + attackerLevel) * 15.0)
-     let blockB = Math.min(
-       Math.max(
+     let blockLevel = playerLevel / ((playerLevel + attackerLevel) * 15.0)
+     let blockDex = Math.min(
+        Math.max(
           Math.floor(
-          (playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800.0)
+            (playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800.0)
           ),
           0
-       ),
-       10
+        ),
+        10
      )
+     let blockJob = (playerDex / 8.0) * classBlockModifier
      // rangedblock & meleeblock
-     let extraBlock = isRangeAttack ? extraRangedBlock : extraMeleeBlock
+     let blockBonus = isRangeAttack ? extraRangedBlock : extraMeleeBlock
      let blockRate = Math.max(
-       Math.floor(
-         (playerDex / 8.0) * classBlockModifier + blockA + blockB + extraBlock
-       ),
+       Math.floor(blockLevel + blockDex + blockJob + blockBonus),
        0
      )
+     blockRate = blockRate * (1 - attackBlockPenetration / 100)
      return blockRate
    }
 
    // ------------------------------------------------------------------------------------
-   // example (Beast King Khan https://api.flyff.com/monster/16244 vs Lv160 Knight's dex 240, extra Block +45%)
-   // calculateBlock(160, 150, 240, 251, 45, 45) = 75
+   // example (Beast King Khan https://api.flyff.com/monster/16244 vs Lv165 Knight's dex 240, blockBonus +45%)
+   // getBlockChance(165, 150, 240, 251, 45, 45) = 75
    // ------------------------------------------------------------------------------------
    ```
 
@@ -1426,7 +1437,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       ```
       ```js
       // simple formula
-      function getBlock(
+      function getBlockChance(
         playerDex,
         classBlockModifier = 1,
         extraRangedBlock = 0,
@@ -1458,11 +1469,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       // ------------------------------------------------------------------------------------
       // example (Lv160 Knight's dex 240, extra Block +45%)
-      // getBlock(240, 1 ,45, 45) = 85
+      // getBlockChance(240, 1 ,45, 45) = 85
       // ------------------------------------------------------------------------------------
       ```
 
-   > source:[Flyffulator/src/calc/mover.js/getBlock](https://github.com/Frostiae/Flyffulator/blob/7e6b38dc458bffd9edb5e5e6e96237bfe6ae3b51/src/calc/mover.js#L103 "Flyffulator/src/calc/mover.js/getBlock")
+   > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/c74839c5602e329610fd6e0aa8e3236af76910ec/src/flyff/flyffentity.js#L1062C5-L1062C19 "Flyffulator/src/flyff/flyffentity.js")
 
    </details>
 
