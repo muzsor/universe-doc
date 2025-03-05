@@ -1341,26 +1341,18 @@ DamagePerSecond = computeDamage * hitsPerSecond
    // MoverAttack.cpp
    // float CMover::GetBlockFactor( CMover* pAttacker, ATTACK_INFO* pInfo )
    BlockRate = Math.max(Math.floor((blockBase + blockJob + blockBonus), 0) * (1 - BlockPenetration%)
-   // if BlockRate < 0.0 , then 0.0
-
-   // ------------------------------------------------------------------------------------
-   // classBlockModifier = GetJobPropFactor( JOB_PROP_BLOCKING )
-   // ------------------------------------------------------------------------------------
    ```
 
    * blockBase
       ```js
       blockLevel = PlayerLevel / ((PlayerLevel + AttackerLevel) * 15.0)
       blockDex = Math.min(Math.max(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0), 10)
-      // fblockB Limited to 0.0 ~ 10.0
-
       blockBase = Math.max(blockLevel + blockDex, 0)
-      // if fAdd < 0.0 , then 0.0
       ```
 
    * blockJob
       ```js
-      blockJob = (PlayerDex / 8.0) * classBlockModifier
+      blockJob = (PlayerDex / 8.0) * jobBlockModifier
       ```
 
    * blockBonus : From Defender's Gear, Buff scaled `block`, `meleeblock`, `DST_BLOCK_MELEE%`.(If attack is ranged then `rangedblock`, `DST_BLOCK_RANGE%`)
@@ -1386,7 +1378,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
      attackerDex,
      extraRangedBlock = 0,
      extraMeleeBlock = 0,
-     classBlockModifier = 1,
+     jobBlockModifier = 1,
      isRangeAttack = false
      attackBlockPenetration = 0
    ) {
@@ -1400,7 +1392,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
         ),
         10
      )
-     let blockJob = (playerDex / 8.0) * classBlockModifier
+     let blockJob = (playerDex / 8.0) * jobBlockModifier
      // rangedblock & meleeblock
      let blockBonus = isRangeAttack ? extraRangedBlock : extraMeleeBlock
      let blockRate = Math.max(
@@ -1424,14 +1416,14 @@ DamagePerSecond = computeDamage * hitsPerSecond
    <details><summary>details</summary>
 
    ```js
-   CharacterWindowBlock = ((PlayerDex / 8.0) * classBlockModifier) + fblockB + ExtraBlock
+   CharacterWindowBlock = ((PlayerDex / 8.0) * jobBlockModifier) + fblockB + ExtraBlock
    ```
 
    * The block rate displayed in the character window assumes that your enemies's level is the same as yours and that they have 15 dex, which can make your block rate seem higher than it really is.
       ```js
       // simple formula in Excel
       // A1 : Player's Dex
-      // A2 : classBlockModifier
+      // A2 : jobBlockModifier
       // A3 : Attacker's Dex (same level enemies Dex, in character window is always 15)
       //CharacterWindowBlock =MIN(MAX(MIN(MAX(ROUNDDOWN((A1+A3+2)*((A1-A3)/800), 0), 0), 10)+ROUNDDOWN(((A1/8)*A2), 0), 0), 100)
       ```
@@ -1439,7 +1431,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // simple formula
       function getBlockChance(
         playerDex,
-        classBlockModifier = 1,
+        jobBlockModifier = 1,
         extraRangedBlock = 0,
         extraMeleeBlock = 0,
         isRangeAttack = false,
@@ -1459,7 +1451,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
         return Math.min(
           Math.max(
             blockB +
-              Math.floor((playerDex / 8.0) * classBlockModifier) +
+              Math.floor((playerDex / 8.0) * jobBlockModifier) +
               extraBlock,
             0
           ),
