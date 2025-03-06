@@ -349,13 +349,13 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       </details>
 
-   * DamagePropertyFactor : `1.0`(attacker is none or same element), `1.0 ~ 1.0895`(attacker element vs none or others), `1.0 ~ 1.2139`(strong), `0.9554 ~ 1.0895`(weak).
+   * DamagePropertyFactor : `1.0`(both are none), `0.98 ~ 1.0895`(<u>same element</u> or <u>any element vs none</u>), `1.0 ~ 1.2139`(strong), `0.9554 ~ 1.0895`(weak).
 
       * Element Type : Includes the weapon's inherent element.
 
       * Element Level : Sum of unscaled `elementattack` `DST_CHR_WEAEATKCHANGE` from Attacker's Gear, Buff.
 
-      * ElementAttackStone%： Only boost attack when using auto attack against monsters that have a weakness to that element. If the monsters aren't weak to that element, the stones won't increase attack.
+      * ElementAttackStone% ： Only boost attack when using auto attack against monsters that have a weakness to that element. If the monsters aren't weak to that element, the stones won't increase attack.
 
       ```js
       // MoverAttack.cpp
@@ -369,61 +369,110 @@ DamagePerSecond = computeDamage * hitsPerSecond
       DamagePropertyFactor = (1 - (2% * (DefenderElementLevel - AttackerElementLevel)))
       ```
 
-      <details><summary>details</summary>
+      * Player vs Monster
 
-      | Attack Element Level (Same or Others) | DamagePropertyFactor |
-      |:-------------------------------------:|:--------------------:|
-      | 0                                     | 0.98                 |
-      | 1                                     | 1                    |
-      | 2                                     | 1.02                 |
-      | 3                                     | 1.0221               |
-      | 4                                     | 1.0256               |
-      | 5                                     | 1.0305               |
-      | 6                                     | 1.0368               |
-      | 7                                     | 1.0446               |
-      | 8                                     | 1.0537               |
-      | 9                                     | 1.0642               |
-      | 10                                    | 1.0761               |
-      | 11                                    | 1.0895               |
-      | ...                                   | 1.0895               |
+         <details><summary>details</summary>
 
-      | Attack Element Level (Strong) | DamagePropertyFactor |
-      |:-----------------------------:|:--------------------:|
-      | 0                             | 1                    |
-      | 1                             | 1.07                 |
-      | 2                             | 1.0743               |
-      | 3                             | 1.0816               |
-      | 4                             | 1.0917               |
-      | 5                             | 1.1048               |
-      | 6                             | 1.1209               |
-      | 7                             | 1.1397               |
-      | 8                             | 1.1615               |
-      | 9                             | 1.1862               |
-      | 10                            | 1.2139               |
-      | ...                           | 1.2139               |
+         | Attack Element Level (Same or Others) | DamagePropertyFactor |
+         |:-------------------------------------:|:--------------------:|
+         | 0                                     | 0.98                 |
+         | 1                                     | 1                    |
+         | 2                                     | 1.02                 |
+         | 3                                     | 1.0221               |
+         | 4                                     | 1.0256               |
+         | 5                                     | 1.0305               |
+         | 6                                     | 1.0368               |
+         | 7                                     | 1.0446               |
+         | 8                                     | 1.0537               |
+         | 9                                     | 1.0642               |
+         | 10                                    | 1.0761               |
+         | 11                                    | 1.0895               |
+         | ...                                   | 1.0895               |
 
-      | Attack Element Level (Weak) | DamagePropertyFactor |
-      |:---------------------------:|:--------------------:|
-      | 0                           | 0.9554               |
-      | 1                           | 0.9632               |
-      | 2                           | 0.9695               |
-      | 3                           | 0.9744               |
-      | 4                           | 0.9779               |
-      | 5                           | 0.98                 |
-      | 6                           | 1                    |
-      | 7                           | 1.02                 |
-      | 8                           | 1.0221               |
-      | 9                           | 1.0256               |
-      | 10                          | 1.0305               |
-      | 11                          | 1.0368               |
-      | 12                          | 1.0446               |
-      | 13                          | 1.0537               |
-      | 14                          | 1.0642               |
-      | 15                          | 1.0761               |
-      | 16                          | 1.0895               |
-      | 16                          | 1.0895               |
+         | Attack Element Level (Strong) | DamagePropertyFactor |
+         |:-----------------------------:|:--------------------:|
+         | 0                             | 1                    |
+         | 1                             | 1.07                 |
+         | 2                             | 1.0743               |
+         | 3                             | 1.0816               |
+         | 4                             | 1.0917               |
+         | 5                             | 1.1048               |
+         | 6                             | 1.1209               |
+         | 7                             | 1.1397               |
+         | 8                             | 1.1615               |
+         | 9                             | 1.1862               |
+         | 10                            | 1.2139               |
+         | ...                           | 1.2139               |
 
-      </details>
+         | Attack Element Level (Weak) | DamagePropertyFactor |
+         |:---------------------------:|:--------------------:|
+         | 0                           | 0.9554               |
+         | 1                           | 0.9632               |
+         | 2                           | 0.9695               |
+         | 3                           | 0.9744               |
+         | 4                           | 0.9779               |
+         | 5                           | 0.98                 |
+         | 6                           | 1                    |
+         | 7                           | 1.02                 |
+         | 8                           | 1.0221               |
+         | 9                           | 1.0256               |
+         | 10                          | 1.0305               |
+         | 11                          | 1.0368               |
+         | 12                          | 1.0446               |
+         | 13                          | 1.0537               |
+         | 14                          | 1.0642               |
+         | 15                          | 1.0761               |
+         | 16                          | 1.0895               |
+         | 16                          | 1.0895               |
+
+         </details>
+
+      * Monster vs Player, Player vs Player
+
+         <details><summary>details</summary>
+
+         * Most monster element is level 1.
+
+         | Defender Element Level (Same or Others) | DamagePropertyFactor |
+         |:---------------------------------------:|:--------------------:|
+         | 1                                       | 0.98                 |
+         | 2                                       | 0.98                 |
+         | 3                                       | 0.98                 |
+         | 4                                       | 0.97                 |
+         | 5                                       | 0.97                 |
+         | 6                                       | 0.96                 |
+         | 7                                       | 0.95                 |
+         | 8                                       | 0.94                 |
+         | 9                                       | 0.93                 |
+         | 10                                      | 0.92                 |
+
+         | Defender Element Level (Strong) | DamagePropertyFactor |
+         |:-------------------------------:|:--------------------:|
+         | 1                               | 0.98                 |
+         | 2                               | 0.96                 |
+         | 3                               | 0.94                 |
+         | 4                               | 0.92                 |
+         | 5                               | 0.9                  |
+         | 6                               | 0.88                 |
+         | 7                               | 0.86                 |
+         | 8                               | 0.84                 |
+         | 9                               | 0.82                 |
+         | 10                              | 0.8                  |
+
+         | Defender Element Level (Weak) | DamagePropertyFactor |
+         |:-----------------------------:|:--------------------:|
+         | 1                             | 1.02                 |
+         | 2                             | 1.04                 |
+         | 3                             | 1.06                 |
+         | 4                             | 1.08                 |
+         | 5                             | 1.1                  |
+         | 6                             | 1.12                 |
+         | 7                             | 1.14                 |
+         | 8                             | 1.16                 |
+         | 9                             | 1.18                 |
+         | 10                            | 1.2                  |
+
+         </details>
 
    * ChargeMultiplier : Ranger Attack boost based on charge level.
 
@@ -1296,7 +1345,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 <table><tr><td><details><summary>details</summary>
 
-> source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/c74839c5602e329610fd6e0aa8e3236af76910ec/src/flyff/flyffdamagecalculator.js#L700 "Flyffulator/src/flyff/flyffdamagecalculator.js")
+> source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffdamagecalculator.js#L760 "Flyffulator/src/flyff/flyffdamagecalculator.js")
 
 * Defender is Player.
 
@@ -1347,7 +1396,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * BlockPenetration% : From Attacker's Gear, Buff scaled `blockpenetration` `pvpblockpenetration` `Block_Penetration`.
 
-     > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/c74839c5602e329610fd6e0aa8e3236af76910ec/src/flyff/flyffentity.js#L1110 "Flyffulator/src/flyff/flyffentity.js")
+     > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffentity.js#L1281 "Flyffulator/src/flyff/flyffentity.js")
 
    </details>
 
@@ -1450,7 +1499,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
       ```
 
-   > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/c74839c5602e329610fd6e0aa8e3236af76910ec/src/flyff/flyffentity.js#L1062C5-L1062C19 "Flyffulator/src/flyff/flyffentity.js")
+   > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffentity.js#L1281 "Flyffulator/src/flyff/flyffentity.js")
 
    </details>
 
