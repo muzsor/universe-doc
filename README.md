@@ -439,7 +439,11 @@
 
 > source:[Game Version 1.3.2 Patch Notes](https://universe.flyff.com/news/patchnotes132 "Game Version 1.3.2 Patch Notes")
 
-* Added a chat command /lockedslots to display all missing quests and achievements unlocking inventory slots.
+* Added a chat command `/lockedslots` to display all missing quests and achievements unlocking inventory slots.
+
+> source:[Game Version 1.4.3 Patch Notes (March 6)](https://universe.flyff.com/news/patchnotemarch6 "Game Version 1.4.3 Patch Notes (March 6)")
+
+* You can now spectate players inside Guild Siege maps using `/spectate <name>`, with some restrictions. Spectating a player will allow your camera to follow them.
 
 <div align="center"><img src="./system/commands.png" alt="commands.png" width="600"/></div>
 
