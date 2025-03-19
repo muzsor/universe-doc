@@ -363,11 +363,6 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // Player VS Monster
       DamagePropertyFactor = ElementAttackFactor + ElementAttackStone%
       ```
-      ```js
-      // Monster VS Player, Player VS Player
-      // example Attacker is fire vs Defender is water
-      DamagePropertyFactor = (1 - (2% * (DefenderElementLevel - AttackerElementLevel)))
-      ```
 
       * Player vs Monster
 
@@ -423,7 +418,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
          | 14                          | 1.0642               |
          | 15                          | 1.0761               |
          | 16                          | 1.0895               |
-         | 16                          | 1.0895               |
+         | ...                         | 1.0895               |
 
          </details>
 
@@ -435,42 +430,48 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
          | Defender Element Level (Same or Others) | DamagePropertyFactor |
          |:---------------------------------------:|:--------------------:|
-         | 1                                       | 0.98                 |
+         | 1                                       | 1                    |
          | 2                                       | 0.98                 |
-         | 3                                       | 0.98                 |
-         | 4                                       | 0.97                 |
-         | 5                                       | 0.97                 |
-         | 6                                       | 0.96                 |
-         | 7                                       | 0.95                 |
-         | 8                                       | 0.94                 |
-         | 9                                       | 0.93                 |
-         | 10                                      | 0.92                 |
+         | 3                                       | 0.9779               |
+         | 4                                       | 0.9744               |
+         | 5                                       | 0.9695               |
+         | 6                                       | 0.9632               |
+         | 7                                       | 0.9554               |
+         | 8                                       | 0.9463               |
+         | 9                                       | 0.9358               |
+         | 10                                      | 0.9239               |
+         | 11                                      | 0.9105               |
+         | ...                                     | 0.9105               |
 
          | Defender Element Level (Strong) | DamagePropertyFactor |
          |:-------------------------------:|:--------------------:|
-         | 1                               | 0.98                 |
-         | 2                               | 0.96                 |
-         | 3                               | 0.94                 |
-         | 4                               | 0.92                 |
-         | 5                               | 0.9                  |
-         | 6                               | 0.88                 |
-         | 7                               | 0.86                 |
-         | 8                               | 0.84                 |
-         | 9                               | 0.82                 |
-         | 10                              | 0.8                  |
+         | 1                               | 0.9632               |
+         | 2                               | 0.9554               |
+         | 3                               | 0.9463               |
+         | 4                               | 0.9358               |
+         | 5                               | 0.9239               |
+         | 6                               | 0.9105               |
+         | ...                             | 0.9105               |
 
          | Defender Element Level (Weak) | DamagePropertyFactor |
          |:-----------------------------:|:--------------------:|
-         | 1                             | 1.02                 |
-         | 2                             | 1.04                 |
-         | 3                             | 1.06                 |
-         | 4                             | 1.08                 |
-         | 5                             | 1.1                  |
-         | 6                             | 1.12                 |
-         | 7                             | 1.14                 |
-         | 8                             | 1.16                 |
-         | 9                             | 1.18                 |
-         | 10                            | 1.2                  |
+         | 1                             | 1.07                 |
+         | 2                             | 1.07                 |
+         | 3                             | 1.07                 |
+         | 4                             | 1.07                 |
+         | 5                             | 1.07                 |
+         | 6                             | 1                    |
+         | 7                             | 0.98                 |
+         | 8                             | 0.9779               |
+         | 9                             | 0.9744               |
+         | 10                            | 0.9695               |
+         | 11                            | 0.9632               |
+         | 12                            | 0.9554               |
+         | 13                            | 0.9463               |
+         | 14                            | 0.9358               |
+         | 15                            | 0.9239               |
+         | 16                            | 0.9105               |
+         | ...                           | 0.9105               |
 
          </details>
 
