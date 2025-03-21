@@ -566,11 +566,17 @@
 
 <div align="center"><img src="./costume_collection/78.Neon_Valentine.jpg" alt="78.Neon_Valentine" width="300"/></div>
 
-78. `2025-03-06`: `Hanbok 2025`
+79. `2025-03-06`: `Hanbok 2025`
 
    * Hat / Suit / Hands / Shoes / Bag
 
 <div align="center"><img src="./costume_collection/79.Hanbok_2025.jpg" alt="79.Hanbok_2025" width="300"/></div>
+
+80. `2025-03-20`: `Cyberpunk 2025`
+
+   * Hat / Suit / Hands / Shoes / Skateboard / Mask
+
+<div align="center"><img src="./costume_collection/80.Cyberpunk_2025.jpg" alt="80.Cyberpunk_2025" width="300"/></div>
 
 </details></td></tr></table>
 
