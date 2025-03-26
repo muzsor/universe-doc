@@ -30,7 +30,6 @@
     - [💬 chatting filter](#-chatting-filter)
     - [👩🏻‍💻 commands](#-commands)
     - [💫 transmute](#-transmute)
-    - [🏰 guild name color](#-guild-name-color)
     - [🏰 guild level](#-guild-level)
     - [👩🏻‍❤️‍👨🏻 couple](#️-couple)
       - [couple skills](#couple-skills)
@@ -461,7 +460,7 @@
 
 </details></td></tr></table>
 
-### 🏰 guild name color
+### 🏰 guild level
 
 <table><tr><td><details><summary>details</summary>
 
@@ -472,20 +471,6 @@
 </div>
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1173045738230521926 "@bluechromed @[Dev] Blukie (discord flyff universe)")
-
-<div align="center"><img src="./system/guild/guild_name_color.png" alt="guild_name_color.png"/></div>
-
-</details></td></tr></table>
-
-### 🏰 guild level
-
-<table><tr><td><details><summary>details</summary>
-
-<div align="center">
-
-**For more information please refer to [Gothante](https://gothante.com/?search=guild+level).**
-
-</div>
 
 > source:[@kroontje @[Mod] Kroontje (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577555546656850/1201432655619702885 "@kroontje @[Mod] Kroontje (discord flyff universe)")
 
