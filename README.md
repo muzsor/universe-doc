@@ -224,7 +224,7 @@
 
 * `2022-11-03 06:00 UTC`:New Taiwanese server `獨眼蝙蝠` starts.
 
-* `2022-08-17 02:00 UTC`:[Summer `2022` expansion (version `1.1.0`)](https://universe.flyff.com/news/summerupdate "Summer 2022 expansion on August 22!")
+* `2022-08-22 07:00 UTC`:[Summer `2022` expansion (version `1.1.0`)](https://universe.flyff.com/news/summerupdate "Summer 2022 expansion on August 22!")
 
 <div align="center"><img src="./system/updates/Summer_2022_v1.1.0.png" alt="Summer_2022_v1.1.0.png" width="400"/></div>
 
@@ -256,7 +256,7 @@
 
 <details><summary>2024</summary>
 
-* `2024-02-15 06:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
+* `2024-02-15 09:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
 * `2024-05-16 08:00 UTC`:[FWC 2024 Server Event](https://universe.flyff.com/news/fwc2024serverevent "Flyff World Championship 2024")
 
