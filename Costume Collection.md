@@ -23,6 +23,7 @@
     - [51~60](#5160)
     - [61~70](#6170)
     - [71~80](#7180)
+    - [81~90](#8190)
   - [🎉 Costume Collection Event](#-costume-collection-event)
   - [🛒 On Sale](#-on-sale)
     - [Black Friday Costume Lucky Box](#black-friday-costume-lucky-box)
@@ -577,6 +578,20 @@
    * Hat / Suit / Hands / Shoes / Skateboard / Mask
 
 <div align="center"><img src="./costume_collection/80.Cyberpunk_2025.jpg" alt="80.Cyberpunk_2025" width="300"/></div>
+
+</details></td></tr></table>
+
+### 81~90
+
+<table><tr><td><details><summary>81~90 details</summary>
+
+<br>
+
+81. `2025-04-03`: `Spring Picnic`
+
+   * Hat / Suit / Hands/ Shoes / Bag
+
+<div align="center"><img src="./costume_collection/81.Spring_Picnic.jpg" alt="81.Spring_Picnic.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
