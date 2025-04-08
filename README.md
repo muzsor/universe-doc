@@ -282,6 +282,8 @@
 
 * `2025-02-27 09:00 UTC`:[Server Merge Announcement: Totemia and Genèse servers](https://universe.flyff.com/news/servermergefeb25 "Server Merge Announcement: Totemia and Genèse servers")
 
+* `2025-04-24 08:00 UTC`:[Flyff World Championship 2025](https://universe.flyff.com/news/fwc2025 "Flyff World Championship 2025")
+
 </details>
 
 #### 💸 top up event
