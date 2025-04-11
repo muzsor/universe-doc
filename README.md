@@ -240,6 +240,10 @@
 
 * `2023-05-18 07:00 UTC`:[1st Flyff World Championship (FWC) for Flyff Universe](https://universe.flyff.com/news/fwc1 "1st Flyff World Championship (FWC) for Flyff Universe")
 
+   > [FWC Event Details](https://universe.flyff.com/news/fwc1event "FWC Event Details")
+
+<div align="center"><img src="./system/updates/FWC2023.png" alt="FWC2023.png" width="400"/></div>
+
 * `2023-07-13 09:00 UTC`:[Áries and Flarine Server Merge](https://universe.flyff.com/news/servermergebrltam "Server Merge Notice: Áries and Flarine Server Merge")
 
 * `2023-10-12 07:00 UTC`:End of `FWC` Server and Transfer.
@@ -258,7 +262,11 @@
 
 * `2024-02-15 09:00 UTC`:[New Horizon Expansion (Flyff Universe Version 1.3.6)](https://universe.flyff.com/news/patchnotes136 "Game Version 1.3.6 Patch Notes")
 
-* `2024-05-16 08:00 UTC`:[FWC 2024 Server Event](https://universe.flyff.com/news/fwc2024serverevent "Flyff World Championship 2024")
+* `2024-05-16 08:00 UTC`:[Flyff World Championship 2024](https://universe.flyff.com/news/fwc2024 "Flyff World Championship 2024")
+
+   > [FWC 2024 Server Event](https://universe.flyff.com/news/fwc2024serverevent "Flyff World Championship 2024")
+
+<div align="center"><img src="./system/updates/FWC2024.jpg" alt="FWC2024.jpg" width="400"/></div>
 
 * `2024-08-16`: [Flyff 20 Year Anniversary Article](https://universe.flyff.com/news/flyff20anniversaryarticle "Flyff 20 Year Anniversary Article")
 
@@ -283,6 +291,8 @@
 * `2025-02-27 09:00 UTC`:[Server Merge Announcement: Totemia and Genèse servers](https://universe.flyff.com/news/servermergefeb25 "Server Merge Announcement: Totemia and Genèse servers")
 
 * `2025-04-24 08:00 UTC`:[Flyff World Championship 2025](https://universe.flyff.com/news/fwc2025 "Flyff World Championship 2025")
+
+<div align="center"><img src="./system/updates/FWC2025.png" alt="FWC2025.png" width="400"/></div>
 
 </details>
 
