@@ -19,7 +19,7 @@
   - [⚙️ system](#️-system)
     - [📢 updates](#-updates)
       - [💸 top up event](#-top-up-event)
-    - [📅 all sever contents time](#-all-sever-contents-time)
+    - [📅 all server contents time](#-all-server-contents-time)
     - [🕙 time](#-time)
     - [🗺️ map](#️-map)
       - [wdmadrigal](#wdmadrigal)
@@ -344,7 +344,7 @@
 
 </details></td></tr></table>
 
-### 📅 all sever contents time
+### 📅 all server contents time
 
 <table><tr><td><details><summary>details</summary>
 
