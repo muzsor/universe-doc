@@ -593,6 +593,12 @@
 
 <div align="center"><img src="./costume_collection/81.Spring_Picnic.jpg" alt="81.Spring_Picnic.jpg" width="300"/></div>
 
+82. `2025-04-17`: `Easter Rabbit 2025`
+
+   * Hat / Suit / Shoes / Backpack
+
+<div align="center"><img src="./costume_collection/82.Easter_Rabbit_2025.jpg" alt="82.Easter_Rabbit_2025.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
