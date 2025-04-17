@@ -9,7 +9,7 @@
 > [!CAUTION]
 > **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thank you.** 🙏
 
-<!-- Copyright 2024 © Gala Lab Corp. All Rights Reserved. -->
+<!-- Copyright 2025 © Gala Lab Corp. All Rights Reserved. -->
 
 <table><tr><td><details><summary>📁 Table of Contents</summary>
 
@@ -76,7 +76,8 @@
       - [ultimate weapon](#ultimate-weapon)
       - [ultimate weapon event](#ultimate-weapon-event)
       - [regular weapon](#regular-weapon)
-      - [⚜️ fwc golden weapon](#️-fwc-golden-weapon)
+      - [⚜️ fwc 2024 golden weapon](#️-fwc-2024-golden-weapon)
+      - [⚜️ fwc 2025 golden weapon](#️-fwc-2025-golden-weapon)
       - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
       - [ultimate jewelry event](#ultimate-jewelry-event)
@@ -94,7 +95,6 @@
     - [🙌 blessing](#-blessing)
     - [📜 stat scroll](#-stat-scroll)
     - [📜 awake](#-awake)
-    - [💍 FWC 2023 Jewelry](#-fwc-2023-jewelry)
   - [🐶 pet](#-pet)
     - [🦮 raised pet](#-raised-pet)
     - [🕊️ grace effect](#️-grace-effect)
@@ -1218,11 +1218,19 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### ⚜️ fwc golden weapon
+#### ⚜️ fwc 2024 golden weapon
 
 <details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/ultimate/fwc_golden_ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
+<div align="center"><img src="./upgrade/ultimate/fwc2024_golden_ultimate_weapons.png" alt="fwc2024_golden_ultimate_weapons.png"/></div>
+
+</details>
+
+#### ⚜️ fwc 2025 golden weapon
+
+<details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/ultimate/fwc2025_golden_ultimate_weapons.png" alt="fwc2025_golden_ultimate_weapons.png"/></div>
 
 </details>
 
@@ -1438,16 +1446,6 @@ Those who have completed the Optional Master Quest during the event period will 
 **For more information please refer to [Flyffipedia](https://flyffipedia.com/skillawakes).**
 
 </div>
-
-</details></td></tr></table>
-
-### 💍 FWC 2023 Jewelry
-
-<table><tr><td><details><summary>details</summary>
-
-<div align="center"><img src="./upgrade/fwc2023_jewelry.png" alt="fwc_jewelry.png"/></div>
-
-> source:[FWC 2023 Event Details](https://universe.flyff.com/news/fwc1event "FWC 2023 Event Details")
 
 </details></td></tr></table>
 
