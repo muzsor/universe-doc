@@ -1917,6 +1917,16 @@ Those who have completed the Optional Master Quest during the event period will 
 
   * [Personal House NPC] Pang: Level2 Buffs limited to characters level 120 and below.
 
+     <img src="./system/buff_pang.png" alt="buff_pang.png"/>
+
+     * Haste Lv. 8: Attack Speed+19% (9+10), Casting Speed+13% (4+9)
+
+     * Heap Up Lv. 7: STA+26 (7+19)
+
+     * Quick Step Lv. 8: Speed+27% (8+19)
+
+     * Accuracy Lv. 7: Hit Rate+16% (7+9)
+
   * [Personal House NPC] Klock: Earn that jewel with 30% chance or removing Ultimate Jewel.
 
      * Ultimate Jewelry Manufacture, Compose Success Rate Increased.
@@ -1986,6 +1996,16 @@ Those who have completed the Optional Master Quest during the event period will 
   * [Guild House NPC] Nanco: Critical Resist +3%
 
   * [Guild House NPC] Pang: Level4 Buffs limited to characters level 140 and below.
+
+     <img src="./system/buff_pang.png" alt="buff_pang.png"/>
+
+     * Haste Lv. 10: Attack Speed+20% (10+10), Casting Speed+13% (4+9)
+
+     * Heap Up Lv. 9: STA+28 (9+19)
+
+     * Quick Step Lv. 10: Speed+29% (10+19)
+
+     * Accuracy Lv. 9: Hit Rate+18% (9+9)
 
   * [Guild House NPC] Alyn: Weapon/Armor upgrade chance +3%
 
