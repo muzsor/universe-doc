@@ -292,6 +292,8 @@
 
 * `2025-04-24 08:00 UTC`:[Flyff World Championship 2025](https://universe.flyff.com/news/fwc2025 "Flyff World Championship 2025")
 
+   > [📢 FWC 2025 Server Event Announcement](https://universe.flyff.com/news/fwc2025event "📢 FWC 2025 Server Event Announcement")
+
 <div align="center"><img src="./system/updates/FWC2025.png" alt="FWC2025.png" width="400"/></div>
 
 </details>
