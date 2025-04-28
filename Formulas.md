@@ -1346,7 +1346,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
 <table><tr><td><details><summary>details</summary>
 
-> source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffdamagecalculator.js#L760 "Flyffulator/src/flyff/flyffdamagecalculator.js")
+> source:[getBlockFactor() Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffdamagecalculator.js#L779 "getBlockFactor() Flyffulator/src/flyff/flyffdamagecalculator.js")
 
 * Defender is Player.
 
@@ -1397,7 +1397,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    * BlockPenetration% : From Attacker's Gear, Buff scaled `blockpenetration` `pvpblockpenetration` `Block_Penetration`.
 
-     > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffentity.js#L1281 "Flyffulator/src/flyff/flyffentity.js")
+     > source:[getBlockChance() Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffentity.js#L1350 "getBlockChance() Flyffulator/src/flyff/flyffentity.js")
 
    </details>
 
@@ -1500,7 +1500,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
       // ------------------------------------------------------------------------------------
       ```
 
-   > source:[Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffentity.js#L1281 "Flyffulator/src/flyff/flyffentity.js")
+   > source:[getBlockChance() Flyffulator/src/flyff/flyffentity.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffentity.js#L1350 "getBlockChance() Flyffulator/src/flyff/flyffentity.js")
 
    </details>
 

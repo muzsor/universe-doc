@@ -637,7 +637,11 @@
 
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177176494221566062 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
+> source:[getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffexperiencecalculator.js#L98 "getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js")
+
 * New mechanism to the game: low, regular and captain monsters level `30+` killed by at least `80%` of damage inflicted from single target attacks and skills will have an increased experience and drop rate.
+
+   > monster's rank: small, normal, captain.
 
    > 遊戲新機制：`30` 級以上的低階怪物、普通怪物、隊長怪物被單一目標攻擊和技能造成的傷害至少 `80%` 擊殺後，經驗值和掉落率都會增加。
 
@@ -649,15 +653,15 @@
 
 > source:[📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/959370780666396703/1177171087008727120 "📣patch-notes @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-* Increased the 1v1 Exp and Drop bonus of new levels. It was `35%` before and is now ranging from `90%` at `141` to `102%` at `160`.
+* Increased the 1v1 Exp and Drop bonus of new levels. It was `35%` before and is now ranging from `90.4423%` at `141` to `102.5%` at `160`. (At levels `161` and higher, remains `102.5%`.)
 
-   > 增加了新等級的 `1v1` 經驗值和掉落獎勵。之前是 `35%`，現在從等級 `141` 時的 `90%` 到 `160` 時的 `102%`。
+   > 增加了新等級的 `1v1` 經驗值和掉落獎勵。之前是 `35%`，現在從等級 `141` 時的 `90.4423%` 到 `160` 時的 `102.5%`。(在 `161` 以上，仍為 `102.5%`。)
 
 > source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177233268349870182 "@navi2765 @Navi (discord flyff universe)")
 
 * 1v1 Exp and Drop bonus are based on monster level. Meaning that you can take advantage of this exp increase as soon as you are strong enough to fight monsters level 141 and above.
 
-   > `1v1` 經驗值和掉落獎勵基於怪物等級。 這意味著，只要您足夠強大，可以對抗 `141` 級及以上的怪物，您就可以利用此經驗值增加。
+   > `1v1` 經驗值和掉落獎勵基於怪物等級。這意味著，只要您足夠強大，可以對抗 `141` 級及以上的怪物，您就可以利用此經驗值增加。
 
 </details></td></tr></table>
 
