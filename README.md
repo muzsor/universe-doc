@@ -673,6 +673,8 @@
 
 > source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffdamagecalculator.js#L379 "Flyffulator/src/flyff/flyffdamagecalculator.js")
 
+> source:[Flyffulator/src/assets/LevelDifferencePenalties.json](https://github.com/Frostiae/Flyffulator/blob/main/src/assets/LevelDifferencePenalties.json "Flyffulator/src/assets/LevelDifferencePenalties.json")
+
 > source:[@navi2765 @Navi (discord flyff universe)](https://discord.com/channels/778915844070834186/1333187382941585468/1333187382941585468 "@navi2765 @Navi (discord flyff universe)")
 
 </details></td></tr></table>
