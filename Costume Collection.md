@@ -599,6 +599,12 @@
 
 <div align="center"><img src="./costume_collection/82.Easter_Rabbit_2025.jpg" alt="82.Easter_Rabbit_2025.jpg" width="300"/></div>
 
+83. `2025-04-24`: `Easter Bunny 2025`
+
+   * Hat / Suit / Hands / Shoes / Band-aid / Backpack
+
+<div align="center"><img src="./costume_collection/83.Easter_Bunny_2025.jpg" alt="83.Easter_Bunny_2025.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
