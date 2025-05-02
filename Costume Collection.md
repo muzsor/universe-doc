@@ -605,6 +605,12 @@
 
 <div align="center"><img src="./costume_collection/83.Easter_Bunny_2025.jpg" alt="83.Easter_Bunny_2025.jpg" width="300"/></div>
 
+84. `2025-04-30`: `Pastel`
+
+   * Hat / Suit / Shoes
+
+<div align="center"><img src="./costume_collection/84.Pastel.jpg" alt="84.Pastel.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
