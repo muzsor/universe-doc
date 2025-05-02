@@ -42,7 +42,7 @@
       - [exp bonus](#exp-bonus)
       - [party exp](#party-exp)
       - [party skill](#party-skill)
-    - [🌟 exp system](#-exp-system)
+    - [� 1v1 bonus](#-1v1-bonus)
     - [🥇 level gap](#-level-gap)
     - [🎁 drop rate](#-drop-rate)
       - [Level-based Drop Rate Penalties](#level-based-drop-rate-penalties)
@@ -628,7 +628,7 @@
 
 </details></td></tr></table>
 
-### 🌟 exp system
+### 🎯 1v1 bonus
 
 <table><tr><td><details><summary>details</summary>
 
@@ -639,6 +639,8 @@
 > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1177176494221566062 "@bluechromed @[Dev] Blukie (discord flyff universe)")
 
 > source:[getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffexperiencecalculator.js#L98 "getSingleTargetFactor() Flyffulator/src/flyff/flyffexperiencecalculator.js")
+
+<div align="center"><img src="./system/experience_bonus_1v1.png" alt="experience_bonus_1v1.png" width="800"/></div>
 
 * New mechanism to the game: low, regular and captain monsters level `30+` killed by at least `80%` of damage inflicted from single target attacks and skills will have an increased experience and drop rate.
 
