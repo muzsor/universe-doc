@@ -53,7 +53,8 @@
       - [Dungeon](#dungeon)
     - [📦 item rarity](#-item-rarity)
     - [💳 extended battle pass](#-extended-battle-pass)
-    - [🛒 fitting room](#-fitting-room)
+    - [🛒 search shop](#-search-shop)
+    - [👕 fitting room](#-fitting-room)
     - [👗 costume collection](#-costume-collection)
       - [👗 costume collection details](#-costume-collection-details)
     - [⏳ monster focus timer](#-monster-focus-timer)
@@ -436,7 +437,7 @@
 
 <div align="center"><img src="./system/chatting_filter/chatting_filter.png" alt="chatting_filter.png" width="300"/></div>
 
-<div align="center"><img src="./system/chatting_filter/chatting_filter_interface.png" alt="chatting_filter_interface.png" width="400"/></div>
+<div align="center"><img src="./system/chatting_filter/chatting_filter_window.png" alt="chatting_filter_window.png" width="400"/></div>
 
 </details></td></tr></table>
 
@@ -856,7 +857,27 @@ This Extended is also valid for that specific season when it is purchased.
 
 </details></td></tr></table>
 
-### 🛒 fitting room
+### 🛒 search shop
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=search+shop).**
+
+</div>
+
+> source:[Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)](https://universe.flyff.com/news/ver141 "Updates to Battle for Madrigal Expansion (Flyff Universe Version 1.4.1)")
+
+<div align="center"><img src="./system/search_shop/search_shop.png" alt="search_shop.png" width="200"/></div>
+
+<div align="center"><img src="./system/search_shop/search_shop_window.png" alt="search_shop_window.png" width="600"/></div>
+
+<div align="center"><img src="./system/search_shop/search_shop_click.png" alt="search_shop_click.png"/></div>
+
+</details></td></tr></table>
+
+### 👕 fitting room
 
 <table><tr><td><details><summary>details</summary>
 
@@ -876,7 +897,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center"><img src="./system/fitting_room/fitting_room.png" alt="fitting_room.png" width="400"/></div>
 
-<div align="center"><img src="./system/fitting_room/fitting_room_interface.png" alt="fitting_room_interface.png" width="500"/></div>
+<div align="center"><img src="./system/fitting_room/fitting_room_window.png" alt="fitting_room_window.png" width="500"/></div>
 
 </details></td></tr></table>
 
