@@ -952,7 +952,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
               = Max(Math.floor(FlatDefense / 7.0 + 1) * (1 - ArmorPenetrate%) * (1 + Defense%), 0)
       ```
 
-   * ElementResistFactor : If the skill and weapon match the element, apply `10%` more damage; If the weapon is weak compared to the skill element, apply `-10%` less damage.
+   * ElementResistFactor : If the weapon and skill share the same element, increase damage by `10%`. If the weapon is weak against the skill’s element, reduce damage by `10%`.
       ```js
       // applyElementDefense(damage)
       ElementResistFactor = SkillElementVSDefenderElementFactor * SkillElementVSWeaponElementFactor
