@@ -589,7 +589,7 @@
 
 81. `2025-04-03`: `Spring Picnic`
 
-   * Hat / Suit / Hands/ Shoes / Bag
+   * Hat / Suit / Hands / Shoes / Bag
 
 <div align="center"><img src="./costume_collection/81.Spring_Picnic.jpg" alt="81.Spring_Picnic.jpg" width="300"/></div>
 
@@ -610,6 +610,12 @@
    * Hat / Suit / Shoes
 
 <div align="center"><img src="./costume_collection/84.Pastel.jpg" alt="84.Pastel.jpg" width="300"/></div>
+
+85. `2025-05-15`: `3rd Anniversary Mecha`
+
+   * Hat / Suit / Hands / Shoes / Cloak (Wings)
+
+<div align="center"><img src="./costume_collection/85.3rd_Anniversary_Mecha.jpg" alt="85.3rd_Anniversary_Mecha.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
