@@ -130,41 +130,43 @@
 
 ## 🌐 community
 
-* [Flyff Universe](https://universe.flyff.com/ "Flyff Universe")：Official Website.
+* [Flyff Universe](https://universe.flyff.com/ "Flyff Universe")： Official Website.
 
-   * [Galalab Support (helpshift)](https://galalab.helpshift.com/hc/en/12-flyff-universe/contact-us/ "Galalab Support (helpshift)")：Customer Support.
+   * [Galalab Support (helpshift)](https://galalab.helpshift.com/hc/en/12-flyff-universe/contact-us/ "Galalab Support (helpshift)")： Customer Support.
 
-   * [Flyff Universe Discord](https://discord.com/invite/flyffuniverse "Flyff Universe Discord")：Official Discord.
+   * [Flyff Universe Discord](https://discord.com/invite/flyffuniverse "Flyff Universe Discord")： Official Discord.
 
-   * [Flyff Universe API](https://api.flyff.com/ "Flyff Universe API")：Flyff Universe Public API.
+   * [Flyff Universe API](https://api.flyff.com/ "Flyff Universe API")： Flyff Universe Public API.
 
-   * [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")：Fansite Kit with high quality Flyff assets.
+   * [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")： Fansite Kit with high quality Flyff assets.
 
    * [Gothante](https://gothante.com/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
 
-   * [Frostiae/Flyffulator](https://flyffulator.com/)：Extensive character simulator and damage calculator for Flyff Universe..
+   * [Frostiae/Flyffulator](https://flyffulator.com/)： Extensive character simulator and damage calculator for Flyff Universe..
 
      * [Frostiae/Flyffulator](https://github.com/Frostiae/Flyffulator "Frostiae/Flyffulator")
 
    * [Sniegu Translation Platform](https://translation.sniegu.fr/projects/flyff/ "Sniegu Translation Platform")
 
-* [swaight/Flyffipedia](https://flyffipedia.com/ "swaight/Flyffipedia")：A wiki page containing all kinds of static information about the game's data.
+* [swaight/Flyffipedia](https://flyffipedia.com/ "swaight/Flyffipedia")： A wiki page containing all kinds of static information about the game's data.
 
-* [tacota0158/Madrigalinside](https://madrigalinside.com/ "tacota0158/Madrigalinside")：A wiki page containing all kinds of static information about the game's data.
+* [tacota0158/Madrigalinside](https://madrigalinside.com/ "tacota0158/Madrigalinside")： A wiki page containing all kinds of static information about the game's data.
 
-* [Skillulator | FlyFF Universe Skill Calculator](https://skillulator.lol/ "Skillulator | FlyFF Universe Skill Calculator")：A skill calculator for flyff universe.
+* [Skillulator | FlyFF Universe Skill Calculator](https://skillulator.lol/ "Skillulator | FlyFF Universe Skill Calculator")： A skill calculator for flyff universe.
 
    * [nulfrost/skillulator](https://github.com/nulfrost/skillulator "nulfrost/skillulator")
 
-* [Flyff - Skill Simulator](https://flyffskillsimulator.vercel.app/ "guysuvijak/Flyff - Skill Simulator")：A skill build simulator for Flyff Universe, built with Next.js and React Flow.
+* [Flyff - Skill Simulator](https://flyffskillsimulator.vercel.app/ "guysuvijak/Flyff - Skill Simulator")： A skill build simulator for Flyff Universe, built with Next.js and React Flow.
 
    * [guysuvijak/flyff-skill-simulator](https://github.com/guysuvijak/flyff-skill-simulator "guysuvijak/flyff-skill-simulator")
 
-* [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/)：A Simple Website for Housing Furniture Preview.
+* [ShynoX/SiegeStats](https://siegestats.cc/): SiegeStats is all about the Player vs. Player aspect of Flyff. It aims to organize and visualize Flyff's Battlelog format to allow inspection and analysis of those.
+
+* [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/)： A Simple Website for Housing Furniture Preview.
 
    * [@adama.97 @Yuzaro (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 "@adama.97 @Yuzaro (discord flyff universe)")
 
-* [MonkeyZero/Flyff Model Viewer | flyffmodelviewer.com](https://flyffmodelviewer.com/ "MonkeyZero/Welcome to Flyff Model Viewer | flyffmodelviewer.com")：The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
+* [MonkeyZero/Flyff Model Viewer | flyffmodelviewer.com](https://flyffmodelviewer.com/ "MonkeyZero/Welcome to Flyff Model Viewer | flyffmodelviewer.com")： The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
 
 ### closed
 

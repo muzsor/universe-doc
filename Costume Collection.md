@@ -9,7 +9,7 @@
 > [!CAUTION]
 > **This repository was created to promote the game. If any inconvenience is caused, please contact me as soon as possible. Thank you.** 🙏
 
-<!-- Copyright 2024 © Gala Lab Corp. All Rights Reserved. -->
+<!-- Copyright 2025 © Gala Lab Corp. All Rights Reserved. -->
 
 <table><tr><td><details><summary>📁 Table of Contents</summary>
 
@@ -91,7 +91,7 @@
 
 <div align="center"><img src="./costume_collection/08.Shade%20Child.jpg" alt="08.Shade Child.jpg" width="300"/></div>
 
-9.  `2022-09-15`: `Menhera Kei`
+9. `2022-09-15`: `Menhera Kei`
 
    * Hat / Suit / Shoes / Mask / Cloak
 
@@ -333,19 +333,19 @@
 
 <div align="center"><img src="./costume_collection/43.Candy_Cane.jpg" alt="43.Candy_Cane.jpg" width="300"/></div>
 
-44.  `2024-01-04`: `Artificial`
+44. `2024-01-04`: `Artificial`
 
    * Hat / Suit / Hands / Shoes / Cloak
 
 <div align="center"><img src="./costume_collection/44.Artificial.jpg" alt="44.Artificial.jpg" width="300"/></div>
 
-45.  `2024-01-18`: `Emerald Explorer`
+45. `2024-01-18`: `Emerald Explorer`
 
    * Hat / Suit / Hands / Shoes / Backpack / Swords
 
 <div align="center"><img src="./costume_collection/45.Emerald_Explorer.jpg" alt="45.Emerald_Explorer.jpg" width="300"/></div>
 
-46.  `2024-02-01`: `Snowy`
+46. `2024-02-01`: `Snowy`
 
    * Hat / Suit / Hands / Shoes / Backpack / Glasses
 
