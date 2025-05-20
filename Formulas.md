@@ -1,7 +1,7 @@
 # Formulas
 
 > [!IMPORTANT]
-> **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark.</ins>**
+> **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark / Ruiwoo Technology.</ins>**
 
 > [!IMPORTANT]
 > **The information used in the document is from the FlyFF Universe API and belong to Gala Lab Corp.**
@@ -9,7 +9,7 @@
 > [!CAUTION]
 > **This document is for reference only and may not fully represent the game. If any inconvenience is caused, please contact me as soon as possible. Thank you.** 🙏
 
-<!-- Copyright 2024 © Gala Lab Corp. All Rights Reserved. -->
+<!-- Copyright 2025 © Gala Lab Corp. All Rights Reserved. -->
 
 <table><tr><td><details><summary>📁 Table of Contents</summary>
 
@@ -1326,7 +1326,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
 <details>
   <summary>📁 block details</summary>
 
->
+</br>
 
 * You will still get hit, but you'll take significantly less damage. Secondary effects such as crowd control, debuffs, or Sword Cross can still be triggered even if the hit is blocked.
 
@@ -1612,14 +1612,22 @@ DamagePerSecond = computeDamage * hitsPerSecond
 <details>
   <summary>📁 block details</summary>
 
+</br>
+
+> source:[Flyffulator/src/flyff/flyffdamagecalculator.js](https://github.com/Frostiae/Flyffulator/blob/main/src/flyff/flyffexperiencecalculator.js "Flyffulator/src/flyff/flyffexperiencecalculator.js")
+
 * exp:
    ```js
-   expValue = monsterExpValue * serverExpRate * (1 + 1v1Bonus%) * experienceReduceFactor
+   expValue = monsterExpValue * (1 + monsterexp% + monsterexpanddrop%) * (1 + 1v1Bonus%) * userRatio * levelReduceFactor
    ```
 
-   * 1v1Bonus% : low, regular and captain monsters level `30+` killed by at least `80%` of damage inflicted from single target attacks and skills will have an increased experience and drop rate. From level `30` to `140`, `20%` to `35%`; from `141` to `160`, `90%` to `102%`.
+   * monsterexp%, monsterexpanddrop% : Buffs or dungeon's curses.
 
-   * experienceReduceFactor : Reduces the experience of the highest level party member around the kill target.
+   * 1v1Bonus% : Low, regular and captain monsters level `30+` killed by at least `80%` of damage inflicted from single target attacks and skills will have an increased experience and drop rate. From level `30` to `140`, `20%` to `35%`; from `141` to `160`, `90.4423%` to `102.5%`.
+
+   * userRatio : Determines how much experience the user earns based on their contribution. `currentDamageDone / totalDamage`
+
+   * levelReduceFactor : Reduces the experience of the highest level party member around the kill target.
 
 * character exp:
    ```js
@@ -1635,5 +1643,7 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * masterHeroFactor : If character has an active Optional Master/Hero Quest, the exp rate is divided by `2` (`50%` exp rate penalty).
 
    * characterExpRate% : From Character's Gear, Buff scaled `exprate`.
+
+   * eventBonus : EXP Boost Event or other event.
 
 </details>
