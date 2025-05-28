@@ -22,6 +22,7 @@
     - [📅 all server contents time](#-all-server-contents-time)
     - [🕙 time](#-time)
     - [🗺️ map](#️-map)
+      - [madrigal minimum level limit](#madrigal-minimum-level-limit)
       - [wdmadrigal](#wdmadrigal)
       - [coral island monster](#coral-island-monster)
       - [herneos monster](#herneos-monster)
@@ -388,6 +389,16 @@
 ### 🗺️ map
 
 <table><tr><td><details><summary>details</summary>
+
+#### madrigal minimum level limit
+
+* Some continents now require a minimum player level: Level `20` for Garden of Rhisis and Darkon 3, Level `80` for Azria and Level `100` for Coral Island. Note that the level requirement does not apply to safe areas like Azria Village, Coral Village, The Wilds entrance, etc. Players not meeting level requirements will be automatically teleported to Flaris.
+
+* Reduced the requirement to teleport to Sunny Pang using Town Blinkwing or Blinkwing of Madrigal from Level `120` to Level `110`.
+
+> source:[Game Version 1.3.11 Patch Notes](https://universe.flyff.com/news/patchnotes1311 "Game Version 1.3.11 Patch Notes")
+
+<div align="center"><img src="./system/map/madrigal_minimum_level.png" alt="madrigal_minimum_level.png"/></div>
 
 #### wdmadrigal
 
