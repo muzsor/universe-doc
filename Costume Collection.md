@@ -617,6 +617,12 @@
 
 <div align="center"><img src="./costume_collection/85.3rd_Anniversary_Mecha.jpg" alt="85.3rd_Anniversary_Mecha.jpg" width="300"/></div>
 
+86. `2025-05-29`: `Ruby Yukata`
+
+   * Hat / Suit / Shoes / Wings / Sunglasses
+
+<div align="center"><img src="./costume_collection/86.Ruby_Yukata.jpg" alt="86.Ruby_Yukata.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
