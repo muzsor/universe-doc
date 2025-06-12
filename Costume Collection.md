@@ -623,6 +623,12 @@
 
 <div align="center"><img src="./costume_collection/86.Ruby_Yukata.jpg" alt="86.Ruby_Yukata.jpg" width="300"/></div>
 
+87. `2025-06-12`: `Modern Alien`
+
+   * Hat / Suit / Shoes / Glasses / Backpack
+
+<div align="center"><img src="./costume_collection/87.Modern_Alien.jpg" alt="87.Modern_Alien.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
