@@ -80,7 +80,6 @@
       - [ultimate weapon](#ultimate-weapon)
       - [ultimate weapon event](#ultimate-weapon-event)
       - [regular weapon](#regular-weapon)
-      - [⚜️ fwc 2024 golden weapon](#️-fwc-2024-golden-weapon)
       - [⚜️ fwc 2025 golden weapon](#️-fwc-2025-golden-weapon)
       - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
@@ -1269,14 +1268,6 @@ Those who have completed the Optional Master Quest during the event period will 
 <details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/ultimate/ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
-
-</details>
-
-#### ⚜️ fwc 2024 golden weapon
-
-<details><summary>details</summary>
-
-<div align="center"><img src="./upgrade/ultimate/fwc2024_golden_ultimate_weapons.png" alt="fwc2024_golden_ultimate_weapons.png"/></div>
 
 </details>
 
