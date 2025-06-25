@@ -56,6 +56,7 @@
       - [Dungeon](#dungeon)
     - [📦 item rarity](#-item-rarity)
     - [💳 extended battle pass](#-extended-battle-pass)
+    - [⚖️ trade](#️-trade)
     - [🛒 search shop](#-search-shop)
     - [👕 fitting room](#-fitting-room)
     - [👗 costume collection](#-costume-collection)
@@ -878,6 +879,18 @@ This Extended is also valid for that specific season when it is purchased.
    10. 5 Daily Search Shop Teleports
 
    * and more to come over the game updates!
+
+</details></td></tr></table>
+
+### ⚖️ trade
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=what+is+trading%3F).**
+
+</div>
 
 </details></td></tr></table>
 
