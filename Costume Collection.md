@@ -629,6 +629,12 @@
 
 <div align="center"><img src="./costume_collection/87.Modern_Alien.jpg" alt="87.Modern_Alien.jpg" width="300"/></div>
 
+88. `2025-06-26`: `Forest Spirit`
+
+   * Hat / Suit / Shoes / Hands / Cloak
+
+<div align="center"><img src="./costume_collection/88.Forest_Spirit.jpg" alt="88.Forest_Spirit.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
