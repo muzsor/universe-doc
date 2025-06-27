@@ -66,6 +66,7 @@
     - [🧠 skill point](#-skill-point)
     - [💪 buff scale](#-buff-scale)
     - [❓ office quest](#-office-quest)
+    - [💯 level reach rewards](#-level-reach-rewards)
     - [👑 master\&hero quests](#-masterhero-quests)
       - [master cloak](#master-cloak)
       - [hero reward](#hero-reward)
@@ -1037,6 +1038,179 @@ When the number of monsters attacked by the same spell (n) is greater than 8, th
 <div align="center"><img src="./system/quest/office_quest_darkon.png" alt="office_quest_darkon.png"/></div>
 <div align="center"><img src="./system/quest/office_quest_azria.png" alt="office_quest_azria.png"/></div>
 <div align="center"><img src="./system/quest/office_quest_coral_island.png" alt="office_quest_coral_island.png"/></div>
+
+</details></td></tr></table>
+
+### 💯 level reach rewards
+
+<table><tr><td><details><summary>details</summary>
+
+<table><tr>
+<td><img src="./system/level_reach_rewards.png" alt="level_reach_rewards.png" width="350"/></td>
+<td>
+
+- level 20 (**Quantity Limit: 2000**):
+   * [Essentials Box II](https://flyffipedia.com/items/details/2942) x1
+   * [Scroll of Sprint](https://flyffipedia.com/items/details/7364) x3
+   * [Fire Effect (7 days)](https://flyffipedia.com/items/details/2803) x1
+
++ level 40 (**Quantity Limit: 1500**):
+   * [Essentials Box III](https://flyffipedia.com/items/details/851) x1
+   * [Extra Bag (15 days)](https://flyffipedia.com/items/details/624) x1
+   * [Scroll of Holy](https://flyffipedia.com/items/details/3456) x2
+   * [Blinkwing of Madrigal](https://flyffipedia.com/items/details/7684) x2
+
+- level 60 (**Quantity Limit: 1000**):
+   * [Essentials Box IV](https://flyffipedia.com/items/details/5441) x1
+   * [Common Bank 15](https://flyffipedia.com/items/details/8007) x1
+   * [Blinkwing of Madrigal](https://flyffipedia.com/items/details/7684) x2
+   * [Scroll of Blessing](https://flyffipedia.com/items/details/7594) x2
+
++ level 80 (**Quantity Limit: 500**):
+   * [Essentials Box V](https://flyffipedia.com/items/details/4859) x1
+   * [Riding Cloud (Light pink) 30 Days](https://flyffipedia.com/items/details/435) x1
+   * [Scroll of SProtect](https://flyffipedia.com/items/details/2527) x3
+
+- level 100 (**Quantity Limit: 300**):
+   * [Essentials Box V](https://flyffipedia.com/items/details/4859) x1
+   * [Baby Robot 30 Days](https://flyffipedia.com/items/details/1612) x1
+   * [Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x1
+
++ level 120 (**Quantity Limit: 100**):
+   * [Essentials Box VI](https://flyffipedia.com/items/details/8744) x1
+   * [Spy Set (M)](https://flyffipedia.com/items/details/9920) / [Spy Set (F)](https://flyffipedia.com/items/details/5838) x1
+   * [Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x3
+
+- level 125:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x5
+   * [Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x5
+   * [Upcut Stone](https://flyffipedia.com/items/details/8691) x5
+   * [Def-Upcut Stone](https://flyffipedia.com/items/details/2551) x5
+   * [Activition](https://flyffipedia.com/items/details/7833) x5
+
++ level 126 (**Quantity Limit: 1000**):
+   * [Scroll of SProtect](https://flyffipedia.com/items/details/2527) x15
+   * [Pet Transmute](https://flyffipedia.com/items/details/8898) x3
+
+- level 130:
+   * [Clockworks +1 Ring Box](https://flyffipedia.com/items/details/7288) x1
+   * [Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x5
+   * [Upcut Stone](https://flyffipedia.com/items/details/8691) x5
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x5
+   * [Bull Hamstern](https://flyffipedia.com/items/details/3393) x5
+
++ level 131 (**Quantity Limit: 500**):
+   * [Clockworks +2 Ring Box](https://flyffipedia.com/items/details/5349) x1
+   * [Pet Transmute](https://flyffipedia.com/items/details/8898) x4
+
+- level 135:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x5
+   * [Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x5
+   * [Upcut Stone](https://flyffipedia.com/items/details/8691) x5
+   * [Grilled Eel](https://flyffipedia.com/items/details/6049) x5
+   * [Scroll of Resurrection](https://flyffipedia.com/items/details/6525) x5
+
++ level 136 (**Quantity Limit: 500**):
+   * [Scroll of AProtect](https://flyffipedia.com/items/details/1683) x15
+   * [Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x2
+
+- level 139:
+   * [Yetti Set (M)](https://flyffipedia.com/items/details/937) / [Yetti Set (M)](https://flyffipedia.com/items/details/3549) x1
+
++ level 140 (**Quantity Limit: 300**):
+   * [Baby Yetti](https://flyffipedia.com/items/details/3683) x1
+   * [Scroll of Weapon Bonus](https://flyffipedia.com/items/details/6201) x10
+
+</td><td>
+
+- level 141:
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x2
+   * [Activition](https://flyffipedia.com/items/details/7833) x5
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x5
+
++ level 143:
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x3
+   * [Upcut Stone](https://flyffipedia.com/items/details/8691) x5
+   * [Grilled Eel](https://flyffipedia.com/items/details/6049) x5
+
+- level 145 (**Quantity Limit: 1000**):
+   * [Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x10
+   * [Activition](https://flyffipedia.com/items/details/7833) x10
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x10
+
++ level 147:
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x3
+   * [Scroll of Xprotect](https://flyffipedia.com/items/details/14737) x5
+   * [Sunstone](https://flyffipedia.com/items/details/15403) x5
+
+- level 149:
+   * [Cloak of Coral](https://flyffipedia.com/items/details/19985) x1
+   * [Ultimate Orb](https://flyffipedia.com/items/details/15012) x1
+
++ level 150 (**Quantity Limit: 500**):
+   * [Scroll of Xprotect](https://flyffipedia.com/items/details/14737) x10
+   * [Sunstone](https://flyffipedia.com/items/details/15403) x10
+
+- level 152:
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x5
+   * [Upcut Stone](https://flyffipedia.com/items/details/8691) x10
+   * [Grilled Eel](https://flyffipedia.com/items/details/6049) x10
+
++ level 154:
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x5
+   * [Shining Oricalkum](https://flyffipedia.com/items/details/12908) x1
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x10
+
+- level 156 (**Quantity Limit: 300**):
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x5
+   * [Scroll of Xprotect](https://flyffipedia.com/items/details/14737) x15
+   * [Sunstone](https://flyffipedia.com/items/details/15403) x10
+
++ level 158:
+   * [Baby Wheelem (30 Days)](https://flyffipedia.com/items/details/19969) x1
+
+- level 160:
+   * [Light Prince/Princess Set](https://flyffipedia.com/items/details/14548) x1
+
++ level 160 (**Quantity Limit: 100**):
+   * [Meteo Bike (Silver)](https://flyffipedia.com/items/details/13605) x1
+
+</td><td>
+
+- level 161:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x4
+   * [Activition](https://flyffipedia.com/items/details/7833) x5
+   * [Scroll of Xprotect](https://flyffipedia.com/items/details/14737) x4
+
++ level 162:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x8
+   * [Flip Jump 2 Motion](https://flyffipedia.com/items/details/22206) x1
+
+- level 162 (**Quantity Limit: 500**):
+   * [5th grade Jewel Selection Box](https://flyffipedia.com/items/details/23000) x3
+
++ level 163:
+   * [Vital Drink X or Refresher Hold](https://flyffipedia.com/items/details/3237) x4
+   * [Scroll of Xprotect](https://flyffipedia.com/items/details/14737) x4
+
+- level 163 (**Quantity Limit: 300**):
+   * [Ultimate Jewel Box](https://flyffipedia.com/items/details/17866) x10
+
++ level 164:
+   * [Baby Carrierbomb](https://flyffipedia.com/items/details/18276) (30 Days) x1
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x12
+
+- level 164 (**Quantity Limit: 200**):
+   * [Tier A Piercing Card Lucky Box](https://flyffipedia.com/items/details/20148) x1
+
++ level 165:
+   * [Scroll of Xprotect](https://flyffipedia.com/items/details/14737) x10
+   * [Nightmare Set](https://flyffipedia.com/items/details/24944) x1
+
+- level 165 (**Quantity Limit: 100**):
+   * [Archangel White Weapon Set](https://flyffipedia.com/items/details/27322) x1
+
+</td></tr></table>
 
 </details></td></tr></table>
 
