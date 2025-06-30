@@ -110,7 +110,6 @@
     - [💫 pet transmutation](#-pet-transmutation)
   - [🐉 dungeons](#-dungeons)
     - [📌 dungeons location](#-dungeons-location)
-    - [📌 new instance dungeons location](#-new-instance-dungeons-location)
     - [🚩 dungeons difficulties](#-dungeons-difficulties)
     - [📚 story dungeons](#-story-dungeons)
     - [📍 dungeon checkpoints](#-dungeon-checkpoints)
@@ -1860,15 +1859,19 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./dungeons/dungeons_location.png" alt="dungeons_location.png"/></div>
+<div align="center"><img src="./dungeons/dungeons_location.png" alt="dungeons_location.png"/>
 
-</details></td></tr></table>
+| Continent | Dungeons | Instance Dungeons |
+|:---:|:---:|:---:|
+| Flaris | Mars Dungeon | Leren Chasm |
+| Saint Morning | Iblis Temple | -- |
+| Garden of Rhisis | -- | Rhisis Catacombs |
+| Darken1&2 | Dekane Mine | Envy Depths |
+| Darkon3 | Volkane | Guardiane Sanctuary |
+| Azria | -- | Storm Peak |
+| Coral Island | Herneos | The Wilds |
 
-### 📌 new instance dungeons location
-
-<table><tr><td><details><summary>details</summary>
-
-<div align="center"><img src="./dungeons/new_instance_dungeons_location.png" alt="new_instance_dungeons_location.png"/></div>
+</div>
 
 </details></td></tr></table>
 
