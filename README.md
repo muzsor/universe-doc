@@ -28,6 +28,7 @@
       - [herneos monster](#herneos-monster)
     - [🖱️ pixel perfect cursor precision](#️-pixel-perfect-cursor-precision)
     - [❤️ provisional damage hp](#️-provisional-damage-hp)
+    - [🎨 theme](#-theme)
     - [💬 chatting filter](#-chatting-filter)
     - [👩🏻‍💻 commands](#-commands)
     - [💫 transmute](#-transmute)
@@ -436,6 +437,18 @@
 
 </details></td></tr></table>
 
+### 🎨 theme
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**For more information please refer to [Gothante](https://gothante.com/?search=how+to+change+theme%3F).**
+
+</div>
+
+</details></td></tr></table>
+
 ### 💬 chatting filter
 
 <table><tr><td><details><summary>details</summary>
@@ -484,7 +497,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=how+do+i+transmute+an+equipment).**
+**For more information please refer to [Gothante](https://gothante.com/?search=how+do+i+transmute+an+equipment%3F).**
 
 </div>
 
