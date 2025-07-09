@@ -1,5 +1,7 @@
 # universe-document
 
+<div align="center"><img src="./banner.png" alt="banner.png" width="640"/></div>
+
 > [!IMPORTANT]
 > **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark / Ruiwoo Technology.</ins>**
 
