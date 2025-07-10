@@ -27,7 +27,7 @@
   - [🎉 Costume Collection Event](#-costume-collection-event)
   - [🛒 On Sale](#-on-sale)
     - [Black Friday Costume Lucky Box](#black-friday-costume-lucky-box)
-    - [🍀 costume lucky box on sale](#-costume-lucky-box-on-sale)
+    - [🍀 Costume Lucky Box](#-costume-lucky-box)
 
 </details></td></tr></table>
 
@@ -635,6 +635,12 @@
 
 <div align="center"><img src="./costume_collection/88.Forest_Spirit.jpg" alt="88.Forest_Spirit.jpg" width="300"/></div>
 
+89. `2025-07-10`: `2025 Swimsuit`
+
+   * Hat / Suit / Shoes / Hands / Sunglasses
+
+<div align="center"><img src="./costume_collection/89.2025_Swimsuit.jpg" alt="89.2025_Swimsuit.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
@@ -657,7 +663,7 @@
 
 > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1177389181723496498 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-* `2023-11-24~2023-11-27`: **Blackfriday Costume Lucky Box** will provide past costumes and here are the available costumes from this box:
+* `2023-11-24 ~ 2023-11-27`: **Blackfriday Costume Lucky Box** will provide past costumes and here are the available costumes from this box:
 
    * Casual Summer
    * Fantasy Towel
@@ -674,7 +680,7 @@
 
 > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1311623168099618826 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-* `2024-11-29~2024-12-01`: **2024 Blackfriday Costume Lucky Box** will provide past costumes and here are the available costumes from this box:
+* `2024-11-29 ~ 2024-12-01`: **2024 Blackfriday Costume Lucky Box** will provide past costumes and here are the available costumes from this box:
 
 
    * Menhera Kei
@@ -688,9 +694,9 @@
    * AI Casual
    * Disco
 
-### 🍀 costume lucky box on sale
+### 🍀 Costume Lucky Box
 
-* `2024-03-21~2024-03-27`: costume lucky box on sale everyday up to 20%.
+* `2024-03-21 ~ 2024-03-27`: costume lucky box on sale everyday up to 20%.
 
   <div align="center"><img src="./costume_collection/fashionsale_20240321.png" alt="fashionsale_20240321.png" width="400"/></div>
 
@@ -704,23 +710,35 @@
   * Wolf & Rabbit
   * Foxy
 
-* `2024-04-19~2024-04-21`: 2 costume boxes will be on sale!
+* `2024-04-19 ~ 2024-04-21`: 2 costume boxes will be on sale!
 
   > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1230428448363642890 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
   * Japanese Uniform Lucky Box
   * AI Frog Lucky Box
 
-* `2024-05-09~2024-05-23`: 2nd Anniversary Costume Lucky Box.
+* `2024-05-09 ~ 2024-05-23`: 2nd Anniversary Costume Lucky Box.
 
   > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1238046856374648905 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
   <div align="center"><img src="./costume_collection/2ndAnni_Luck_box.png" alt="2ndAnni_Luck_box.png" width="400"/></div>
 
-* `2024-08-16~2024-08-22`: Memorial Summer Lucky Box
+* `2024-08-16 ~ 2024-08-22`: Memorial Summer Lucky Box
 
   > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1273189557596192821 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
 <div align="center"><img src="./costume_collection/Memorial_SummerM.png" alt="Memorial_SummerM.png" width="400"/> <img src="./costume_collection/Memorial_SummerF.png" alt="Memorial_SummerF.png" width="400"/></div>
+
+* `2025-06-26 ~ 2025-07-10`: Summer Costume Select Box 1
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1387709375413616750 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+<div align="center"><img src="./costume_collection/Summer_Costume_Box.png" alt="Summer_Costume_Box.png" width="400"/></div>
+
+* `2025-07-10 ~ 2025-07-24`: School Life Costume Select Box 1
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1392776853130969261 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+<div align="center"><img src="./costume_collection/School_Life_Costume.png" alt="School_Life_Costume.png" width="400"/></div>
 
 </details>
