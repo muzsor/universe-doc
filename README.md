@@ -1292,11 +1292,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### hero reward
 
-* Becoming a Hero will give you a unique badge and a permanent free stat page (`3` stat pages in total if a Battle Pass is active).
+* Becoming a **Hero 120 - 125** will give you a unique badge and a permanent free stat page (`3` stat pages in total if a Battle Pass is active).
 
-* Completing the Quest Hero 125 will give you a unique badge and a Card and Dice Bag that allows you to store up to 10 slots.
+* Completing the **Quest Hero 125 - 140** will give you a unique badge and a Card and Dice Bag that allows you to store up to 10 slots.
 
-* Completing the Quest Hero 140 will give you a unique badge, Extended Motions(contains 9 motions for your character) and Dark Dragon Set.
+* Completing the **Quest Hero 140 - 160** will give you a unique badge, Extended Motions (contains 9 motions for your character) and Dark Dragon Set.
 
 </details></td></tr></table>
 
