@@ -1381,13 +1381,16 @@ DamagePerSecond = computeDamage * hitsPerSecond
    * blockBase
       ```js
       blockLevel = PlayerLevel / ((PlayerLevel + AttackerLevel) * 15.0)
-      blockDex = Math.min(Math.max(Math.floor((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800.0)), 0), 10)
+      if (attackLevelHidden) {
+         AttackerDex = 15 + (attackerDex - 15) * playerLevel / 100;
+      }
+      blockDex = Math.min((PlayerDex + AttackerDex + 2) * ((PlayerDex - AttackerDex) / 800), 10)
       blockBase = Math.max(blockLevel + blockDex, 0)
       ```
 
    * blockJob
       ```js
-      blockJob = (PlayerDex / 8.0) * jobBlockModifier
+      blockJob = (PlayerDex / 8.0) * JobBlockModifier
       ```
 
    * blockBonus : From Defender's Gear, Buff scaled `block`, `meleeblock`, `DST_BLOCK_MELEE%`.(If attack is ranged then `rangedblock`, `DST_BLOCK_RANGE%`)
@@ -1407,40 +1410,55 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
    ```js
    function getBlockChance(
-     playerLevel,
      attackerLevel,
-     playerDex,
      attackerDex,
-     extraRangedBlock = 0,
-     extraMeleeBlock = 0,
+     playerLevel,
+     playerDex,
      jobBlockModifier = 1,
-     isRangeAttack = false
+     extraMeleeBlock = 0,
+     extraRangedBlock = 0,
+     attackLevelHidden = false,
      attackBlockPenetration = 0
    ) {
-     let blockLevel = playerLevel / ((playerLevel + attackerLevel) * 15.0)
-     let blockDex = Math.min(
-        Math.max(
-          Math.floor(
-            (playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800.0)
-          ),
-          0
-        ),
-        10
-     )
-     let blockJob = (playerDex / 8.0) * jobBlockModifier
-     // rangedblock & meleeblock
-     let blockBonus = isRangeAttack ? extraRangedBlock : extraMeleeBlock
-     let blockRate = Math.max(
-       Math.floor(blockLevel + blockDex + blockJob + blockBonus),
-       0
-     )
-     blockRate = blockRate * (1 - attackBlockPenetration / 100)
-     return blockRate
+     const blockLevel = playerLevel / ((playerLevel + attackerLevel) * 15)
+     if (attackLevelHidden) {
+       attackerDex = 15 + (attackerDex - 15) * playerLevel / 100;
+     }
+     const blockDex = Math.min((playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800), 10)
+     const blockBase = Math.max(blockLevel + blockDex, 0)
+
+     const blockJob = (playerDex / 8) * jobBlockModifier
+
+     const blockPenetrationMultiplier = 1 - attackBlockPenetration / 100;
+
+     let meeleeBlockRate = Math.max(Math.floor(blockBase + blockJob + extraMeleeBlock), 0)
+     meeleeBlockRate = Math.floor(meeleeBlockRate * blockPenetrationMultiplier);
+
+     let rangedBlockRate = Math.max(Math.floor(blockBase + blockJob + extraRangedBlock), 0)
+     rangedBlockRate = Math.floor(rangedBlockRate * blockPenetrationMultiplier);
+
+     return { 'Melee Block': meeleeBlockRate, 'Ranged Block': rangedBlockRate }
    }
 
    // ------------------------------------------------------------------------------------
    // example (Beast King Khan https://api.flyff.com/monster/16244 vs Lv165 Knight's dex 240, blockBonus +45%)
-   // getBlockChance(165, 150, 240, 251, 45, 45) = 75
+   // getBlockChance(150, 251, 165, 240, 1, 45, 45, true) = 75
+   // ------------------------------------------------------------------------------------
+   ```
+   ```js
+   function getRealBlockChance(blockRate) {
+     if (blockRate <= 6) {
+       return 6.25;
+     }
+     if (blockRate >= 75) {
+       return 92.5;
+     }
+     return `${(blockRate - 1) / 80 * 100}%`;
+   }
+
+   // ------------------------------------------------------------------------------------
+   // example (Beast King Khan https://api.flyff.com/monster/16244 vs Lv165 Knight's dex 240, blockBonus +45%)
+   // getRealBlockChance(getBlockChance(150, 251, 165, 240, 1, 45, 45, true)['Melee Block']) = 92.5%
    // ------------------------------------------------------------------------------------
    ```
 
@@ -1580,7 +1598,6 @@ DamagePerSecond = computeDamage * hitsPerSecond
    </details>
 
 </details></td></tr></table>
-
 
 ### block cap
 
