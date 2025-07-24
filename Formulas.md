@@ -1420,29 +1420,41 @@ DamagePerSecond = computeDamage * hitsPerSecond
      attackLevelHidden = false,
      attackBlockPenetration = 0
    ) {
+     if (attackLevelHidden) {
+       attackerLevel = playerLevel
+     }
      const blockLevel = playerLevel / ((playerLevel + attackerLevel) * 15)
      if (attackLevelHidden) {
-       attackerDex = 15 + (attackerDex - 15) * playerLevel / 100;
+       attackerDex = 15 + ((attackerDex - 15) * playerLevel) / 100
      }
-     const blockDex = Math.min((playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800), 10)
+     const blockDex = Math.min(
+       (playerDex + attackerDex + 2) * ((playerDex - attackerDex) / 800),
+       10
+     )
      const blockBase = Math.max(blockLevel + blockDex, 0)
 
      const blockJob = (playerDex / 8) * jobBlockModifier
 
-     const blockPenetrationMultiplier = 1 - attackBlockPenetration / 100;
+     const blockPenetrationMultiplier = 1 - attackBlockPenetration / 100
 
-     let meeleeBlockRate = Math.max(Math.floor(blockBase + blockJob + extraMeleeBlock), 0)
-     meeleeBlockRate = Math.floor(meeleeBlockRate * blockPenetrationMultiplier);
+     let meeleeBlockRate = Math.max(
+       Math.floor(blockBase + blockJob + extraMeleeBlock),
+       0
+     )
+     meeleeBlockRate = Math.floor(meeleeBlockRate * blockPenetrationMultiplier)
 
-     let rangedBlockRate = Math.max(Math.floor(blockBase + blockJob + extraRangedBlock), 0)
-     rangedBlockRate = Math.floor(rangedBlockRate * blockPenetrationMultiplier);
+     let rangedBlockRate = Math.max(
+       Math.floor(blockBase + blockJob + extraRangedBlock),
+       0
+     )
+     rangedBlockRate = Math.floor(rangedBlockRate * blockPenetrationMultiplier)
 
      return { 'Melee Block': meeleeBlockRate, 'Ranged Block': rangedBlockRate }
    }
 
    // ------------------------------------------------------------------------------------
-   // example (Beast King Khan https://api.flyff.com/monster/16244 vs Lv165 Knight's dex 240, blockBonus +45%)
-   // getBlockChance(150, 251, 165, 240, 1, 45, 45, true) = 75
+   // example (Beast King Khan https://api.flyff.com/monster/16244 vs Lv165 Knight's dex 160, blockBonus +55%)
+   // getBlockChance(150, 251, 165, 160, 1, 55, 55, true) = 75
    // ------------------------------------------------------------------------------------
    ```
    ```js
