@@ -641,6 +641,12 @@
 
 <div align="center"><img src="./costume_collection/89.2025_Swimsuit.jpg" alt="89.2025_Swimsuit.jpg" width="300"/></div>
 
+90. `2025-07-24`: `Fantasy Guardian`
+
+   * Hat / Suit / Shoes / Mask / Backpack
+
+<div align="center"><img src="./costume_collection/90.Fantasy_Guardian.jpg" alt="90.Fantasy_Guardian.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
