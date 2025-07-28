@@ -998,13 +998,21 @@ This Extended is also valid for that specific season when it is purchased.
 
 </div>
 
-<div align="center"><img src="./system/herd_damage_reduction.png" alt="herd_damage_reduction.png" width="600"/></div>
+<div align="center"><img src="./system/herd_damage_reduction.png" alt="herd_damage_reduction.png" width="800"/></div>
 
-When the number of monsters attacked by the same spell (n) is greater than 8, the n-th monster will take damage = 0.9^(n-8).
+When the number of monsters attacked by the same spell (n) is greater than 8, the n-th monster will take
+
+$$
+\text{Damage}(n) =
+\begin{cases}
+1, & n \leq 8 \\
+0.9^{n-8}, & n > 8
+\end{cases}
+$$
 
 * For example:
   * Monsters 1st to 8th will receive 100% damage.
-  * Monsters 9th will receive 91% damage.
+  * Monsters 9th will receive 90% damage.
   * Monsters 10th will receive 81% damage.
   * Monsters 11th will receive 72.9% damage.
   * Monsters 12th will receive 65.61% damage.
