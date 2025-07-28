@@ -146,7 +146,7 @@
 
    * [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")： Fansite Kit with high quality Flyff assets.
 
-   * [Gothante](https://gothante.com/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
+   * [Gothante](https://gothante.wiki/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
 
    * [Frostiae/Flyffulator](https://flyffulator.com/)： Extensive character simulator and damage calculator for Flyff Universe..
 
@@ -445,7 +445,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=how+to+change+theme%3F).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=how+to+change+theme%3F).**
 
 </div>
 
@@ -457,7 +457,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=chat).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=chat).**
 
 </div>
 
@@ -477,7 +477,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=commands).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=commands).**
 
 </div>
 
@@ -499,7 +499,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=how+do+i+transmute+an+equipment%3F).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=how+do+i+transmute+an+equipment%3F).**
 
 </div>
 
@@ -511,7 +511,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=guild+level).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=guild+level).**
 
 </div>
 
@@ -726,7 +726,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=drop+rate).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=drop+rate).**
 
 </div>
 
@@ -839,7 +839,7 @@
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=extended+pass+system).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=extended+pass+system).**
 
 </div>
 
@@ -903,7 +903,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=what+is+trading%3F).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=what+is+trading%3F).**
 
 </div>
 
@@ -915,7 +915,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=search+shop).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=search+shop).**
 
 </div>
 
@@ -935,7 +935,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=fitting+room).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=fitting+room).**
 
 </div>
 
@@ -959,7 +959,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=costume+collection).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=costume+collection).**
 
 </div>
 
@@ -994,7 +994,7 @@ This Extended is also valid for that specific season when it is purchased.
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=herd+damage+reduction).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=herd+damage+reduction).**
 
 </div>
 
@@ -1234,7 +1234,7 @@ When the number of monsters attacked by the same spell (n) is greater than 8, th
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=optional+master%2Fhero+quests).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=optional+master%2Fhero+quests).**
 
 </div>
 
@@ -1326,7 +1326,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=upgrade).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=upgrade).**
 
 </div>
 
@@ -1346,7 +1346,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=what+power+dice+and+upgrading+materials+do+i+need+for+which+upgrade).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=what+power+dice+and+upgrading+materials+do+i+need+for+which+upgrade).**
 
 </div>
 
@@ -1362,7 +1362,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=the+catchers).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=the+catchers).**
 
 </div>
 
@@ -1486,7 +1486,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=how+to+reroll).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=how+to+reroll).**
 
 </div>
 
@@ -1592,15 +1592,15 @@ Those who have completed the Optional Master Quest during the event period will 
 
 #### weapon glow
 
-**For more information please refer to [Gothante](https://gothante.com/?search=weapon+glow).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=weapon+glow).**
 
 #### armor glow
 
-**For more information please refer to [Gothante](https://gothante.com/?search=armor+set+glow).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=armor+set+glow).**
 
 #### swinging
 
-**For more information please refer to [Gothante](https://gothante.com/?search=weapon+swinging).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=weapon+swinging).**
 
 </details></td></tr></table>
 
@@ -1640,7 +1640,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=crafting).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=crafting).**
 
 </div>
 
@@ -1669,7 +1669,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=random+stats+%28stats+bonus%29).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=random+stats+%28stats+bonus%29).**
 
 </div>
 
@@ -1706,7 +1706,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=raised+pet).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=raised+pet).**
 
 </div>
 
@@ -1790,7 +1790,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-**For more information please refer to [Gothante](https://gothante.com/?search=pet+transmutation).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=pet+transmutation).**
 
 1. [Crystal Iphrine Shell](https://flyffipedia.com/items/details/9040 "Crystal Iphrine Shell")
    * `2022-08-22 ~ 2022-09-21`
@@ -1856,7 +1856,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=dungeons).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=dungeons).**
 
 </div>
 
@@ -2027,7 +2027,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=forsaken+tower).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=forsaken+tower).**
 
 **Only the experience necessary for a single level up is calculated, without accounting for cumulative experience.**
 
@@ -2079,7 +2079,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=kalgas+assault).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=kalgas+assault).**
 
 </div>
 
@@ -2118,7 +2118,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center">
 
-**For more information please refer to [Gothante](https://gothante.com/?search=housing).**
+**For more information please refer to [Gothante](https://gothante.wiki/?search=housing).**
 
 </div>
 
