@@ -24,6 +24,7 @@
     - [61~70](#6170)
     - [71~80](#7180)
     - [81~90](#8190)
+    - [91~100](#91100)
   - [🎉 Costume Collection Event](#-costume-collection-event)
   - [🛒 On Sale](#-on-sale)
     - [Black Friday Costume Lucky Box](#black-friday-costume-lucky-box)
@@ -646,6 +647,20 @@
    * Hat / Suit / Shoes / Mask / Backpack
 
 <div align="center"><img src="./costume_collection/90.Fantasy_Guardian.jpg" alt="90.Fantasy_Guardian.jpg" width="300"/></div>
+
+</details></td></tr></table>
+
+### 91~100
+
+<table><tr><td><details><summary>91~100 details</summary>
+
+<br>
+
+91. `2025-08-07`: Botanist Musician
+
+   * Hat / Suit / Shoes / Glasses / Guitar (backpack)
+
+<div align="center"><img src="./costume_collection/91.Botanist_Musician.jpg" alt="91.Botanist_Musician.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
