@@ -662,6 +662,12 @@
 
 <div align="center"><img src="./costume_collection/91.Botanist_Musician.jpg" alt="91.Botanist_Musician.jpg" width="300"/></div>
 
+92. `2025-08-21`: Nobility
+
+   * Hat / Suit / Hands / Shoes / Cloak
+
+<div align="center"><img src="./costume_collection/92.Nobility.jpg" alt="92.Nobility.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
