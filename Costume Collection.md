@@ -709,7 +709,6 @@
 
 * `2024-11-29 ~ 2024-12-01`: **2024 Blackfriday Costume Lucky Box** will provide past costumes and here are the available costumes from this box:
 
-
    * Menhera Kei
    * Carnival Traveler
    * Winter Casual Set
@@ -748,13 +747,13 @@
 
   > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1238046856374648905 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-  <div align="center"><img src="./costume_collection/2ndAnni_Luck_box.png" alt="2ndAnni_Luck_box.png" width="400"/></div>
+  <div align="center"><img src="./costume_collection/2nd_Anniversary_Costume_Box.png" alt="2nd_Anniversary_Costume_Box.png" width="400"/></div>
 
-* `2024-08-16 ~ 2024-08-22`: Memorial Summer Lucky Box
+* `2024-08-16 ~ 2024-08-22`, `2025-07-24 ~ 2025-07-31`(M), `2025-07-31 ~ 2025-08-07`(F): Memorial Summer Lucky Box
 
   > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1273189557596192821 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-<div align="center"><img src="./costume_collection/Memorial_SummerM.png" alt="Memorial_SummerM.png" width="400"/> <img src="./costume_collection/Memorial_SummerF.png" alt="Memorial_SummerF.png" width="400"/></div>
+<div align="center"><img src="./costume_collection/Memorial_Summer_M.png" alt="Memorial_Summer_M.png" width="400"/> <img src="./costume_collection/Memorial_Summer_F.png" alt="Memorial_Summer_F.png" width="400"/></div>
 
 * `2025-06-26 ~ 2025-07-10`: Summer Costume Select Box 1
 
@@ -766,6 +765,24 @@
 
   > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1392776853130969261 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
 
-<div align="center"><img src="./costume_collection/School_Life_Costume.png" alt="School_Life_Costume.png" width="400"/></div>
+<div align="center"><img src="./costume_collection/School_Life_Costume_Box.png" alt="School_Life_Costume_Box.png" width="400"/></div>
+
+* `2025-07-24 ~ 2025-08-07`: Fantasy Costume Select Box 1
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1397850826705342474 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+<div align="center"><img src="./costume_collection/Fantasy_Costume_Box.png" alt="Fantasy_Costume_Box.png" width="400"/></div>
+
+* `2025-08-07 ~ 2025-08-21`: Casual Costume Select Box 1
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1402926378847965194 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+<div align="center"><img src="./costume_collection/Casual_Costume_Box.png" alt="Casual_Costume_Box.png" width="400"/></div>
+
+* `2025-08-21 ~ 2025-09-04`: Cute Costume Select Box 1
+
+  > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1408012107680841739 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+<div align="center"><img src="./costume_collection/Cute_Costume_Box.png" alt="Cute_Costume_Box.png" width="400"/></div>
 
 </details>
