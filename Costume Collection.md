@@ -668,6 +668,12 @@
 
 <div align="center"><img src="./costume_collection/92.Nobility.jpg" alt="92.Nobility.jpg" width="300"/></div>
 
+93. `2025-09-04`: Obsidian Flame
+
+   * Hat / Suit / Shoes / Hands / Animated Cloak
+
+<div align="center"><img src="./costume_collection/93.Obsidian_Flame.jpg" alt="93.Obsidian_Flame.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
