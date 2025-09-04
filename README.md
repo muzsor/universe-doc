@@ -1803,53 +1803,53 @@ Those who have completed the Optional Master Quest during the event period will 
 1. [Crystal Iphrine Shell](https://flyffipedia.com/items/details/9040 "Crystal Iphrine Shell")
    * `2022-08-22 ~ 2022-09-21`
 
-<div align="center"><img src="./pet/transmutes/crystal_iphrine_shell.png" alt="crystal_iphrine_shell.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/crystal_iphrine_shell.jpg" alt="crystal_iphrine_shell.jpg" width="400"></div>
 
 2. [Primgon](https://flyffipedia.com/items/details/1127 "Primgon Cage")
    * `2022-09-22 ~ 2022-11-24`
 
-<div align="center"><img src="./pet/transmutes/primgon.png" alt="primgon.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/primgon.jpg" alt="primgon.jpg" width="400"></div>
 
 3. [Nine Tails](https://flyffipedia.com/items/details/14640 "Nine Tails Cage")
    * `2022-11-25 ~ 2023-02-01`
 
-<div align="center"><img src="./pet/transmutes/nine_tails.png" alt="nine_tails.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/nine_tails.jpg" alt="nine_tails.jpg" width="400"></div>
 
 4. [Tonge](https://flyffipedia.com/items/details/11407 "Tonge Cage")
    * `2023-02-02 ~ 2023-04-12`
 
-<div align="center"><img src="./pet/transmutes/tonge.png" alt="tonge.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/tonge.jpg" alt="tonge.jpg" width="400"></div>
 
 5. [Hantiger](https://flyffipedia.com/items/details/15854 "Hantiger Cage")
    * `2023-04-13 ~ 2023-06-07`
 
-<div align="center"><img src="./pet/transmutes/hantiger.png" alt="hantiger.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/hantiger.jpg" alt="hantiger.jpg" width="400"></div>
 
 6. [Skating Cat](https://flyffipedia.com/items/details/17941 "Skating Cat Cage")
    * `2023-06-08 ~ 2023-07-19`
 
-<div align="center"><img src="./pet/transmutes/skating_cat.png" alt="skating_cat.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/skating_cat.jpg" alt="skating_cat.jpg" width="400"></div>
 
 7. [Draco](https://flyffipedia.com/items/details/2923 "Draco Cage")
    * `2023-07-20 ~ 2024-05-08`
    * `2025-06-12 ~`
 
-<div align="center"><img src="./pet/transmutes/draco.png" alt="draco.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/draco.jpg" alt="draco.jpg" width="400"></div>
 
 8. [Fox Spirit](https://flyffipedia.com/items/details/11025 "Fox Spirit Cage")
    * `2024-05-09 ~ 2024-11-20`
 
-<div align="center"><img src="./pet/transmutes/fox_spirit.png" alt="fox_spirit.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/fox_spirit.jpg" alt="fox_spirit.jpg" width="400"></div>
 
 9. [White Lion](https://flyffipedia.com/items/details/10710 "White Lion Cage")
    * `2024-11-21 ~ 2025-05-14`
 
-<div align="center"><img src="./pet/transmutes/white_lion.png" alt="white_lion.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/white_lion.jpg" alt="white_lion.jpg" width="400"></div>
 
 10. [Steambot](https://flyffipedia.com/items/details/15601 "Steambot Cage")
    * `2025-05-15 ~ 2025-06-11`
 
-<div align="center"><img src="./pet/transmutes/steambot.png" alt="steambot.png" width="400"></div>
+<div align="center"><img src="./pet/transmutes/steambot.jpg" alt="steambot.jpg" width="400"></div>
 
 </details></td></tr></table>
 
