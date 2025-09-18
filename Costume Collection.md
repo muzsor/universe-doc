@@ -674,6 +674,12 @@
 
 <div align="center"><img src="./costume_collection/93.Obsidian_Flame.jpg" alt="93.Obsidian_Flame.jpg" width="300"/></div>
 
+94. `2025-09-18`: FireFighter
+
+   * Hat / Suit / Shoes / Hands / Oxygen Tank (Cloak)
+
+<div align="center"><img src="./costume_collection/94.FireFighter.jpg" alt="94.FireFighter.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
