@@ -680,6 +680,12 @@
 
 <div align="center"><img src="./costume_collection/94.FireFighter.jpg" alt="94.FireFighter.jpg" width="300"/></div>
 
+95. `2025-10-01`: Aero Streetwear
+
+   * Hat / Suit / Shoes / Sunglasses (Mask) / Bag (Cloak)
+
+<div align="center"><img src="./costume_collection/95.Aero_Streetwear.jpg" alt="95.Aero_Streetwear.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
