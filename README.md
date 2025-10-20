@@ -1,6 +1,6 @@
 # universe-document
 
-<div align="center"><img src="./banner.png" alt="banner.png" width="640"/></div>
+<div align="center"><img src="./assets/banner.png" alt="banner.png" width="640"/></div>
 
 > [!IMPORTANT]
 > **Document about the game Flyff Universe. <ins>NOT affiliated with GalaLab / Wemade Connect / PlayPark / Ruiwoo Technology.</ins>**
@@ -136,43 +136,39 @@
 
 ## 🌐 community
 
-* [Flyff Universe](https://universe.flyff.com/ "Flyff Universe")： Official Website.
+* <img src="https://universe.flyff.com/storage/img/favicon.png" alt="Flyff Universe Icon" width="16"/> [Flyff Universe](https://universe.flyff.com/ "Flyff Universe")： Official Website.
 
-   * [Galalab Support (helpshift)](https://galalab.helpshift.com/hc/en/12-flyff-universe/contact-us/ "Galalab Support (helpshift)")： Customer Support.
+   * <img src="./assets/galalab_support_favicon.png" alt="Galalab Support Icon" width="16"/> [Galalab Support (helpshift)](https://galalab.helpshift.com/hc/en/12-flyff-universe/contact-us/ "Galalab Support (helpshift)")： Customer Support.
 
-   * [Flyff Universe Discord](https://discord.com/invite/flyffuniverse "Flyff Universe Discord")： Official Discord.
+   * <img src="./assets/discord_favicon.ico" alt="Discord Icon" width="16"/> [Flyff Universe Discord](https://discord.com/invite/flyffuniverse "Flyff Universe Discord")： Official Discord.
 
-   * [Flyff Universe API](https://api.flyff.com/ "Flyff Universe API")： Flyff Universe Public API.
+   * <img src="https://api.flyff.com/favicon.ico" alt="Flyff Universe API Icon" width="16"/> [Flyff Universe API](https://api.flyff.com/ "Flyff Universe API")： Flyff Universe Public API.
 
-   * [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")： Fansite Kit with high quality Flyff assets.
+   * <img src="./assets/google_drive_favicon.png" alt="Google Drive Icon" width="16"/> [Flyff Official Fansite Kit](https://drive.google.com/drive/folders/12jQHkPvKXZrDZ9h_SNS7scf2mGUKSuKl "Flyff Official Fansite Kit")： Fansite Kit with high quality Flyff assets.
 
-   * [Gothante](https://gothante.wiki/ "Gothante"): Meet Gothante, a general search tool for Flyff Universe!
+   * <img src="https://api.flyff.com/image/npc/almani.png" alt="Gothante Icon" height="18"/> [Gothante](https://gothante.wiki/ "Gothante")： Meet Gothante, a general search tool for Flyff Universe!
 
-   * [Frostiae/Flyffulator](https://flyffulator.com/)： Extensive character simulator and damage calculator for Flyff Universe..
+   * <img src="https://flyffulator.com/logonew.png" alt="Flyffulator Icon" width="16"/> [Frostiae/Flyffulator](https://flyffulator.com/)： Extensive character simulator and damage calculator for Flyff Universe.
 
-     * [Frostiae/Flyffulator](https://github.com/Frostiae/Flyffulator "Frostiae/Flyffulator")
+   * <img src="./assets/sniegu_translation_platform_favicon.png" alt="Sniegu Translation Platform Icon" width="16"/> [Sniegu Translation Platform](https://translation.sniegu.fr/projects/flyff/ "Sniegu Translation Platform")
 
-   * [Sniegu Translation Platform](https://translation.sniegu.fr/projects/flyff/ "Sniegu Translation Platform")
+* <img src="https://flyffipedia.com/img/apple-touch-icon.png" alt="Flyffipedia Icon" width="16"/> [swaight/Flyffipedia](https://flyffipedia.com/ "swaight/Flyffipedia")： A wiki page containing all kinds of static information about the game's data.
 
-* [swaight/Flyffipedia](https://flyffipedia.com/ "swaight/Flyffipedia")： A wiki page containing all kinds of static information about the game's data.
+* <img src="https://madrigalinside.com//wp-content/uploads/2021/09/cropped-mi-logo-icon-neu-transparent-32x32.png" alt="Madrigalinside Icon" width="16"/> [tacota0158/Madrigalinside](https://madrigalinside.com/ "tacota0158/Madrigalinside")： A wiki page containing all kinds of static information about the game's data.
 
-* [tacota0158/Madrigalinside](https://madrigalinside.com/ "tacota0158/Madrigalinside")： A wiki page containing all kinds of static information about the game's data.
+* <img src="https://skillulator.lol/assets/favicon-C49brna2.svg" alt="Madrigalinside Icon" width="16"/> [nulfrost/Skillulator | FlyFF Universe Skill Calculator](https://skillulator.lol/ "nulfrost/Skillulator | FlyFF Universe Skill Calculator")： Skillulator helps you optimize and share your FlyFF skill builds.
 
-* [Skillulator | FlyFF Universe Skill Calculator](https://skillulator.lol/ "Skillulator | FlyFF Universe Skill Calculator")： A skill calculator for flyff universe.
+* <img src="https://universe.flyff.com/storage/img/favicon.png" alt="Flyff Universe Icon" width="16"/> [guysuvijak/Flyff - Skill Simulator](https://flyffskillsimulator.vercel.app/ "guysuvijak/Flyff - Skill Simulator")： Flyff Skill Simulator is an open-source project developed using Next.js and React Flow technologies.
 
-   * [nulfrost/skillulator](https://github.com/nulfrost/skillulator "nulfrost/skillulator")
+* <img src="https://siegestats.cc/favicon.ico" alt="SiegeStats Icon" width="16"/> [ShynoX/SiegeStats](https://siegestats.cc/ "ShynoX/SiegeStats"): SiegeStats is all about the Player vs. Player aspect of Flyff. It aims to organize and visualize Flyff's Battlelog format to allow inspection and analysis of those.
 
-* [Flyff - Skill Simulator](https://flyffskillsimulator.vercel.app/ "guysuvijak/Flyff - Skill Simulator")： A skill build simulator for Flyff Universe, built with Next.js and React Flow.
+* <img src="https://universe.flyff.com/storage/img/favicon.png" alt="FlyffU-Launcher Icon" width="16"/> [toffeegg/FlyffU-Launcher](https://github.com/toffeegg/FlyffU-Launcher/releases "toffeegg/FlyffU-Launcher")： A multi-profile launcher for Flyff Universe.
 
-   * [guysuvijak/flyff-skill-simulator](https://github.com/guysuvijak/flyff-skill-simulator "guysuvijak/flyff-skill-simulator")
+* <img src="https://flyff-calculators.com/favicon.ico" alt="Flyff Calculators Icon" width="16"/> [Stellar/Flyff Calculators](https://flyff-calculators.com/ "Stellar/Flyff Calculators")： Calculate upgrade costs in flyff universe for gear, jewelry, piercing, ultimate and more!
 
-* [ShynoX/SiegeStats](https://siegestats.cc/): SiegeStats is all about the Player vs. Player aspect of Flyff. It aims to organize and visualize Flyff's Battlelog format to allow inspection and analysis of those.
+* <img src="https://housing-yuzaro.netlify.app//favicon.ico" alt="Housing help by Yuzaro Icon" width="16"/> [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/ "Housing help by Yuzaro")： A Simple Website for Housing Furniture Preview. <!-- https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 -->
 
-* [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/)： A Simple Website for Housing Furniture Preview.
-
-   * [@adama.97 @Yuzaro (discord flyff universe)](https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 "@adama.97 @Yuzaro (discord flyff universe)")
-
-* [MonkeyZero/Flyff Model Viewer | flyffmodelviewer.com](https://flyffmodelviewer.com/ "MonkeyZero/Welcome to Flyff Model Viewer | flyffmodelviewer.com")： The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
+* <img src="https://flyffmodelviewer.com/wp-content/uploads/2021/12/view.png" alt="flyffmodelviewer.com Icon" width="16"/> [MonkeyZero/Flyff Model Viewer | flyffmodelviewer.com](https://flyffmodelviewer.com/ "MonkeyZero/Welcome to Flyff Model Viewer | flyffmodelviewer.com")： The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
 
 ### closed
 
