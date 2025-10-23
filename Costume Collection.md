@@ -686,6 +686,12 @@
 
 <div align="center"><img src="./costume_collection/95.Aero_Streetwear.jpg" alt="95.Aero_Streetwear.jpg" width="300"/></div>
 
+96. `2025-10-23`: Knotty Scarecrow
+
+   * Hat / Suit / Shoes / Cloak
+
+<div align="center"><img src="./costume_collection/96.Knotty_Scarecrow.jpg" alt="96.Knotty_Scarecrow.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
