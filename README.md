@@ -168,6 +168,8 @@
 
 * <img src="https://housing-yuzaro.netlify.app//favicon.ico" alt="Housing help by Yuzaro Icon" width="16"/> [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/ "Housing help by Yuzaro")： A Simple Website for Housing Furniture Preview. <!-- https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 -->
 
+*  <img src="https://flyffuniversemodelviewer.com/favicon.ico" alt="i9hdkills Flyff Universe resources Icon" width="16"/> [i9hdkills Flyff Universe resources](https://flyffuniversemodelviewer.com/cs-viewer "i9hdkills Flyff Universe resources")： A collection of different tools and resources for Flyff Universe.
+
 * <img src="https://flyffmodelviewer.com/wp-content/uploads/2021/12/view.png" alt="flyffmodelviewer.com Icon" width="16"/> [MonkeyZero/Flyff Model Viewer | flyffmodelviewer.com](https://flyffmodelviewer.com/ "MonkeyZero/Welcome to Flyff Model Viewer | flyffmodelviewer.com")： The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
 
 ### closed
