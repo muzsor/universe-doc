@@ -303,6 +303,8 @@
 
 <div align="center"><img src="./system/updates/FWC2025.png" alt="FWC2025.png" width="400"/></div>
 
+* `2025-10-22 08:00 UTC`: [Public Test Server Manifest](https://universe.flyff.com/news/pts2025 )
+
 </details>
 
 #### 💸 top up event
