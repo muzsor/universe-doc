@@ -692,6 +692,12 @@
 
 <div align="center"><img src="./costume_collection/96.Knotty_Scarecrow.jpg" alt="96.Knotty_Scarecrow.jpg" width="300"/></div>
 
+97. `2025-11-06`: Sewn Demon
+
+   * Hat / Suit / Hands / Shoes / Wings (Cloak)
+
+<div align="center"><img src="./costume_collection/97.Sewn_Demon.jpg" alt="97.Sewn_Demon.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
