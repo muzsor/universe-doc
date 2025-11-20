@@ -698,6 +698,12 @@
 
 <div align="center"><img src="./costume_collection/97.Sewn_Demon.jpg" alt="97.Sewn_Demon.jpg" width="300"/></div>
 
+98. `2025-11-20`: Spellbat
+
+   * Hat / Suit / Shoes / Hands / Wings (cloak) / Lollipop (mask)
+
+<div align="center"><img src="./costume_collection/98.Spellbat.jpg" alt="98.Spellbat.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
