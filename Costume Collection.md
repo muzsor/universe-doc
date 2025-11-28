@@ -756,6 +756,21 @@
    * AI Casual
    * Disco
 
+> [November 27 Item Shop Update](https://universe.flyff.com/news/nov27itemshopupdate "November 27 Item Shop Update")
+
+* `2025-11-28 ~ 2025-11-30`: **2025 Blackfriday Costume Lucky Box** will be available to purchase as a discounted price for a limited time.
+
+   * Spring Qipao
+   * Japanese Uniform
+   * Star
+   * Banana Hero
+   * Modern Alien
+   * Steampunk Wizard Costume Lucky Box
+   * Carnival Traveler
+   * Music Beat Costume Lucky Box
+   * Oni
+   * Xmas 2024 White Edition
+
 ### 🍀 Costume Lucky Box
 
 * `2024-03-21 ~ 2024-03-27`: costume lucky box on sale everyday up to 20%.
