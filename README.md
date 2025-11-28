@@ -1936,6 +1936,7 @@ Those who have completed the Optional Master Quest during the event period will 
 | Darkon3 | Volkane | Guardiane Sanctuary |
 | Azria | -- | Storm Peak |
 | Coral Island | Herneos | The Wilds |
+| Kaillun | -- | Ankou's Asylum |
 
 </div>
 
