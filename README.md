@@ -119,7 +119,7 @@
     - [⏳ cooldown](#-cooldown)
     - [🥅 pet cages](#-pet-cages)
     - [💥 dungeons curses](#-dungeons-curses)
-      - [the wilds](#the-wilds)
+      - [the wilds \& ankou's asylum](#the-wilds--ankous-asylum)
     - [💎 dungeons drops](#-dungeons-drops)
     - [🗼 forsaken tower](#-forsaken-tower)
     - [🏆 guild siege](#-guild-siege)
@@ -2002,9 +2002,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <table><tr><td><details><summary>details</summary>
 
-#### the wilds
+#### the wilds & ankou's asylum
 
-<div align="center"><img src="./dungeons/the_wilds_curses.png" alt="the_wilds_curses.png"/></div>
+<div align="center"><img src="./dungeons/the_wilds&ankous_asylum_curses.png" alt="the_wilds&ankous_asylum_curses.png"/></div>
 
 </details></td></tr></table>
 
