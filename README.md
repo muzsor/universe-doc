@@ -28,6 +28,7 @@
       - [wdmadrigal](#wdmadrigal)
       - [coral island monster](#coral-island-monster)
       - [herneos monster](#herneos-monster)
+      - [kaillun monster](#kaillun-monster)
     - [🖱️ pixel perfect cursor precision](#️-pixel-perfect-cursor-precision)
     - [❤️ provisional damage hp](#️-provisional-damage-hp)
     - [🎨 theme](#-theme)
@@ -83,14 +84,13 @@
       - [upgrade level bonus](#upgrade-level-bonus)
     - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate](#-ultimate)
       - [ultimate weapon](#ultimate-weapon)
-      - [ultimate weapon event](#ultimate-weapon-event)
-      - [regular weapon](#regular-weapon)
-      - [⚜️ fwc 2025 golden weapon](#️-fwc-2025-golden-weapon)
+      - [lv150 regular weapon](#lv150-regular-weapon)
+      - [lv175/180 regular weapon \& shield](#lv175180-regular-weapon--shield)
       - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
-      - [ultimate jewelry event](#ultimate-jewelry-event)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
-    - [💎 battle for madrigal ultimate jewels](#-battle-for-madrigal-ultimate-jewels)
+    - [🦾 muran's awakening equipment sets](#-murans-awakening-equipment-sets)
+    - [💎 ultimate jewels](#-ultimate-jewels)
     - [💍 jewelry upgrade](#-jewelry-upgrade)
     - [🔥 element upgrade](#-element-upgrade)
     - [✨ glow\&swinging](#-glowswinging)
@@ -303,7 +303,11 @@
 
 <div align="center"><img src="./system/updates/FWC2025.png" alt="FWC2025.png" width="400"/></div>
 
-* `2025-10-22 08:00 UTC`: [Public Test Server Manifest](https://universe.flyff.com/news/pts2025 )
+* `2025-10-22 08:00 UTC`: [Public Test Server Manifest](https://universe.flyff.com/news/pts2025)
+
+* `2025-11-27 02:00 UTC`: [Muran’s Awakening Expansion (Flyff Universe version 1.5.0)](https://universe.flyff.com/news/muransawakeningexpansion "Muran's Awakening Expansion (Flyff Universe Version 1.5.0)")
+
+<div align="center"><img src="./system/updates/Muran’s_Awakening_v1.5.0.png" alt="Muran’s_Awakening_v1.5.0.png" width="400"/></div>
 
 </details>
 
@@ -350,6 +354,10 @@
 * **<font color=#FF0000>2 for 1</font>** `2024-11-29 00:00 UTC ~ 2024-11-30 23:59 UTC`:Black Friday Special Sales `1+1` (`20%` discount).
 
    > [🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)](https://discord.com/channels/778915844070834186/1034809950356111390/1311623005864202250 "🔔item-shop-news @wemadeconnect @[GM] Pang (discord flyff universe)")
+
+* **<font color=#FF0000>2 for 1</font>** `2025-11-28 00:00 UTC ~ 2025-11-30 23:59 UTC`:Black Friday Special Sales `1+1` (`20%` discount).
+
+   > [November 27 Item Shop Update](https://universe.flyff.com/news/nov27itemshopupdate "November 27 Item Shop Update")
 
 </details>
 
@@ -414,6 +422,10 @@
 #### herneos monster
 
 <div align="center"><img src="./system/map/herneos_monster.png" alt="herneos_monster.png"/></div>
+
+#### kaillun monster
+
+<div align="center"><img src="./system/map/kaillun_monster.png" alt="kaillun_monster.png" width="800"/></div>
 
 </details></td></tr></table>
 
@@ -1232,6 +1244,57 @@ $$
 - level 165 (**Quantity Limit: 100**):
    * [Archangel White Weapon Set](https://flyffipedia.com/items/details/27322) x1
 
+</td>
+
+<td>
+
+- level 169:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x2
+   * [Shining Oricalkum](https://flyffipedia.com/items/details/12908) x2
+   * [Ultimate Orb](https://flyffipedia.com/items/details/15012) x2
+
++ level 172:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x2
+   * [Scroll of Ultimate Power](https://flyffipedia.com/items/details/12252) x2
+   * [Scroll of Ultimate Bonus](https://flyffipedia.com/items/details/12944) x2
+
+- level 175 :
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x2
+   * [Scroll of Reduction B](https://flyffipedia.com/items/details/3149) x5
+
++ level 175 (**Quantity Limit: 500**):
+   * [Baby Pang 30 Day](https://flyffipedia.com/) x1
+
+- level 178:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x4
+   * [Scroll of PickUp Boost (7 days)](https://flyffipedia.com/items/details/12988) x1
+   * [Scroll of Pickup Range (7 days)](https://flyffipedia.com/items/details/27781) x1
+
++ level 181:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x4
+   * [Scroll of Weapon Bonus (3rd Jobs)](https://flyffipedia.com/) x10
+   * [Smelting Scroll Box](https://flyffipedia.com/items/details/15944) x10
+
+- level 184:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x4
+   * [Nitro Booster (15 Days)](https://flyffipedia.com/items/details/10962) x1
+
++ level 184 (**Quantity Limit: 300**):
+   * [Muran Guardian Lion](https://flyffipedia.com/) x1
+
+- level 187:
+   * [Scroll of Amplification ES](https://flyffipedia.com/items/details/6106) x6
+   * [Extra Bag (15 days)](https://flyffipedia.com/items/details/624) x1
+   * [Bank Extra Bag (15 Days)](https://flyffipedia.com/items/details/15883) x1
+
++ level 190:
+   * [Scroll of Xprotect](https://flyffipedia.com/items/details/14737) x5
+   * [Sunstone](https://flyffipedia.com/items/details/15403) x2
+   * [Scroll of Ultimate Bonus II](https://flyffipedia.com/) x1
+
+- level 190 (**Quantity Limit: 100**):
+   * [Muran Weapon Set](https://flyffipedia.com/) x1
+
 </td></tr></table>
 
 </details></td></tr></table>
@@ -1450,41 +1513,23 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <details><summary>details</summary>
 
-> source:[@tassel#0672 @[Mod CN] tassel (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1178910002065457202 "@tassel#0672 @[Mod CN] tassel (discord flyff universe)")
-
-* When upgrading Ultimate Weapons, it works conditionally, which means it will check success/failure first then decide whether it will be great or not.
-
 <div align="center"><img src="./upgrade/ultimate/ultimate_weapon_upgrade.png" alt="ultimate_weapon_upgrade.png"/></div>
 
-<div align="center"><img src="./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Weapon%20%2B0%20to%20%2B5.png" alt="1,000,000 Simulations Of Ultimate Weapon +0 to +5.png" width="600"/></div>
-
-> source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1174954477112021042 "@bluechromed @[Dev] Blukie (discord flyff universe)")
-
 </details>
 
-#### ultimate weapon event
+#### lv150 regular weapon
 
 <details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/ultimate/ultimate_weapon_upgrade_event.png" alt="ultimate_weapon_upgrade_event.png"/></div>
-
-* **Enhance Upgrade Event (Ultimate)** applies only for **Ultimate Weapons & Accessories**.
+<div align="center"><img src="./upgrade/ultimate/lv150_ultimate_weapons.png" alt="lv150_ultimate_weapons.png"/></div>
 
 </details>
 
-#### regular weapon
+#### lv175/180 regular weapon & shield
 
 <details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/ultimate/ultimate_weapons.png" alt="ultimate_weapons.png"/></div>
-
-</details>
-
-#### ⚜️ fwc 2025 golden weapon
-
-<details><summary>details</summary>
-
-<div align="center"><img src="./upgrade/ultimate/fwc2025_golden_ultimate_weapons.png" alt="fwc2025_golden_ultimate_weapons.png"/></div>
+<div align="center"><img src="./upgrade/ultimate/lv175_180_ultimate_weapons&shield.png" alt="lv175_180_ultimate_weapons&shield.png"/></div>
 
 </details>
 
@@ -1526,18 +1571,6 @@ Those who have completed the Optional Master Quest during the event period will 
     * (4/5) Set Effect : MP Recovery After Kill +500
     * (5/5) Set Effect : Magic Attack +5%, Decreased Casting Time +10%
 
-<div align="center"><img src="./upgrade/ultimate/1,000,000%20Simulations%20Of%20Ultimate%20Jewelry%20%2B5.png" alt="1,000,000 Simulations Of Ultimate Jewelry +5.png" width="600"/></div>
-
-</details>
-
-#### ultimate jewelry event
-
-<details><summary>details</summary>
-
-<div align="center"><img src="./upgrade/ultimate/ultimate_jewelry_upgrade_event.png" alt="ultimate_jewelry_upgrade_event.png"/></div>
-
-* **Enhance Upgrade Event (Ultimate)** applies only for **Ultimate Weapons & Accessories**.
-
 </details>
 
 </details></td></tr></table>
@@ -1550,13 +1583,23 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### 💎 battle for madrigal ultimate jewels
+### 🦾 muran's awakening equipment sets
 
 <table><tr><td><details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/ultimate_jewels.png" alt="ultimate_jewels.png"/></div>
+<div align="center"><img src="./upgrade/murans_awakening_equipment_sets.png" alt="murans_awakening_equipment_sets.png"/></div>
 
-<div align="center"><img src="./upgrade/ultimate_jewels_fusion.png" alt="ultimate_jewels_fusion.png"/></div>
+</details></td></tr></table>
+
+### 💎 ultimate jewels
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/ultimate/ultimate_jewels.png" alt="ultimate_jewels.png"/></div>
+
+<div align="center"><img src="./upgrade/ultimate/fusion_ultimate_jewels.png" alt="fusion_ultimate_jewels.png"/></div>
+
+<div align="center"><img src="./upgrade/ultimate/synthesize_ultimate_jewel.png" alt="synthesize_ultimate_jewel.png"/></div>
 
 </details></td></tr></table>
 
