@@ -122,6 +122,7 @@
       - [the wilds \& ankou's asylum](#the-wilds--ankous-asylum)
     - [💎 dungeons drops](#-dungeons-drops)
     - [🗼 forsaken tower](#-forsaken-tower)
+    - [❓ daily quests v1.5](#-daily-quests-v15)
     - [🏆 guild siege](#-guild-siege)
       - [red chip](#red-chip)
       - [maps](#maps)
@@ -2104,6 +2105,22 @@ Those who have completed the Optional Master Quest during the event period will 
 <div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_6f.png" alt="forsaken_tower_daily_quests_6f.png"/></div>
 
 <div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_7f.png" alt="forsaken_tower_daily_quests_7f.png"/></div>
+
+</details></td></tr></table>
+
+### ❓ daily quests v1.5
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center">
+
+**Only the experience necessary for a single level up is calculated, without accounting for cumulative experience.**
+
+**The actual number of days required to level up will be fewer than those indicated in the chart.**
+
+</div>
+
+<div align="center"><img src="./dungeons/daily_quests_v1.5.png" alt="daily_quests_v1.5.png"/></div>
 
 </details></td></tr></table>
 
