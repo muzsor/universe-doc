@@ -84,8 +84,9 @@
       - [upgrade level bonus](#upgrade-level-bonus)
     - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate](#-ultimate)
       - [ultimate weapon](#ultimate-weapon)
-      - [lv150 regular weapon](#lv150-regular-weapon)
-      - [lv175/180 regular weapon \& shield](#lv175180-regular-weapon--shield)
+      - [lv150 weapon](#lv150-weapon)
+      - [lv175 weapon](#lv175-weapon)
+      - [lv180 weapon \& shield](#lv180-weapon--shield)
       - [reroll weapons](#reroll-weapons)
       - [ultimate jewelry](#ultimate-jewelry)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
@@ -1518,7 +1519,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### lv150 regular weapon
+#### lv150 weapon
 
 <details><summary>details</summary>
 
@@ -1526,11 +1527,19 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### lv175/180 regular weapon & shield
+#### lv175 weapon
 
 <details><summary>details</summary>
 
-<div align="center"><img src="./upgrade/ultimate/lv175_180_ultimate_weapons&shield.png" alt="lv175_180_ultimate_weapons&shield.png"/></div>
+<div align="center"><img src="./upgrade/ultimate/lv175_weapons.png" alt="lv175_weapons.png"/></div>
+
+</details>
+
+#### lv180 weapon & shield
+
+<details><summary>details</summary>
+
+<div align="center"><img src="./upgrade/ultimate/lv180_ultimate_weapons&_shields.png" alt="lv180_ultimate_weapons&_shields.png"/></div>
 
 </details>
 
