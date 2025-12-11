@@ -2129,6 +2129,8 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </div>
 
+<div align="center"><img src="./dungeons/kaillun_daily_quests.png" alt="kaillun_daily_quests.png" width="600"/></div>
+
 <div align="center"><img src="./dungeons/daily_quests_v1.5.png" alt="daily_quests_v1.5.png"/></div>
 
 </details></td></tr></table>
