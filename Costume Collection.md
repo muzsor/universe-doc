@@ -704,6 +704,12 @@
 
 <div align="center"><img src="./costume_collection/98.Spellbat.jpg" alt="98.Spellbat.jpg" width="300"/></div>
 
+99. `2025-12-04`: 2025 Thanksgiving
+
+   * Hat / Suit / Shoes / Hands / Flower (cloak) / Glasses (mask)
+
+<div align="center"><img src="./costume_collection/99.2025_Thanksgiving.jpg" alt="99.2025_Thanksgiving.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
