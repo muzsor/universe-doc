@@ -710,6 +710,12 @@
 
 <div align="center"><img src="./costume_collection/99.2025_Thanksgiving.jpg" alt="99.2025_Thanksgiving.jpg" width="300"/></div>
 
+100. `2025-12-18`: 2025 Christmas
+
+   * Hat / Suit / Shoes / Hands / Cloak
+
+<div align="center"><img src="./costume_collection/100.2025_Christmas.jpg" alt="100.2025_Christmas.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
