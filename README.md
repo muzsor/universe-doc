@@ -69,7 +69,6 @@
     - [🐑 herd damage reduction](#-herd-damage-reduction)
     - [🧠 skill point](#-skill-point)
     - [💪 buff scale](#-buff-scale)
-    - [❓ office quest](#-office-quest)
     - [💯 level reach rewards](#-level-reach-rewards)
     - [👑 master\&hero quests](#-masterhero-quests)
       - [master cloak](#master-cloak)
@@ -122,6 +121,7 @@
     - [💥 dungeons curses](#-dungeons-curses)
       - [the wilds \& ankou's asylum](#the-wilds--ankous-asylum)
     - [💎 dungeons drops](#-dungeons-drops)
+    - [❓ office quest](#-office-quest)
     - [🗼 forsaken tower](#-forsaken-tower)
     - [❓ daily quests v1.5](#-daily-quests-v15)
     - [🏆 guild siege](#-guild-siege)
@@ -1062,18 +1062,6 @@ $$
 > source:[@steinschleuder @[Justice] Steinschleuder (discord flyff universe)](https://discord.com/channels/778915844070834186/999269990098284554/1145962826742116352 "@cysotiso @[Zanarkand] Cysotiso (discord flyff universe)")
 
 <div align="center"><img src="./system/buff_scale.png" alt="buff_scale.png"/></div>
-
-</details></td></tr></table>
-
-### ❓ office quest
-
-<table><tr><td><details><summary>details</summary>
-
-<div align="center"><img src="./system/quest/office_quest_flaris.png" alt="office_quest_flaris.png"/></div>
-<div align="center"><img src="./system/quest/office_quest_saint_morning.png" alt="office_quest_saint_morning.png"/></div>
-<div align="center"><img src="./system/quest/office_quest_darkon.png" alt="office_quest_darkon.png"/></div>
-<div align="center"><img src="./system/quest/office_quest_azria.png" alt="office_quest_azria.png"/></div>
-<div align="center"><img src="./system/quest/office_quest_coral_island.png" alt="office_quest_coral_island.png"/></div>
 
 </details></td></tr></table>
 
@@ -2080,6 +2068,19 @@ Those who have completed the Optional Master Quest during the event period will 
 * Fragments you earn in Cursed dungeons are not soul-linked, they are untradeable however. Everyone in the party can receive them, and if they do the fragments will go directly to their inventory.
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172752197742768189 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+</details></td></tr></table>
+
+### ❓ office quest
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./dungeons/office_quest/office_quest_flaris.png" alt="office_quest_flaris.png"/></div>
+<div align="center"><img src="./dungeons/office_quest/office_quest_saint_morning.png" alt="office_quest_saint_morning.png"/></div>
+<div align="center"><img src="./dungeons/office_quest/office_quest_darkon.png" alt="office_quest_darkon.png"/></div>
+<div align="center"><img src="./dungeons/office_quest/office_quest_azria.png" alt="office_quest_azria.png"/></div>
+<div align="center"><img src="./dungeons/office_quest/office_quest_coral_island.png" alt="office_quest_coral_island.png"/></div>
+<div align="center"><img src="./dungeons/office_quest/office_quest_kaillun.png" alt="office_quest_kaillun.png"/></div>
 
 </details></td></tr></table>
 
