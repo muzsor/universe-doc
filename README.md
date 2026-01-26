@@ -152,7 +152,7 @@
 
    * <img src="https://flyffulator.com/logonew.png" alt="Flyffulator Icon" width="16"/> [Frostiae/Flyffulator](https://flyffulator.com/)： Extensive character simulator and damage calculator for Flyff Universe.
 
-   * <img src="./assets/sniegu_translation_platform_favicon.png" alt="Sniegu Translation Platform Icon" width="16"/> [Sniegu Translation Platform](https://translation.sniegu.fr/projects/flyff/ "Sniegu Translation Platform")
+   * <img src="./assets/sniegu_translation_platform_favicon.png" alt="Flyff-Universe-Translations" width="16"/> [Flyff-Universe-Translations](https://github.com/Gala-Lab/Flyff-Universe-Translations "Flyff-Universe-Translations")： Official Flyff Universe localization repository.
 
 * <img src="https://flyffipedia.com/img/apple-touch-icon.png" alt="Flyffipedia Icon" width="16"/> [swaight/Flyffipedia](https://flyffipedia.com/ "swaight/Flyffipedia")： A wiki page containing all kinds of static information about the game's data.
 
@@ -310,6 +310,14 @@
 * `2025-11-27 02:00 UTC`: [Muran’s Awakening Expansion (Flyff Universe version 1.5.0)](https://universe.flyff.com/news/muransawakeningexpansion "Muran's Awakening Expansion (Flyff Universe Version 1.5.0)")
 
 <div align="center"><img src="./system/updates/Muran’s_Awakening_v1.5.0.png" alt="Muran’s_Awakening_v1.5.0.png" width="400"/></div>
+
+</details>
+
+<details><summary>2026</summary>
+
+* `2025-01-26 06:23 UTC`:[📢 Flyff Universe Official Translation Repository – Info & Call for Contributions](https://universe.flyff.com/news/translationreposiktroy2026 "📢 Flyff Universe Official Translation Repository – Info & Call for Contributions")
+
+   > [Flyff-Universe-Translations](https://github.com/Gala-Lab/Flyff-Universe-Translations "Flyff-Universe-Translations")
 
 </details>
 
