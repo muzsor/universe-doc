@@ -121,6 +121,7 @@
     - [💥 dungeons curses](#-dungeons-curses)
       - [the wilds \& ankou's asylum](#the-wilds--ankous-asylum)
     - [💎 dungeons drops](#-dungeons-drops)
+    - [😈 ankou's asylum map](#-ankous-asylum-map)
     - [❓ office quest](#-office-quest)
     - [🗼 forsaken tower](#-forsaken-tower)
     - [❓ daily quests v1.5](#-daily-quests-v15)
@@ -2076,6 +2077,14 @@ Those who have completed the Optional Master Quest during the event period will 
 * Fragments you earn in Cursed dungeons are not soul-linked, they are untradeable however. Everyone in the party can receive them, and if they do the fragments will go directly to their inventory.
 
    > source:[@bluechromed @[Dev] Blukie (discord flyff universe)](https://discord.com/channels/778915844070834186/1000058902576119878/1172752197742768189 "@bluechromed @[Dev] Blukie (discord flyff universe)")
+
+</details></td></tr></table>
+
+### 😈 ankou's asylum map
+
+<table><tr><td><details><summary>details</summary>
+
+<div align="center"><img src="./dungeons/ankou's_asylum.png" alt="ankou's_asylum.png"/></div>
 
 </details></td></tr></table>
 
