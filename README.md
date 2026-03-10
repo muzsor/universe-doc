@@ -141,7 +141,7 @@
 
 * <img src="https://universe.flyff.com/storage/img/favicon.png" alt="Flyff Universe Icon" width="16"/> [Flyff Universe](https://universe.flyff.com/ "Flyff Universe")： Official Website.
 
-   * <img src="./assets/galalab_support_favicon.png" alt="Galalab Support Icon" width="16"/> [Galalab Support (helpshift)](https://galalab.helpshift.com/hc/en/12-flyff-universe/contact-us/ "Galalab Support (helpshift)")： Customer Support.
+   * <img src="./assets/galalab_support_favicon.png" alt="Galalab Support Icon" width="16"/> [WEMADE CONNECT Customer Support](https://flerogames.zendesk.com/hc/en-us/requests/new?tf_360007006771=flyff_g "Galalab Support (helpshift)")： Customer Support.
 
    * <img src="./assets/discord_favicon.ico" alt="Discord Icon" width="16"/> [Flyff Universe Discord](https://discord.com/invite/flyffuniverse "Flyff Universe Discord")： Official Discord.
 
