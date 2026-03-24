@@ -752,6 +752,12 @@
 
 <div align="center"><img src="./costume_collection/105.Heart_Punk.jpg" alt="105.Heart_Punk.jpg" width="300"/></div>
 
+106. `2026-03-12`: Lucky Clover
+
+   * Hat / Suit / Shoes / Hands / Aibag (backpack) / Mask
+
+<div align="center"><img src="./costume_collection/106.Lucky_Clover.jpg" alt="106.Lucky_Clover.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 
