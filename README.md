@@ -306,9 +306,9 @@
 
 <div align="center"><img src="./system/updates/FWC2025.png" alt="FWC2025.png" width="400"/></div>
 
-* `2025-10-22 08:00 UTC`: [Public Test Server Manifest](https://universe.flyff.com/news/pts2025)
+* `2025-10-22 08:00 UTC`:[Public Test Server Manifest](https://universe.flyff.com/news/pts2025)
 
-* `2025-11-27 02:00 UTC`: [Muran’s Awakening Expansion (Flyff Universe version 1.5.0)](https://universe.flyff.com/news/muransawakeningexpansion "Muran's Awakening Expansion (Flyff Universe Version 1.5.0)")
+* `2025-11-27 02:00 UTC`:[Muran’s Awakening Expansion (Flyff Universe version 1.5.0)](https://universe.flyff.com/news/muransawakeningexpansion "Muran's Awakening Expansion (Flyff Universe Version 1.5.0)")
 
 <div align="center"><img src="./system/updates/Muran’s_Awakening_v1.5.0.png" alt="Muran’s_Awakening_v1.5.0.png" width="400"/></div>
 
@@ -316,9 +316,13 @@
 
 <details><summary>2026</summary>
 
-* `2025-01-26 06:23 UTC`:[📢 Flyff Universe Official Translation Repository – Info & Call for Contributions](https://universe.flyff.com/news/translationreposiktroy2026 "📢 Flyff Universe Official Translation Repository – Info & Call for Contributions")
+* `2026-01-26 06:23 UTC`:[📢 Flyff Universe Official Translation Repository – Info & Call for Contributions](https://universe.flyff.com/news/translationreposiktroy2026 "📢 Flyff Universe Official Translation Repository – Info & Call for Contributions")
 
    > [Flyff-Universe-Translations](https://github.com/Gala-Lab/Flyff-Universe-Translations "Flyff-Universe-Translations")
+
+* `2026-04-23`:[Flyff World Championship 2026](https://universe.flyff.com/news/fwc2026 "Flyff World Championship 2026")
+
+<div align="center"><img src="./system/updates/FWC2026.png" alt="FWC2026.png" width="400"/></div>
 
 </details>
 
