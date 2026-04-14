@@ -758,8 +758,15 @@
 
 <div align="center"><img src="./costume_collection/106.Lucky_Clover.jpg" alt="106.Lucky_Clover.jpg" width="300"/></div>
 
-</details></td></tr></table>
+107. `2026-03-26`: Street Bunny
 
+108. `2026-04-09`: Oni-Style
+
+   * Hat / Suit / Shoes / Bag (backpack) / Mask
+
+<div align="center"><img src="./costume_collection/108.Oni-Style.jpg" alt="108.Oni-Style.jpg" width="300"/></div>
+
+</details></td></tr></table>
 
 ## 🎉 Costume Collection Event
 
