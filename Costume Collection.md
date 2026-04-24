@@ -758,13 +758,25 @@
 
 <div align="center"><img src="./costume_collection/106.Lucky_Clover.jpg" alt="106.Lucky_Clover.jpg" width="300"/></div>
 
-107. `2026-03-26`: Street Bunny
+107. `2026-03-26`: Lotus Blossom
 
-108. `2026-04-09`: Oni-Style
+   * Hat / Suit / Hands / Shoes / Ribbon (Cloak) / Tilak (Mask)
+
+<div align="center"><img src="./costume_collection/107.Lotus_Blossom.jpg" alt="107.Lotus_Blossom.jpg" width="300"/></div>
+
+108. `2026-04-02`: Street Bunny
+
+109. `2026-04-09`: Oni-Style
 
    * Hat / Suit / Shoes / Bag (backpack) / Mask
 
-<div align="center"><img src="./costume_collection/108.Oni-Style.jpg" alt="108.Oni-Style.jpg" width="300"/></div>
+<div align="center"><img src="./costume_collection/109.Oni-Style.jpg" alt="109.Oni-Style.jpg" width="300"/></div>
+
+110. `2026-04-23`: Idol 2026
+
+   * Hat / Suit / Hands / Shoes / Headset (Mask)
+
+<div align="center"><img src="./costume_collection/110.Idol_2026.jpg" alt="110.Idol_2026.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
