@@ -628,7 +628,7 @@
 
 <div align="center"><img src="./costume_collection/87.Modern_Alien.jpg" alt="87.Modern_Alien.jpg" width="300"/></div>
 
-88. `2025-06-26`: `Forest Spirit`
+88. `2025-06-26`, `2026-05-07`: `Forest Spirit`
 
    * Hat / Suit / Shoes / Hands / Cloak
 
