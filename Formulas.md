@@ -535,7 +535,11 @@ DamagePerSecond = computeDamage * hitsPerSecond
 
       <details><summary>details</summary>
 
-      <img src="./formulas/effect_of_defense_on_adjusted_attack.png" alt="effect_of_defense_on_adjusted_attack.png" width="600"/>
+      <img src="./formulas/defense_attack_curve.png" alt="defense_attack_curve.png" width="600"/>
+
+      * The blue line sits entirely below the gray line, meaning the actual formula grants players higher damage reduction at the same `D/A ratio`.
+
+      * At `D/A = 0.10`, damage reduction is `30%` (compared to only `10%` for the linear model).
 
       ```js
       value = Math.sqrt(defense / (defense + (2.0 * attack)))
