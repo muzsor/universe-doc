@@ -26,6 +26,7 @@
     - [81~90](#8190)
     - [91~100](#91100)
     - [101~110](#101110)
+    - [111~120](#111120)
   - [🎉 Costume Collection Event](#-costume-collection-event)
 
 </details></td></tr></table>
@@ -777,6 +778,20 @@
    * Hat / Suit / Hands / Shoes / Headset (Mask)
 
 <div align="center"><img src="./costume_collection/110.Idol_2026.jpg" alt="110.Idol_2026.jpg" width="300"/></div>
+
+</details></td></tr></table>
+
+### 111~120
+
+<table><tr><td><details><summary>111~120 details</summary>
+
+<br>
+
+111. `2026-05-07`: Military 2026
+
+   * Hat / Suit / Hands / Shoes / Backpack (Cloak) / Mask
+
+<div align="center"><img src="./costume_collection/111.Military_2026.jpg" alt="111.Military_2026.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
