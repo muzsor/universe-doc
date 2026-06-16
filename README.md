@@ -342,6 +342,8 @@
 
 <div align="center"><img src="./system/updates/FWC2026.png" alt="FWC2026.png" width="400"/></div>
 
+* `2026-05-04`:[Server Merge Announcement: 独眼蝙蝠 (TW), 데미안(KR), リシス (JP)](https://universe.flyff.com/news/servermerge2026 "Server Merge Announcement: 独眼蝙蝠 (TW), 데미안(KR), リシス (JP)")
+
 </details>
 
 #### 💸 top up event
