@@ -793,6 +793,24 @@
 
 <div align="center"><img src="./costume_collection/111.Military_2026.jpg" alt="111.Military_2026.jpg" width="300"/></div>
 
+112. `2026-05-21`: Carnival Master
+
+   * Hat / Suit / Hands / Shoes / Popcorn Bucket (Cloak) / Rabbit Mask / Lion Mask
+
+<div align="center"><img src="./costume_collection/112.Carnival_Master.jpg" alt="112.Carnival_Master.jpg" width="300"/></div>
+
+113. `2026-05-28`: Celestial Phoenix
+
+   * Hat / Suit / Shoes / Mask / Wings (Cloak)
+
+<div align="center"><img src="./costume_collection/113.Celestial_Phoenix.png" alt="113.Celestial_Phoenix.png" width="300"/></div>
+
+114. `2026-06-11`: 2026 Mascot
+
+   * Hat / Suit / Hands / Shoes / Flag (Cloak) / Sunglasses (Mask)
+
+<div align="center"><img src="./costume_collection/114.2026_Mascot.jpg" alt="114.2026_Mascot.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
