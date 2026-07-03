@@ -811,6 +811,18 @@
 
 <div align="center"><img src="./costume_collection/114.2026_Mascot.jpg" alt="114.2026_Mascot.jpg" width="300"/></div>
 
+115. `2026-06-25`: 2026 Mascot - Series 2
+
+   * Hat / Suit / Hands / Shoes / Flag (Cloak) / Sunglasses (Mask)
+
+<div align="center"><img src="./costume_collection/115.2026_Mascot_2.jpg" alt="115.2026_Mascot_2.jpg" width="300"/></div>
+
+116. `2026-07-02`: Swimsuit 2026
+
+   * Hat / Suit / Hands / Shoes
+
+<div align="center"><img src="./costume_collection/116.Swimsuit_2026.jpg" alt="116.Swimsuit_2026.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
