@@ -823,6 +823,12 @@
 
 <div align="center"><img src="./costume_collection/116.Swimsuit_2026.jpg" alt="116.Swimsuit_2026.jpg" width="300"/></div>
 
+117. `2026-07-23`: Veiled Wardens
+
+   * Hat / Suit / Hands / Shoes / Mantle (Cloak) / Shield (Cloak)
+
+<div align="center"><img src="./costume_collection/117.Veiled_Wardens.jpg" alt="117.Veiled_Wardens.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
