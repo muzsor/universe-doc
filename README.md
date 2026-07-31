@@ -128,7 +128,7 @@
     - [😈 ankou's asylum map](#-ankous-asylum-map)
     - [❓ office quest](#-office-quest)
     - [🗼 forsaken tower](#-forsaken-tower)
-    - [❓ daily quests v1.5](#-daily-quests-v15)
+    - [❓ daily quests v1.5.5](#-daily-quests-v155)
     - [🏆 guild siege](#-guild-siege)
       - [red chip](#red-chip)
       - [maps](#maps)
@@ -343,6 +343,10 @@
 <div align="center"><img src="./system/updates/FWC2026.png" alt="FWC2026.png" width="400"/></div>
 
 * `2026-05-04`:[Server Merge Announcement: 独眼蝙蝠 (TW), 데미안(KR), リシス (JP)](https://universe.flyff.com/news/servermerge2026 "Server Merge Announcement: 独眼蝙蝠 (TW), 데미안(KR), リシス (JP)")
+
+* `2026-07-23 09:00 UTC`:[Game Version 1.5.5 Patch Notes - Muran’s Awakening Expansion](https://universe.flyff.com/news/muransawakeningexpansionv155 "Game Version 1.5.5 Patch Notes - Muran’s Awakening Expansion")
+
+<div align="center"><img src="./system/updates/Muran’s_Awakening_v1.5.5.png" alt="Muran’s_Awakening_v1.5.5.png" width="400"/></div>
 
 </details>
 
@@ -1967,7 +1971,7 @@ Those who have completed the Optional Master Quest during the event period will 
 | Darkon3 | Volkane | Guardiane Sanctuary |
 | Azria | -- | Storm Peak |
 | Coral Island | Herneos | The Wilds |
-| Kaillun | -- | Ankou's Asylum |
+| Kaillun | Euphresia | Ankou's Asylum |
 
 </div>
 
@@ -2157,9 +2161,15 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_7f.png" alt="forsaken_tower_daily_quests_7f.png"/></div>
 
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_8f.png" alt="forsaken_tower_daily_quests_8f.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_9f.png" alt="forsaken_tower_daily_quests_9f.png"/></div>
+
+<div align="center"><img src="./dungeons/forsaken_tower/forsaken_tower_daily_quests_10f.png" alt="forsaken_tower_daily_quests_10f.png"/></div>
+
 </details></td></tr></table>
 
-### ❓ daily quests v1.5
+### ❓ daily quests v1.5.5
 
 <table><tr><td><details><summary>details</summary>
 
@@ -2173,7 +2183,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./dungeons/kaillun_daily_quests.png" alt="kaillun_daily_quests.png" width="600"/></div>
 
-<div align="center"><img src="./dungeons/daily_quests_v1.5.png" alt="daily_quests_v1.5.png"/></div>
+<div align="center"><img src="./dungeons/daily_quests_v1.5.5.png" alt="daily_quests_v1.5.5png"/></div>
 
 </details></td></tr></table>
 
