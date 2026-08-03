@@ -1634,7 +1634,9 @@ Those who have completed the Optional Master Quest during the event period will 
 
 <div align="center"><img src="./upgrade/ultimate/fusion_ultimate_jewels.png" alt="fusion_ultimate_jewels.png"/></div>
 
-<div align="center"><img src="./upgrade/ultimate/synthesize_ultimate_jewel.png" alt="synthesize_ultimate_jewel.png"/></div>
+<div align="center"><img src="./upgrade/ultimate/synthesize_ultimate_jewels.png" alt="synthesize_ultimate_jewels.png"/></div>
+
+<div align="center"><img src="./upgrade/ultimate/insert_ultimate_jewels.png" alt="insert_ultimate_jewels.png"/></div>
 
 </details></td></tr></table>
 
