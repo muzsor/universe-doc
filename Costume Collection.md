@@ -829,6 +829,12 @@
 
 <div align="center"><img src="./costume_collection/117.Veiled_Wardens.jpg" alt="117.Veiled_Wardens.jpg" width="300"/></div>
 
+118. `2026-07-30`: Japanese Street Punk
+
+   * Hat / Suit / Hands / Shoes / Katana (Cloak) / Mask
+
+<div align="center"><img src="./costume_collection/118.Japanese_Street_Punk.jpg" alt="118.Japanese_Street_Punk.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
