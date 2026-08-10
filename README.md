@@ -85,13 +85,13 @@
     - [🏹 weapon\&armor upgrade](#-weaponarmor-upgrade)
       - [event](#event)
       - [upgrade level bonus](#upgrade-level-bonus)
-    - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate](#-ultimate)
+    - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate weapons](#-ultimate-weapons)
       - [ultimate weapon](#ultimate-weapon)
-      - [lv150 weapon](#lv150-weapon)
-      - [lv175 weapon](#lv175-weapon)
-      - [lv180 weapon \& shield](#lv180-weapon--shield)
+      - [lv150 weapons](#lv150-weapons)
+      - [lv175 weapons](#lv175-weapons)
+      - [lv180 weapons \& shields](#lv180-weapons--shields)
       - [reroll weapons](#reroll-weapons)
-      - [ultimate jewelry](#ultimate-jewelry)
+    - [🆄🅻🆃🅸🅼🅰🆃🅴 ultimate jewelry](#-ultimate-jewelry)
     - [🦾 new horizon equipment sets](#-new-horizon-equipment-sets)
     - [🦾 muran's awakening equipment sets](#-murans-awakening-equipment-sets)
     - [💎 ultimate jewels](#-ultimate-jewels)
@@ -1532,7 +1532,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details></td></tr></table>
 
-### 🆄🅻🆃🅸🅼🅰🆃🅴 ultimate
+### 🆄🅻🆃🅸🅼🅰🆃🅴 ultimate weapons
 
 <table><tr><td><details><summary>details</summary>
 
@@ -1544,7 +1544,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### lv150 weapon
+#### lv150 weapons
 
 <details><summary>details</summary>
 
@@ -1552,7 +1552,7 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### lv175 weapon
+#### lv175 weapons
 
 <details><summary>details</summary>
 
@@ -1560,11 +1560,13 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### lv180 weapon & shield
+#### lv180 weapons & shields
 
 <details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/ultimate/lv180_ultimate_weapons&_shields.png" alt="lv180_ultimate_weapons&_shields.png"/></div>
+
+<div align="center"><img src="./upgrade/ultimate/lv180_ultimate_weapons&_shields_pvp.png" alt="lv180_ultimate_weapons&_shields_pvp.png"/></div>
 
 </details>
 
@@ -1580,9 +1582,11 @@ Those who have completed the Optional Master Quest during the event period will 
 
 </details>
 
-#### ultimate jewelry
+</details></td></tr></table>
 
-<details><summary>details</summary>
+### 🆄🅻🆃🅸🅼🅰🆃🅴 ultimate jewelry
+
+<table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/ultimate/ultimate_jewelry.png" alt="ultimate_jewelry.png"/></div>
 
@@ -1606,8 +1610,6 @@ Those who have completed the Optional Master Quest during the event period will 
     * (4/5) Set Effect : MP Recovery After Kill +500
     * (5/5) Set Effect : Magic Attack +5%, Decreased Casting Time +10%
 
-</details>
-
 </details></td></tr></table>
 
 ### 🦾 new horizon equipment sets
@@ -1623,6 +1625,8 @@ Those who have completed the Optional Master Quest during the event period will 
 <table><tr><td><details><summary>details</summary>
 
 <div align="center"><img src="./upgrade/murans_awakening_equipment_sets.png" alt="murans_awakening_equipment_sets.png"/></div>
+
+<div align="center"><img src="./upgrade/murans_awakening_equipment_sets_pvp.png" alt="murans_awakening_equipment_sets_pvp.png"/></div>
 
 </details></td></tr></table>
 
