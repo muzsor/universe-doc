@@ -431,7 +431,7 @@
 
 <div align="center"><img src="./costume_collection/58.Spring_Qipao.jpg" alt="58.Spring_Qipao.jpg" width="300"/></div>
 
-59. `2024-06-20`: `Magical Kid`
+59. `2024-06-20`, `2026-08-12`: `Magical Kid`
 
    * Hair / Hands / Suit / Shoes / Glasses
 
@@ -834,6 +834,12 @@
    * Hat / Suit / Hands / Shoes / Katana (Cloak) / Mask
 
 <div align="center"><img src="./costume_collection/118.Japanese_Street_Punk.jpg" alt="118.Japanese_Street_Punk.jpg" width="300"/></div>
+
+119. `2026-08-27`: Mirage Born
+
+   * Hat / Suit / Hands / Shoes / Wings (Cloak) / Horus Eyepatch (Mask)
+
+<div align="center"><img src="./costume_collection/119.Mirage_Born.jpg" alt="119.Mirage_Born.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
