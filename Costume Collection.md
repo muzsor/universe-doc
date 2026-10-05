@@ -27,6 +27,7 @@
     - [91~100](#91100)
     - [101~110](#101110)
     - [111~120](#111120)
+    - [121~130](#121130)
   - [🎉 Costume Collection Event](#-costume-collection-event)
 
 </details></td></tr></table>
@@ -840,6 +841,32 @@
    * Hat / Suit / Hands / Shoes / Wings (Cloak) / Horus Eyepatch (Mask)
 
 <div align="center"><img src="./costume_collection/119.Mirage_Born.jpg" alt="119.Mirage_Born.jpg" width="300"/></div>
+
+120. `2026-09-10`: Japanese Warrior
+
+   * Hat / Suit / Hands / Shoes / Katana (Cloak)
+
+<div align="center"><img src="./costume_collection/120.Japanese_Warrior.jpg" alt="120.Japanese_Warrior.jpg" width="300"/></div>
+
+</details></td></tr></table>
+
+### 121~130
+
+<table><tr><td><details><summary>121~130 details</summary>
+
+<br>
+
+121. `2026-09-17`: High-Seas Rogue
+
+   * Hat / Suit / Hands / Shoes / Coat / Eyepatch (Mask)
+
+<div align="center"><img src="./costume_collection/121.High-Seas_Rogue.jpg" alt="121.High-Seas_Rogue.jpg" width="300"/></div>
+
+122. `2026-10-01`: Midgard Legacy
+
+   * Hat / Suit / Hands / Shoes / Coat / Eyepatch (Mask)
+
+<div align="center"><img src="./costume_collection/122.Midgard_Legacy.jpg" alt="122.Midgard_Legacy.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
