@@ -19,7 +19,7 @@
   - [🌐 community](#-community)
     - [official](#official)
     - [wiki](#wiki)
-    - [skill simulator](#skill-simulator)
+    - [simulator](#simulator)
     - [others](#others)
     - [closed](#closed)
   - [⚙️ system](#️-system)
@@ -167,25 +167,26 @@
 
 * <img src="https://madrigalinside.com//wp-content/uploads/2021/09/cropped-mi-logo-icon-neu-transparent-32x32.png" alt="Madrigalinside Icon" width="16"/> [tacota0158/Madrigalinside](https://madrigalinside.com/ "tacota0158/Madrigalinside")： A wiki page containing all kinds of static information about the game's data.
 
-### skill simulator
+* [flyingsnow2/Flyff Universe quest rewards overview](https://flyingsnow2.github.io/flyff-universe-quest-rewards-overview/ "flyingsnow2/Flyff Universe quest rewards overview")：An overview of the obtainable rewards of the different quests in Flyff Universe.
 
-* [coolguy/Skill Simulator for Flyff Universe — Plan Your Build](https://flyff-skill-sim.pages.dev/ "coolguy/Skill Simulator for Flyff Universe — Plan Your Build")： Skill Simulator for Flyff Universe.
+### simulator
 
-* <img src="https://skillulator.lol/assets/favicon-C49brna2.svg" alt="Madrigalinside Icon" width="16"/> [nulfrost/Skillulator | FlyFF Universe Skill Calculator](https://skillulator.lol/ "nulfrost/Skillulator | FlyFF Universe Skill Calculator")： Skillulator helps you optimize and share your FlyFF skill builds.
+* <img src="https://flyff-builds.pages.dev/favicon.svg" alt="Flyff Builds Icon" width="16"/> [coolguy/Flyff Builds — Flyff Universe build comparison](https://flyff-builds.pages.dev/ "coolguy/Flyff Builds — Flyff Universe build comparison")： Compare Flyff Universe builds side by side: shorthand gear entry, stat pages, gear swaps and final stats for every third job — HP, attack, crit, healing and more.
+
+* <img src="https://flyff-skill-sim.pages.dev/favicon.ico" alt="Flyff Builds Icon" width="16"/> [coolguy/Skill Simulator for Flyff Universe — Plan Your Build](https://flyff-skill-sim.pages.dev/ "coolguy/Skill Simulator for Flyff Universe — Plan Your Build")： Skill Simulator for Flyff Universe.
+
 
 * <img src="https://universe.flyff.com/storage/img/favicon.png" alt="Flyff Universe Icon" width="16"/> [guysuvijak/Flyff - Skill Simulator](https://flyffskillsimulator.vercel.app/ "guysuvijak/Flyff - Skill Simulator")： Flyff Skill Simulator is an open-source project developed using Next.js and React Flow technologies.
 
 ### others
+
+* <img src="https://flyffuniversemodelviewer.com/favicon.ico" alt="i9hdkills Flyff Universe resources Icon" width="16"/> [i9hdkills Flyff Universe resources](https://flyffuniversemodelviewer.com/ "i9hdkills Flyff Universe resources")： A collection of different tools and resources for Flyff Universe.
 
 * <img src="https://siegestats.cc/favicon.ico" alt="SiegeStats Icon" width="16"/> [ShynoX/SiegeStats](https://siegestats.cc/ "ShynoX/SiegeStats"): SiegeStats is all about the Player vs. Player aspect of Flyff. It aims to organize and visualize Flyff's Battlelog format to allow inspection and analysis of those.
 
 * <img src="https://flyff-calculators.com/favicon.ico" alt="Flyff Calculators Icon" width="16"/> [Stellar/Flyff Calculators](https://flyff-calculators.com/ "Stellar/Flyff Calculators")： Calculate upgrade costs in flyff universe for gear, jewelry, piercing, ultimate and more!
 
 * <img src="https://housing-yuzaro.netlify.app//favicon.ico" alt="Housing help by Yuzaro Icon" width="16"/> [Housing help by Yuzaro](https://housing-yuzaro.netlify.app/ "Housing help by Yuzaro")： A Simple Website for Housing Furniture Preview. <!-- https://discord.com/channels/778915844070834186/1076577520301903984/1214919984506212362 -->
-
-* <img src="https://flyffuniversemodelviewer.com/favicon.ico" alt="i9hdkills Flyff Universe resources Icon" width="16"/> [i9hdkills Flyff Universe resources](https://flyffuniversemodelviewer.com/cs-viewer "i9hdkills Flyff Universe resources")： A collection of different tools and resources for Flyff Universe.
-
-* <img src="https://flyffuniversemodelviewer.com/favicon.ico" alt="i9hdkills Flyff Universe resources Icon" width="16"/> [i9hdkills Snapshot Comparisons](https://flyff-u-snapshot-comparisons.com/ "i9hdkills Flyff Universe resources")： Flyff Universe Game Data Snapshot Comparisons. Stay up to date with (hidden) Game Updates.
 
 * <img src="https://flyffmodelviewer.com/wp-content/uploads/2021/12/view.png" alt="flyffmodelviewer.com Icon" width="16"/> [MonkeyZero/Flyff Model Viewer | flyffmodelviewer.com](https://flyffmodelviewer.com/ "MonkeyZero/Welcome to Flyff Model Viewer | flyffmodelviewer.com")： The Ultimate Gateway to the Wonderful Universe of Fly For Fun!
 
@@ -195,13 +196,11 @@
 
 <!-- Your contributions are greatly appreciated! -->
 
-* [FlyingSnow/Flyff Universe quest rewards overview](https://flyffu-quest-rewards-overview.herokuapp.com/ "FlyingSnow/Flyff Universe quest rewards overview")：An overview of the obtainable rewards of the different quests in Flyff Universe.
-
-   * [bram-prins/flyff-universe-quest-rewards-overview](https://github.com/bram-prins/flyff-universe-quest-rewards-overview "flyff-universe-quest-rewards-overview")
-
 * [shovel/Madrigalmaps](https://www.madrigalmaps.com/ "shovel/Madrigalmaps")：An interactive map of the world, Madrigal.
 
 * [toffeegg/FlyffU-Launcher](https://github.com/toffeegg/FlyffU-Launcher/releases "toffeegg/FlyffU-Launcher")： A multi-profile launcher for Flyff Universe.
+
+* [nulfrost/Skillulator | FlyFF Universe Skill Calculator](https://skillulator.lol/ "nulfrost/Skillulator | FlyFF Universe Skill Calculator")： Skillulator helps you optimize and share your FlyFF skill builds.
 
 </details></td></tr></table>
 
