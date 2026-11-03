@@ -175,6 +175,7 @@
 
 * <img src="https://flyff-skill-sim.pages.dev/favicon.ico" alt="Flyff Builds Icon" width="16"/> [coolguy/Skill Simulator for Flyff Universe — Plan Your Build](https://flyff-skill-sim.pages.dev/ "coolguy/Skill Simulator for Flyff Universe — Plan Your Build")： Skill Simulator for Flyff Universe.
 
+* <img src="https://flyff-universe-party-exp.pages.dev/icons/icon.svg" alt="Flyff Universe Icon" width="16"/> [Flyff Universe Party EXP Calculator](https://flyff-universe-party-exp.pages.dev/ "Flyff Universe Party EXP Calculator")： Flyff Universe: party exp distribution and party level calculations, based on Flyffulator’s exp formulas.
 
 * <img src="https://universe.flyff.com/storage/img/favicon.png" alt="Flyff Universe Icon" width="16"/> [guysuvijak/Flyff - Skill Simulator](https://flyffskillsimulator.vercel.app/ "guysuvijak/Flyff - Skill Simulator")： Flyff Skill Simulator is an open-source project developed using Next.js and React Flow technologies.
 
@@ -346,6 +347,8 @@
 * `2026-07-23 09:00 UTC`:[Game Version 1.5.5 Patch Notes - Muran’s Awakening Expansion](https://universe.flyff.com/news/muransawakeningexpansionv155 "Game Version 1.5.5 Patch Notes - Muran’s Awakening Expansion")
 
 <div align="center"><img src="./system/updates/Muran’s_Awakening_v1.5.5.png" alt="Muran’s_Awakening_v1.5.5.png" width="400"/></div>
+
+* `2026-11-03`:[[Notice] Server Merges: Mushpoie & Flarine / Glaphan & Mia](https://universe.flyff.com/news/servermergenov2026 "[Notice] Server Merges: Mushpoie & Flarine / Glaphan & Mia")
 
 </details>
 
