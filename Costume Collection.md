@@ -864,9 +864,21 @@
 
 122. `2026-10-01`: Midgard Legacy
 
-   * Hat / Suit / Hands / Shoes / Coat / Eyepatch (Mask)
+   * Hat / Suit / Hands / Shoes / Backpack / Runes 01, Runes 02 (Mask)
 
 <div align="center"><img src="./costume_collection/122.Midgard_Legacy.jpg" alt="122.Midgard_Legacy.jpg" width="300"/></div>
+
+123. `2026-10-15`: High-Noon Scouts
+
+   * Hat / Suit / Hands / Shoes / Coat / Mask
+
+<div align="center"><img src="./costume_collection/123.High-Noon_Scouts.jpg" alt="123.High-Noon_Scouts.jpg" width="300"/></div>
+
+124. `2026-10-29`: Halloween 2026
+
+   * Hat / Suit / Hands / Shoes / Wings (Cloak) / Pets
+
+<div align="center"><img src="./costume_collection/124.Halloween_2026.jpg" alt="124.Halloween_2026.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
