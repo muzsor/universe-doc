@@ -46,19 +46,17 @@
 
    * Suit / Shoes
 
-   * Coral `2%`, Purple `4%`, White `6%`, Blue `8%`, Black `10%`
+<div align="center"><img src="./costume_collection/01.Casual_Summer.jpg" alt="01.Casual_Summer.jpg" width="300"/></div>
 
 2. `2022-06-08`: `Fantasy Towel`
 
    * Hat / Suit / Shoes
 
-   * Purple `2%`, Green `4%`, Black `6%`, Blue `6%`, White `8%`, Orange `10%`
+<div align="center"><img src="./costume_collection/02.Fantasy_Towel.jpg" alt="02.Fantasy_Towel.jpg" width="300"/></div>
 
 3. `2022-06-21`: `Elf`
 
    * Hat / Suit / Shoes / Gloves
-
-   * Green `10%`, Purple `6%`, Blue `2%`, Red `4%`, White `2%`, Black `8%`
 
 <div align="center"><img src="./costume_collection/03.Elf.jpg" alt="03.Elf.jpg" width="300"/></div>
 
@@ -879,6 +877,12 @@
    * Hat / Suit / Hands / Shoes / Wings (Cloak) / Pets
 
 <div align="center"><img src="./costume_collection/124.Halloween_2026.jpg" alt="124.Halloween_2026.jpg" width="300"/></div>
+
+125. `2026-11-12`: Twilight Dusk
+
+   * Hat / Suit / Hands / Shoes / Cloak / Lollipop
+
+<div align="center"><img src="./costume_collection/125.Twilight_Dusk.jpg" alt="125.Twilight_Dusk.jpg" width="300"/></div>
 
 </details></td></tr></table>
 
