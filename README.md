@@ -335,6 +335,10 @@
 
 * `2026-11-03`:[[Notice] Server Merges: Mushpoie & Flarine / Glaphan & Mia](https://universe.flyff.com/news/servermergenov2026 "[Notice] Server Merges: Mushpoie & Flarine / Glaphan & Mia")
 
+* `2026-11-26`:[Game Version 1.6.0 Patch Notes - Legend of the Abyss Expansion (Part 1) (Nov 26)](https://universe.flyff.com/news/legendoftheabyss160 "Game Version 1.6.0 Patch Notes - Legend of the Abyss Expansion (Part 1) (Nov 26)")
+
+<div align="center"><img src="./system/updates/Legend_of_the_Abyss_v1.6.0.png" alt="Legend_of_the_Abyss_v1.6.0.png" width="400"/></div>
+
 </details>
 
 #### 💸 top up event
