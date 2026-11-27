@@ -884,6 +884,12 @@
 
 <div align="center"><img src="./costume_collection/125.Twilight_Dusk.jpg" alt="125.Twilight_Dusk.jpg" width="300"/></div>
 
+126. `2026-11-26`: Native American 2026
+
+   * Hat / Suit / Hands / Shoes / Cloak
+
+<div align="center"><img src="./costume_collection/126.Native_American_2026.jpg" alt="126.Native_American_2026.jpg" width="300"/></div>
+
 </details></td></tr></table>
 
 ## 🎉 Costume Collection Event
